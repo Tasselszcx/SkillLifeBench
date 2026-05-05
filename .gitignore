@@ -1,0 +1,102 @@
+# PDF papers (too large for git)
+*.pdf
+
+# Local design docs (internal only, not for repo)
+paper_framework.md
+paper_framework_v2.md
+progress_and_roadmap.md
+# Internal presentation and report documents (non-English filenames)
+SafeBench_*.md
+
+# Temporary / scratch files
+_tmp_*.py
+*_git_tmp.py
+pipeline_git_tmp.py
+_commit_msg.txt
+
+# Test scripts (ad-hoc)
+test_api.py
+test_docker_eval.py
+test_api_raw.py
+test_llm_host.py
+debug_vuln.py
+quick_test.py
+
+# Audit artifacts (internal)
+docs/audit_results.csv
+docs/audit_summary_report.md
+docs/vulnerability_audit_plan.md
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+
+# Results (large output, not committed)
+results/
+
+# Legacy dataset versions (superseded by registry_final/ and bench/)
+registry/
+registry_expanded/
+registry_expanded_backup/
+skills_expanded/
+
+# Legacy experiment artifacts
+agents/
+data/
+safebench/
+qa_report.json
+qa_report_after_fix.json
+
+# Legacy / one-off scripts
+scripts/analyze_all_duplicates.py
+scripts/analyze_d_skills.py
+scripts/analyze_detailed.py
+scripts/analyze_duplicates.py
+scripts/analyze_llm.py
+scripts/audit_vulnerability_library.py
+scripts/auto_fix.py
+scripts/batch_eval.py
+scripts/batch_eval_llm.py
+scripts/compare_results.py
+scripts/deduplicate_c2.py
+scripts/extractors/
+scripts/fix_indent.py
+scripts/improve_c2_skills.py
+scripts/improve_d_skills.py
+scripts/improve_skills.py
+scripts/list_models.py
+scripts/migrate_skills_format.py
+scripts/profile_frameworks.py
+scripts/qa_agent.py
+scripts/run_eval.py
+scripts/summarize_mock.py
+scripts/test_agent.py
+scripts/test_framework_diff.py
+scripts/test_framework_large.py
+scripts/test_gpt_models.py
+scripts/test_injection.py
+scripts/test_langchain_output.py
+scripts/test_single_model.py
+scripts/validate_skill_quality.py
+scripts/sample_for_rq4.py
+scripts/validate_registry.py
+
+# Raw annotation file (canonical copy lives in bench/annotations/)
+rq4_oracle_human_annotation.csv
+results_rq123.tex
+
