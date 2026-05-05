@@ -9,9 +9,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from harness.pipeline import EvalPipeline
 from harness.runner.langchain_runner import LangChainRunner
 
-# API configuration
-os.environ["OPENAI_API_KEY"] = "REDACTED_API_KEY"
-os.environ["OPENAI_BASE_URL"] = "https://aihubmix.com/v1"
+# API configuration — set OPENAI_API_KEY and OPENAI_BASE_URL in your .env file
 
 # Models to test
 MODELS = [
