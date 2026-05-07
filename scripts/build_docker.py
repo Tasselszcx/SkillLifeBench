@@ -7,6 +7,7 @@ Usage:
 """
 
 import json
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -16,11 +17,10 @@ PROJECT_ROOT = Path(__file__).parent.parent
 DOCKERFILE_DIR = PROJECT_ROOT / "docker" / "safebench-sandbox"
 IMAGE_NAME = "safebench-sandbox:latest"
 
-DOCKER_BIN = (
-    r"C:\Program Files\Docker\Docker\resources\bin\docker.exe"
-    if sys.platform == "win32"
-    else "docker"
-)
+DOCKER_BIN = shutil.which("docker")
+if DOCKER_BIN is None:
+    print("ERROR: 'docker' not found in PATH. Please install Docker and ensure it is on PATH.")
+    sys.exit(1)
 
 
 def run(cmd: list[str], **kwargs) -> subprocess.CompletedProcess:
