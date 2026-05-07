@@ -1,9 +1,11 @@
 """Batch run LLM Judge with multiple models.
 
 Usage:
-    python scripts/run_llm_judge_batch.py
+    python scripts/run_llm_judge_batch.py --source <results_dir>
+    python scripts/run_llm_judge_batch.py --source docker_full_qwen3-32b_120
 """
 
+import argparse
 import subprocess
 import sys
 from pathlib import Path
@@ -15,15 +17,19 @@ MODELS = [
     "GLM-4.6",
 ]
 
-SOURCE = "docker_full_qwen3-32b_120"
-
 
 def main():
+    parser = argparse.ArgumentParser(description="Batch run LLM Judge with multiple models.")
+    parser.add_argument("--source", required=True,
+                        help="Results directory name under results/ (e.g. docker_full_qwen3-32b_120)")
+    args = parser.parse_args()
+
+    source = args.source
     root = Path(__file__).parent.parent
     script = root / "scripts" / "run_llm_judge.py"
 
     print(f"Running LLM Judge for {len(MODELS)} models...")
-    print(f"Source: {SOURCE}")
+    print(f"Source: {source}")
     print(f"Models: {', '.join(MODELS)}\n")
 
     for i, model in enumerate(MODELS, 1):
@@ -35,7 +41,7 @@ def main():
             sys.executable,
             str(script),
             "--model", model,
-            "--source", SOURCE,
+            "--source", source,
         ]
 
         try:

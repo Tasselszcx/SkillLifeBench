@@ -1,19 +1,13 @@
 #!/usr/bin/env python3
 """Generate statistics and distribution reports for the vulnerability registry."""
 
-import os
+import json
 import sys
 from pathlib import Path
-from collections import Counter, defaultdict
-
-try:
-    import yaml
-except ImportError:
-    print("Required: pip install pyyaml")
-    sys.exit(1)
+from collections import Counter
 
 SAFEBENCH_DIR = Path(__file__).parent.parent
-REGISTRY_DIR = SAFEBENCH_DIR / "registry"
+REGISTRY_FILE = SAFEBENCH_DIR / "injector" / "injected_skills.json"
 
 CLASS_NAMES = {
     "A": "Code-Level",
@@ -45,13 +39,12 @@ SUBCLASS_NAMES = {
 
 
 def load_all_entries():
-    entries = []
-    for yaml_file in sorted(REGISTRY_DIR.rglob("*.yaml")):
-        with open(yaml_file, "r", encoding="utf-8") as f:
-            entry = yaml.safe_load(f)
-            if entry and "vuln_id" in entry:
-                entries.append(entry)
-    return entries
+    if not REGISTRY_FILE.exists():
+        print(f"ERROR: registry file not found: {REGISTRY_FILE}")
+        sys.exit(1)
+    with open(REGISTRY_FILE, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return [e for e in data if "vuln_id" in e]
 
 
 def print_section(title):

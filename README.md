@@ -59,7 +59,6 @@ SkillLifeBench/
 ├── docker/                # safebench-sandbox Docker image definition
 │   └── safebench-sandbox/
 ├── scripts/               # Evaluation and analysis scripts
-│   ├── run_eval.py         # Single-model evaluation
 │   ├── compare_models.py   # Cross-model ASR comparison
 │   ├── analyze_results.py  # Summary statistics
 │   ├── run_llm_judge.py    # LLM-as-judge runner
