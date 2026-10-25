@@ -5,8 +5,8 @@ All commands below are offline. Run them from the repository root with a new out
 ## One-command verification
 
 ```sh
-python3 scripts/verify_release.py --output /tmp/skilllifebench-check
-python3 scripts/verify_release.py --full --output /tmp/skilllifebench-full-check
+python3 -m skilllifebench verify --output /tmp/skilllifebench-check
+python3 -m skilllifebench verify --full --output /tmp/skilllifebench-full-check
 ```
 
 The quick check validates file hashes, 388 source scenarios, the exact runtime/lifecycle schedules, Boolean outcome algebra, and consistency with the published tables. The full check additionally reconstructs frozen outcomes from evidence. Expect several GB of extracted files and reserve about 10 GB of scratch space.
@@ -29,13 +29,13 @@ Full verification has reproduced all 1,680 lifecycle records, including 8,036 pr
 Runtime — 12 hosted models:
 
 ```sh
-python3 www2027/results/runtime-binary-v56/hosted/verify_release.py --extract --evidence-root /tmp/skilllifebench-hosted-evidence --output /tmp/skilllifebench-hosted-report.json
+python3 data/runtime/hosted/verify_release.py --extract --evidence-root /tmp/skilllifebench-hosted-evidence --output /tmp/skilllifebench-hosted-report.json
 ```
 
 Runtime — two Qwen models and the paired intervention:
 
 ```sh
-python3 www2027/results/runtime-binary-v56/qwen/verify_release.py --extract --evidence-root /tmp/skilllifebench-qwen-evidence --output /tmp/skilllifebench-qwen-report.json
+python3 data/runtime/qwen/verify_release.py --extract --evidence-root /tmp/skilllifebench-qwen-evidence --output /tmp/skilllifebench-qwen-report.json
 ```
 
 Lifecycle:
@@ -47,7 +47,7 @@ python3 -m skilllifebench replay --output /tmp/skilllifebench-lifecycle-replay
 Source corpus:
 
 ```sh
-python3 www2027/data/release-v1/code/release_bundle.py verify --bundle www2027/data/release-v1
+python3 data/scenarios/code/release_bundle.py verify --bundle data/scenarios
 ```
 
 ## Evidence layout
@@ -56,7 +56,7 @@ python3 www2027/data/release-v1/code/release_bundle.py verify --bundle www2027/d
 
 Some API receipts have explicit published copies with credential-bearing headers removed. The original-to-published map preserves this transformation; scoring-bearing responses, observations and state remain bound to the final verdicts. Deleted credentials are not needed for replay.
 
-Files under `www2027/paper/results/` are the plotted/tabulated inputs for supporting studies. Supporting-study files provide reported measurements and provenance; complete evidence replay is available for the two decision tracks above.
+Files under `data/studies/` are the plotted/tabulated inputs for supporting studies. Supporting-study files provide reported measurements and provenance; complete evidence replay is available for the two decision tracks above.
 
 ## Running new models versus replay
 

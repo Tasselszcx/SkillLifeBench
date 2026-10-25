@@ -9,7 +9,7 @@ git clone https://github.com/Tasselszcx/SkillLifeBench.git
 cd SkillLifeBench
 python3 -m skilllifebench list
 python3 -m skilllifebench list --json
-python3 scripts/verify_release.py --output /tmp/skilllifebench-check
+python3 -m skilllifebench verify --output /tmp/skilllifebench-check
 python3 -m skilllifebench replay --output /tmp/skilllifebench-replay
 ```
 
@@ -18,7 +18,7 @@ Each output directory must be new. Listing shows 60 lifecycle instances from 12 
 For all frozen runtime and lifecycle outcomes:
 
 ```sh
-python3 scripts/verify_release.py --full --output /tmp/skilllifebench-full-check
+python3 -m skilllifebench verify --full --output /tmp/skilllifebench-full-check
 ```
 
 Reserve about 10 GB of scratch space for full extraction. Extraction and checks run on the CPU; no model requests, skill execution, or access to original private machine paths is required. See [reproduction](reproduction.md).
