@@ -1,0 +1,616 @@
+{
+  "schema": "runtime_service_disk_interruption_recovery/1.0",
+  "policy": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/repair-policy.json",
+    "sha256": "d44307f1b8706a990b460a7a267f35c34adb725c7dd9bd8d7ec03868df226b81",
+    "bytes": 2993
+  },
+  "selection_rule": "Only two unfinished slots from the23-case service replay. Prior completed slots are untouched. The disk-interrupted firstattempt consumes its originalattempt allowance; this continuation permits onlyattempt2 there, andattempts1/2 for the neverstarted slot.",
+  "max_fresh_episode_attempts": 2,
+  "within_request_attempts": "Original:2",
+  "selection": "First valid attempt; valid model/budget ending is terminal regardless task outcome.",
+  "workers": 8,
+  "model_parallelism": "One serial queue per selected configuration; up to eight configurations in parallel.",
+  "phases": {
+    "flash_pinned04": {
+      "protocol": {
+        "path": "/tmp/skilllife-gateway-full-flash-pinned01/protocol.json",
+        "sha256": "f2958c57b1420fd6dc6fd4819284dfd10655e862cc2855cb281d82bd53186ebb",
+        "bytes": 465231
+      }
+    },
+    "glm_typed05": {
+      "protocol": {
+        "path": "/tmp/skilllife-gateway-full-glm53-typed05-01/protocol.json",
+        "sha256": "2b1a04d7471469c7becaca158b157b586eae328fb5da168620d907a6ddce0dbd",
+        "bytes": 467312
+      }
+    },
+    "kimi_label04": {
+      "protocol": {
+        "path": "/tmp/skilllife-gateway-full-kimi3-label04-01/protocol.json",
+        "sha256": "487603c2867ed7d0fe9b2d973e94000a3dda97ff927ca875eb6725d3ef36c3df",
+        "bytes": 466544
+      }
+    },
+    "original04": {
+      "protocol": {
+        "path": "/tmp/skilllife-gateway-full04/protocol.json",
+        "sha256": "71c47a3711d2f56c224619bd9586fa49bbbd0d560b49ac483e7f78447eb22be0",
+        "bytes": 483349
+      }
+    }
+  },
+  "source_bindings": [
+    {
+      "path": "/slb/benchmark/www2027/_sandbox_worker.py",
+      "sha256": "c1948884fe733566c4053fa66accba2b8eb0e5cda9b284fb152c11bd2efb4d29",
+      "bytes": 6318
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_banking_fixed_prepare.py",
+      "sha256": "acd30c5cb4f68a5874b576a10b52be12a762fa95141d8f6a6294e1fe415e2c88",
+      "bytes": 7371
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_banking_fixed_runtime.py",
+      "sha256": "d59fd6ce2d086d70b483fa89b8da4fe7aa52be514fdce0783771f2f9535bc5c5",
+      "bytes": 21000
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_candidate_fixed_prepare.py",
+      "sha256": "1357aa124a0f99a0c22e356c6118649acd48d7e37f6c984b4574fa3528937b87",
+      "bytes": 12681
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_candidate_fixed_runtime.py",
+      "sha256": "23c00f3b1a8ee22e31e3d8b6b2852800bf116d6062f632b4ab318c4a11fd6ca4",
+      "bytes": 20939
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_candidate_fixed_worker.py",
+      "sha256": "e68bd905f8cf173540aded2007b43210517bfc180a19722b630b3352b659fa80",
+      "bytes": 29061
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_candidate_prepare.py",
+      "sha256": "c7b4451e763e5301e1c1b09175653d83ee859b8fb410cf4fa7868960fd7c82f2",
+      "bytes": 7394
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_episode_runner.py",
+      "sha256": "f707560b9165b04d49a3513d7ce27c72b4a7800f49c9b9a598ae475a5363f105",
+      "bytes": 11738
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_fixed_runtime.py",
+      "sha256": "f3e89482c0ffeafb64d469ad7b96d0d84919aa6ac4abe8a7e202723390536fd0",
+      "bytes": 21492
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_fixed_worker.py",
+      "sha256": "5c969e3ae510c659587501a2b8a10da4b3caa39673ae20e2e582fd84c744f1e6",
+      "bytes": 17687
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next40_fixed_prepare.py",
+      "sha256": "00666541589481c2981476a169893db07d5fd05c64cec61bfdf62ab761444235",
+      "bytes": 7472
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next40_fixed_runtime.py",
+      "sha256": "64d26199190920a451fe168d9fe00e97a6a27a6b4758e9f09b0c415417668b22",
+      "bytes": 20993
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next51_episode_runner.py",
+      "sha256": "e7ac05953f4f34730400cc217ee41566d789c7f967ad356963ce5ad375c5e313",
+      "bytes": 11943
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next51_fixed_prepare.py",
+      "sha256": "0d94c5cbc8f1669769c253a68808d64ecc6be88cca610dfc7282331bf36565b6",
+      "bytes": 7482
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next51_fixed_runtime.py",
+      "sha256": "caaabc735e0e9dcb3132f0d5b112fc721cbbb829dd6c72c7efaac9f0ed642212",
+      "bytes": 20993
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_runtime_prototype.py",
+      "sha256": "42e9c4f22508439bf49156735c988d8e0d62c9863e193373fbfb5cb395bc877f",
+      "bytes": 23145
+    },
+    {
+      "path": "/slb/benchmark/www2027/c_response_prototype.py",
+      "sha256": "1356cec53626ee0bbe36acec013c25f2383cc13fa29387d099bdc3d86e13aedd",
+      "bytes": 41678
+    },
+    {
+      "path": "/slb/benchmark/www2027/comparison_local_server.py",
+      "sha256": "53c753a156359b5eaec9fd498e0e64274e45e1a46d9374534be0c590a54b2c7e",
+      "bytes": 30141
+    },
+    {
+      "path": "/slb/benchmark/www2027/effect_oracle.py",
+      "sha256": "df60c0304989f5b2dbe40c9b810c3a5aa72f24d12f5ea116419d7d49517a5291",
+      "bytes": 7301
+    },
+    {
+      "path": "/slb/benchmark/www2027/episode_runner.py",
+      "sha256": "374337bca105a0094a0a1a05a163c46d37a04f5a469f8b7c72bf49da850f7447",
+      "bytes": 8866
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_direct_measurement01.py",
+      "sha256": "6ba82b54e101cc1032ed82aea9a758b4940bd71442aec74f6555587f3e03bf1a",
+      "bytes": 11436
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_direct_session01.py",
+      "sha256": "19664e2c6c81ffae472e3a6432f54b659ec01c28455efa4afb7b79ae317e5d6d",
+      "bytes": 20822
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_direct_study01.py",
+      "sha256": "aa603b7ab230fde4d7e806daddedd78ee207f0c067e50f678c75318c93578c6e",
+      "bytes": 40534
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_transport03.py",
+      "sha256": "8c9617a260277e9a66d811387a50d042d2b814eda64fd62d614508baa9f94f09",
+      "bytes": 29048
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_transport04.py",
+      "sha256": "b0a3c55f37171051a3fd32c7ba61df06e961e584944a1849968dc2ff3b86e67c",
+      "bytes": 29183
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_transport05.py",
+      "sha256": "ed42709fb1f838076ae4baede002b996c933487de256539f0eb045b81df0cdc5",
+      "bytes": 5436
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_typed_continuation_view01.py",
+      "sha256": "019e289275454eb1b98948445e699e4238ec1123cd023047f04fe8cea339e080",
+      "bytes": 7927
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_graph_adapters.py",
+      "sha256": "a090b9734b10dc1c842c1ca2c3bbcf5c33c7d7dfd057eaa2203fad302cfb55ac",
+      "bytes": 15225
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_matrix_runner.py",
+      "sha256": "2736414fb1d3e12bcf82425c52b42c47f3d2c92558a49ff1437abf7abf231d50",
+      "bytes": 25500
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_matrix_session.py",
+      "sha256": "8647c9e47ab84cae38416fdc19f590afd84f91f8654fcd4ef7722cc2f10067ae",
+      "bytes": 20041
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_matrix_sources.py",
+      "sha256": "c1902e7e2d57652be0c392636fb02a329356b7581833ba5c009e9c02a22af220",
+      "bytes": 15054
+    },
+    {
+      "path": "/slb/benchmark/www2027/isolated_executor.py",
+      "sha256": "5480909102f136aafdc65707ebbd8ea057e309616e942b107b2c559bf7108855",
+      "bytes": 21300
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_client.py",
+      "sha256": "b81e99d9d30a28ee7d475ea2343549da69a666a376f5ef429c0747b277b92868",
+      "bytes": 7130
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_long_context_server.py",
+      "sha256": "a3aa8f994bb991f99d6c8dafc4e464edf39d4b36294890edcbdc36fe179f022a",
+      "bytes": 11703
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_lossless2048_server.py",
+      "sha256": "c4a73f9c8f3ccbf277b5af8db9a25d3dcb427de426abd487282092bdd66cf5be",
+      "bytes": 13594
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_lossless_parser.py",
+      "sha256": "2b0bff0477933f25eb1f93431d2160280f8ac37b728e5869827b6ac1cc7ac224",
+      "bytes": 4358
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_schema_parser.py",
+      "sha256": "c98b49f8b8cc716f000d97b8a6f91dea694a0ffcb45baa14f0d1f3e1d2e5de31",
+      "bytes": 10868
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_server.py",
+      "sha256": "b6ebdb12ef710e843dd926b7ee9f7c52da0fc8f19c68e4220833c324e35c2dc3",
+      "bytes": 9933
+    },
+    {
+      "path": "/slb/benchmark/www2027/provider_client.py",
+      "sha256": "8d8236c57bb80800ccdafbb6f54742ecd4e1f84d6b44a92d443008614c911856",
+      "bytes": 2877
+    }
+  ],
+  "launcher": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/run_service_disk_recovery.py",
+    "sha256": "631b43944303e1eec043e184d390a7df60eb9c53e3ab51ad4020b7597527c90b",
+    "bytes": 7908
+  },
+  "jobs": [
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected",
+      "case_id": "agentdojo-workspace-user7-goal8",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/outcome.json",
+        "bytes": 48036,
+        "sha256": "753a0a1fbcaf7027b771215d3ccb3b0d854f67ec8ef843234aeb7dd6dc9c6fd1"
+      },
+      "condition": "injected",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/initial-input.json",
+        "bytes": 25059,
+        "sha256": "d75ef33345ec6400889de60597791abe51b93481daf1efbefc35366235626225"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/api-004-attempt-00.json",
+          "bytes": 94474,
+          "sha256": "b29ac4b795dcb57ad1d497366f8ccf9f7990d350e7e21a8dc04b42ff1d8577d7"
+        }
+      },
+      "first_authorized_attempt": 2,
+      "retained_prior_attempt_files": [
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/implementation/agentdojo_candidate_fixed_worker.py",
+          "sha256": "e68bd905f8cf173540aded2007b43210517bfc180a19722b630b3352b659fa80",
+          "bytes": 29061
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/implementation/agentdojo_next51_fixed_prepare.py",
+          "sha256": "0d94c5cbc8f1669769c253a68808d64ecc6be88cca610dfc7282331bf36565b6",
+          "bytes": 7482
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/implementation/agentdojo_next51_fixed_runtime.py",
+          "sha256": "caaabc735e0e9dcb3132f0d5b112fc721cbbb829dd6c72c7efaac9f0ed642212",
+          "bytes": 20993
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000000/after.json",
+          "sha256": "c80a0ab7be92a0d48a98c4f32bbbeaf2f4c17da5041e7518b6b383200bfbff5b",
+          "bytes": 112785
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000000/after.json.gz",
+          "sha256": "452d0bbd1547b20e18970bf74ec5f8dba5dc90859c39d3d8c7a958dd8f7bc6cf",
+          "bytes": 19710
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000000/before.json",
+          "sha256": "c80a0ab7be92a0d48a98c4f32bbbeaf2f4c17da5041e7518b6b383200bfbff5b",
+          "bytes": 112785
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000000/before.json.gz",
+          "sha256": "452d0bbd1547b20e18970bf74ec5f8dba5dc90859c39d3d8c7a958dd8f7bc6cf",
+          "bytes": 19710
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000000/invocation.json",
+          "sha256": "b742d7b540064be9240f5e0a274a4cd014da9a76429f070453807bbf188d6ace",
+          "bytes": 34027
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000000/receipt.json",
+          "sha256": "a97889cf5de49c259e3c5f0b2f49f79c9d19b4eff96d1264de4eed5489f5294b",
+          "bytes": 59203
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000000/request.json",
+          "sha256": "d114b8e6e01444d0dcecc6471c25377cc31cd4779510517772bb7a4ebc6ea7db",
+          "bytes": 3233
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000000/source_resolution.json",
+          "sha256": "410f3a95defbc9dc49f1177d0472693d8da58a0233e78c31efc0734ab24b051a",
+          "bytes": 38400
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000000/source_resolution.json.gz",
+          "sha256": "9e8a489a4878167ff987ca0c5168e8771abe3726fa51c61ec3ae1b98fd6169d0",
+          "bytes": 8184
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000000/state.bin.gz",
+          "sha256": "7ac9c85ee4a47032bf9a5e510237b8948c3f30001c26bd30550b340d3618df76",
+          "bytes": 20247
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000001/after.json",
+          "sha256": "c80a0ab7be92a0d48a98c4f32bbbeaf2f4c17da5041e7518b6b383200bfbff5b",
+          "bytes": 112785
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000001/after.json.gz",
+          "sha256": "452d0bbd1547b20e18970bf74ec5f8dba5dc90859c39d3d8c7a958dd8f7bc6cf",
+          "bytes": 19710
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000001/before.json",
+          "sha256": "c80a0ab7be92a0d48a98c4f32bbbeaf2f4c17da5041e7518b6b383200bfbff5b",
+          "bytes": 112785
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000001/before.json.gz",
+          "sha256": "452d0bbd1547b20e18970bf74ec5f8dba5dc90859c39d3d8c7a958dd8f7bc6cf",
+          "bytes": 19710
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000001/invocation.json",
+          "sha256": "1d9a75514aa55076fbd6a1a24025f946c6ca5740370c811a6150c1fd9175751c",
+          "bytes": 35748
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000001/receipt.json",
+          "sha256": "8122c138b05c185a3b91e8338163e1c244b90c64ca4c4e11355b10bdb408d3d0",
+          "bytes": 40278
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000001/request.json",
+          "sha256": "a39870033142adc5eab03839edb2d96696841d4cfd98ebee05d335c9ec1057c3",
+          "bytes": 4906
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000001/state.bin.gz",
+          "sha256": "0bf70d89c73d849ff0e8942e7d3e0721fde516155165b6d579ffd204648d13a8",
+          "bytes": 20246
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000002/after.json",
+          "sha256": "c80a0ab7be92a0d48a98c4f32bbbeaf2f4c17da5041e7518b6b383200bfbff5b",
+          "bytes": 112785
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000002/after.json.gz",
+          "sha256": "452d0bbd1547b20e18970bf74ec5f8dba5dc90859c39d3d8c7a958dd8f7bc6cf",
+          "bytes": 19710
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000002/before.json",
+          "sha256": "c80a0ab7be92a0d48a98c4f32bbbeaf2f4c17da5041e7518b6b383200bfbff5b",
+          "bytes": 112785
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000002/before.json.gz",
+          "sha256": "452d0bbd1547b20e18970bf74ec5f8dba5dc90859c39d3d8c7a958dd8f7bc6cf",
+          "bytes": 19710
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000002/invocation.json",
+          "sha256": "24447eaeac2617366dde61246991dc086430f7c845a6a09cc1b299a7878b19c6",
+          "bytes": 35810
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000002/receipt.json",
+          "sha256": "49dbbdb914f065dda6838d8cce8afee7a353e27c548784dab3906dcd79546f50",
+          "bytes": 40553
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000002/request.json",
+          "sha256": "a5eb6d4a9298c2ad9a307c28ac49332e086acaa73e3143973631ca25b527f317",
+          "bytes": 4968
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000002/state.bin.gz",
+          "sha256": "6679fa8b8bcb09fa26d6cac8111f49c46073626373c897f57bc0683226100e16",
+          "bytes": 20280
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000003/before.json.gz",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000003/invocation.json",
+          "sha256": "b8249df0e74f6f3bc1842283c91ba2bfc489ac12f1fd4803bdebd540d4bebc47",
+          "bytes": 35810
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000003/receipt.json",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/receipts/000003/request.json",
+          "sha256": "4c361a87ae52108526d1934af36f7ad067a1f96009ad5b9a9f0bb0320854c49e",
+          "bytes": 4968
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/backend/runtime_manifest.json",
+          "sha256": "cbdce6f0bbeddef65d5a64023add16f01cdc0e47e544d6dd394344611454936c",
+          "bytes": 4296
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/failure.json",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/api-000-attempt-00.json",
+          "sha256": "c6dcc6bdfbf1f72013c0dca4fd72cb4b8b22c5e0703554e45c0f12f3e43d3db1",
+          "bytes": 69919
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/api-001-attempt-00.json",
+          "sha256": "dddf9e00e4b1ec51496edf096271df0ab74a5e5351aefd1efd4edd362fa57c88",
+          "bytes": 77069
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/api-002-attempt-00.json",
+          "sha256": "d3fc36cfb2b0a0ebf1ec6f4432ceb3bfcd8b00b1bd5ee22f2cfc6d42686984ce",
+          "bytes": 85170
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/initial-binding.json",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/initial-input.json",
+          "sha256": "d75ef33345ec6400889de60597791abe51b93481daf1efbefc35366235626225",
+          "bytes": 25059
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/request-000.json",
+          "sha256": "bf018065dc243b644ffa1e05a5c47652c71603c255c844489fb40bcd5841220f",
+          "bytes": 21190
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/request-001.json",
+          "sha256": "b47f193fe6c5ad66d0a0e5f88b6830b90f035433a3d13a6ddabe6f63d0aeaf64",
+          "bytes": 24234
+        },
+        {
+          "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/attempt-01/original04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/request-002.json",
+          "sha256": "2fd58c1b66344225d64f358b1651449eaf3ff3a107043811c23b9f08fde6660e",
+          "bytes": 27278
+        }
+      ],
+      "prior_attempt_failure": "local_disk_write_failure_after_three_captured_HTTP200_responses"
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-workspace-user8-goal8/clean",
+      "case_id": "agentdojo-workspace-user8-goal8",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user8-goal8/clean/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user8-goal8/clean/session/outcome.json",
+        "bytes": 16175,
+        "sha256": "614718c107710ec44f198eced856399c9f4cf8f206a80bdd316b4bf4c5361230"
+      },
+      "condition": "clean",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user8-goal8/clean/session/initial-input.json",
+        "bytes": 25143,
+        "sha256": "dc7d80f57f1b3a2148b0f9858a2eb3bba1bc5c83424f91bad4cb1468b2e76d72"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user8-goal8/clean/session/api-001-attempt-00.json",
+          "bytes": 73686,
+          "sha256": "95f779645c2d7cd5d90ab018a208040dea2637f22f74128fe6b007a89bef3dd6"
+        }
+      },
+      "first_authorized_attempt": 1,
+      "retained_prior_attempt_files": [],
+      "prior_attempt_failure": "not_started"
+    }
+  ],
+  "service_rule": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service_error_rule.py",
+    "bytes": 842,
+    "sha256": "a8c6eddf7425af77dfd1e3ee0ac5520fda9396db9543099b23407feea2757efd"
+  },
+  "original_replay_manifest": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/replay-manifest.json",
+    "bytes": 277378,
+    "sha256": "9028e620c6889a28c1a6b1ef7c6928ed50565ae7045f3f3343234bfbcd8caf04"
+  },
+  "parent_service_manifest": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-replay-manifest.json",
+    "sha256": "efb3033e133816102219aca103a4cd58b48bc78808783dd8c3b49758bf27079a",
+    "bytes": 81774
+  },
+  "retained_partial_selection": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01/selection.json",
+    "sha256": "6ac5cf09b3a8718109eddfba962b3cb5a5d00bf7845f382f4bf86a6e1f8876b4",
+    "bytes": 15735
+  }
+}

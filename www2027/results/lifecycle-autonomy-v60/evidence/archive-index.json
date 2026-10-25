@@ -1,0 +1,56 @@
+{
+  "automatic_raw_hash_replay_compatibility": false,
+  "compressed_bytes": 15152772,
+  "concatenated_sha256": "4d031926e38d7fcd3e6939a4da718aecf2867dcde8c34ebe6e0e564153a653d7",
+  "created_at": "2026-10-23T11:13:45.769245+00:00",
+  "evidence_files": 38791,
+  "export_script_sha256": "932da4c0c9b1aab398fb8d4b9b8cf10847388c7af1b07199588277a58c8e404d",
+  "header_derivative_files": 3729,
+  "header_projector_sources": {
+    "gateway_evidence_archive01.py": {
+      "bytes": 37497,
+      "path": "/slb/benchmark/www2027/gateway_evidence_archive01.py",
+      "sha256": "e21e0615a37b321b9a6b4e374115ecf974e856af8a737689076e17d62f6fbd40"
+    },
+    "gateway_public_header_view01.py": {
+      "bytes": 16757,
+      "path": "/slb/benchmark/www2027/gateway_public_header_view01.py",
+      "sha256": "17bc55711514cb6831ef974c4bd8b374497c44a8bdf0d0c12fe06c18018e3f37"
+    },
+    "gateway_public_header_view02.py": {
+      "path": "/slb/benchmark/www2027/gateway_public_header_view02.py",
+      "sha256": "d04362d1ffb7cedf0cec68d4ae6575327c4dcea2cbef491aa688b1f2386b5fbf"
+    }
+  },
+  "original_absolute_paths_rewritten": true,
+  "original_private_files_modified": false,
+  "original_uncompressed_bytes": 618952356,
+  "parts": [
+    {
+      "bytes": 15152772,
+      "name": "evidence.tar.xz.part-0001",
+      "sha256": "4d031926e38d7fcd3e6939a4da718aecf2867dcde8c34ebe6e0e564153a653d7"
+    }
+  ],
+  "portable_index_member": "release/portable-path-index.jsonl",
+  "portable_index_sha256": "5459e33d513790a1598d2bd72e3a7748a6b890ebb117366818a459e869ede238",
+  "proof_scope_member": "release/proof-scope.json",
+  "proof_scope_sha256": "8f2db0ee0102d08170c5231cee157a60f7e58a74076b0945e6b2f2a88305e344",
+  "public_uncompressed_bytes": 635751867,
+  "schema": "skilllifebench-public-evidence/v60",
+  "valid_final_episodes": 1680,
+  "privacy_derivative_files": 3512,
+  "privacy_publication_member": "release/privacy-publication.json",
+  "privacy_publication_sha256": "f55c33e9ce296592d9c51d0dfce0eb8f3d8fa892c2e1b993c3ed21211a885748",
+  "original_archive_sha256": "4ab956bbbfb97a676c702bbffdb2827e9f925c0091527d6e27396a726adb1e8b",
+  "original_export_script_sha256": "dd03d1a98486e15934018d4145ffe5e506a0242fc5748facc5a6a6c4ac2eb0ef",
+  "public_verifier_sha256": "88e2eb13b260d617c9e094aa4497455e0c92ee8042e37934e6488380a1d73811",
+  "publication_transforms": [
+    "credential-header-null",
+    "opaque-provider-state-null-including-encoded-json",
+    "stable-private-host-path-aliases"
+  ],
+  "original_hashes_preserved_as_historical_bindings": true,
+  "public_derivative_hashes_verified_separately": true,
+  "publication_transform_script_sha256": "7fcce7359b0215039342921e72369d27b2c5f80b523824979a45772491e47cf5"
+}

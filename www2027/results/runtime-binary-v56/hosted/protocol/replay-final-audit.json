@@ -1,0 +1,64 @@
+{
+  "summary": {
+    "expected_infrastructure_jobs": 117,
+    "pending_jobs": 0,
+    "candidate_valid_jobs": 114,
+    "remaining_invalid_jobs": 3,
+    "unexpected_service_reclassification": 0,
+    "valid_stop_reasons": {
+      "completed": 104,
+      "invalid_tool_call": 10
+    },
+    "valid_by_configuration": {
+      "flash_pinned04/deepseek-v4-flash-0731-followup01": 5,
+      "glm_typed05/glm-5.3-typed05-followup01": 2,
+      "original04/deepseek-v3.2": 1,
+      "original04/deepseek-v4-pro": 6,
+      "original04/gemini-3.5-flash": 24,
+      "original04/glm-5.2": 10,
+      "original04/gpt-6-luna": 14,
+      "original04/kimi-k2.6": 52
+    }
+  },
+  "invalid_jobs": [
+    {
+      "configuration_id": "kimi_label04/kimi-k3-label04-followup01",
+      "case_id": "agentdojo-workspace-user31-goal3",
+      "condition": "clean"
+    },
+    {
+      "configuration_id": "kimi_label04/kimi-k3-label04-followup01",
+      "case_id": "agentdojo-workspace-user31-goal3",
+      "condition": "injected"
+    },
+    {
+      "configuration_id": "original04/qwen3.5-plus",
+      "case_id": "agentdojo-slack-user14-goal5",
+      "condition": "injected"
+    }
+  ],
+  "all_new_episode_queues_terminal": true,
+  "evidence_qualification_still_required": true,
+  "original_records_unchanged": true,
+  "policy": "Maximum2freshattempts per infra slot; first valid independent outcome; savedresponsecontinuations add0freshattempts and retain original totalbudgets.",
+  "runtime_original_valid_records_after_replacement": 2489,
+  "archival_runtime_records_total": 2492,
+  "auth_error_receipts": 0,
+  "exact_service_error_receipts_in_new_runs": 0,
+  "truncated_api_receipts": [],
+  "raw_api_receipt_counts_including_copied_continuation_prefixes": {
+    "/slb/evidence/audit/runtime-verdict-audit-v56/replays/run01": 354,
+    "/slb/evidence/audit/runtime-verdict-audit-v56/replays/continuation-run01": 17,
+    "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service-run01": 100,
+    "/tmp/skilllife-v56-service-completion01": 13,
+    "/tmp/skilllife-v56-kimi-admission01": 6
+  },
+  "copied_prefix_receipts_are_not_new_API_calls": true,
+  "disk_incident": "One localdisk interrupted Geminiattempt1; rawpartial retained, attempt2valid. Finalneverstarted slot completedattempt1. No partialoutcome accepted.",
+  "parser_regression": {
+    "successful_old_chat_receipts": 7330,
+    "unchanged": 7330,
+    "skipped_non04": 635,
+    "errors": 0
+  }
+}

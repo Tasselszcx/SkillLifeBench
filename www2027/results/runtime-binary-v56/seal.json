@@ -1,0 +1,27 @@
+{
+  "schema": "immutable-runtime-measurement-seal/v56",
+  "status": "complete_and_independently_checked",
+  "model_calls_during_scoring_and_sealing": 0,
+  "files": [
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/binary14-final01/current-model-runtime-data.json",
+      "bytes": 32481,
+      "sha256": "92cfe778761f374664d0c4b1ed0f21684bbdb05ee18d8f7103420766d5266a79"
+    },
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/binary14-final01/default-check-pairs.json",
+      "bytes": 251709,
+      "sha256": "80f5d18e136b188fb424b3fea1962bdf7f6ea9aab689c4048347c266fffc9efb"
+    },
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/binary14-final01/independent-checks.json",
+      "bytes": 5229,
+      "sha256": "c26abde27acc70edfd250eae3092367ffcb7fd720e7416bd46e69efb9caeafd1"
+    },
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/binary14-final01/runtime-case-verdicts.jsonl",
+      "bytes": 2618758,
+      "sha256": "9e47d6e746782b963cb1d31ce3f8b5c896c94a3e6d7521b3351b28f54b37f492"
+    }
+  ]
+}

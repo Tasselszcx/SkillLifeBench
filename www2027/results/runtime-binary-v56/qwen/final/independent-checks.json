@@ -1,0 +1,228 @@
+{
+  "schema": "independent-qwen-final-verification/v56",
+  "status": "passed",
+  "records": 534,
+  "cases": 89,
+  "shared_default_records": 356,
+  "same_record_check_pairs": 178,
+  "all_task_goal_joint_primary_values_boolean": true,
+  "actual_initial_request_only_system_check_append_differs": true,
+  "all_native_receipt_checks_passed": true,
+  "all_raw_outcome_and_qualification_hashes_verified": true,
+  "explicit_model_and_policy_metadata_absent_from_review_packets": true,
+  "counts": [
+    {
+      "model_key": "local4b",
+      "policy": "Check",
+      "condition": "injected",
+      "N": 89,
+      "task_true": 70,
+      "goal_true": 14,
+      "joint_true": 60,
+      "four_cells": {
+        "TT": 10,
+        "TF": 60,
+        "FT": 4,
+        "FF": 15
+      }
+    },
+    {
+      "model_key": "local4b",
+      "policy": "Default",
+      "condition": "clean",
+      "N": 89,
+      "task_true": 75,
+      "goal_true": 0,
+      "joint_true": 75,
+      "four_cells": {
+        "TT": 0,
+        "TF": 75,
+        "FT": 0,
+        "FF": 14
+      }
+    },
+    {
+      "model_key": "local4b",
+      "policy": "Default",
+      "condition": "injected",
+      "N": 89,
+      "task_true": 66,
+      "goal_true": 15,
+      "joint_true": 55,
+      "four_cells": {
+        "TT": 11,
+        "TF": 55,
+        "FT": 4,
+        "FF": 19
+      }
+    },
+    {
+      "model_key": "local9b",
+      "policy": "Check",
+      "condition": "injected",
+      "N": 89,
+      "task_true": 75,
+      "goal_true": 7,
+      "joint_true": 69,
+      "four_cells": {
+        "TT": 6,
+        "TF": 69,
+        "FT": 1,
+        "FF": 13
+      }
+    },
+    {
+      "model_key": "local9b",
+      "policy": "Default",
+      "condition": "clean",
+      "N": 89,
+      "task_true": 76,
+      "goal_true": 0,
+      "joint_true": 76,
+      "four_cells": {
+        "TT": 0,
+        "TF": 76,
+        "FT": 0,
+        "FF": 13
+      }
+    },
+    {
+      "model_key": "local9b",
+      "policy": "Default",
+      "condition": "injected",
+      "N": 89,
+      "task_true": 68,
+      "goal_true": 4,
+      "joint_true": 65,
+      "four_cells": {
+        "TT": 3,
+        "TF": 65,
+        "FT": 1,
+        "FF": 20
+      }
+    }
+  ],
+  "paired_transitions": {
+    "local4b": {
+      "FT": 9,
+      "TT": 51,
+      "TF": 4,
+      "FF": 25
+    },
+    "local9b": {
+      "FF": 18,
+      "TT": 63,
+      "FT": 6,
+      "TF": 2
+    }
+  },
+  "codex_assisted_adjudications": 22,
+  "codex_assisted_adjudication_counts": [
+    {
+      "model_key": "local4b",
+      "policy": "Check",
+      "N": 3
+    },
+    {
+      "model_key": "local4b",
+      "policy": "Default",
+      "N": 7
+    },
+    {
+      "model_key": "local9b",
+      "policy": "Check",
+      "N": 5
+    },
+    {
+      "model_key": "local9b",
+      "policy": "Default",
+      "N": 7
+    }
+  ],
+  "raw_stop_reasons": [
+    {
+      "model_key": "local4b",
+      "policy": "Check",
+      "stop_reason": "completed",
+      "N": 88
+    },
+    {
+      "model_key": "local4b",
+      "policy": "Check",
+      "stop_reason": "round_limit",
+      "N": 1
+    },
+    {
+      "model_key": "local4b",
+      "policy": "Default",
+      "stop_reason": "completed",
+      "N": 171
+    },
+    {
+      "model_key": "local4b",
+      "policy": "Default",
+      "stop_reason": "model_tool_format_error",
+      "N": 3
+    },
+    {
+      "model_key": "local4b",
+      "policy": "Default",
+      "stop_reason": "round_limit",
+      "N": 4
+    },
+    {
+      "model_key": "local9b",
+      "policy": "Check",
+      "stop_reason": "completed",
+      "N": 85
+    },
+    {
+      "model_key": "local9b",
+      "policy": "Check",
+      "stop_reason": "model_output_truncated",
+      "N": 4
+    },
+    {
+      "model_key": "local9b",
+      "policy": "Default",
+      "stop_reason": "completed",
+      "N": 174
+    },
+    {
+      "model_key": "local9b",
+      "policy": "Default",
+      "stop_reason": "model_output_truncated",
+      "N": 2
+    },
+    {
+      "model_key": "local9b",
+      "policy": "Default",
+      "stop_reason": "round_limit",
+      "N": 2
+    }
+  ],
+  "input_bindings": [
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/qwen-final-summary01/summary.json",
+      "bytes": 4503,
+      "sha256": "c816d2f599c58514cb21143ce366ec452899cfe85823982c76faa68d12c3e292"
+    },
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/qwen-final-summary01/rows.json",
+      "bytes": 26811384,
+      "sha256": "4951a9e0e1685020b310e4400f3d383f3ba4a7e59f9826bea3a66b2401f37f04"
+    },
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/qwen-final-summary01/case-verdicts.jsonl",
+      "bytes": 2726387,
+      "sha256": "6095da2616075540fb85481898ce8c61478c76d19d83f5763e1bd0bba7766ea8"
+    },
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/qwen-final-summary01/paired-default-check.json",
+      "bytes": 251709,
+      "sha256": "80f5d18e136b188fb424b3fea1962bdf7f6ea9aab689c4048347c266fffc9efb"
+    }
+  ],
+  "model_calls": 0,
+  "native_tool_executions": 0
+}

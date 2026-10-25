@@ -1,0 +1,648 @@
+{
+  "method": "Percentile bootstrap over twelve template groups; same group draws used across all models and both conditions.",
+  "cluster_count": 12,
+  "instances_per_cluster": 5,
+  "repeats": 10000,
+  "seed": 20261023,
+  "scope": "Descriptive sensitivity to the constructed template mix; five parameter instances are not independent templates, and intervals do not establish ecological representativeness.",
+  "multiple_comparisons": "Pairwise intervals are descriptive and unadjusted; no significance or stable-superiority labels are assigned.",
+  "pairwise_challenged_joint_intervals": [
+    {
+      "model_left": "gpt-5.6-sol",
+      "model_right": "gpt-5.6-terra",
+      "observed_macro_difference_pp": 0.0,
+      "cluster_interval_low_pp": -4.999999999999993,
+      "cluster_interval_high_pp": 4.999999999999993
+    },
+    {
+      "model_left": "gpt-5.6-sol",
+      "model_right": "claude-sonnet-5",
+      "observed_macro_difference_pp": 8.333333333333332,
+      "cluster_interval_low_pp": -3.3333333333333326,
+      "cluster_interval_high_pp": 26.66666666666667
+    },
+    {
+      "model_left": "gpt-5.6-sol",
+      "model_right": "glm-5.2",
+      "observed_macro_difference_pp": 8.333333333333332,
+      "cluster_interval_low_pp": 0.0,
+      "cluster_interval_high_pp": 19.999999999999996
+    },
+    {
+      "model_left": "gpt-5.6-sol",
+      "model_right": "glm-5.3",
+      "observed_macro_difference_pp": 16.666666666666664,
+      "cluster_interval_low_pp": 3.3333333333333326,
+      "cluster_interval_high_pp": 31.666666666666664
+    },
+    {
+      "model_left": "gpt-5.6-sol",
+      "model_right": "deepseek-v4-pro",
+      "observed_macro_difference_pp": 20.0,
+      "cluster_interval_low_pp": 3.3333333333333326,
+      "cluster_interval_high_pp": 41.66666666666665
+    },
+    {
+      "model_left": "gpt-5.6-sol",
+      "model_right": "kimi-k2.6",
+      "observed_macro_difference_pp": 20.0,
+      "cluster_interval_low_pp": 6.666666666666643,
+      "cluster_interval_high_pp": 38.33333333333333
+    },
+    {
+      "model_left": "gpt-5.6-sol",
+      "model_right": "deepseek-v3.2",
+      "observed_macro_difference_pp": 36.666666666666664,
+      "cluster_interval_low_pp": 15.000000000000002,
+      "cluster_interval_high_pp": 60.00000000000001
+    },
+    {
+      "model_left": "gpt-5.6-sol",
+      "model_right": "claude-sonnet-4-6",
+      "observed_macro_difference_pp": 40.0,
+      "cluster_interval_low_pp": 23.33333333333334,
+      "cluster_interval_high_pp": 58.33333333333335
+    },
+    {
+      "model_left": "gpt-5.6-sol",
+      "model_right": "qwen3.5-4b",
+      "observed_macro_difference_pp": 41.66666666666667,
+      "cluster_interval_low_pp": 18.333333333333336,
+      "cluster_interval_high_pp": 66.66666666666667
+    },
+    {
+      "model_left": "gpt-5.6-sol",
+      "model_right": "qwen3.5-9b",
+      "observed_macro_difference_pp": 45.0,
+      "cluster_interval_low_pp": 21.66666666666668,
+      "cluster_interval_high_pp": 68.33333333333334
+    },
+    {
+      "model_left": "gpt-5.6-sol",
+      "model_right": "deepseek-v4-flash",
+      "observed_macro_difference_pp": 51.66666666666667,
+      "cluster_interval_low_pp": 36.66666666666667,
+      "cluster_interval_high_pp": 66.66666666666667
+    },
+    {
+      "model_left": "gpt-5.6-sol",
+      "model_right": "gpt-6-luna",
+      "observed_macro_difference_pp": 65.0,
+      "cluster_interval_low_pp": 41.666666666666664,
+      "cluster_interval_high_pp": 86.66666666666667
+    },
+    {
+      "model_left": "gpt-5.6-sol",
+      "model_right": "gemini-3.5-flash",
+      "observed_macro_difference_pp": 86.66666666666667,
+      "cluster_interval_low_pp": 80.0,
+      "cluster_interval_high_pp": 93.33333333333333
+    },
+    {
+      "model_left": "gpt-5.6-terra",
+      "model_right": "claude-sonnet-5",
+      "observed_macro_difference_pp": 8.333333333333332,
+      "cluster_interval_low_pp": 0.0,
+      "cluster_interval_high_pp": 23.33333333333334
+    },
+    {
+      "model_left": "gpt-5.6-terra",
+      "model_right": "glm-5.2",
+      "observed_macro_difference_pp": 8.333333333333332,
+      "cluster_interval_low_pp": 1.6666666666666607,
+      "cluster_interval_high_pp": 16.666666666666664
+    },
+    {
+      "model_left": "gpt-5.6-terra",
+      "model_right": "glm-5.3",
+      "observed_macro_difference_pp": 16.666666666666664,
+      "cluster_interval_low_pp": 3.3333333333333326,
+      "cluster_interval_high_pp": 33.333333333333336
+    },
+    {
+      "model_left": "gpt-5.6-terra",
+      "model_right": "deepseek-v4-pro",
+      "observed_macro_difference_pp": 20.0,
+      "cluster_interval_low_pp": 3.3333333333333326,
+      "cluster_interval_high_pp": 39.99999999999999
+    },
+    {
+      "model_left": "gpt-5.6-terra",
+      "model_right": "kimi-k2.6",
+      "observed_macro_difference_pp": 20.0,
+      "cluster_interval_low_pp": 3.3333333333333437,
+      "cluster_interval_high_pp": 40.000000000000014
+    },
+    {
+      "model_left": "gpt-5.6-terra",
+      "model_right": "deepseek-v3.2",
+      "observed_macro_difference_pp": 36.666666666666664,
+      "cluster_interval_low_pp": 15.000000000000002,
+      "cluster_interval_high_pp": 60.00000000000001
+    },
+    {
+      "model_left": "gpt-5.6-terra",
+      "model_right": "claude-sonnet-4-6",
+      "observed_macro_difference_pp": 40.0,
+      "cluster_interval_low_pp": 23.33333333333334,
+      "cluster_interval_high_pp": 58.33333333333335
+    },
+    {
+      "model_left": "gpt-5.6-terra",
+      "model_right": "qwen3.5-4b",
+      "observed_macro_difference_pp": 41.66666666666667,
+      "cluster_interval_low_pp": 18.333333333333325,
+      "cluster_interval_high_pp": 68.33333333333333
+    },
+    {
+      "model_left": "gpt-5.6-terra",
+      "model_right": "qwen3.5-9b",
+      "observed_macro_difference_pp": 45.0,
+      "cluster_interval_low_pp": 21.66666666666668,
+      "cluster_interval_high_pp": 68.33333333333333
+    },
+    {
+      "model_left": "gpt-5.6-terra",
+      "model_right": "deepseek-v4-flash",
+      "observed_macro_difference_pp": 51.66666666666667,
+      "cluster_interval_low_pp": 36.66666666666666,
+      "cluster_interval_high_pp": 66.66666666666667
+    },
+    {
+      "model_left": "gpt-5.6-terra",
+      "model_right": "gpt-6-luna",
+      "observed_macro_difference_pp": 65.0,
+      "cluster_interval_low_pp": 41.666666666666664,
+      "cluster_interval_high_pp": 86.66666666666667
+    },
+    {
+      "model_left": "gpt-5.6-terra",
+      "model_right": "gemini-3.5-flash",
+      "observed_macro_difference_pp": 86.66666666666667,
+      "cluster_interval_low_pp": 76.66666666666666,
+      "cluster_interval_high_pp": 95.0
+    },
+    {
+      "model_left": "claude-sonnet-5",
+      "model_right": "glm-5.2",
+      "observed_macro_difference_pp": 0.0,
+      "cluster_interval_low_pp": -8.333333333333348,
+      "cluster_interval_high_pp": 6.666666666666677
+    },
+    {
+      "model_left": "claude-sonnet-5",
+      "model_right": "glm-5.3",
+      "observed_macro_difference_pp": 8.333333333333332,
+      "cluster_interval_low_pp": -9.999999999999986,
+      "cluster_interval_high_pp": 26.66666666666666
+    },
+    {
+      "model_left": "claude-sonnet-5",
+      "model_right": "deepseek-v4-pro",
+      "observed_macro_difference_pp": 11.666666666666666,
+      "cluster_interval_low_pp": 0.0,
+      "cluster_interval_high_pp": 26.66666666666665
+    },
+    {
+      "model_left": "claude-sonnet-5",
+      "model_right": "kimi-k2.6",
+      "observed_macro_difference_pp": 11.666666666666666,
+      "cluster_interval_low_pp": -10.041666666666647,
+      "cluster_interval_high_pp": 35.0
+    },
+    {
+      "model_left": "claude-sonnet-5",
+      "model_right": "deepseek-v3.2",
+      "observed_macro_difference_pp": 28.333333333333332,
+      "cluster_interval_low_pp": 9.999999999999998,
+      "cluster_interval_high_pp": 51.66666666666666
+    },
+    {
+      "model_left": "claude-sonnet-5",
+      "model_right": "claude-sonnet-4-6",
+      "observed_macro_difference_pp": 31.666666666666664,
+      "cluster_interval_low_pp": 16.666666666666664,
+      "cluster_interval_high_pp": 48.33333333333334
+    },
+    {
+      "model_left": "claude-sonnet-5",
+      "model_right": "qwen3.5-4b",
+      "observed_macro_difference_pp": 33.33333333333333,
+      "cluster_interval_low_pp": 11.625000000000018,
+      "cluster_interval_high_pp": 58.333333333333336
+    },
+    {
+      "model_left": "claude-sonnet-5",
+      "model_right": "qwen3.5-9b",
+      "observed_macro_difference_pp": 36.666666666666664,
+      "cluster_interval_low_pp": 15.000000000000002,
+      "cluster_interval_high_pp": 60.0
+    },
+    {
+      "model_left": "claude-sonnet-5",
+      "model_right": "deepseek-v4-flash",
+      "observed_macro_difference_pp": 43.333333333333336,
+      "cluster_interval_low_pp": 19.999999999999996,
+      "cluster_interval_high_pp": 64.99999999999999
+    },
+    {
+      "model_left": "claude-sonnet-5",
+      "model_right": "gpt-6-luna",
+      "observed_macro_difference_pp": 56.666666666666664,
+      "cluster_interval_low_pp": 23.333333333333318,
+      "cluster_interval_high_pp": 85.0
+    },
+    {
+      "model_left": "claude-sonnet-5",
+      "model_right": "gemini-3.5-flash",
+      "observed_macro_difference_pp": 78.33333333333333,
+      "cluster_interval_low_pp": 53.333333333333336,
+      "cluster_interval_high_pp": 95.0
+    },
+    {
+      "model_left": "glm-5.2",
+      "model_right": "glm-5.3",
+      "observed_macro_difference_pp": 8.333333333333332,
+      "cluster_interval_low_pp": -1.6666666666666607,
+      "cluster_interval_high_pp": 21.666666666666657
+    },
+    {
+      "model_left": "glm-5.2",
+      "model_right": "deepseek-v4-pro",
+      "observed_macro_difference_pp": 11.666666666666666,
+      "cluster_interval_low_pp": 0.0,
+      "cluster_interval_high_pp": 24.999999999999993
+    },
+    {
+      "model_left": "glm-5.2",
+      "model_right": "kimi-k2.6",
+      "observed_macro_difference_pp": 11.666666666666666,
+      "cluster_interval_low_pp": -3.3333333333333437,
+      "cluster_interval_high_pp": 29.999999999999993
+    },
+    {
+      "model_left": "glm-5.2",
+      "model_right": "deepseek-v3.2",
+      "observed_macro_difference_pp": 28.333333333333332,
+      "cluster_interval_low_pp": 13.33333333333333,
+      "cluster_interval_high_pp": 46.66666666666666
+    },
+    {
+      "model_left": "glm-5.2",
+      "model_right": "claude-sonnet-4-6",
+      "observed_macro_difference_pp": 31.666666666666664,
+      "cluster_interval_low_pp": 18.333333333333346,
+      "cluster_interval_high_pp": 45.000000000000014
+    },
+    {
+      "model_left": "glm-5.2",
+      "model_right": "qwen3.5-4b",
+      "observed_macro_difference_pp": 33.33333333333333,
+      "cluster_interval_low_pp": 13.333333333333341,
+      "cluster_interval_high_pp": 55.00000000000001
+    },
+    {
+      "model_left": "glm-5.2",
+      "model_right": "qwen3.5-9b",
+      "observed_macro_difference_pp": 36.666666666666664,
+      "cluster_interval_low_pp": 18.333333333333325,
+      "cluster_interval_high_pp": 56.666666666666664
+    },
+    {
+      "model_left": "glm-5.2",
+      "model_right": "deepseek-v4-flash",
+      "observed_macro_difference_pp": 43.333333333333336,
+      "cluster_interval_low_pp": 26.62500000000002,
+      "cluster_interval_high_pp": 60.00000000000001
+    },
+    {
+      "model_left": "glm-5.2",
+      "model_right": "gpt-6-luna",
+      "observed_macro_difference_pp": 56.666666666666664,
+      "cluster_interval_low_pp": 28.333333333333332,
+      "cluster_interval_high_pp": 81.66666666666667
+    },
+    {
+      "model_left": "glm-5.2",
+      "model_right": "gemini-3.5-flash",
+      "observed_macro_difference_pp": 78.33333333333333,
+      "cluster_interval_low_pp": 60.00000000000001,
+      "cluster_interval_high_pp": 91.66666666666667
+    },
+    {
+      "model_left": "glm-5.3",
+      "model_right": "deepseek-v4-pro",
+      "observed_macro_difference_pp": 3.3333333333333335,
+      "cluster_interval_low_pp": -6.666666666666665,
+      "cluster_interval_high_pp": 16.66666666666664
+    },
+    {
+      "model_left": "glm-5.3",
+      "model_right": "kimi-k2.6",
+      "observed_macro_difference_pp": 3.3333333333333335,
+      "cluster_interval_low_pp": -4.999999999999993,
+      "cluster_interval_high_pp": 11.666666666666647
+    },
+    {
+      "model_left": "glm-5.3",
+      "model_right": "deepseek-v3.2",
+      "observed_macro_difference_pp": 20.0,
+      "cluster_interval_low_pp": 9.999999999999986,
+      "cluster_interval_high_pp": 31.666666666666664
+    },
+    {
+      "model_left": "glm-5.3",
+      "model_right": "claude-sonnet-4-6",
+      "observed_macro_difference_pp": 23.333333333333332,
+      "cluster_interval_low_pp": 13.33333333333332,
+      "cluster_interval_high_pp": 35.0
+    },
+    {
+      "model_left": "glm-5.3",
+      "model_right": "qwen3.5-4b",
+      "observed_macro_difference_pp": 25.0,
+      "cluster_interval_low_pp": 9.999999999999998,
+      "cluster_interval_high_pp": 43.333333333333336
+    },
+    {
+      "model_left": "glm-5.3",
+      "model_right": "qwen3.5-9b",
+      "observed_macro_difference_pp": 28.333333333333332,
+      "cluster_interval_low_pp": 11.66666666666667,
+      "cluster_interval_high_pp": 46.666666666666664
+    },
+    {
+      "model_left": "glm-5.3",
+      "model_right": "deepseek-v4-flash",
+      "observed_macro_difference_pp": 35.0,
+      "cluster_interval_low_pp": 13.333333333333346,
+      "cluster_interval_high_pp": 54.999999999999986
+    },
+    {
+      "model_left": "glm-5.3",
+      "model_right": "gpt-6-luna",
+      "observed_macro_difference_pp": 48.333333333333336,
+      "cluster_interval_low_pp": 15.000000000000002,
+      "cluster_interval_high_pp": 78.33333333333333
+    },
+    {
+      "model_left": "glm-5.3",
+      "model_right": "gemini-3.5-flash",
+      "observed_macro_difference_pp": 70.0,
+      "cluster_interval_low_pp": 50.0,
+      "cluster_interval_high_pp": 88.33333333333331
+    },
+    {
+      "model_left": "deepseek-v4-pro",
+      "model_right": "kimi-k2.6",
+      "observed_macro_difference_pp": 0.0,
+      "cluster_interval_low_pp": -16.666666666666675,
+      "cluster_interval_high_pp": 13.33333333333333
+    },
+    {
+      "model_left": "deepseek-v4-pro",
+      "model_right": "deepseek-v3.2",
+      "observed_macro_difference_pp": 16.666666666666664,
+      "cluster_interval_low_pp": 5.000000000000004,
+      "cluster_interval_high_pp": 31.666666666666664
+    },
+    {
+      "model_left": "deepseek-v4-pro",
+      "model_right": "claude-sonnet-4-6",
+      "observed_macro_difference_pp": 20.0,
+      "cluster_interval_low_pp": 10.000000000000009,
+      "cluster_interval_high_pp": 31.66666666666666
+    },
+    {
+      "model_left": "deepseek-v4-pro",
+      "model_right": "qwen3.5-4b",
+      "observed_macro_difference_pp": 21.666666666666668,
+      "cluster_interval_low_pp": 4.999999999999999,
+      "cluster_interval_high_pp": 41.66666666666667
+    },
+    {
+      "model_left": "deepseek-v4-pro",
+      "model_right": "qwen3.5-9b",
+      "observed_macro_difference_pp": 25.0,
+      "cluster_interval_low_pp": 8.333333333333337,
+      "cluster_interval_high_pp": 45.0
+    },
+    {
+      "model_left": "deepseek-v4-pro",
+      "model_right": "deepseek-v4-flash",
+      "observed_macro_difference_pp": 31.666666666666664,
+      "cluster_interval_low_pp": 4.999999999999999,
+      "cluster_interval_high_pp": 55.00000000000001
+    },
+    {
+      "model_left": "deepseek-v4-pro",
+      "model_right": "gpt-6-luna",
+      "observed_macro_difference_pp": 45.0,
+      "cluster_interval_low_pp": 6.666666666666665,
+      "cluster_interval_high_pp": 80.0
+    },
+    {
+      "model_left": "deepseek-v4-pro",
+      "model_right": "gemini-3.5-flash",
+      "observed_macro_difference_pp": 66.66666666666666,
+      "cluster_interval_low_pp": 40.0,
+      "cluster_interval_high_pp": 88.33333333333334
+    },
+    {
+      "model_left": "kimi-k2.6",
+      "model_right": "deepseek-v3.2",
+      "observed_macro_difference_pp": 16.666666666666664,
+      "cluster_interval_low_pp": 0.0,
+      "cluster_interval_high_pp": 35.00000000000001
+    },
+    {
+      "model_left": "kimi-k2.6",
+      "model_right": "claude-sonnet-4-6",
+      "observed_macro_difference_pp": 20.0,
+      "cluster_interval_low_pp": 6.666666666666665,
+      "cluster_interval_high_pp": 35.00000000000001
+    },
+    {
+      "model_left": "kimi-k2.6",
+      "model_right": "qwen3.5-4b",
+      "observed_macro_difference_pp": 21.666666666666668,
+      "cluster_interval_low_pp": 1.6666666666666607,
+      "cluster_interval_high_pp": 45.0
+    },
+    {
+      "model_left": "kimi-k2.6",
+      "model_right": "qwen3.5-9b",
+      "observed_macro_difference_pp": 25.0,
+      "cluster_interval_low_pp": 4.999999999999999,
+      "cluster_interval_high_pp": 46.666666666666664
+    },
+    {
+      "model_left": "kimi-k2.6",
+      "model_right": "deepseek-v4-flash",
+      "observed_macro_difference_pp": 31.666666666666664,
+      "cluster_interval_low_pp": 6.666666666666665,
+      "cluster_interval_high_pp": 53.33333333333334
+    },
+    {
+      "model_left": "kimi-k2.6",
+      "model_right": "gpt-6-luna",
+      "observed_macro_difference_pp": 45.0,
+      "cluster_interval_low_pp": 8.333333333333325,
+      "cluster_interval_high_pp": 78.33333333333331
+    },
+    {
+      "model_left": "kimi-k2.6",
+      "model_right": "gemini-3.5-flash",
+      "observed_macro_difference_pp": 66.66666666666666,
+      "cluster_interval_low_pp": 45.00000000000001,
+      "cluster_interval_high_pp": 84.99999999999999
+    },
+    {
+      "model_left": "deepseek-v3.2",
+      "model_right": "claude-sonnet-4-6",
+      "observed_macro_difference_pp": 3.3333333333333335,
+      "cluster_interval_low_pp": -11.66666666666667,
+      "cluster_interval_high_pp": 16.666666666666675
+    },
+    {
+      "model_left": "deepseek-v3.2",
+      "model_right": "qwen3.5-4b",
+      "observed_macro_difference_pp": 5.0,
+      "cluster_interval_low_pp": -8.333333333333337,
+      "cluster_interval_high_pp": 23.333333333333346
+    },
+    {
+      "model_left": "deepseek-v3.2",
+      "model_right": "qwen3.5-9b",
+      "observed_macro_difference_pp": 8.333333333333332,
+      "cluster_interval_low_pp": -8.333333333333337,
+      "cluster_interval_high_pp": 29.99999999999999
+    },
+    {
+      "model_left": "deepseek-v3.2",
+      "model_right": "deepseek-v4-flash",
+      "observed_macro_difference_pp": 15.0,
+      "cluster_interval_low_pp": -9.999999999999998,
+      "cluster_interval_high_pp": 38.333333333333336
+    },
+    {
+      "model_left": "deepseek-v3.2",
+      "model_right": "gpt-6-luna",
+      "observed_macro_difference_pp": 28.333333333333332,
+      "cluster_interval_low_pp": -9.999999999999998,
+      "cluster_interval_high_pp": 61.66666666666668
+    },
+    {
+      "model_left": "deepseek-v3.2",
+      "model_right": "gemini-3.5-flash",
+      "observed_macro_difference_pp": 50.0,
+      "cluster_interval_low_pp": 20.000000000000004,
+      "cluster_interval_high_pp": 76.66666666666666
+    },
+    {
+      "model_left": "claude-sonnet-4-6",
+      "model_right": "qwen3.5-4b",
+      "observed_macro_difference_pp": 1.6666666666666667,
+      "cluster_interval_low_pp": -15.000000000000014,
+      "cluster_interval_high_pp": 21.66666666666667
+    },
+    {
+      "model_left": "claude-sonnet-4-6",
+      "model_right": "qwen3.5-9b",
+      "observed_macro_difference_pp": 5.0,
+      "cluster_interval_low_pp": -14.999999999999996,
+      "cluster_interval_high_pp": 26.66666666666666
+    },
+    {
+      "model_left": "claude-sonnet-4-6",
+      "model_right": "deepseek-v4-flash",
+      "observed_macro_difference_pp": 11.666666666666666,
+      "cluster_interval_low_pp": -11.666666666666664,
+      "cluster_interval_high_pp": 33.333333333333314
+    },
+    {
+      "model_left": "claude-sonnet-4-6",
+      "model_right": "gpt-6-luna",
+      "observed_macro_difference_pp": 25.0,
+      "cluster_interval_low_pp": -10.000000000000004,
+      "cluster_interval_high_pp": 56.66666666666668
+    },
+    {
+      "model_left": "claude-sonnet-4-6",
+      "model_right": "gemini-3.5-flash",
+      "observed_macro_difference_pp": 46.666666666666664,
+      "cluster_interval_low_pp": 23.333333333333332,
+      "cluster_interval_high_pp": 68.33333333333333
+    },
+    {
+      "model_left": "qwen3.5-4b",
+      "model_right": "qwen3.5-9b",
+      "observed_macro_difference_pp": 3.3333333333333335,
+      "cluster_interval_low_pp": -8.333333333333332,
+      "cluster_interval_high_pp": 18.33333333333333
+    },
+    {
+      "model_left": "qwen3.5-4b",
+      "model_right": "deepseek-v4-flash",
+      "observed_macro_difference_pp": 10.0,
+      "cluster_interval_low_pp": -21.708333333333314,
+      "cluster_interval_high_pp": 40.0
+    },
+    {
+      "model_left": "qwen3.5-4b",
+      "model_right": "gpt-6-luna",
+      "observed_macro_difference_pp": 23.333333333333332,
+      "cluster_interval_low_pp": -18.33333333333333,
+      "cluster_interval_high_pp": 63.33333333333332
+    },
+    {
+      "model_left": "qwen3.5-4b",
+      "model_right": "gemini-3.5-flash",
+      "observed_macro_difference_pp": 45.0,
+      "cluster_interval_low_pp": 15.000000000000005,
+      "cluster_interval_high_pp": 73.33333333333331
+    },
+    {
+      "model_left": "qwen3.5-9b",
+      "model_right": "deepseek-v4-flash",
+      "observed_macro_difference_pp": 6.666666666666667,
+      "cluster_interval_low_pp": -26.66666666666667,
+      "cluster_interval_high_pp": 38.33333333333332
+    },
+    {
+      "model_left": "qwen3.5-9b",
+      "model_right": "gpt-6-luna",
+      "observed_macro_difference_pp": 20.0,
+      "cluster_interval_low_pp": -20.0,
+      "cluster_interval_high_pp": 58.33333333333333
+    },
+    {
+      "model_left": "qwen3.5-9b",
+      "model_right": "gemini-3.5-flash",
+      "observed_macro_difference_pp": 41.66666666666667,
+      "cluster_interval_low_pp": 15.000000000000002,
+      "cluster_interval_high_pp": 66.66666666666667
+    },
+    {
+      "model_left": "deepseek-v4-flash",
+      "model_right": "gpt-6-luna",
+      "observed_macro_difference_pp": 13.333333333333334,
+      "cluster_interval_low_pp": -9.999999999999998,
+      "cluster_interval_high_pp": 35.0
+    },
+    {
+      "model_left": "deepseek-v4-flash",
+      "model_right": "gemini-3.5-flash",
+      "observed_macro_difference_pp": 35.0,
+      "cluster_interval_low_pp": 16.666666666666664,
+      "cluster_interval_high_pp": 54.99999999999999
+    },
+    {
+      "model_left": "gpt-6-luna",
+      "model_right": "gemini-3.5-flash",
+      "observed_macro_difference_pp": 21.666666666666668,
+      "cluster_interval_low_pp": 0.0,
+      "cluster_interval_high_pp": 45.00000000000001
+    }
+  ]
+}

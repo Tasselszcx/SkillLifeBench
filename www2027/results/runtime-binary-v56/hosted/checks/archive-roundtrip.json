@@ -1,0 +1,182 @@
+{
+  "all_git_blobs_under_100MB": true,
+  "archives": [
+    {
+      "bundle": "audit-only.tar.xz",
+      "bytes": 6492980,
+      "changed_members": 813,
+      "credential_prefix_matches": 0,
+      "matches_staging_bytes": true,
+      "sha256": "87bbe1b73b3986ff1d40daeaabeab141adcdac4f9d0dcb2295ea27325fec6f76",
+      "transform_counts": {
+        "path_aliasing": 5208,
+        "session_field_removal": 120
+      },
+      "uncompressed_bytes": 223513814,
+      "verified_members": 5611
+    },
+    {
+      "bundle": "claude-sonnet-4-6.tar.xz",
+      "bytes": 9631688,
+      "changed_members": 357,
+      "credential_prefix_matches": 0,
+      "matches_staging_bytes": true,
+      "sha256": "0f60c195ae9c99567c5abce52746fd51c0edd159a13575ec05fd8845f84e2f80",
+      "transform_counts": {
+        "path_aliasing": 2202
+      },
+      "uncompressed_bytes": 453244457,
+      "verified_members": 3331
+    },
+    {
+      "bundle": "claude-sonnet-5.tar.xz",
+      "bytes": 9318540,
+      "changed_members": 357,
+      "credential_prefix_matches": 0,
+      "matches_staging_bytes": true,
+      "sha256": "a32953e5addf2a68479675a1a5b531584042b73b0525b7b98694ee3a7a3e73dd",
+      "transform_counts": {
+        "path_aliasing": 2214
+      },
+      "uncompressed_bytes": 446365588,
+      "verified_members": 3333
+    },
+    {
+      "bundle": "deepseek-v3.2.tar.xz",
+      "bytes": 12914368,
+      "changed_members": 358,
+      "credential_prefix_matches": 0,
+      "matches_staging_bytes": true,
+      "sha256": "e3e81201546f09492edd714ee3d8b85b8e6d9062f008e6a6bf04d250833646d0",
+      "transform_counts": {
+        "path_aliasing": 2324
+      },
+      "uncompressed_bytes": 535882263,
+      "verified_members": 4006
+    },
+    {
+      "bundle": "deepseek-v4-flash.tar.xz",
+      "bytes": 10717944,
+      "changed_members": 358,
+      "credential_prefix_matches": 0,
+      "matches_staging_bytes": true,
+      "sha256": "fd9bbe5a487c4c3a676b66c639f419fcbfae631dec35d0e383cfeb62c18e5f93",
+      "transform_counts": {
+        "path_aliasing": 2710
+      },
+      "uncompressed_bytes": 482618202,
+      "verified_members": 3465
+    },
+    {
+      "bundle": "deepseek-v4-pro.tar.xz",
+      "bytes": 9255824,
+      "changed_members": 358,
+      "credential_prefix_matches": 0,
+      "matches_staging_bytes": true,
+      "sha256": "6c84eecc88d4fd0d559297ed341e5e336b5ddafa7e341aeab9bd4fe339bf490e",
+      "transform_counts": {
+        "path_aliasing": 2614
+      },
+      "uncompressed_bytes": 419409395,
+      "verified_members": 3323
+    },
+    {
+      "bundle": "gemini-3.5-flash.tar.xz",
+      "bytes": 12298264,
+      "changed_members": 358,
+      "credential_prefix_matches": 0,
+      "matches_staging_bytes": true,
+      "sha256": "f603943c11c21e28c6562461e8eaaeb127714b8da1dcde445e15f540d45507d1",
+      "transform_counts": {
+        "path_aliasing": 4288
+      },
+      "uncompressed_bytes": 661636754,
+      "verified_members": 4177
+    },
+    {
+      "bundle": "glm-5.2.tar.xz",
+      "bytes": 8903320,
+      "changed_members": 358,
+      "credential_prefix_matches": 0,
+      "matches_staging_bytes": true,
+      "sha256": "e316f3649443e3df0c45072c3b68b0370a5a3fe4e0a449eedc4586026101e11d",
+      "transform_counts": {
+        "path_aliasing": 2794
+      },
+      "uncompressed_bytes": 409431514,
+      "verified_members": 3270
+    },
+    {
+      "bundle": "glm-5.3.tar.xz",
+      "bytes": 12159452,
+      "changed_members": 358,
+      "credential_prefix_matches": 0,
+      "matches_staging_bytes": true,
+      "sha256": "dfa443fa23a8ba49e1831c2636286cd54653db52302e55a2cdcfae95802f92ec",
+      "transform_counts": {
+        "path_aliasing": 2320
+      },
+      "uncompressed_bytes": 435068789,
+      "verified_members": 3271
+    },
+    {
+      "bundle": "gpt-5.6-sol.tar.xz",
+      "bytes": 10412180,
+      "changed_members": 1629,
+      "credential_prefix_matches": 0,
+      "matches_staging_bytes": true,
+      "sha256": "c0ce9cff93b5cf14398366544bd9d76c026da75018e9a2b6d7d4e0fff13f9009",
+      "transform_counts": {
+        "path_aliasing": 2160,
+        "session_field_removal": 8323
+      },
+      "uncompressed_bytes": 461692259,
+      "verified_members": 3308
+    },
+    {
+      "bundle": "gpt-5.6-terra.tar.xz",
+      "bytes": 10601072,
+      "changed_members": 1601,
+      "credential_prefix_matches": 0,
+      "matches_staging_bytes": true,
+      "sha256": "e7c6035ce08f2ef5204e6f4e3be6e50bb57fdc52054155380bc96eb545ccc4cc",
+      "transform_counts": {
+        "path_aliasing": 2160,
+        "session_field_removal": 6530
+      },
+      "uncompressed_bytes": 464617992,
+      "verified_members": 3285
+    },
+    {
+      "bundle": "gpt-6-luna.tar.xz",
+      "bytes": 8068736,
+      "changed_members": 415,
+      "credential_prefix_matches": 0,
+      "matches_staging_bytes": true,
+      "sha256": "7c1854f0beee0dd71976984d19f97b804f5f1a17155a35943b5cc70530eee016",
+      "transform_counts": {
+        "path_aliasing": 3320,
+        "session_field_removal": 53
+      },
+      "uncompressed_bytes": 372216890,
+      "verified_members": 3055
+    },
+    {
+      "bundle": "kimi-k2.6.tar.xz",
+      "bytes": 8954312,
+      "changed_members": 358,
+      "credential_prefix_matches": 0,
+      "matches_staging_bytes": true,
+      "sha256": "fe5ad7d2efe651bba3be8d544c68b043409046df633bd1e458fb462e89b5e306",
+      "transform_counts": {
+        "path_aliasing": 6446
+      },
+      "uncompressed_bytes": 418870305,
+      "verified_members": 3291
+    }
+  ],
+  "max_blob_bytes": 12914368,
+  "metadata_and_source_credential_prefix_matches": 0,
+  "status": "passed",
+  "total_compressed_bytes": 129728680
+}

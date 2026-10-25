@@ -1,0 +1,914 @@
+{
+  "schema_version": 1,
+  "release_status": "final_v1",
+  "created_at": "2026-10-15T11:44:15.216414+00:00",
+  "counts": {
+    "admitted_scenarios": 388,
+    "episode_rows": 2119,
+    "admitted_dataset_episode_rows": 2111,
+    "supplementary_episode_rows": 8
+  },
+  "source_tables": {
+    "new194": {
+      "path": "/slb/evidence/experiments/new194-analysis.json",
+      "sha256": "e070fc654755eb542e52f1471476b87579bdf13c7a151c65a435917a206b72c8",
+      "bytes": 6232896,
+      "format": "nested_json",
+      "rows": 1164,
+      "metric_names": [
+        "harm",
+        "artifact_utility",
+        "non_exposure",
+        "incomplete_no_action_observed",
+        "d_endpoint_verified",
+        "d_source_exposed_sink_effect",
+        "d_full_chain_verified",
+        "harm_recorded_in_partial_execution"
+      ],
+      "source_scope": "Frozen first wave of the expanded study: all194 newlyadded scenarios. Original194-entry repair and deduplication remain separate; this wave alone is not the requested complete doubled-benchmark rerun.",
+      "release_path": "sources/measurements/new194.json",
+      "published_sha256": "14fb374bebface9864015a0867f90759e43d110678e79282649de03dc73d26ee",
+      "published_bytes": 6115141
+    },
+    "legacy66": {
+      "path": "/slb/evidence/experiments/legacy66-analysis.json",
+      "sha256": "bbbfd3ff0ecbd8b722b508c65a06b4d23bffa00c3a6dddf17f5e9c05e69fda06",
+      "bytes": 2486142,
+      "format": "nested_json",
+      "rows": 435,
+      "metric_names": [
+        "harm",
+        "artifact_utility",
+        "non_exposure",
+        "incomplete_no_action_observed",
+        "d_endpoint_verified",
+        "d_source_exposed_sink_effect",
+        "d_full_chain_verified",
+        "harm_recorded_in_partial_execution"
+      ],
+      "source_scope": "Supplemental repaired legacy endpoints: 53 source-bound adaptations and 13 disclosed replacements of original slots. Zero net-new scenarios. Separate from primary new194 cohort; partial mechanism scope remains explicit.",
+      "release_path": "sources/measurements/legacy66.json",
+      "published_sha256": "fe7a9961c318712315bf32a5a79a01e08302517fc4d779de262d71b2ca876cf0",
+      "published_bytes": 2461777
+    },
+    "legacy_c2": {
+      "path": "/slb/evidence/experiments/legacy-c2-analysis-v2.json",
+      "sha256": "f620fdb94271814909256f52ba1a4c73b5b0584afb5350313f48707734f2ff38",
+      "bytes": 8890,
+      "format": "episodes_json",
+      "rows": 8,
+      "metric_names": [
+        "local_mail_effect",
+        "task_complete",
+        "source_preceded_mail_effect",
+        "source_exposed_mail_effect",
+        "source_return_verified",
+        "summary_facts_correct"
+      ],
+      "source_scope": "Two source-bound repaired legacy C slots; small paired fixed-artifact transfer wave.",
+      "release_path": "sources/measurements/legacy_c2.json"
+    },
+    "agentdojo4": {
+      "path": "/slb/evidence/experiments/agentdojo-four-analysis.json",
+      "sha256": "94896456eb0895a5fb4ef9bc626cc973efa52e98f1296ced415d5da404c76efb",
+      "bytes": 44740,
+      "format": "episodes_json",
+      "rows": 16,
+      "metric_names": [
+        "original_utility",
+        "original_goal_success",
+        "independent_ever_target_effect",
+        "injected_source_returned",
+        "injected_feedback_in_later_model_request"
+      ],
+      "source_scope": "Four fixed published artifacts transferred to two qualified tool paths; per-case descriptive evidence, with original utility scopes retained.",
+      "release_path": "sources/measurements/agentdojo4.json"
+    },
+    "agentdojo18": {
+      "path": "/slb/evidence/experiments/agentdojo-candidate18-cells-v2.csv",
+      "sha256": "6114af507345dca1240e05e28e21b5396cd3c42c5f87f0b0ef4d63128bbcb5c1",
+      "bytes": 12554,
+      "format": "csv",
+      "rows": 72,
+      "metric_names": [
+        "ever_actual_effect",
+        "final_target_present",
+        "effect_then_restored",
+        "qualified_cell_actual_effect",
+        "source_feedback_in_later_successful_request",
+        "retrieval_feedback_in_later_successful_request",
+        "normal_result_correct",
+        "joint_safe_success",
+        "original_goal_value",
+        "original_utility_value"
+      ],
+      "source_scope": "Original CSV column names and Boolean/empty encodings; definitions remain cohort-specific.",
+      "release_path": "sources/measurements/agentdojo18.csv"
+    },
+    "agentdojo_banking15": {
+      "path": "/slb/evidence/experiments/agentdojo-banking15-analysis.csv",
+      "sha256": "86e782fc2b54a6934a70a426904c65b146b8c17ef867e4da2c26088cd56a4732",
+      "bytes": 12049,
+      "format": "csv",
+      "rows": 60,
+      "metric_names": [
+        "primary_record_effect",
+        "qualified_primary_record_effect",
+        "final_target_present",
+        "effect_then_restored",
+        "normal_result_correct",
+        "joint_safe_success",
+        "original_goal_value",
+        "original_utility_value",
+        "source_feedback_in_later_successful_request"
+      ],
+      "source_scope": "Original CSV column names and Boolean/empty encodings; definitions remain cohort-specific.",
+      "release_path": "sources/measurements/agentdojo_banking15.csv"
+    },
+    "agentdojo_next40": {
+      "path": "/slb/evidence/experiments/agentdojo-next40-analysis.csv",
+      "sha256": "ea550596066d01445f9aa4383e021a3b87b5464482921f862100ffd77cfd9fd8",
+      "bytes": 52550,
+      "format": "csv",
+      "rows": 160,
+      "metric_names": [
+        "primary_record_effect",
+        "qualified_primary_record_effect",
+        "full_modeled_goal_effect",
+        "qualified_full_modeled_goal_effect",
+        "final_target_present",
+        "final_full_modeled_goal_present",
+        "qualified_final_primary",
+        "qualified_final_full_modeled",
+        "normal_result_v1",
+        "normal_result_correct",
+        "normal_with_requested_format",
+        "joint_semantic_safe",
+        "joint_with_requested_format",
+        "original_goal_value",
+        "original_utility_value",
+        "source_feedback_in_later_successful_request",
+        "requested_output_format_value",
+        "v1_ever_primary",
+        "v1_final_primary",
+        "v1_qualified_ever_primary",
+        "v1_qualified_final_primary",
+        "v1_ever_full_modeled",
+        "v1_final_full_modeled",
+        "v1_qualified_ever_full_modeled",
+        "v1_qualified_final_full_modeled",
+        "amended_ever_primary",
+        "amended_final_primary",
+        "amended_qualified_ever_primary",
+        "amended_qualified_final_primary",
+        "amended_ever_full_modeled",
+        "amended_final_full_modeled",
+        "amended_qualified_ever_full_modeled",
+        "amended_qualified_final_full_modeled"
+      ],
+      "source_scope": "Original CSV column names and Boolean/empty encodings; definitions remain cohort-specific.",
+      "release_path": "sources/measurements/agentdojo_next40.csv"
+    },
+    "agentdojo_next51": {
+      "path": "/slb/evidence/experiments/agentdojo-next51-analysis.csv",
+      "sha256": "bff71742065e6a685e9977d0adbc9cf163ec48647600fc0d9ca25af321fd2b1c",
+      "bytes": 68251,
+      "format": "csv",
+      "rows": 204,
+      "metric_names": [
+        "authorization_disjointness",
+        "registered_target_attainment",
+        "registered_full_goal_completion",
+        "qualified_registered_target_attainment",
+        "qualified_registered_full_goal_completion",
+        "registered_unauthorized_target_effect",
+        "qualified_unauthorized_target_effect",
+        "any_established_out_of_request_native_consequence",
+        "qualified_any_established_out_of_request_native_consequence",
+        "joint_registered_target_safe",
+        "joint_registered_target_with_requested_format",
+        "normal_result_v1",
+        "normal_result_v2",
+        "normal_result_v3",
+        "qualified_normal_result_correct",
+        "normal_with_requested_format",
+        "qualified_normal_with_requested_format",
+        "joint_security_safe",
+        "joint_with_requested_format",
+        "final_output_primary",
+        "final_output_full",
+        "qualified_final_output_primary",
+        "qualified_final_output_full",
+        "full_goal_completed_by_terminal",
+        "qualified_full_goal_completed_by_terminal"
+      ],
+      "source_scope": "Original CSV column names and Boolean/empty encodings; definitions remain cohort-specific.",
+      "release_path": "sources/measurements/agentdojo_next51.csv"
+    }
+  },
+  "source_metric_definitions": {
+    "new194": {
+      "harm": {
+        "source_field_name": "harm",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "artifact_utility": {
+        "source_field_name": "artifact_utility",
+        "scope": "Final-artifact utility only; semantic task utility was unmeasured.",
+        "qualification_inferred": false
+      },
+      "non_exposure": {
+        "source_field_name": "non_exposure",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "incomplete_no_action_observed": {
+        "source_field_name": "incomplete_no_action_observed",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "d_endpoint_verified": {
+        "source_field_name": "d_endpoint_verified",
+        "scope": "Source-reported authored D endpoint/observed dataflow; not native emergent D.",
+        "qualification_inferred": false
+      },
+      "d_source_exposed_sink_effect": {
+        "source_field_name": "d_source_exposed_sink_effect",
+        "scope": "Source-reported authored D endpoint/observed dataflow; not native emergent D.",
+        "qualification_inferred": false
+      },
+      "d_full_chain_verified": {
+        "source_field_name": "d_full_chain_verified",
+        "scope": "Source-reported authored D endpoint/observed dataflow; not native emergent D.",
+        "qualification_inferred": false
+      },
+      "harm_recorded_in_partial_execution": {
+        "source_field_name": "harm_recorded_in_partial_execution",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      }
+    },
+    "legacy66": {
+      "harm": {
+        "source_field_name": "harm",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "artifact_utility": {
+        "source_field_name": "artifact_utility",
+        "scope": "Final-artifact utility only; semantic task utility was unmeasured.",
+        "qualification_inferred": false
+      },
+      "non_exposure": {
+        "source_field_name": "non_exposure",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "incomplete_no_action_observed": {
+        "source_field_name": "incomplete_no_action_observed",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "d_endpoint_verified": {
+        "source_field_name": "d_endpoint_verified",
+        "scope": "Source-reported authored D endpoint/observed dataflow; not native emergent D.",
+        "qualification_inferred": false
+      },
+      "d_source_exposed_sink_effect": {
+        "source_field_name": "d_source_exposed_sink_effect",
+        "scope": "Source-reported authored D endpoint/observed dataflow; not native emergent D.",
+        "qualification_inferred": false
+      },
+      "d_full_chain_verified": {
+        "source_field_name": "d_full_chain_verified",
+        "scope": "Source-reported authored D endpoint/observed dataflow; not native emergent D.",
+        "qualification_inferred": false
+      },
+      "harm_recorded_in_partial_execution": {
+        "source_field_name": "harm_recorded_in_partial_execution",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      }
+    },
+    "legacy_c2": {
+      "local_mail_effect": {
+        "source_field_name": "local_mail_effect",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "task_complete": {
+        "source_field_name": "task_complete",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "source_preceded_mail_effect": {
+        "source_field_name": "source_preceded_mail_effect",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "source_exposed_mail_effect": {
+        "source_field_name": "source_exposed_mail_effect",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "source_return_verified": {
+        "source_field_name": "source_return_verified",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "summary_facts_correct": {
+        "source_field_name": "summary_facts_correct",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      }
+    },
+    "agentdojo4": {
+      "original_utility": {
+        "source_field_name": "original_utility",
+        "scope": "Original source utility oracle; not relabeled as full semantic utility.",
+        "qualification_inferred": false
+      },
+      "original_goal_success": {
+        "source_field_name": "original_goal_success",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "independent_ever_target_effect": {
+        "source_field_name": "independent_ever_target_effect",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "injected_source_returned": {
+        "source_field_name": "injected_source_returned",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "injected_feedback_in_later_model_request": {
+        "source_field_name": "injected_feedback_in_later_model_request",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      }
+    },
+    "agentdojo18": {
+      "ever_actual_effect": {
+        "source_field_name": "ever_actual_effect",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "final_target_present": {
+        "source_field_name": "final_target_present",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "effect_then_restored": {
+        "source_field_name": "effect_then_restored",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "qualified_cell_actual_effect": {
+        "source_field_name": "qualified_cell_actual_effect",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "source_feedback_in_later_successful_request": {
+        "source_field_name": "source_feedback_in_later_successful_request",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "retrieval_feedback_in_later_successful_request": {
+        "source_field_name": "retrieval_feedback_in_later_successful_request",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "normal_result_correct": {
+        "source_field_name": "normal_result_correct",
+        "scope": "This source's case-specific normal-task measurement and version; no cross-cohort equivalence implied.",
+        "qualification_inferred": false
+      },
+      "joint_safe_success": {
+        "source_field_name": "joint_safe_success",
+        "scope": "This source's declared joint predicate and qualification rule; not universal safety.",
+        "qualification_inferred": false
+      },
+      "original_goal_value": {
+        "source_field_name": "original_goal_value",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "original_utility_value": {
+        "source_field_name": "original_utility_value",
+        "scope": "Original source utility oracle; not relabeled as full semantic utility.",
+        "qualification_inferred": false
+      }
+    },
+    "agentdojo_banking15": {
+      "primary_record_effect": {
+        "source_field_name": "primary_record_effect",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "qualified_primary_record_effect": {
+        "source_field_name": "qualified_primary_record_effect",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "final_target_present": {
+        "source_field_name": "final_target_present",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "effect_then_restored": {
+        "source_field_name": "effect_then_restored",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "normal_result_correct": {
+        "source_field_name": "normal_result_correct",
+        "scope": "This source's case-specific normal-task measurement and version; no cross-cohort equivalence implied.",
+        "qualification_inferred": false
+      },
+      "joint_safe_success": {
+        "source_field_name": "joint_safe_success",
+        "scope": "This source's declared joint predicate and qualification rule; not universal safety.",
+        "qualification_inferred": false
+      },
+      "original_goal_value": {
+        "source_field_name": "original_goal_value",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "original_utility_value": {
+        "source_field_name": "original_utility_value",
+        "scope": "Original source utility oracle; not relabeled as full semantic utility.",
+        "qualification_inferred": false
+      },
+      "source_feedback_in_later_successful_request": {
+        "source_field_name": "source_feedback_in_later_successful_request",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      }
+    },
+    "agentdojo_next40": {
+      "primary_record_effect": {
+        "source_field_name": "primary_record_effect",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "qualified_primary_record_effect": {
+        "source_field_name": "qualified_primary_record_effect",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "full_modeled_goal_effect": {
+        "source_field_name": "full_modeled_goal_effect",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "qualified_full_modeled_goal_effect": {
+        "source_field_name": "qualified_full_modeled_goal_effect",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "final_target_present": {
+        "source_field_name": "final_target_present",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "final_full_modeled_goal_present": {
+        "source_field_name": "final_full_modeled_goal_present",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "qualified_final_primary": {
+        "source_field_name": "qualified_final_primary",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "qualified_final_full_modeled": {
+        "source_field_name": "qualified_final_full_modeled",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "normal_result_v1": {
+        "source_field_name": "normal_result_v1",
+        "scope": "This source's case-specific normal-task measurement and version; no cross-cohort equivalence implied.",
+        "qualification_inferred": false
+      },
+      "normal_result_correct": {
+        "source_field_name": "normal_result_correct",
+        "scope": "This source's case-specific normal-task measurement and version; no cross-cohort equivalence implied.",
+        "qualification_inferred": false
+      },
+      "normal_with_requested_format": {
+        "source_field_name": "normal_with_requested_format",
+        "scope": "This source's case-specific normal-task measurement and version; no cross-cohort equivalence implied.",
+        "qualification_inferred": false
+      },
+      "joint_semantic_safe": {
+        "source_field_name": "joint_semantic_safe",
+        "scope": "This source's declared joint predicate and qualification rule; not universal safety.",
+        "qualification_inferred": false
+      },
+      "joint_with_requested_format": {
+        "source_field_name": "joint_with_requested_format",
+        "scope": "This source's declared joint predicate and qualification rule; not universal safety.",
+        "qualification_inferred": false
+      },
+      "original_goal_value": {
+        "source_field_name": "original_goal_value",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "original_utility_value": {
+        "source_field_name": "original_utility_value",
+        "scope": "Original source utility oracle; not relabeled as full semantic utility.",
+        "qualification_inferred": false
+      },
+      "source_feedback_in_later_successful_request": {
+        "source_field_name": "source_feedback_in_later_successful_request",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "requested_output_format_value": {
+        "source_field_name": "requested_output_format_value",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "v1_ever_primary": {
+        "source_field_name": "v1_ever_primary",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "v1_final_primary": {
+        "source_field_name": "v1_final_primary",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "v1_qualified_ever_primary": {
+        "source_field_name": "v1_qualified_ever_primary",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "v1_qualified_final_primary": {
+        "source_field_name": "v1_qualified_final_primary",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "v1_ever_full_modeled": {
+        "source_field_name": "v1_ever_full_modeled",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "v1_final_full_modeled": {
+        "source_field_name": "v1_final_full_modeled",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "v1_qualified_ever_full_modeled": {
+        "source_field_name": "v1_qualified_ever_full_modeled",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "v1_qualified_final_full_modeled": {
+        "source_field_name": "v1_qualified_final_full_modeled",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "amended_ever_primary": {
+        "source_field_name": "amended_ever_primary",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "amended_final_primary": {
+        "source_field_name": "amended_final_primary",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "amended_qualified_ever_primary": {
+        "source_field_name": "amended_qualified_ever_primary",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "amended_qualified_final_primary": {
+        "source_field_name": "amended_qualified_final_primary",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "amended_ever_full_modeled": {
+        "source_field_name": "amended_ever_full_modeled",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "amended_final_full_modeled": {
+        "source_field_name": "amended_final_full_modeled",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "amended_qualified_ever_full_modeled": {
+        "source_field_name": "amended_qualified_ever_full_modeled",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "amended_qualified_final_full_modeled": {
+        "source_field_name": "amended_qualified_final_full_modeled",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      }
+    },
+    "agentdojo_next51": {
+      "authorization_disjointness": {
+        "source_field_name": "authorization_disjointness",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "registered_target_attainment": {
+        "source_field_name": "registered_target_attainment",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "registered_full_goal_completion": {
+        "source_field_name": "registered_full_goal_completion",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "qualified_registered_target_attainment": {
+        "source_field_name": "qualified_registered_target_attainment",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "qualified_registered_full_goal_completion": {
+        "source_field_name": "qualified_registered_full_goal_completion",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "registered_unauthorized_target_effect": {
+        "source_field_name": "registered_unauthorized_target_effect",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "qualified_unauthorized_target_effect": {
+        "source_field_name": "qualified_unauthorized_target_effect",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "any_established_out_of_request_native_consequence": {
+        "source_field_name": "any_established_out_of_request_native_consequence",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "qualified_any_established_out_of_request_native_consequence": {
+        "source_field_name": "qualified_any_established_out_of_request_native_consequence",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "joint_registered_target_safe": {
+        "source_field_name": "joint_registered_target_safe",
+        "scope": "This source's declared joint predicate and qualification rule; not universal safety.",
+        "qualification_inferred": false
+      },
+      "joint_registered_target_with_requested_format": {
+        "source_field_name": "joint_registered_target_with_requested_format",
+        "scope": "This source's declared joint predicate and qualification rule; not universal safety.",
+        "qualification_inferred": false
+      },
+      "normal_result_v1": {
+        "source_field_name": "normal_result_v1",
+        "scope": "This source's case-specific normal-task measurement and version; no cross-cohort equivalence implied.",
+        "qualification_inferred": false
+      },
+      "normal_result_v2": {
+        "source_field_name": "normal_result_v2",
+        "scope": "This source's case-specific normal-task measurement and version; no cross-cohort equivalence implied.",
+        "qualification_inferred": false
+      },
+      "normal_result_v3": {
+        "source_field_name": "normal_result_v3",
+        "scope": "This source's case-specific normal-task measurement and version; no cross-cohort equivalence implied.",
+        "qualification_inferred": false
+      },
+      "qualified_normal_result_correct": {
+        "source_field_name": "qualified_normal_result_correct",
+        "scope": "This source's case-specific normal-task measurement and version; no cross-cohort equivalence implied.",
+        "qualification_inferred": false
+      },
+      "normal_with_requested_format": {
+        "source_field_name": "normal_with_requested_format",
+        "scope": "This source's case-specific normal-task measurement and version; no cross-cohort equivalence implied.",
+        "qualification_inferred": false
+      },
+      "qualified_normal_with_requested_format": {
+        "source_field_name": "qualified_normal_with_requested_format",
+        "scope": "This source's case-specific normal-task measurement and version; no cross-cohort equivalence implied.",
+        "qualification_inferred": false
+      },
+      "joint_security_safe": {
+        "source_field_name": "joint_security_safe",
+        "scope": "This source's declared joint predicate and qualification rule; not universal safety.",
+        "qualification_inferred": false
+      },
+      "joint_with_requested_format": {
+        "source_field_name": "joint_with_requested_format",
+        "scope": "This source's declared joint predicate and qualification rule; not universal safety.",
+        "qualification_inferred": false
+      },
+      "final_output_primary": {
+        "source_field_name": "final_output_primary",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "final_output_full": {
+        "source_field_name": "final_output_full",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "qualified_final_output_primary": {
+        "source_field_name": "qualified_final_output_primary",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "qualified_final_output_full": {
+        "source_field_name": "qualified_final_output_full",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "full_goal_completed_by_terminal": {
+        "source_field_name": "full_goal_completed_by_terminal",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      },
+      "qualified_full_goal_completed_by_terminal": {
+        "source_field_name": "qualified_full_goal_completed_by_terminal",
+        "scope": "Exact source-specific predicate/version named by this field; not pooled with other primary effects or converted into one ASR.",
+        "qualification_inferred": false
+      }
+    }
+  },
+  "supplementary_evidence": {
+    "primary_d_final": {
+      "path": "sources/supplementary-evidence/primary_d_final.json",
+      "sha256": "5f6bdd28493e35c52ca216cd47589ae77327fa9a942435911296024d08680122",
+      "bytes": 89511,
+      "included_in_2119_episode_rows": false
+    },
+    "real_e_final": {
+      "path": "sources/supplementary-evidence/real_e_final.json",
+      "sha256": "18a1b1eeaf0fc51e2ff6948d3df2c8ae4757d173dadddd698ae4a33da1b7cfee",
+      "bytes": 16634,
+      "included_in_2119_episode_rows": false
+    }
+  },
+  "files": {
+    "sources/index.json": {
+      "sha256": "125c2ad6caf296b6cb8a02959955b20f316b5a0a6628a23ecaa560859ed02839",
+      "bytes": 278931
+    },
+    "sources/scenarios/cohort-new194-frozen.json": {
+      "sha256": "5398eb7026509a25106827f8da1a02a9202c69ef72d429ed4bf9b5e03d47ab73",
+      "bytes": 1721848,
+      "source_sha256": "251f2f11847d1e53e4945866bddd602cc04275822059f26259ea65a57a7ddb2c",
+      "source_bytes": 1722508
+    },
+    "sources/scenarios/cohort-legacy66-frozen.json": {
+      "sha256": "2716c21397d082fdb70e2ae0863521acd8a4be0e05766ca99341789f35619703",
+      "bytes": 1438065,
+      "source_sha256": "e2a59f28175ef2caa4f73396e3bd629795c888b5fca158958604e779f9b482d7",
+      "source_bytes": 1438395
+    },
+    "sources/scenarios/cohort-legacy-c2-frozen.json": {
+      "sha256": "76165752dfb426e17989c6f1340cedcaa401c641b76e7ef214dfe9b64fce7275",
+      "bytes": 23084,
+      "source_sha256": "a555e7e728b22fb5467bb82cf0a0c5dd22ad0fd337ab5fc53ffa61739d32e6c7",
+      "source_bytes": 23300
+    },
+    "sources/scenarios/cohort-agentdojo4-frozen.json": {
+      "sha256": "ca5d8aa8cd4b92c76e5c5079753a36fd0d80b8dc21142eb20be318737095034f",
+      "bytes": 14148
+    },
+    "sources/scenarios/cohort-agentdojo18-frozen.json": {
+      "sha256": "652058ca2b1ce537f0ae3934aa6ac85f806715fefd00f27aa17e59efe3d78e9a",
+      "bytes": 90810
+    },
+    "sources/scenarios/cohort-agentdojo-banking15-frozen.json": {
+      "sha256": "f658b39801dbbd4e02fe0d6ff1b8b762da24d13e0abeda6ae64aca1911ab0a63",
+      "bytes": 64369
+    },
+    "sources/scenarios/cohort-agentdojo-next40-frozen.json": {
+      "sha256": "5405a1a75ee3ac7c7959f6ee206cddd475066a719dc124b1d14bbfb98b9a6170",
+      "bytes": 230163
+    },
+    "sources/scenarios/cohort-agentdojo-next51-security49-frozen.json": {
+      "sha256": "b2dbcabb2b6e9d9e4bad78e529715351946d1e16f267fe08ab9350961306aa7f",
+      "bytes": 313044,
+      "source_sha256": "32a020561554ed795012a4540b3247c6d486a42ec8e812d161c1e79313e6846c",
+      "source_bytes": 313099
+    },
+    "sources/scenarios/cohort-agentdojo-next51-frozen.json": {
+      "sha256": "c57f87aed8877e4d50d538fa022342814e686291f0660997e6579705b5da1a00",
+      "bytes": 359274,
+      "source_sha256": "45700a77eff80295e95ed076e13a8f39a1b916a8b27cc657bb32629dd3d630ec",
+      "source_bytes": 365269
+    },
+    "sources/next51-plan.json": {
+      "sha256": "62b19677ff1761bb95b5007a8c46e8a15772362b15e3c72584ebb9da94a3d334",
+      "bytes": 369459
+    },
+    "sources/measurements/new194.json": {
+      "sha256": "14fb374bebface9864015a0867f90759e43d110678e79282649de03dc73d26ee",
+      "bytes": 6115141,
+      "source_sha256": "e070fc654755eb542e52f1471476b87579bdf13c7a151c65a435917a206b72c8",
+      "source_bytes": 6232896
+    },
+    "sources/measurements/legacy66.json": {
+      "sha256": "fe7a9961c318712315bf32a5a79a01e08302517fc4d779de262d71b2ca876cf0",
+      "bytes": 2461777,
+      "source_sha256": "bbbfd3ff0ecbd8b722b508c65a06b4d23bffa00c3a6dddf17f5e9c05e69fda06",
+      "source_bytes": 2486142
+    },
+    "sources/measurements/legacy_c2.json": {
+      "sha256": "f620fdb94271814909256f52ba1a4c73b5b0584afb5350313f48707734f2ff38",
+      "bytes": 8890
+    },
+    "sources/measurements/agentdojo4.json": {
+      "sha256": "94896456eb0895a5fb4ef9bc626cc973efa52e98f1296ced415d5da404c76efb",
+      "bytes": 44740
+    },
+    "sources/measurements/agentdojo18.csv": {
+      "sha256": "6114af507345dca1240e05e28e21b5396cd3c42c5f87f0b0ef4d63128bbcb5c1",
+      "bytes": 12554
+    },
+    "sources/measurements/agentdojo_banking15.csv": {
+      "sha256": "86e782fc2b54a6934a70a426904c65b146b8c17ef867e4da2c26088cd56a4732",
+      "bytes": 12049
+    },
+    "sources/measurements/agentdojo_next40.csv": {
+      "sha256": "ea550596066d01445f9aa4383e021a3b87b5464482921f862100ffd77cfd9fd8",
+      "bytes": 52550
+    },
+    "sources/measurements/agentdojo_next51.csv": {
+      "sha256": "bff71742065e6a685e9977d0adbc9cf163ec48647600fc0d9ca25af321fd2b1c",
+      "bytes": 68251
+    },
+    "sources/supplementary-evidence/primary_d_final.json": {
+      "sha256": "67e3d0321f203cfd9cac32fb3e13d22f3c644cc8e48887ffdaa1c7875f022aa1",
+      "bytes": 89181,
+      "source_sha256": "5f6bdd28493e35c52ca216cd47589ae77327fa9a942435911296024d08680122",
+      "source_bytes": 89511
+    },
+    "sources/supplementary-evidence/real_e_final.json": {
+      "sha256": "18a1b1eeaf0fc51e2ff6948d3df2c8ae4757d173dadddd698ae4a33da1b7cfee",
+      "bytes": 16634
+    },
+    "code/release_bundle.py": {
+      "sha256": "dd9c138e6e98a410a2a3f0924cf5fba4eaacc9a85bea43150a0563e9a74ae6eb",
+      "bytes": 26952,
+      "source_sha256": "5ec4ae2e63d38f7041c12887546732f52cc8098b996293f342d271dab51157e6",
+      "source_bytes": 26083
+    },
+    "scenarios.json": {
+      "sha256": "12928cc1861869e0d62eaf865d3dd7e0e1b5dfe9872e1a7ea6d2231e1261d3e2",
+      "bytes": 3881643,
+      "source_sha256": "e84a8c5a4007d29de8eb34a807545ea4a4b5c16fcbf7abe55b8f428777da0716",
+      "source_bytes": 3881859
+    },
+    "episodes.csv": {
+      "sha256": "7fc70b25878451b1c58806529b946866d2208df8d772a893914338079f0aca06",
+      "bytes": 3232934,
+      "source_sha256": "5004020fd1d238b5fa9b3915490c1002adc46cd1e5dcf0e5eab5cbcea55cb77c",
+      "source_bytes": 3553969
+    },
+    "sources/next51-terminal-inventory.json": {
+      "sha256": "5490019d4d5a5f0b30666bfc5fc161092a330404bb563ef79d44596013265ade",
+      "bytes": 99511,
+      "source_sha256": "8b172326d8ee84b951756b67da9d8e8eb2bc3603426a20689dc8498e0d9b3616",
+      "source_bytes": 111336
+    },
+    "publication-bindings.json": {
+      "sha256": "5c5444a88ed5834749d32d0352ba72d03b8d36a2160631ec31c32f1e6857b5c1",
+      "bytes": 3722
+    }
+  },
+  "schema": {
+    "metric_encoding": "T=True,F=False,U=source explicit unknown/empty. Metric names remain original and source-specific.",
+    "missing_fields": "Unavailable qualified/outcome-present fields are marked not_reported andU; no qualified predicate is invented.",
+    "record_status": "Original complete/recorded/evidence/identity/stop fields are preserved in source_status_json; merely having an analysis row never proves execution.",
+    "row_pointers": "JSON pointers use zero-based array indices; csv:data-row:N is the1-based logical data-row number, excluding the header.",
+    "scenario_scope": "Only388 admitted original case objects. The2held case objects remain in the copied original51cohort, linked from their8 supplementary rows.",
+    "metric_scope": "Artifact utility is not semantic utility. Different primary definitions are not combined into one ASR. D/E extra evidence does not add episode rows."
+  },
+  "reproduction": {
+    "verify_command": "python -B code/release_bundle.py verify --bundle .",
+    "entrypoint": "www2027.release_bundle",
+    "scope": "Reproduce the portable table index from unchanged source tables; no model/native execution or score recomputation."
+  },
+  "new_model_calls": 0,
+  "new_native_tool_executions": 0,
+  "new_measurement_rules": 0,
+  "publication": {
+    "ledger": "publication-bindings.json",
+    "path_alias_prefix": "/slb",
+    "source_case_ids_and_hashes_preserved": true,
+    "measurements_changed": false,
+    "source_objects": "Only private host-location metadata has publication aliases; original source identities are retained."
+  }
+}

@@ -1,0 +1,717 @@
+{
+  "schema": "qwen-complete-runtime-replay-artifact/v56",
+  "status": "complete_boolean_results",
+  "models": [
+    "Qwen3.5-9B",
+    "Qwen3.5-4B"
+  ],
+  "case_ids_per_condition": 89,
+  "episode_verdicts": 534,
+  "leaderboard_default_verdicts": 356,
+  "paired_check_cases": 178,
+  "explicit_codex_decisions": 22,
+  "raw_files": 41894,
+  "api_receipts": 2428,
+  "all_raw_attempts_preserved": true,
+  "pilot_included": false,
+  "credential_check": "Loopback local endpoints only; captured API receipts have no authentication header/key fields.",
+  "raw_archives": [
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/raw-protocol-9c966770968f.tar.xz",
+      "bytes": 130284,
+      "sha256": "5e94805af638de78acdfe7c212874433ace35ac750b0ae0dc2c4b7a1561fe4a9",
+      "group": "protocol",
+      "members": 6,
+      "source_sha256": "9c966770968f3a4687827d41579ca96c8a115891087a9d604500b8a05024dd45",
+      "source_bytes": 130792,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/raw-local9b-0dd1f13acf15.tar.xz",
+      "bytes": 28505880,
+      "sha256": "03eabe09286c7e976494d7f9c294a527b9ba7c05012da0a01bcd8d83585115a9",
+      "group": "local9b",
+      "members": 20554,
+      "source_sha256": "0dd1f13acf15f8ed86ee3d3742c12bf78ec139420771607062ac14476c2c6182",
+      "source_bytes": 28508224,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/raw-local4b-f8bde36007ef.tar.xz",
+      "bytes": 29237664,
+      "sha256": "e2a2615144c5129d478caf31202bc306b58ec4e485b30acbccd548f32f936813",
+      "group": "local4b",
+      "members": 21334,
+      "source_sha256": "f8bde36007efbf4328a93e4829fd19e6fd0a40f75bd4b1693456ce94b59c6ebd",
+      "source_bytes": 29239648,
+      "publication_transform": "private_host_path_aliases_only"
+    }
+  ],
+  "qualified_archive": {
+    "path": "/tmp/skilllife-v56-qwen-release/qualified-records.tar.xz",
+    "bytes": 1389596,
+    "sha256": "703062065331e70d5c508067c257c85661836e7d4c528fe3eda3e62a01020347",
+    "source_sha256": "dec43124820b11d51424ce04b8fabd0e4c32ae31678e7525e03e0d4d6362b78a",
+    "source_bytes": 1390688,
+    "publication_transform": "private_host_path_aliases_only"
+  },
+  "source_summary": {
+    "path": "/tmp/skilllife-runtime-v56-large/qwen-final-summary01/summary.json",
+    "bytes": 4503,
+    "sha256": "c816d2f599c58514cb21143ce366ec452899cfe85823982c76faa68d12c3e292"
+  },
+  "files": [
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/README.txt",
+      "bytes": 3154,
+      "sha256": "525d231468939fe07456ebbba3e55bb55c758c48e03c690b4a150ac9133ce7be",
+      "relative_path": "README.txt",
+      "source_sha256": "17a8d18ac08c5543065c4928eb514bc1139347a3b6885dbd85982d74473bce5d",
+      "source_bytes": 2673,
+      "publication_transform": "public_evidence_binding_support"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/replays/service_error_rule.py",
+      "bytes": 842,
+      "sha256": "a8c6eddf7425af77dfd1e3ee0ac5520fda9396db9543099b23407feea2757efd",
+      "relative_path": "code/replays/service_error_rule.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/saved_runtime_inputs_v56.py",
+      "bytes": 13213,
+      "sha256": "e4d7cf4e8d04dca89e612a9e0b23ab27bd027371a51ba1720ee68a6a181e261b",
+      "relative_path": "code/saved_runtime_inputs_v56.py",
+      "source_sha256": "be2ebbeff0ddc65a13f143441043ec180ebe46c46da56fc202b802a8fbdc3a38",
+      "source_bytes": 12523,
+      "publication_transform": "public_evidence_binding_support"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "relative_path": "code/www2027/__init__.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_banking_effect_evidence.py",
+      "bytes": 37113,
+      "sha256": "ce837b99a3ddca2dc51dc21e6694d723679036d924e2e0a6498a32447aa04f4f",
+      "relative_path": "code/www2027/agentdojo_banking_effect_evidence.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_banking_record_measurements.py",
+      "bytes": 21778,
+      "sha256": "2bc73d8fedfcf7a9b4b28eaaa10684a1a870e49ed8b57a80678939542677529b",
+      "relative_path": "code/www2027/agentdojo_banking_record_measurements.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_binary_goal_v56.py",
+      "bytes": 10495,
+      "sha256": "0331b1b91ef806b88d4db786b50c60633d8f9c39c8022458554df98dffd3c1c3",
+      "relative_path": "code/www2027/agentdojo_binary_goal_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_binary_task_v56.py",
+      "bytes": 35572,
+      "sha256": "d13fcb80f3e77ee2e2bb93c5b4e5a02a44078cf0e4d8e63e69321a434ef9e4fd",
+      "relative_path": "code/www2027/agentdojo_binary_task_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_candidate_effect_evidence.py",
+      "bytes": 60161,
+      "sha256": "8074cb122120861f301fd0244fa64567eb7f40e4f1696adc31f04f2219077360",
+      "relative_path": "code/www2027/agentdojo_candidate_effect_evidence.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_candidate_projections.py",
+      "bytes": 20247,
+      "sha256": "279c7025c2286bb344ea839a0ea48a2e04e717127f0f8387f21f7caa13f12ce5",
+      "relative_path": "code/www2027/agentdojo_candidate_projections.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_candidate_utility.py",
+      "bytes": 30358,
+      "sha256": "da109d9d54e841213ea8c5fd99205823af7063e581d0f688ed2dcba238a96c2d",
+      "relative_path": "code/www2027/agentdojo_candidate_utility.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_effect_evidence.py",
+      "bytes": 25224,
+      "sha256": "c931b125d28b0e5ba3fe40368de0578bd76ef91bdcda0a8e75aa0adc585e86c6",
+      "relative_path": "code/www2027/agentdojo_effect_evidence.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_next40_effect_evidence.py",
+      "bytes": 46918,
+      "sha256": "97b89bf46958c0f3a7a757b0bcdeb8700e1b12ee7d1e7a7b356ee940d54fef71",
+      "relative_path": "code/www2027/agentdojo_next40_effect_evidence.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_next40_effect_evidence_amendment01.py",
+      "bytes": 5172,
+      "sha256": "f7a18d424f351341b95b0ebc268eab7d6c6665edb05862d7691922f95657f215",
+      "relative_path": "code/www2027/agentdojo_next40_effect_evidence_amendment01.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_next40_normal_utility.py",
+      "bytes": 36697,
+      "sha256": "91a93ea17f62043f532f251249e815683408f6f3e2a95e11c37ce369bd38388a",
+      "relative_path": "code/www2027/agentdojo_next40_normal_utility.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_next40_normal_utility_amendment01.py",
+      "bytes": 11745,
+      "sha256": "5e61b26a6117113d6faf69928f25ffc77eb33adbdc2a8f948f4f8b0c4c0352c2",
+      "relative_path": "code/www2027/agentdojo_next40_normal_utility_amendment01.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_next40_normal_validation.py",
+      "bytes": 37682,
+      "sha256": "586aa7c312abfe26bbdd65228fd31701a46e176dcf1628093df67f2a63921757",
+      "relative_path": "code/www2027/agentdojo_next40_normal_validation.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_next51_effect_evidence.py",
+      "bytes": 32772,
+      "sha256": "3df33466ebc5b446cd5cbf3825a082c666ac626b2ef8f2da0b6b1b6e07027303",
+      "relative_path": "code/www2027/agentdojo_next51_effect_evidence.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_next51_normal_utility.py",
+      "bytes": 28440,
+      "sha256": "5070ef591261dbe2a5717ae05a4ea23b9666ea75e5e2176a707c6246517b5ac8",
+      "relative_path": "code/www2027/agentdojo_next51_normal_utility.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_next51_normal_utility_amendment01.py",
+      "bytes": 7521,
+      "sha256": "33eaec14e190eca608b0cba2c2d032f30003573cee13fad0a4f26b0fe91c2917",
+      "relative_path": "code/www2027/agentdojo_next51_normal_utility_amendment01.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_next51_reference_diagnostics.py",
+      "bytes": 34585,
+      "sha256": "e4dc961d5a8cc86187b5055171a567be68f1c08619cd84521a7ff22f46aac1e8",
+      "relative_path": "code/www2027/agentdojo_next51_reference_diagnostics.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_next51_target_measurements.py",
+      "bytes": 38842,
+      "sha256": "976c1aba64b1b3ae57d2d80aff5f76d5e8637c39dc6bc144a156ca0510a0d28d",
+      "relative_path": "code/www2027/agentdojo_next51_target_measurements.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_next51_target_measurements_amendment01.py",
+      "bytes": 24254,
+      "sha256": "b011b582a04b65cbd87c16e42a284c34520ff5ff3b721465df921039d90b11ae",
+      "relative_path": "code/www2027/agentdojo_next51_target_measurements_amendment01.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_next60_source_review.py",
+      "bytes": 63739,
+      "sha256": "fa4b4c8593531787efb293b9277f19a4375425be3e818cf0e4d5777cb07c3ee2",
+      "relative_path": "code/www2027/agentdojo_next60_source_review.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_next60_target_measurements.py",
+      "bytes": 33949,
+      "sha256": "8bde867119a8bf9df527406ee7567a8511e18d16137fa11cd387fd5236c7da32",
+      "relative_path": "code/www2027/agentdojo_next60_target_measurements.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/code/www2027/agentdojo_next60_target_measurements_amendment01.py",
+      "bytes": 3922,
+      "sha256": "2120e7795b4c69095003bef37567771c224bd55411623e61ccd3729fdffb702c",
+      "relative_path": "code/www2027/agentdojo_next60_target_measurements_amendment01.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/final/case-verdicts.csv",
+      "bytes": 47467,
+      "sha256": "3e2ef7ad4c54755b1e981dcd5b69ec1352ee44074cd43daecb437cddf601266c",
+      "relative_path": "final/case-verdicts.csv"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/final/case-verdicts.jsonl",
+      "bytes": 2725177,
+      "sha256": "ec44a094aafd30810e54edde19bbfd42d599e03aaecc706c62344aefd1f9fb0a",
+      "relative_path": "final/case-verdicts.jsonl",
+      "source_sha256": "6095da2616075540fb85481898ce8c61478c76d19d83f5763e1bd0bba7766ea8",
+      "source_bytes": 2726387,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/final/current-model-runtime-data.json",
+      "bytes": 10812,
+      "sha256": "693278704f9053e25c67d73586e60a72eed6920ffa164bd4f783639ab33f932e",
+      "relative_path": "final/current-model-runtime-data.json",
+      "source_sha256": "756e2af35df50cf22e77210f23cc82c34fab0569813978f7a9196b7091b8923c",
+      "source_bytes": 10867,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/final/explicit-codex-decisions.jsonl",
+      "bytes": 22084,
+      "sha256": "c4f987f18dc042fdaaebf6b6b1b7477b54a03879cbd87fae3fc47ff5859a2ac3",
+      "relative_path": "final/explicit-codex-decisions.jsonl",
+      "source_sha256": "6c9f4b50d08132e14a7a73aefe6033e0a26039d79f9248a98d387b21efdf959e",
+      "source_bytes": 23294,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/final/independent-checks.json",
+      "bytes": 4956,
+      "sha256": "e47fdd40a335d65ac2ec19c6d06d74d656e2e5ef81ed695c5c9c89cdd481a102",
+      "relative_path": "final/independent-checks.json"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/final/leaderboard-default-verdicts.jsonl",
+      "bytes": 1807610,
+      "sha256": "4b77900f0ebeb79f371a2af50ff937de003d7b36a7a621a9d5806d86c8808576",
+      "relative_path": "final/leaderboard-default-verdicts.jsonl",
+      "source_sha256": "e9ffff076e594548ec61f60114c303fb481a294979a6d48970e1c4d02f0de813",
+      "source_bytes": 1808380,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/final/paired-default-check.json",
+      "bytes": 251709,
+      "sha256": "80f5d18e136b188fb424b3fea1962bdf7f6ea9aab689c4048347c266fffc9efb",
+      "relative_path": "final/paired-default-check.json"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/final/rows.json",
+      "bytes": 26810174,
+      "sha256": "3ad03bf7bae2b6c13f25dcecf81acb76d341ae279d797b65153e5939f1bbee75",
+      "relative_path": "final/rows.json",
+      "source_sha256": "4951a9e0e1685020b310e4400f3d383f3ba4a7e59f9826bea3a66b2401f37f04",
+      "source_bytes": 26811384,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/final/seal.json",
+      "bytes": 1641,
+      "sha256": "bdaddbc21d072ac919915440dcf989b52215b52f1b393677a843c07a98ff9d57",
+      "relative_path": "final/seal.json"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/final/summary.json",
+      "bytes": 4503,
+      "sha256": "c816d2f599c58514cb21143ce366ec452899cfe85823982c76faa68d12c3e292",
+      "relative_path": "final/summary.json"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/qualified-file-manifest.jsonl",
+      "bytes": 237367,
+      "sha256": "7e31b9d638a5bc167276b277c3388d866621204d339e272738036eb7bd72c510",
+      "relative_path": "qualified-file-manifest.jsonl",
+      "source_sha256": "e99639a31ec54356014695802392f96b6db1262ecd42e2bd0b8833bb261e4e9a",
+      "source_bytes": 147866,
+      "publication_transform": "public_evidence_binding_support"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/qualified-records.tar.xz",
+      "bytes": 1389596,
+      "sha256": "703062065331e70d5c508067c257c85661836e7d4c528fe3eda3e62a01020347",
+      "relative_path": "qualified-records.tar.xz",
+      "source_sha256": "dec43124820b11d51424ce04b8fabd0e4c32ae31678e7525e03e0d4d6362b78a",
+      "source_bytes": 1390688,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/raw-file-manifest.jsonl",
+      "bytes": 18462115,
+      "sha256": "b83aac05bc094ce7b9d69c4dabd725ce3ff3092dfdea2b2f2aed0095739bdcb3",
+      "relative_path": "raw-file-manifest.jsonl",
+      "source_sha256": "9dd086ed529d3f8546b786d15d842fa47d4514fb9125f0dc045e394ff5e9a6f3",
+      "source_bytes": 17700403,
+      "publication_transform": "public_evidence_binding_support"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/raw-local4b-f8bde36007ef.tar.xz",
+      "bytes": 29237664,
+      "sha256": "e2a2615144c5129d478caf31202bc306b58ec4e485b30acbccd548f32f936813",
+      "relative_path": "raw-local4b-f8bde36007ef.tar.xz",
+      "source_sha256": "f8bde36007efbf4328a93e4829fd19e6fd0a40f75bd4b1693456ce94b59c6ebd",
+      "source_bytes": 29239648,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/raw-local9b-0dd1f13acf15.tar.xz",
+      "bytes": 28505880,
+      "sha256": "03eabe09286c7e976494d7f9c294a527b9ba7c05012da0a01bcd8d83585115a9",
+      "relative_path": "raw-local9b-0dd1f13acf15.tar.xz",
+      "source_sha256": "0dd1f13acf15f8ed86ee3d3742c12bf78ec139420771607062ac14476c2c6182",
+      "source_bytes": 28508224,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/raw-protocol-9c966770968f.tar.xz",
+      "bytes": 130284,
+      "sha256": "5e94805af638de78acdfe7c212874433ace35ac750b0ae0dc2c4b7a1561fe4a9",
+      "relative_path": "raw-protocol-9c966770968f.tar.xz",
+      "source_sha256": "9c966770968f3a4687827d41579ca96c8a115891087a9d604500b8a05024dd45",
+      "source_bytes": 130792,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/binary-grader-protocol.txt",
+      "bytes": 2817,
+      "sha256": "f9d3ec098a60856d49c22d5a5472d55caa550c08a3e5154a0b194df5228d0316",
+      "relative_path": "source/binary-grader-protocol.txt"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/cases.json",
+      "bytes": 539869,
+      "sha256": "8ae7f218d0d981f9b18a994a7cdda07eaeb75c9079b7cc317b55ea55299c41f8",
+      "relative_path": "source/cases.json"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/check_append_only.txt",
+      "bytes": 618,
+      "sha256": "affe090af6bfe022b09fd896306deaa01ad048414ea5731a1856e8e0537cd282",
+      "relative_path": "source/check_append_only.txt"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "bytes": 480048,
+      "sha256": "f9c7d13f2f004ebecf6d48713a4a4b8a970685072c19b952566fda8e6c4bc6b6",
+      "relative_path": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "source_sha256": "919708391e214ff43d77033dda16c290c2d11e9ec709e300778da2ed59c16ff5",
+      "source_bytes": 489343,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "bytes": 995999,
+      "sha256": "77e04f33191bbc19d5598c935ed997099a6710314af5fc8a3b49b83aa473d237",
+      "relative_path": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "source_sha256": "b4739ffc5d898d3754d265c87e23efb0892612746e0154d917e47bdb67b1f629",
+      "source_bytes": 1007824,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/contracts/agentdojo-next51-target-contracts.json",
+      "bytes": 3068768,
+      "sha256": "5b2ba6873d793670518000b0e4a97a54fa195c4bb1b69e2afd1c35fe2e14dd4f",
+      "relative_path": "source/contracts/agentdojo-next51-target-contracts.json",
+      "source_sha256": "6ac1d47f068b0077ea2d7d060b6489d01723801a6997a63211bb101684b9b92b",
+      "source_bytes": 3090821,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/contracts/agentdojo-next60-target-contracts.json",
+      "bytes": 724949,
+      "sha256": "44b3bc9972f7e5fe13162662f87be2f96e7f46c5c9236b3fe4364a1d29f3d06d",
+      "relative_path": "source/contracts/agentdojo-next60-target-contracts.json",
+      "source_sha256": "43684b8c402bf88c1b710b2301f4bf7ed3c6a84e8b2def23bdb9b2b2dd3057eb",
+      "source_bytes": 745921,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/catalog-schema-qualification.json",
+      "bytes": 36174,
+      "sha256": "e4ae536566e476faf90c794b5072bca41ce0cacf507e41bae4e0d644134c8f38",
+      "relative_path": "source/execution-plan/catalog-schema-qualification.json",
+      "source_sha256": "2e4dc5c8ec356582e80675793e8ed5ce10990fc4e1f2e4164b1cdf6c07c2eff1",
+      "source_bytes": 36210,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/commands.json",
+      "bytes": 1444,
+      "sha256": "63bb53d3d22c47e7525cb269143d52e809bad8c9d25e74d1ae55e0ca4130c902",
+      "relative_path": "source/execution-plan/commands.json",
+      "source_sha256": "97cdab09d008a9e94b2d0b78b99d48b843b740e59303d1d2b5a3c217ee02f301",
+      "source_bytes": 1865,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/manifest.json",
+      "bytes": 14473,
+      "sha256": "3e82e80c8bd3bc2c721a50d0cb9d3653db7ec184131d1e34c8c508266709470d",
+      "relative_path": "source/execution-plan/manifest.json",
+      "source_sha256": "31cb49c05ce0080caaa38c81d27680363ed0c3ef65441765283053c7362b5e91",
+      "source_bytes": 16242,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/manifest.sha256",
+      "bytes": 65,
+      "sha256": "115c13ca383b7b6c30aa99f3d6fc5b230edbb19b1a10717203e59ed1a8d09aef",
+      "relative_path": "source/execution-plan/manifest.sha256",
+      "source_sha256": "2962f28374bebc5a0b1562e53d80c64afcbefbaebe1a530ae66f2e296c3f93c1",
+      "source_bytes": 65,
+      "publication_transform": "public_evidence_binding_support"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/pilot-reclassification-check.json",
+      "bytes": 4513,
+      "sha256": "0c0d11f13fa33d7670032edf7e583eba82e259e8799d6d336492a068ff6a5767",
+      "relative_path": "source/execution-plan/pilot-reclassification-check.json"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/root-full-review.json",
+      "bytes": 459,
+      "sha256": "3c44708cc2cead5e44f2c81767a38b8b14752d46527067414b6239bde336efac",
+      "relative_path": "source/execution-plan/root-full-review.json"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/source-snapshot/www2027/agentdojo_binary_task_v56.py",
+      "bytes": 35572,
+      "sha256": "d13fcb80f3e77ee2e2bb93c5b4e5a02a44078cf0e4d8e63e69321a434ef9e4fd",
+      "relative_path": "source/execution-plan/source-snapshot/www2027/agentdojo_binary_task_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/source-snapshot/www2027/effect_oracle.py",
+      "bytes": 7301,
+      "sha256": "df60c0304989f5b2dbe40c9b810c3a5aa72f24d12f5ea116419d7d49517a5291",
+      "relative_path": "source/execution-plan/source-snapshot/www2027/effect_oracle.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/source-snapshot/www2027/episode_runner.py",
+      "bytes": 8866,
+      "sha256": "374337bca105a0094a0a1a05a163c46d37a04f5a469f8b7c72bf49da850f7447",
+      "relative_path": "source/execution-plan/source-snapshot/www2027/episode_runner.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/source-snapshot/www2027/harness_matrix_session.py",
+      "bytes": 20041,
+      "sha256": "8647c9e47ab84cae38416fdc19f590afd84f91f8654fcd4ef7722cc2f10067ae",
+      "relative_path": "source/execution-plan/source-snapshot/www2027/harness_matrix_session.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/source-snapshot/www2027/harness_matrix_sources.py",
+      "bytes": 15054,
+      "sha256": "c1902e7e2d57652be0c392636fb02a329356b7581833ba5c009e9c02a22af220",
+      "relative_path": "source/execution-plan/source-snapshot/www2027/harness_matrix_sources.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/source-snapshot/www2027/local_client.py",
+      "bytes": 7130,
+      "sha256": "b81e99d9d30a28ee7d475ea2343549da69a666a376f5ef429c0747b277b92868",
+      "relative_path": "source/execution-plan/source-snapshot/www2027/local_client.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/source-snapshot/www2027/local_qwen35_lossless_parser.py",
+      "bytes": 4358,
+      "sha256": "2b0bff0477933f25eb1f93431d2160280f8ac37b728e5869827b6ac1cc7ac224",
+      "relative_path": "source/execution-plan/source-snapshot/www2027/local_qwen35_lossless_parser.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/source-snapshot/www2027/local_qwen35_schema_parser.py",
+      "bytes": 10868,
+      "sha256": "c98b49f8b8cc716f000d97b8a6f91dea694a0ffcb45baa14f0d1f3e1d2e5de31",
+      "relative_path": "source/execution-plan/source-snapshot/www2027/local_qwen35_schema_parser.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/source-snapshot/www2027/provider_client.py",
+      "bytes": 2877,
+      "sha256": "8d8236c57bb80800ccdafbb6f54742ecd4e1f84d6b44a92d443008614c911856",
+      "relative_path": "source/execution-plan/source-snapshot/www2027/provider_client.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/source-snapshot/www2027/qwen_runtime_repair_v56.py",
+      "bytes": 23806,
+      "sha256": "3153def2e189a5532e3ac40cf366f999923dc7db181846763fa31e90b74a5b57",
+      "relative_path": "source/execution-plan/source-snapshot/www2027/qwen_runtime_repair_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/source-snapshot/www2027/test_qwen_runtime_repair_v56.py",
+      "bytes": 7773,
+      "sha256": "358d5417a0a61d2d32f5870b466d7460728935fe8487657a879e6b82582599cc",
+      "relative_path": "source/execution-plan/source-snapshot/www2027/test_qwen_runtime_repair_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/execution-plan/tests.txt",
+      "bytes": 1402,
+      "sha256": "7968f54cab4664dca557ab09fb0c42809be7a1d7b1dd7540361d71784fe8c33c",
+      "relative_path": "source/execution-plan/tests.txt"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/goal-grader-freeze01.json",
+      "bytes": 741,
+      "sha256": "2c0f5e928b65babd2ca73e55f9a1fbb79c6705d8c533c363fffab84d2c3cfaa4",
+      "relative_path": "source/goal-grader-freeze01.json",
+      "source_sha256": "ef295f5a6d0050fb401b9c7758453fdd69f62bd2772530b9126e324f198a78b1",
+      "source_bytes": 813,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/grader-freeze05.json",
+      "bytes": 3467,
+      "sha256": "b607930f151bca866f62e34534e78983e2fed7c4196e49b32ecb67e9bfefd02e",
+      "relative_path": "source/grader-freeze05.json",
+      "source_sha256": "9f685581e9f31eb4a16c01d8fa3296fe50f7fc36bfbc4595fe235bdcbab4a09e",
+      "source_bytes": 3647,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/package_qwen_runtime_v56.py",
+      "bytes": 16541,
+      "sha256": "2fbbaa55493017549d84be60a6cc1117fad3bbf8efe0c277e83be1de930a632d",
+      "relative_path": "source/package_qwen_runtime_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualification-source-snapshot/agentdojo_binary_goal_v56.py",
+      "bytes": 10495,
+      "sha256": "0331b1b91ef806b88d4db786b50c60633d8f9c39c8022458554df98dffd3c1c3",
+      "relative_path": "source/qualification-source-snapshot/agentdojo_binary_goal_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualification-source-snapshot/agentdojo_binary_task_v56.py",
+      "bytes": 35572,
+      "sha256": "d13fcb80f3e77ee2e2bb93c5b4e5a02a44078cf0e4d8e63e69321a434ef9e4fd",
+      "relative_path": "source/qualification-source-snapshot/agentdojo_binary_task_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualification-source-snapshot/effect_oracle.py",
+      "bytes": 7301,
+      "sha256": "df60c0304989f5b2dbe40c9b810c3a5aa72f24d12f5ea116419d7d49517a5291",
+      "relative_path": "source/qualification-source-snapshot/effect_oracle.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualification-source-snapshot/episode_runner.py",
+      "bytes": 8866,
+      "sha256": "374337bca105a0094a0a1a05a163c46d37a04f5a469f8b7c72bf49da850f7447",
+      "relative_path": "source/qualification-source-snapshot/episode_runner.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualification-source-snapshot/harness_matrix_session.py",
+      "bytes": 20041,
+      "sha256": "8647c9e47ab84cae38416fdc19f590afd84f91f8654fcd4ef7722cc2f10067ae",
+      "relative_path": "source/qualification-source-snapshot/harness_matrix_session.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualification-source-snapshot/harness_matrix_sources.py",
+      "bytes": 15054,
+      "sha256": "c1902e7e2d57652be0c392636fb02a329356b7581833ba5c009e9c02a22af220",
+      "relative_path": "source/qualification-source-snapshot/harness_matrix_sources.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualification-source-snapshot/local_client.py",
+      "bytes": 7130,
+      "sha256": "b81e99d9d30a28ee7d475ea2343549da69a666a376f5ef429c0747b277b92868",
+      "relative_path": "source/qualification-source-snapshot/local_client.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualification-source-snapshot/local_qwen35_lossless_parser.py",
+      "bytes": 4358,
+      "sha256": "2b0bff0477933f25eb1f93431d2160280f8ac37b728e5869827b6ac1cc7ac224",
+      "relative_path": "source/qualification-source-snapshot/local_qwen35_lossless_parser.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualification-source-snapshot/local_qwen35_schema_parser.py",
+      "bytes": 10868,
+      "sha256": "c98b49f8b8cc716f000d97b8a6f91dea694a0ffcb45baa14f0d1f3e1d2e5de31",
+      "relative_path": "source/qualification-source-snapshot/local_qwen35_schema_parser.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualification-source-snapshot/provider_client.py",
+      "bytes": 2877,
+      "sha256": "8d8236c57bb80800ccdafbb6f54742ecd4e1f84d6b44a92d443008614c911856",
+      "relative_path": "source/qualification-source-snapshot/provider_client.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualification-source-snapshot/qualify_qwen_runtime_v56.py",
+      "bytes": 19196,
+      "sha256": "9d48ade27ec9e0fcab766bd2395f6132d613a0da693f576afa3d3826f1ea34f6",
+      "relative_path": "source/qualification-source-snapshot/qualify_qwen_runtime_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualification-source-snapshot/qwen_runtime_repair_v56.py",
+      "bytes": 23806,
+      "sha256": "3153def2e189a5532e3ac40cf366f999923dc7db181846763fa31e90b74a5b57",
+      "relative_path": "source/qualification-source-snapshot/qwen_runtime_repair_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualification-source-snapshot/saved_runtime_inputs_v56.py",
+      "bytes": 12419,
+      "sha256": "d13d77a1ea5e9da7c099ac7810a515d6fadc66336e07966eabe8b9a4396f81a3",
+      "relative_path": "source/qualification-source-snapshot/saved_runtime_inputs_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualification-source-snapshot/test_qwen_runtime_repair_v56.py",
+      "bytes": 7773,
+      "sha256": "358d5417a0a61d2d32f5870b466d7460728935fe8487657a879e6b82582599cc",
+      "relative_path": "source/qualification-source-snapshot/test_qwen_runtime_repair_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/qualify_qwen_runtime_v56.py",
+      "bytes": 19196,
+      "sha256": "9d48ade27ec9e0fcab766bd2395f6132d613a0da693f576afa3d3826f1ea34f6",
+      "relative_path": "source/qualify_qwen_runtime_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/saved_runtime_inputs_v56.py",
+      "bytes": 12523,
+      "sha256": "be2ebbeff0ddc65a13f143441043ec180ebe46c46da56fc202b802a8fbdc3a38",
+      "relative_path": "source/saved_runtime_inputs_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/schedule.jsonl",
+      "bytes": 1603496,
+      "sha256": "544fd7b7db6ad3dd6c98bf5d0413697298e89ec4ccb1aadd30bc18cb4100c130",
+      "relative_path": "source/schedule.jsonl",
+      "source_sha256": "d8271c4e4fa0be554dbdfb78a8f73688790a76ae9896ddafa736551a01c5ad35",
+      "source_bytes": 1750346,
+      "publication_transform": "private_host_path_aliases_only"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/semantic-adjudication-rubric.txt",
+      "bytes": 3303,
+      "sha256": "d3de9b67eb572bc3bb981362a249853e862e70e0e49eb06384d8250d76b07d10",
+      "relative_path": "source/semantic-adjudication-rubric.txt"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/summarize_qwen_runtime_v56.py",
+      "bytes": 10639,
+      "sha256": "22847bc5707f644dea73b15d1f9721509d7a2f8aa2e29edff033ee97cf4d22e8",
+      "relative_path": "source/summarize_qwen_runtime_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/system_check.txt",
+      "bytes": 882,
+      "sha256": "88263a26d749e4d95a648255c4a67811359246e2c4276bbc5029ac0f0f96cf80",
+      "relative_path": "source/system_check.txt"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/system_default.txt",
+      "bytes": 262,
+      "sha256": "f157179ebf2a733259d2e29fddb84d04f0fa20912eccfae6b8634ccceec4f730",
+      "relative_path": "source/system_default.txt"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/source/verify_qwen_final_v56.py",
+      "bytes": 10229,
+      "sha256": "b8c34d06d802546d373f0b9fd33dbef171ef41f92ab64bb83723c63d7a59ded4",
+      "relative_path": "source/verify_qwen_final_v56.py"
+    },
+    {
+      "path": "/tmp/skilllife-v56-qwen-release/verify_release.py",
+      "bytes": 21061,
+      "sha256": "041515989486c9698f7d6a1125fe36b3e70cc0698a0179ae3e1e5da24d940db4",
+      "relative_path": "verify_release.py",
+      "source_sha256": "18e6d2074517ea032647cffde2e5814279bc2d15be57139994f793a59286c373",
+      "source_bytes": 18118,
+      "publication_transform": "public_evidence_binding_support"
+    },
+    {
+      "path": "publication-bindings.json",
+      "relative_path": "publication-bindings.json",
+      "sha256": "5fe0d1a44c44d2202685995c9d37483351fd32da0d795d822fbaf4dcbe090aed",
+      "bytes": 113337
+    }
+  ],
+  "publication": {
+    "source_digests_preserved": true,
+    "path_alias_prefix": "/slb",
+    "native_state_deserialized": false,
+    "opaque_session_fields_found": 0,
+    "changed_archive_members": 5102,
+    "ledger": "publication-bindings.json",
+    "archive_member_ledger": [
+      "raw-file-manifest.jsonl",
+      "qualified-file-manifest.jsonl"
+    ],
+    "archive_names": "Source archive identifiers are retained in filenames; sha256 fields bind the published archives."
+  }
+}

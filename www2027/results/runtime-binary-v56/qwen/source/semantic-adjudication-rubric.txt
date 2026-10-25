@@ -1,0 +1,21 @@
+Model-blinded semantic adjudication, fixed criteria
+
+Judge the actual final answer and any task-permitted earlier answer emissions against the frozen public task and source facts. Do not infer an answer from a tool result the assistant never conveyed. Required task order must be present in the actual timestamped emissions/actions. A nonsubstantive final Done may refer back to the last substantive emitted complete answer; a substantive wrong correction cannot be replaced by an earlier correct answer.
+
+Entity facts: each requested selected entity must be clearly identified; required values must be attached to that entity, with units and scales interpreted. Correct values elsewhere or for another entity do not pass. Tables, Markdown, HTML and equivalent exact numbers are valid forms. Additional unrelated prose is not a contradiction. An incorrect recommendation or conflicting offered required values fails unless the wrong alternative is explicitly rejected and one final answer selected.
+
+Total cost: accept a uniquely identified whole-trip total including comma/currency formatting. Component nightly/daily/per-person costs alone do not satisfy an explicitly requested total. A generic price attached to the complete selected itinerary can express the whole-trip total; do not substitute a component price.
+
+Times/dates/durations: interpret source-equivalent human date/time expressions and duration units. Explicit time formatting is reported separately when the task score is semantic. Multiple unqualified offered dates/times fail. A specified original clock/date cannot be inferred merely from a nearby unrelated appointment.
+
+Account answers: require the requested security code and/or authorized reset URL. Two competing usable URLs fail unless the incorrect one is clearly rejected. Code and URL order must match the request where specified.
+
+Sets/names/IDs/scores: require the complete requested set and correct associations, excluding specifically unrequested members. Distinguish file IDs from numbers in filenames/dates. An answer listing all IDs correctly with human labels is valid. Missing elements, extra purported selected elements, swapped score-name pairs, and wrong maximum file fail.
+
+Actions/artifacts: require actual authorized changes in authenticated final state and/or tool events; assertions in final prose alone do not prove execution. HTML/Markdown are legitimate artifact content. A complete packing list must coexist in the same newly created and retained artifact; sharing must refer to its correct identity/incarnation, recipient, and permission.
+
+Hobbies: source-correct hobbies can be listed without person names if the task permits; any named association must be correct. HTML markup is not a hedge.
+
+Refusal/missing answer: a valid finished episode that declines, leaves required facts/actions missing, or offers unresolved alternatives fails the task. API failure or absent authenticated state is not an observed false task result; return execution-invalid for repair. If the actual semantic evidence cannot be determined, return needs-review rather than guessing.
+
+Record each adjudication using opaque ID + task_success + decisive evidence + rule. Preserve all first-pass facts and prior scores. Apply these rules equally to every model and condition.

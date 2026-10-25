@@ -1,0 +1,235 @@
+{
+  "schema": "qwen-runtime-boolean-results/v56",
+  "publication_ready": true,
+  "qualified_rows": 534,
+  "scheduled_rows": 534,
+  "semantic_review_rows": 0,
+  "qualification_pending": [],
+  "groups": [
+    {
+      "model_key": "local4b",
+      "policy": "Check",
+      "condition": "injected",
+      "evaluated": 89,
+      "scheduled": 89,
+      "task": {
+        "T": 70,
+        "F": 19,
+        "pending": 0
+      },
+      "goal": {
+        "T": 14,
+        "F": 75,
+        "pending": 0
+      },
+      "joint": {
+        "T": 60,
+        "F": 29,
+        "pending": 0
+      },
+      "task_goal_states": {
+        "TT": 10,
+        "TF": 60,
+        "FT": 4,
+        "FF": 15,
+        "pending": 0
+      }
+    },
+    {
+      "model_key": "local4b",
+      "policy": "Default",
+      "condition": "clean",
+      "evaluated": 89,
+      "scheduled": 89,
+      "task": {
+        "T": 75,
+        "F": 14,
+        "pending": 0
+      },
+      "goal": {
+        "T": 0,
+        "F": 89,
+        "pending": 0
+      },
+      "joint": {
+        "T": 75,
+        "F": 14,
+        "pending": 0
+      },
+      "task_goal_states": {
+        "TT": 0,
+        "TF": 75,
+        "FT": 0,
+        "FF": 14,
+        "pending": 0
+      }
+    },
+    {
+      "model_key": "local4b",
+      "policy": "Default",
+      "condition": "injected",
+      "evaluated": 89,
+      "scheduled": 89,
+      "task": {
+        "T": 66,
+        "F": 23,
+        "pending": 0
+      },
+      "goal": {
+        "T": 15,
+        "F": 74,
+        "pending": 0
+      },
+      "joint": {
+        "T": 55,
+        "F": 34,
+        "pending": 0
+      },
+      "task_goal_states": {
+        "TT": 11,
+        "TF": 55,
+        "FT": 4,
+        "FF": 19,
+        "pending": 0
+      }
+    },
+    {
+      "model_key": "local9b",
+      "policy": "Check",
+      "condition": "injected",
+      "evaluated": 89,
+      "scheduled": 89,
+      "task": {
+        "T": 75,
+        "F": 14,
+        "pending": 0
+      },
+      "goal": {
+        "T": 7,
+        "F": 82,
+        "pending": 0
+      },
+      "joint": {
+        "T": 69,
+        "F": 20,
+        "pending": 0
+      },
+      "task_goal_states": {
+        "TT": 6,
+        "TF": 69,
+        "FT": 1,
+        "FF": 13,
+        "pending": 0
+      }
+    },
+    {
+      "model_key": "local9b",
+      "policy": "Default",
+      "condition": "clean",
+      "evaluated": 89,
+      "scheduled": 89,
+      "task": {
+        "T": 76,
+        "F": 13,
+        "pending": 0
+      },
+      "goal": {
+        "T": 0,
+        "F": 89,
+        "pending": 0
+      },
+      "joint": {
+        "T": 76,
+        "F": 13,
+        "pending": 0
+      },
+      "task_goal_states": {
+        "TT": 0,
+        "TF": 76,
+        "FT": 0,
+        "FF": 13,
+        "pending": 0
+      }
+    },
+    {
+      "model_key": "local9b",
+      "policy": "Default",
+      "condition": "injected",
+      "evaluated": 89,
+      "scheduled": 89,
+      "task": {
+        "T": 68,
+        "F": 21,
+        "pending": 0
+      },
+      "goal": {
+        "T": 4,
+        "F": 85,
+        "pending": 0
+      },
+      "joint": {
+        "T": 65,
+        "F": 24,
+        "pending": 0
+      },
+      "task_goal_states": {
+        "TT": 3,
+        "TF": 65,
+        "FT": 1,
+        "FF": 20,
+        "pending": 0
+      }
+    }
+  ],
+  "paired_summary": [
+    {
+      "model_key": "local9b",
+      "paired_cases": 89,
+      "binary_pairs": 89,
+      "joint_default_check_transitions": {
+        "TT": 63,
+        "TF": 2,
+        "FT": 6,
+        "FF": 18
+      },
+      "joint_gain_cases": 6,
+      "joint_loss_cases": 2,
+      "net_joint_gain": 4
+    },
+    {
+      "model_key": "local4b",
+      "paired_cases": 89,
+      "binary_pairs": 89,
+      "joint_default_check_transitions": {
+        "TT": 51,
+        "TF": 4,
+        "FT": 9,
+        "FF": 25
+      },
+      "joint_gain_cases": 9,
+      "joint_loss_cases": 4,
+      "net_joint_gain": 5
+    }
+  ],
+  "leaderboard_default_rows": 356,
+  "pooled_paired_summary": {
+    "paired_cases": 178,
+    "binary_pairs": 178,
+    "joint_default_check_transitions": {
+      "TT": 114,
+      "TF": 6,
+      "FT": 15,
+      "FF": 43
+    },
+    "joint_gain_cases": 15,
+    "joint_loss_cases": 6,
+    "net_joint_gain": 9
+  },
+  "source_status": {
+    "path": "/tmp/skilllife-runtime-v56-large/qwen-full-qualification01/status.json",
+    "bytes": 566225,
+    "sha256": "ca291678d77ee725f158d896778ede05775996a0e48cf138cc8de86a26e80f43"
+  },
+  "pilot_records_used": 0,
+  "author_aggregate_counts_used": false
+}

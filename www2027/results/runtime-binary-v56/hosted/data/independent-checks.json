@@ -1,0 +1,171 @@
+{
+  "status": "passed",
+  "models": [
+    {
+      "model": "gpt-5.6-sol",
+      "case_count_per_condition": 89,
+      "binary_outcomes": true,
+      "recomputed_aggregates_match": true
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "case_count_per_condition": 89,
+      "binary_outcomes": true,
+      "recomputed_aggregates_match": true
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "case_count_per_condition": 89,
+      "binary_outcomes": true,
+      "recomputed_aggregates_match": true
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "case_count_per_condition": 89,
+      "binary_outcomes": true,
+      "recomputed_aggregates_match": true
+    },
+    {
+      "model": "deepseek-v4-flash",
+      "case_count_per_condition": 89,
+      "binary_outcomes": true,
+      "recomputed_aggregates_match": true
+    },
+    {
+      "model": "kimi-k2.6",
+      "case_count_per_condition": 89,
+      "binary_outcomes": true,
+      "recomputed_aggregates_match": true
+    },
+    {
+      "model": "claude-sonnet-5",
+      "case_count_per_condition": 89,
+      "binary_outcomes": true,
+      "recomputed_aggregates_match": true
+    },
+    {
+      "model": "glm-5.3",
+      "case_count_per_condition": 89,
+      "binary_outcomes": true,
+      "recomputed_aggregates_match": true
+    },
+    {
+      "model": "glm-5.2",
+      "case_count_per_condition": 89,
+      "binary_outcomes": true,
+      "recomputed_aggregates_match": true
+    },
+    {
+      "model": "gpt-6-luna",
+      "case_count_per_condition": 89,
+      "binary_outcomes": true,
+      "recomputed_aggregates_match": true
+    },
+    {
+      "model": "gemini-3.5-flash",
+      "case_count_per_condition": 89,
+      "binary_outcomes": true,
+      "recomputed_aggregates_match": true
+    },
+    {
+      "model": "deepseek-v3.2",
+      "case_count_per_condition": 89,
+      "binary_outcomes": true,
+      "recomputed_aggregates_match": true
+    }
+  ],
+  "binary_verdicts": 2136,
+  "kept_cases_per_condition": 89,
+  "same_frozen_grader_reproducibility_on_unchanged_records": 2378,
+  "all_first_valid_replacements_bound": 114,
+  "old_to_final_task_transitions": {
+    "gpt-5.6-sol": {
+      "T>T": 123,
+      "F>F": 20,
+      "U>T": 27,
+      "U>F": 7,
+      "F>T": 1
+    },
+    "claude-sonnet-4-6": {
+      "T>T": 112,
+      "F>T": 7,
+      "F>F": 21,
+      "U>F": 6,
+      "U>T": 32
+    },
+    "gpt-5.6-terra": {
+      "T>T": 122,
+      "F>F": 19,
+      "U>T": 30,
+      "U>F": 6,
+      "F>T": 1
+    },
+    "deepseek-v4-pro": {
+      "T>T": 104,
+      "F>F": 25,
+      "U>F": 11,
+      "U>T": 32,
+      "F>T": 6
+    },
+    "deepseek-v4-flash": {
+      "T>T": 100,
+      "U>T": 33,
+      "U>F": 11,
+      "F>T": 12,
+      "F>F": 22
+    },
+    "kimi-k2.6": {
+      "U>F": 17,
+      "F>T": 6,
+      "T>T": 74,
+      "F>F": 17,
+      "U>T": 64
+    },
+    "claude-sonnet-5": {
+      "F>T": 7,
+      "T>T": 103,
+      "F>F": 24,
+      "U>T": 36,
+      "U>F": 8
+    },
+    "glm-5.3": {
+      "F>F": 23,
+      "T>T": 107,
+      "F>T": 8,
+      "U>T": 33,
+      "U>F": 7
+    },
+    "glm-5.2": {
+      "F>T": 5,
+      "U>T": 42,
+      "T>T": 94,
+      "F>F": 27,
+      "U>F": 10
+    },
+    "gpt-6-luna": {
+      "U>F": 13,
+      "F>F": 33,
+      "T>T": 97,
+      "U>T": 33,
+      "F>T": 2
+    },
+    "gemini-3.5-flash": {
+      "F>F": 47,
+      "T>T": 92,
+      "F>T": 13,
+      "U>F": 3,
+      "U>T": 23
+    },
+    "deepseek-v3.2": {
+      "U>F": 11,
+      "F>F": 64,
+      "U>T": 28,
+      "T>T": 65,
+      "F>T": 10
+    }
+  },
+  "ineligible_records_preserved": 356,
+  "original_source_files_written": false,
+  "model_calls_in_regrading": 0,
+  "remaining_semantic_reviews": 0
+}

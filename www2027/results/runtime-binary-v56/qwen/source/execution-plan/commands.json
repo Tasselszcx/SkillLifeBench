@@ -1,0 +1,47 @@
+{
+  "cwd": "/slb/benchmark",
+  "read_only_preflight": [
+    "/slb/evidence/harness-matrix-venv02/bin/python",
+    "-B",
+    "-u",
+    "-m",
+    "www2027.qwen_runtime_repair_v56",
+    "preflight",
+    "--manifest",
+    "/slb/evidence/audit/runtime-verdict-audit-v56/qwen-execution-plan02/manifest.json",
+    "--manifest-sha256",
+    "31cb49c05ce0080caaa38c81d27680363ed0c3ef65441765283053c7362b5e91"
+  ],
+  "live_preflight": [
+    "/slb/evidence/harness-matrix-venv02/bin/python",
+    "-B",
+    "-u",
+    "-m",
+    "www2027.qwen_runtime_repair_v56",
+    "preflight",
+    "--manifest",
+    "/slb/evidence/audit/runtime-verdict-audit-v56/qwen-execution-plan02/manifest.json",
+    "--manifest-sha256",
+    "31cb49c05ce0080caaa38c81d27680363ed0c3ef65441765283053c7362b5e91",
+    "--check-health"
+  ],
+  "full_after_root_review": [
+    "/slb/evidence/harness-matrix-venv02/bin/python",
+    "-B",
+    "-u",
+    "-m",
+    "www2027.qwen_runtime_repair_v56",
+    "run",
+    "--manifest",
+    "/slb/evidence/audit/runtime-verdict-audit-v56/qwen-execution-plan02/manifest.json",
+    "--manifest-sha256",
+    "31cb49c05ce0080caaa38c81d27680363ed0c3ef65441765283053c7362b5e91",
+    "--approval",
+    "/slb/evidence/audit/runtime-verdict-audit-v56/qwen-execution-plan02/root-full-review.json",
+    "--phase",
+    "full",
+    "--output",
+    "/tmp/skilllife-qwen-runtime-v56/full01"
+  ],
+  "servers": "Already runningPID16954/16953;do not restart or reload."
+}

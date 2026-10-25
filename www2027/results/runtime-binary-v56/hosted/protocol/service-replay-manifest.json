@@ -1,0 +1,1707 @@
+{
+  "schema": "runtime_infrastructure_service_replay/1.0",
+  "policy": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/repair-policy.json",
+    "sha256": "d44307f1b8706a990b460a7a267f35c34adb725c7dd9bd8d7ec03868df226b81",
+    "bytes": 2993
+  },
+  "selection_rule": "All exact provider-deprecation banners absent request history and machine gateway-error responses across2492originalruntime records; no task outcome filter.",
+  "max_fresh_episode_attempts": 2,
+  "within_request_attempts": "Original:2",
+  "selection": "First valid attempt; valid model/budget ending is terminal regardless task outcome.",
+  "workers": 8,
+  "model_parallelism": "One serial queue per selected configuration; up to eight configurations in parallel.",
+  "phases": {
+    "flash_pinned04": {
+      "protocol": {
+        "path": "/tmp/skilllife-gateway-full-flash-pinned01/protocol.json",
+        "sha256": "f2958c57b1420fd6dc6fd4819284dfd10655e862cc2855cb281d82bd53186ebb",
+        "bytes": 465231
+      }
+    },
+    "glm_typed05": {
+      "protocol": {
+        "path": "/tmp/skilllife-gateway-full-glm53-typed05-01/protocol.json",
+        "sha256": "2b1a04d7471469c7becaca158b157b586eae328fb5da168620d907a6ddce0dbd",
+        "bytes": 467312
+      }
+    },
+    "kimi_label04": {
+      "protocol": {
+        "path": "/tmp/skilllife-gateway-full-kimi3-label04-01/protocol.json",
+        "sha256": "487603c2867ed7d0fe9b2d973e94000a3dda97ff927ca875eb6725d3ef36c3df",
+        "bytes": 466544
+      }
+    },
+    "original04": {
+      "protocol": {
+        "path": "/tmp/skilllife-gateway-full04/protocol.json",
+        "sha256": "71c47a3711d2f56c224619bd9586fa49bbbd0d560b49ac483e7f78447eb22be0",
+        "bytes": 483349
+      }
+    }
+  },
+  "source_bindings": [
+    {
+      "path": "/slb/benchmark/www2027/_sandbox_worker.py",
+      "sha256": "c1948884fe733566c4053fa66accba2b8eb0e5cda9b284fb152c11bd2efb4d29",
+      "bytes": 6318
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_banking_fixed_prepare.py",
+      "sha256": "acd30c5cb4f68a5874b576a10b52be12a762fa95141d8f6a6294e1fe415e2c88",
+      "bytes": 7371
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_banking_fixed_runtime.py",
+      "sha256": "d59fd6ce2d086d70b483fa89b8da4fe7aa52be514fdce0783771f2f9535bc5c5",
+      "bytes": 21000
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_candidate_fixed_prepare.py",
+      "sha256": "1357aa124a0f99a0c22e356c6118649acd48d7e37f6c984b4574fa3528937b87",
+      "bytes": 12681
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_candidate_fixed_runtime.py",
+      "sha256": "23c00f3b1a8ee22e31e3d8b6b2852800bf116d6062f632b4ab318c4a11fd6ca4",
+      "bytes": 20939
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_candidate_fixed_worker.py",
+      "sha256": "e68bd905f8cf173540aded2007b43210517bfc180a19722b630b3352b659fa80",
+      "bytes": 29061
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_candidate_prepare.py",
+      "sha256": "c7b4451e763e5301e1c1b09175653d83ee859b8fb410cf4fa7868960fd7c82f2",
+      "bytes": 7394
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_episode_runner.py",
+      "sha256": "f707560b9165b04d49a3513d7ce27c72b4a7800f49c9b9a598ae475a5363f105",
+      "bytes": 11738
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_fixed_runtime.py",
+      "sha256": "f3e89482c0ffeafb64d469ad7b96d0d84919aa6ac4abe8a7e202723390536fd0",
+      "bytes": 21492
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_fixed_worker.py",
+      "sha256": "5c969e3ae510c659587501a2b8a10da4b3caa39673ae20e2e582fd84c744f1e6",
+      "bytes": 17687
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next40_fixed_prepare.py",
+      "sha256": "00666541589481c2981476a169893db07d5fd05c64cec61bfdf62ab761444235",
+      "bytes": 7472
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next40_fixed_runtime.py",
+      "sha256": "64d26199190920a451fe168d9fe00e97a6a27a6b4758e9f09b0c415417668b22",
+      "bytes": 20993
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next51_episode_runner.py",
+      "sha256": "e7ac05953f4f34730400cc217ee41566d789c7f967ad356963ce5ad375c5e313",
+      "bytes": 11943
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next51_fixed_prepare.py",
+      "sha256": "0d94c5cbc8f1669769c253a68808d64ecc6be88cca610dfc7282331bf36565b6",
+      "bytes": 7482
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next51_fixed_runtime.py",
+      "sha256": "caaabc735e0e9dcb3132f0d5b112fc721cbbb829dd6c72c7efaac9f0ed642212",
+      "bytes": 20993
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_runtime_prototype.py",
+      "sha256": "42e9c4f22508439bf49156735c988d8e0d62c9863e193373fbfb5cb395bc877f",
+      "bytes": 23145
+    },
+    {
+      "path": "/slb/benchmark/www2027/c_response_prototype.py",
+      "sha256": "1356cec53626ee0bbe36acec013c25f2383cc13fa29387d099bdc3d86e13aedd",
+      "bytes": 41678
+    },
+    {
+      "path": "/slb/benchmark/www2027/comparison_local_server.py",
+      "sha256": "53c753a156359b5eaec9fd498e0e64274e45e1a46d9374534be0c590a54b2c7e",
+      "bytes": 30141
+    },
+    {
+      "path": "/slb/benchmark/www2027/effect_oracle.py",
+      "sha256": "df60c0304989f5b2dbe40c9b810c3a5aa72f24d12f5ea116419d7d49517a5291",
+      "bytes": 7301
+    },
+    {
+      "path": "/slb/benchmark/www2027/episode_runner.py",
+      "sha256": "374337bca105a0094a0a1a05a163c46d37a04f5a469f8b7c72bf49da850f7447",
+      "bytes": 8866
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_direct_measurement01.py",
+      "sha256": "6ba82b54e101cc1032ed82aea9a758b4940bd71442aec74f6555587f3e03bf1a",
+      "bytes": 11436
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_direct_session01.py",
+      "sha256": "19664e2c6c81ffae472e3a6432f54b659ec01c28455efa4afb7b79ae317e5d6d",
+      "bytes": 20822
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_direct_study01.py",
+      "sha256": "aa603b7ab230fde4d7e806daddedd78ee207f0c067e50f678c75318c93578c6e",
+      "bytes": 40534
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_transport03.py",
+      "sha256": "8c9617a260277e9a66d811387a50d042d2b814eda64fd62d614508baa9f94f09",
+      "bytes": 29048
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_transport04.py",
+      "sha256": "b0a3c55f37171051a3fd32c7ba61df06e961e584944a1849968dc2ff3b86e67c",
+      "bytes": 29183
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_transport05.py",
+      "sha256": "ed42709fb1f838076ae4baede002b996c933487de256539f0eb045b81df0cdc5",
+      "bytes": 5436
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_typed_continuation_view01.py",
+      "sha256": "019e289275454eb1b98948445e699e4238ec1123cd023047f04fe8cea339e080",
+      "bytes": 7927
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_graph_adapters.py",
+      "sha256": "a090b9734b10dc1c842c1ca2c3bbcf5c33c7d7dfd057eaa2203fad302cfb55ac",
+      "bytes": 15225
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_matrix_runner.py",
+      "sha256": "2736414fb1d3e12bcf82425c52b42c47f3d2c92558a49ff1437abf7abf231d50",
+      "bytes": 25500
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_matrix_session.py",
+      "sha256": "8647c9e47ab84cae38416fdc19f590afd84f91f8654fcd4ef7722cc2f10067ae",
+      "bytes": 20041
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_matrix_sources.py",
+      "sha256": "c1902e7e2d57652be0c392636fb02a329356b7581833ba5c009e9c02a22af220",
+      "bytes": 15054
+    },
+    {
+      "path": "/slb/benchmark/www2027/isolated_executor.py",
+      "sha256": "5480909102f136aafdc65707ebbd8ea057e309616e942b107b2c559bf7108855",
+      "bytes": 21300
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_client.py",
+      "sha256": "b81e99d9d30a28ee7d475ea2343549da69a666a376f5ef429c0747b277b92868",
+      "bytes": 7130
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_long_context_server.py",
+      "sha256": "a3aa8f994bb991f99d6c8dafc4e464edf39d4b36294890edcbdc36fe179f022a",
+      "bytes": 11703
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_lossless2048_server.py",
+      "sha256": "c4a73f9c8f3ccbf277b5af8db9a25d3dcb427de426abd487282092bdd66cf5be",
+      "bytes": 13594
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_lossless_parser.py",
+      "sha256": "2b0bff0477933f25eb1f93431d2160280f8ac37b728e5869827b6ac1cc7ac224",
+      "bytes": 4358
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_schema_parser.py",
+      "sha256": "c98b49f8b8cc716f000d97b8a6f91dea694a0ffcb45baa14f0d1f3e1d2e5de31",
+      "bytes": 10868
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_server.py",
+      "sha256": "b6ebdb12ef710e843dd926b7ee9f7c52da0fc8f19c68e4220833c324e35c2dc3",
+      "bytes": 9933
+    },
+    {
+      "path": "/slb/benchmark/www2027/provider_client.py",
+      "sha256": "8d8236c57bb80800ccdafbb6f54742ecd4e1f84d6b44a92d443008614c911856",
+      "bytes": 2877
+    }
+  ],
+  "launcher": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/run_replays_service.py",
+    "bytes": 7759,
+    "sha256": "f0a42d75b3232586369e5a5255da426c28f4763b46f1e803c0a44809bfd9c91d"
+  },
+  "jobs": [
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-slack-user11-goal3/clean",
+      "case_id": "agentdojo-slack-user11-goal3",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user11-goal3/clean/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user11-goal3/clean/session/outcome.json",
+        "bytes": 64973,
+        "sha256": "b5047fd780b0b5f976c808c9101ec97099d892e6123c2ef89906fd1293511c89"
+      },
+      "condition": "clean",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user11-goal3/clean/session/initial-input.json",
+        "bytes": 11388,
+        "sha256": "a85989da2d1b83cdea4ec1fb2b71c7e35741d5a404b436d33b67c28fecf6c07d"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user11-goal3/clean/session/api-008-attempt-00.json",
+          "bytes": 53627,
+          "sha256": "b1013826f23b995989a9ce379fc65f91e41a9d79b890cba0e82b1c53a629e539"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-slack-user13-goal4/injected",
+      "case_id": "agentdojo-slack-user13-goal4",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user13-goal4/injected/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user13-goal4/injected/session/outcome.json",
+        "bytes": 62399,
+        "sha256": "61aa3a69b7cf0234c8b5c2318f412fca57d0e6405bf679d6f4184a34f7c3ae0c"
+      },
+      "condition": "injected",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user13-goal4/injected/session/initial-input.json",
+        "bytes": 11326,
+        "sha256": "fe109495f79162f66f19d3779fcdb90e0e5df972a8ce828f9dc1d9bcb554ae19"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user13-goal4/injected/session/api-006-attempt-00.json",
+          "bytes": 49915,
+          "sha256": "a59b79e625a743948f82f1a15462a66e6401173909c84fa6fc2df266773635ca"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-slack-user5-goal2/injected",
+      "case_id": "agentdojo-slack-user5-goal2",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user5-goal2/injected/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user5-goal2/injected/session/outcome.json",
+        "bytes": 39629,
+        "sha256": "8fc0c1f351b9293471505faacb82ca2830814b4f470c621bc6b8be184a4c637e"
+      },
+      "condition": "injected",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user5-goal2/injected/session/initial-input.json",
+        "bytes": 11325,
+        "sha256": "3c65c6a66671be204543e910d3da790574c2b2f0673c276c0789da875a068455"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user5-goal2/injected/session/api-002-attempt-00.json",
+          "bytes": 38858,
+          "sha256": "7c44fa95bf5edad16247397ecdf5f88780fdd59cc0952b28156a0ae7def88f74"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-slack-user8-goal4/injected",
+      "case_id": "agentdojo-slack-user8-goal4",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user8-goal4/injected/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user8-goal4/injected/session/outcome.json",
+        "bytes": 16860,
+        "sha256": "0a110d171388172366e43a7fa835b62cd2b45d57dfb69aabc578b7ce4bd6ef14"
+      },
+      "condition": "injected",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user8-goal4/injected/session/initial-input.json",
+        "bytes": 11301,
+        "sha256": "a4f1c0437cac7e519750dd34b7c01cc38fd20fcc440727445246038a780d9225"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-slack-user8-goal4/injected/session/api-001-attempt-00.json",
+          "bytes": 33124,
+          "sha256": "e0d6017fd202c09a190d183e4a9b1ff4e0918173a8ac3c6b8d30b33e6f0af109"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-travel-user1-goal1/injected",
+      "case_id": "agentdojo-travel-user1-goal1",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user1-goal1/injected/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user1-goal1/injected/session/outcome.json",
+        "bytes": 7260,
+        "sha256": "100a9edef1643e6b66a4f148adf9d43ffc53217e8c02c6934d42d6d70e54b669"
+      },
+      "condition": "injected",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user1-goal1/injected/session/initial-input.json",
+        "bytes": 29571,
+        "sha256": "b62207f9cb02f410e799eeac819b6794a30e705399dfd93aa36ff02937ae7acd"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user1-goal1/injected/session/api-000-attempt-00.json",
+          "bytes": 82470,
+          "sha256": "0f3504e11cd9dae84c37650e15a8c86e88aa9f6de274237a8921da503d75b7f9"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-travel-user10-goal3/clean",
+      "case_id": "agentdojo-travel-user10-goal3",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user10-goal3/clean/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user10-goal3/clean/session/outcome.json",
+        "bytes": 43344,
+        "sha256": "710418772188a803bd9e1ae6e6155b1d6a9f56cbe5ee848704766f861c6f0774"
+      },
+      "condition": "clean",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user10-goal3/clean/session/initial-input.json",
+        "bytes": 29542,
+        "sha256": "bafa6db3c6376328e57c43c0f6a8d3d86c61e97fd152055aa9583a28a0e1e60b"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user10-goal3/clean/session/api-004-attempt-00.json",
+          "bytes": 98750,
+          "sha256": "bcac73090b0cdd497faa85af5cec5a83e0fdc95f7b719d4e7919403ac63219ef"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-travel-user10-goal4/injected",
+      "case_id": "agentdojo-travel-user10-goal4",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user10-goal4/injected/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user10-goal4/injected/session/outcome.json",
+        "bytes": 58382,
+        "sha256": "766ae003b7bca2d01f1963990df174edfcb93e1e9e30dc78499d039f31e1aae5"
+      },
+      "condition": "injected",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user10-goal4/injected/session/initial-input.json",
+        "bytes": 29533,
+        "sha256": "c380e3ac6a97ed41a9e13b54cc2976146bf072b4719e1fdba04ff00126934c4b"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user10-goal4/injected/session/api-003-attempt-00.json",
+          "bytes": 104220,
+          "sha256": "477c934ee38eaa36d24f0f2271872b2ea9ebc04b6ef4914439f94e6f0dec7378"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-travel-user12-goal5/clean",
+      "case_id": "agentdojo-travel-user12-goal5",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user12-goal5/clean/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user12-goal5/clean/session/outcome.json",
+        "bytes": 47384,
+        "sha256": "72a98ca068409e9a8039ab40207fba127acd9f5a22df160bb3c801b3aa220980"
+      },
+      "condition": "clean",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user12-goal5/clean/session/initial-input.json",
+        "bytes": 29720,
+        "sha256": "2fa329353d7d84fcee5ae2ec504873c4a03f3a024578abd9a420bece5ca52769"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user12-goal5/clean/session/api-001-attempt-00.json",
+          "bytes": 88002,
+          "sha256": "323c51b5a92650f21ad650ab5a885556d17a9a9816d0ec32ec5df7361ca97ce7"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-travel-user13-goal6/clean",
+      "case_id": "agentdojo-travel-user13-goal6",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user13-goal6/clean/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user13-goal6/clean/session/outcome.json",
+        "bytes": 7257,
+        "sha256": "e144c1cb91fe8fb57a1c74f25943df287e692941741024324e74cd8a7ef55dcd"
+      },
+      "condition": "clean",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user13-goal6/clean/session/initial-input.json",
+        "bytes": 29503,
+        "sha256": "8c74cacb94004a73934a02b083435e1c412ddab46f6f5295e6f92654047fb678"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user13-goal6/clean/session/api-000-attempt-00.json",
+          "bytes": 82154,
+          "sha256": "d8df177058d10fb51bd4d426afb343b3b2f62dee32f2225a1fc79312097cd5e8"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-travel-user15-goal1/injected",
+      "case_id": "agentdojo-travel-user15-goal1",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user15-goal1/injected/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user15-goal1/injected/session/outcome.json",
+        "bytes": 64252,
+        "sha256": "84eef7d822d7c3f3a6c1f9927d620dda5bea34ac53654db2244f55fc87a03fb8"
+      },
+      "condition": "injected",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user15-goal1/injected/session/initial-input.json",
+        "bytes": 29643,
+        "sha256": "86ed6b10fc5e77b29742746c9eb3f89fe88ad02cff34c28291be7d91aa84f09b"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user15-goal1/injected/session/api-002-attempt-00.json",
+          "bytes": 100422,
+          "sha256": "fc77f617c826577098bee424c241fed34c11f9435be748acdbe273298cfe281c"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-travel-user3-goal3/clean",
+      "case_id": "agentdojo-travel-user3-goal3",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user3-goal3/clean/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user3-goal3/clean/session/outcome.json",
+        "bytes": 92063,
+        "sha256": "a54ff81e8a34d5b29b0347cee2c851639090352c4d65e3f330d6a5b389718eec"
+      },
+      "condition": "clean",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user3-goal3/clean/session/initial-input.json",
+        "bytes": 29585,
+        "sha256": "aac9bee0e77a62c5f0800402d1962b17aab9cb8401f379be941c4a8a09b3d84d"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user3-goal3/clean/session/api-003-attempt-00.json",
+          "bytes": 101614,
+          "sha256": "25ded722013ae8e517533f1806fa49cf4c40367295ff915ffc73f629ecbec200"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-travel-user4-goal5/clean",
+      "case_id": "agentdojo-travel-user4-goal5",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user4-goal5/clean/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user4-goal5/clean/session/outcome.json",
+        "bytes": 69934,
+        "sha256": "f29c5cb98eafad64fdb8180c20854ef8b30cadfa65090fb2716d5a9f1194b13b"
+      },
+      "condition": "clean",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user4-goal5/clean/session/initial-input.json",
+        "bytes": 29607,
+        "sha256": "478533ad7e7fa3d191f547f6a389f134dff5d3b3a040bedeaa6344b1517ea77a"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-travel-user4-goal5/clean/session/api-004-attempt-00.json",
+          "bytes": 99496,
+          "sha256": "9b731dc2051080e28a5335b3659624d645101f8ebb7262e8d0fd05b6ff9d5062"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-workspace-user26-goal11/clean",
+      "case_id": "agentdojo-workspace-user26-goal11",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user26-goal11/clean/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user26-goal11/clean/session/outcome.json",
+        "bytes": 7269,
+        "sha256": "c2307ae4beedaee65663b05b115412e72bc62fb735485a294b6d17c7a7050ef1"
+      },
+      "condition": "clean",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user26-goal11/clean/session/initial-input.json",
+        "bytes": 25059,
+        "sha256": "202069cdfc319a627653ee01a6798a59692582446debdbf45777137bca314942"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user26-goal11/clean/session/api-000-attempt-00.json",
+          "bytes": 69086,
+          "sha256": "f0be4a6729b8be1dbcb13cd178d3d68ba513f0962d92019c5ae6c6d70868140a"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-workspace-user27-goal12/injected",
+      "case_id": "agentdojo-workspace-user27-goal12",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user27-goal12/injected/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user27-goal12/injected/session/outcome.json",
+        "bytes": 89451,
+        "sha256": "4292eca91a804bd2949092b2da0b6fd54ad488e39934df3f90fed9956a2d5b0f"
+      },
+      "condition": "injected",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user27-goal12/injected/session/initial-input.json",
+        "bytes": 25109,
+        "sha256": "daeb92944241653e4ce59f505e1749009b1a8d109e69cf7ff63281e57de7753f"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user27-goal12/injected/session/api-001-attempt-00.json",
+          "bytes": 179358,
+          "sha256": "d0660d9d7421fdbb137f00e8efdcece40e8aec084e31b2d949c0f0ef5f8ff5a8"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-workspace-user31-goal3/injected",
+      "case_id": "agentdojo-workspace-user31-goal3",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user31-goal3/injected/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user31-goal3/injected/session/outcome.json",
+        "bytes": 73446,
+        "sha256": "2ed33aec15f7019e8c409f9a50b4c30b551564264bf7ca2b5b577b5c3fc2e14a"
+      },
+      "condition": "injected",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user31-goal3/injected/session/initial-input.json",
+        "bytes": 25150,
+        "sha256": "92f959d7289bcbb5e099a379e21d8e8dff8633e4eaca6cd18768d9f66a04c339"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user31-goal3/injected/session/api-001-attempt-00.json",
+          "bytes": 170416,
+          "sha256": "3338da55fed061d94ad2931691d730a37b8f42fc571e021d059506659b35f3ed"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-workspace-user32-goal4/injected",
+      "case_id": "agentdojo-workspace-user32-goal4",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user32-goal4/injected/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user32-goal4/injected/session/outcome.json",
+        "bytes": 157393,
+        "sha256": "86b6f17cf4d9ad3468b0dc1313985654b03c1bfda46a5cb5884aba271c179510"
+      },
+      "condition": "injected",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user32-goal4/injected/session/initial-input.json",
+        "bytes": 25208,
+        "sha256": "5ad0fbd071d01d902a3da58cfea885b2528c33aafdf125fe7f55a5b036363e1a"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user32-goal4/injected/session/api-003-attempt-00.json",
+          "bytes": 280396,
+          "sha256": "404f073e83e85fc0583fcf77399dc04ad83df63fb1dc5e2e72b0787897394313"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-workspace-user35-goal6/clean",
+      "case_id": "agentdojo-workspace-user35-goal6",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user35-goal6/clean/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user35-goal6/clean/session/outcome.json",
+        "bytes": 310177,
+        "sha256": "90b5523c559d27e7dd944106987b78c1ef5647d9b513713b38d74b0c3d6d2c7d"
+      },
+      "condition": "clean",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user35-goal6/clean/session/initial-input.json",
+        "bytes": 25045,
+        "sha256": "8b6399115e0db6c1e752e5d06f31daf6f000178aecdd6d67c5c0a30dad1f36af"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user35-goal6/clean/session/api-004-attempt-00.json",
+          "bytes": 466419,
+          "sha256": "3fc327a2f125932f55c7d9b780a2d28561f26b7ae53041eb0e702149f5921ab4"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-workspace-user35-goal7/injected",
+      "case_id": "agentdojo-workspace-user35-goal7",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user35-goal7/injected/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user35-goal7/injected/session/outcome.json",
+        "bytes": 7274,
+        "sha256": "7cb88b4533a1d0c91068725226bddc1a219d60e39b13d194e7a2f76b3428b062"
+      },
+      "condition": "injected",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user35-goal7/injected/session/initial-input.json",
+        "bytes": 25045,
+        "sha256": "47918e9229e1e2f5fc550e409befdfdfa9e72987230e68e984f60bf098d267e7"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user35-goal7/injected/session/api-000-attempt-00.json",
+          "bytes": 69042,
+          "sha256": "2768b47ea4d360567a46860145bd78e9de28214de4d1661e9fabac302a460c53"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-workspace-user36-goal7/injected",
+      "case_id": "agentdojo-workspace-user36-goal7",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user36-goal7/injected/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user36-goal7/injected/session/outcome.json",
+        "bytes": 91466,
+        "sha256": "d950299df310b10b64b57776623a4ed4301aa9a02d12dd48cf8754e5a491ac7e"
+      },
+      "condition": "injected",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user36-goal7/injected/session/initial-input.json",
+        "bytes": 25321,
+        "sha256": "9a67640bd5ccc4587e1e32c9f79648d9dc710386e8deefcd0ad4f97375ae5e7b"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user36-goal7/injected/session/api-003-attempt-00.json",
+          "bytes": 179224,
+          "sha256": "e0344875d447c176d03efc6438a1682041afcfd6e897f8d93c2a8b73a170aeb9"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-workspace-user6-goal7/clean",
+      "case_id": "agentdojo-workspace-user6-goal7",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user6-goal7/clean/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user6-goal7/clean/session/outcome.json",
+        "bytes": 7261,
+        "sha256": "1168b5ba382143c231a3d8696790acaeda0f1962a215ad147e646652f2698784"
+      },
+      "condition": "clean",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user6-goal7/clean/session/initial-input.json",
+        "bytes": 25211,
+        "sha256": "ff6a6e6b4c23687514b3569bdf10917bf43ce5757fc2172cec27a28b80317e0f"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user6-goal7/clean/session/api-000-attempt-00.json",
+          "bytes": 69592,
+          "sha256": "0abf5e1505381baebf5e32af297c421445e92204dc372136d76ad52000ee7bf4"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected",
+      "case_id": "agentdojo-workspace-user7-goal8",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/outcome.json",
+        "bytes": 48036,
+        "sha256": "753a0a1fbcaf7027b771215d3ccb3b0d854f67ec8ef843234aeb7dd6dc9c6fd1"
+      },
+      "condition": "injected",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/initial-input.json",
+        "bytes": 25059,
+        "sha256": "d75ef33345ec6400889de60597791abe51b93481daf1efbefc35366235626225"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user7-goal8/injected/session/api-004-attempt-00.json",
+          "bytes": 94474,
+          "sha256": "b29ac4b795dcb57ad1d497366f8ccf9f7990d350e7e21a8dc04b42ff1d8577d7"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/gemini-3.5-flash",
+      "job_id": "gemini-3.5-flash/native/agentdojo-workspace-user8-goal8/clean",
+      "case_id": "agentdojo-workspace-user8-goal8",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user8-goal8/clean/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user8-goal8/clean/session/outcome.json",
+        "bytes": 16175,
+        "sha256": "614718c107710ec44f198eced856399c9f4cf8f206a80bdd316b4bf4c5361230"
+      },
+      "condition": "clean",
+      "model": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user8-goal8/clean/session/initial-input.json",
+        "bytes": 25143,
+        "sha256": "dc7d80f57f1b3a2148b0f9858a2eb3bba1bc5c83424f91bad4cb1468b2e76d72"
+      },
+      "infrastructure_eligibility": {
+        "signature": "explicit_endpoint_deprecation_banner",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/gemini-3.5-flash/native/agentdojo-workspace-user8-goal8/clean/session/api-001-attempt-00.json",
+          "bytes": 73686,
+          "sha256": "95f779645c2d7cd5d90ab018a208040dea2637f22f74128fe6b007a89bef3dd6"
+        }
+      }
+    },
+    {
+      "audit_phase": "original04",
+      "audit_configuration_id": "original04/glm-5.2",
+      "job_id": "glm-5.2/native/agentdojo-workspace-user28-goal13/clean",
+      "case_id": "agentdojo-workspace-user28-goal13",
+      "stop_reason": "completed",
+      "outcome_path": "/tmp/skilllife-gateway-full04/episodes/glm-5.2/native/agentdojo-workspace-user28-goal13/clean/session/outcome.json",
+      "original_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/glm-5.2/native/agentdojo-workspace-user28-goal13/clean/session/outcome.json",
+        "bytes": 7114,
+        "sha256": "3b8cb3f1e524afab19835a0294b126d57dd3e1a590324a15b86de65dce7f4b71"
+      },
+      "condition": "clean",
+      "model": {
+        "key": "glm-5.2",
+        "model": "glm-5.2",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "glm-5.2"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "generation_profile": {
+        "max_output_tokens_requested": 2048,
+        "temperature": "provider_default_unobserved",
+        "top_p": "provider_default_unobserved",
+        "reasoning_effort": "provider_default_unobserved",
+        "seed": "not_sent",
+        "budget_scope": "Same15logicalrounds/30toolactions/2048requestedoutputtokens/900sessionseconds; hidden reasoning compute is not equalized",
+        "comparison_scope": "Gateway model-route configurations; original local baselines use pinned greedy/non-thinking servers and are a separate generation condition"
+      },
+      "transport_version": "04",
+      "original_initial_input": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/glm-5.2/native/agentdojo-workspace-user28-goal13/clean/session/initial-input.json",
+        "bytes": 25126,
+        "sha256": "6fca190c173e1a4edaaabb05d69d7a7413075438fba269167026041208dd0be4"
+      },
+      "infrastructure_eligibility": {
+        "signature": "gateway_error_response_id",
+        "api": {
+          "path": "/tmp/skilllife-gateway-full04/episodes/glm-5.2/native/agentdojo-workspace-user28-goal13/clean/session/api-000-attempt-00.json",
+          "bytes": 69291,
+          "sha256": "9df19e460b9f69f99c0e4efe3ff31bcbbc9fa10690d4207022cd020cec9e6d1b"
+        }
+      }
+    }
+  ],
+  "service_rule": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/service_error_rule.py",
+    "bytes": 842,
+    "sha256": "a8c6eddf7425af77dfd1e3ee0ac5520fda9396db9543099b23407feea2757efd"
+  },
+  "original_replay_manifest": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/replay-manifest.json",
+    "bytes": 277378,
+    "sha256": "9028e620c6889a28c1a6b1ef7c6928ed50565ae7045f3f3343234bfbcd8caf04"
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "schema": "qwen_recorded_runtime_execution_manifest/1.0",
+  "controller_version": "qwen-runtime-recorded-policy-controller-v56.2",
+  "status": "frozen_pending_root_full_launch_review",
+  "parent_protocol": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/qwen-local-plan01/protocol.json",
+    "sha256": "36a619e89bedb1283237634d4ccd8839d69f3ee2ead5d03f669254489a9fbf87",
+    "bytes": 8958
+  },
+  "code_root": "/slb/benchmark",
+  "source_root": "/slb/evidence",
+  "models": [
+    {
+      "key": "local9b",
+      "model_id": "Qwen3.5-9B@c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "repo": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "weights_path": "/slb/evidence/models/qwen35-9b/weights",
+      "pinned_manifest": {
+        "path": "/slb/evidence/models/qwen35-9b/pinned_artifacts.json",
+        "bytes": 3364,
+        "sha256": "58d69cf828dc9389470dcda34c2bb0c5d7aa40d3f1c4d822f255dd0c5fda8ada"
+      },
+      "files_present_size_matched": true,
+      "bytes": 19329314448,
+      "full_weight_hash_revalidation": "Existing server revalidates all weight hashes before startup. Planning step checks presence/size only.",
+      "physical_gpu": 3,
+      "port": 8767,
+      "base_url": "http://127.0.0.1:8767/v1",
+      "server_module": "local_qwen35_lossless2048_server.py",
+      "server_source": {
+        "path": "/slb/benchmark/www2027/local_qwen35_lossless2048_server.py",
+        "bytes": 13594,
+        "sha256": "c4a73f9c8f3ccbf277b5af8db9a25d3dcb427de426abd487282092bdd66cf5be"
+      },
+      "generation": {
+        "max_context": 32768,
+        "max_new_tokens": 2048,
+        "generation_max_time_seconds": 120,
+        "dtype": "bfloat16",
+        "attention": "sdpa",
+        "decoding": "greedy",
+        "thinking": false,
+        "torch": "2.7.1+cu126",
+        "transformers": "5.2.0",
+        "cuda_build": "12.6"
+      },
+      "concurrency": 1,
+      "instance_root": "/slb/evidence/models/qwen35-9b/instances/next51-gpu3-lossless2048-v56-repair01",
+      "expected_identity": {
+        "profile_name": "qwen35-9b-32768-output2048-lossless-greedy-bf16-sdpa-v1",
+        "repo": "Qwen/Qwen3.5-9B",
+        "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+        "model_id": "Qwen3.5-9B@c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+        "max_context": 32768,
+        "max_new_tokens": 2048,
+        "generation_max_time_seconds": 120,
+        "dtype": "bfloat16",
+        "attention": "sdpa",
+        "decoding": "greedy",
+        "thinking": false,
+        "torch": "2.7.1+cu126",
+        "transformers": "5.2.0",
+        "cuda_build": "12.6",
+        "model_manifest_sha256": "58d69cf828dc9389470dcda34c2bb0c5d7aa40d3f1c4d822f255dd0c5fda8ada",
+        "server_sha256": "c4a73f9c8f3ccbf277b5af8db9a25d3dcb427de426abd487282092bdd66cf5be",
+        "client_parser_sha256": "2b0bff0477933f25eb1f93431d2160280f8ac37b728e5869827b6ac1cc7ac224",
+        "parser_module": "www2027.local_qwen35_lossless_parser",
+        "physical_gpu": 3,
+        "port": 8767,
+        "host": "127.0.0.1"
+      },
+      "serve_command": [
+        "/slb/evidence/models/qwen35-9b/venv/bin/python",
+        "-B",
+        "-u",
+        "-m",
+        "www2027.local_qwen35_lossless2048_server",
+        "--root",
+        "/slb/evidence/models/qwen35-9b/instances/next51-gpu3-lossless2048-v56-repair01",
+        "--model-root",
+        "/slb/evidence/models/qwen35-9b",
+        "--gpu",
+        "3",
+        "--port",
+        "8767"
+      ]
+    },
+    {
+      "key": "local4b",
+      "model_id": "Qwen/Qwen3.5-4B@851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "repo": "Qwen/Qwen3.5-4B",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "weights_path": "/slb/evidence/models/comparison-qwen35-4b/weights",
+      "pinned_manifest": {
+        "path": "/slb/evidence/models/comparison-qwen35-4b/pinned_artifacts.json",
+        "bytes": 3351,
+        "sha256": "3062698c0d0f9bd89636a360966d823db89f9d1e0895ca4c52c94c632f8a5503"
+      },
+      "files_present_size_matched": true,
+      "bytes": 9342816694,
+      "full_weight_hash_revalidation": "Existing server revalidates all weight hashes before startup. Planning step checks presence/size only.",
+      "physical_gpu": 4,
+      "port": 8768,
+      "base_url": "http://127.0.0.1:8768/v1",
+      "server_module": "comparison_local_server.py",
+      "server_source": {
+        "path": "/slb/benchmark/www2027/comparison_local_server.py",
+        "bytes": 30141,
+        "sha256": "53c753a156359b5eaec9fd498e0e64274e45e1a46d9374534be0c590a54b2c7e"
+      },
+      "generation": {
+        "max_context": 32768,
+        "max_new_tokens": 2048,
+        "generation_max_time_seconds": 120,
+        "dtype": "bfloat16",
+        "attention": "sdpa",
+        "decoding": "greedy",
+        "thinking": false,
+        "torch": "2.7.1+cu126",
+        "transformers": "5.2.0",
+        "cuda_build": "12.6"
+      },
+      "concurrency": 1,
+      "instance_root": "/slb/evidence/models/comparison-qwen35-4b/instances/v56-runtime-repair01",
+      "expected_identity": {
+        "profile_name": "comparison-qwen35-4b-32768-output2048-greedy-bf16-sdpa-v1",
+        "repo": "Qwen/Qwen3.5-4B",
+        "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+        "model_id": "Qwen/Qwen3.5-4B@851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+        "max_context": 32768,
+        "max_new_tokens": 2048,
+        "generation_max_time_seconds": 120,
+        "dtype": "bfloat16",
+        "attention": "sdpa",
+        "decoding": "greedy",
+        "thinking": false,
+        "torch": "2.7.1+cu126",
+        "transformers": "5.2.0",
+        "cuda_build": "12.6",
+        "model_manifest_sha256": "3062698c0d0f9bd89636a360966d823db89f9d1e0895ca4c52c94c632f8a5503",
+        "server_sha256": "53c753a156359b5eaec9fd498e0e64274e45e1a46d9374534be0c590a54b2c7e",
+        "client_parser_sha256": "2b0bff0477933f25eb1f93431d2160280f8ac37b728e5869827b6ac1cc7ac224",
+        "parser_module": "www2027.local_qwen35_lossless_parser",
+        "physical_gpu": 4,
+        "port": 8768,
+        "host": "127.0.0.1"
+      },
+      "serve_command": [
+        "/slb/evidence/models/qwen35-9b/venv/bin/python",
+        "-B",
+        "-u",
+        "-m",
+        "www2027.comparison_local_server",
+        "serve",
+        "--model-key",
+        "qwen35-4b",
+        "--model-root",
+        "/slb/evidence/models/comparison-qwen35-4b",
+        "--root",
+        "/slb/evidence/models/comparison-qwen35-4b/instances/v56-runtime-repair01",
+        "--gpu",
+        "4",
+        "--port",
+        "8768",
+        "--manifest-sha256",
+        "3062698c0d0f9bd89636a360966d823db89f9d1e0895ca4c52c94c632f8a5503",
+        "--server-sha256",
+        "53c753a156359b5eaec9fd498e0e64274e45e1a46d9374534be0c590a54b2c7e"
+      ]
+    }
+  ],
+  "controller_interpreter": "/slb/evidence/harness-matrix-venv02/bin/python",
+  "scheduled_episodes": 534,
+  "cases": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/qwen-local-plan01/cases.json",
+    "bytes": 539869,
+    "sha256": "8ae7f218d0d981f9b18a994a7cdda07eaeb75c9079b7cc317b55ea55299c41f8"
+  },
+  "schedule": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/qwen-local-plan01/scheduled-jobs.jsonl",
+    "bytes": 1750346,
+    "sha256": "d8271c4e4fa0be554dbdfb78a8f73688790a76ae9896ddafa736551a01c5ad35"
+  },
+  "system_default": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/qwen-local-plan01/default-system.txt",
+    "bytes": 262,
+    "sha256": "f157179ebf2a733259d2e29fddb84d04f0fa20912eccfae6b8634ccceec4f730"
+  },
+  "check_append_only": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/qwen-local-plan01/authorization-check-block.txt",
+    "bytes": 618,
+    "sha256": "affe090af6bfe022b09fd896306deaa01ad048414ea5731a1856e8e0537cd282"
+  },
+  "system_check": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/qwen-local-plan01/check-system.txt",
+    "bytes": 882,
+    "sha256": "88263a26d749e4d95a648255c4a67811359246e2c4276bbc5029ac0f0f96cf80"
+  },
+  "harness_limits": {
+    "max_model_rounds": 15,
+    "max_tool_actions": 30,
+    "max_output_tokens": 2048,
+    "api_attempts": 2,
+    "harness_wall_seconds": 900
+  },
+  "request_timeout_seconds": 180,
+  "minimum_raw_disk_bytes": 21474836480,
+  "max_fresh_episode_attempts": 2,
+  "pilot_case_ids": [
+    "agentdojo-travel-user13-goal6",
+    "agentdojo-slack-user2-goal3"
+  ],
+  "pilot_episodes": 12,
+  "pilot_selection_reason": "One next51 entity-answer task and one next40 read-then-invite task; exercises both original backends and Defaultclean/Defaultchallenged/Checkchallenged for eachmodel. Chosen by protocolcoverage, notobservedmodelperformance.",
+  "optional_additional_protocol_cases": [
+    "agentdojo-workspace-user39-goal10",
+    "agentdojo-workspace-user37-goal8"
+  ],
+  "pilot_data_policy": "Protocolpilot has separate rawoutput and doesnot enter finalleaderboard;full534 is an independent frozen executionwave. No score threshold authorizesfullrun.",
+  "full_data_reuse": "For eachmodel, fullDefaultchallenged89records are reused byte-for-byte asRQ2Default.",
+  "implementation_bindings": [
+    {
+      "path": "/slb/benchmark/www2027/qwen_runtime_repair_v56.py",
+      "sha256": "3153def2e189a5532e3ac40cf366f999923dc7db181846763fa31e90b74a5b57",
+      "bytes": 23806
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_matrix_session.py",
+      "sha256": "8647c9e47ab84cae38416fdc19f590afd84f91f8654fcd4ef7722cc2f10067ae",
+      "bytes": 20041
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_matrix_sources.py",
+      "sha256": "c1902e7e2d57652be0c392636fb02a329356b7581833ba5c009e9c02a22af220",
+      "bytes": 15054
+    },
+    {
+      "path": "/slb/benchmark/www2027/episode_runner.py",
+      "sha256": "374337bca105a0094a0a1a05a163c46d37a04f5a469f8b7c72bf49da850f7447",
+      "bytes": 8866
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_client.py",
+      "sha256": "b81e99d9d30a28ee7d475ea2343549da69a666a376f5ef429c0747b277b92868",
+      "bytes": 7130
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_lossless_parser.py",
+      "sha256": "2b0bff0477933f25eb1f93431d2160280f8ac37b728e5869827b6ac1cc7ac224",
+      "bytes": 4358
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_schema_parser.py",
+      "sha256": "c98b49f8b8cc716f000d97b8a6f91dea694a0ffcb45baa14f0d1f3e1d2e5de31",
+      "bytes": 10868
+    },
+    {
+      "path": "/slb/benchmark/www2027/effect_oracle.py",
+      "sha256": "df60c0304989f5b2dbe40c9b810c3a5aa72f24d12f5ea116419d7d49517a5291",
+      "bytes": 7301
+    },
+    {
+      "path": "/slb/benchmark/www2027/provider_client.py",
+      "sha256": "8d8236c57bb80800ccdafbb6f54742ecd4e1f84d6b44a92d443008614c911856",
+      "bytes": 2877
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_binary_task_v56.py",
+      "sha256": "d13fcb80f3e77ee2e2bb93c5b4e5a02a44078cf0e4d8e63e69321a434ef9e4fd",
+      "bytes": 35572
+    },
+    {
+      "path": "/slb/benchmark/www2027/test_qwen_runtime_repair_v56.py",
+      "sha256": "358d5417a0a61d2d32f5870b466d7460728935fe8487657a879e6b82582599cc",
+      "bytes": 7773
+    }
+  ],
+  "launch_review_policy": "Rootreview approvalfile must bind exactmanifestsha and specificoperation launch_servers/pilot/full. This file doesnotlaunch anything.",
+  "raw_output_root": "/tmp/skilllife-qwen-runtime-v56",
+  "scoring_separate": true,
+  "generation_calls_at_freeze": 0,
+  "native_executions_at_freeze": 0,
+  "parent_execution_manifest": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/qwen-execution-plan01/manifest.json",
+    "sha256": "b213c396c8afc938039146dd0fe25e6ec0f1b7ae585fe207bb2973c1bbfac8d7",
+    "bytes": 12835
+  },
+  "prior_pilot_audit": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/qwen-execution-plan01/pilot-protocol-audit.json",
+    "sha256": "5035c5512e772ca07708eb09651cd3a82c85487330ba2f3b940f0e1354755d98",
+    "bytes": 5139
+  },
+  "catalog_schema_qualification": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/qwen-execution-plan02/catalog-schema-qualification.json",
+    "sha256": "2e4dc5c8ec356582e80675793e8ed5ce10990fc4e1f2e4164b1cdf6c07c2eff1",
+    "bytes": 36210
+  },
+  "loaded_servers_unchanged": true,
+  "terminal_classification": {
+    "exact_pinned_context_errors": {
+      "c4a73f9c8f3ccbf277b5af8db9a25d3dcb427de426abd487282092bdd66cf5be": "ValueError: Declared local context budget exceeded; no truncation applied",
+      "53c753a156359b5eaec9fd498e0e64274e45e1a46d9374534be0c590a54b2c7e": "ValueError: Declared context budget exceeded; no truncation applied"
+    },
+    "model_generated_parser_errors": [
+      "Ambiguous anyOf parameter decoding",
+      "Asymmetric parameter LF framing; no whitespace repair applied",
+      "Duplicate JSON object key",
+      "Duplicate parameter",
+      "Forced tool request not fulfilled",
+      "Incomplete tool-call envelope",
+      "Malformed function block",
+      "Missing required object field",
+      "Non-JSON scalar/object parameter",
+      "Nonfinite JSON literal",
+      "Nonfinite JSON number",
+      "Parameter matches no anyOf branch",
+      "Parameter matches no anyOf decoding",
+      "Parameter outside enum",
+      "Parameter type mismatch",
+      "Tool call produced with tool_choice=none",
+      "Unbalanced tool-call envelope",
+      "Unclosed reasoning block",
+      "Unexpected function-body text",
+      "Unexpected text between parameters",
+      "Unknown function name",
+      "Unknown object field",
+      "Unknown parameter",
+      "Value nesting exceeds bound",
+      "Value rejected by false schema",
+      "forced tool request not fulfilled",
+      "tool call produced with tool_choice=none"
+    ],
+    "incomplete_generation_errors": {
+      "Generation reached output token cap before EOS": "model_output_truncated",
+      "Generation stopped before EOS; time limit or incomplete output": "model_output_incomplete"
+    },
+    "http500_default": "infrastructurefailure;no broadconversion",
+    "raw_preservation": "Rawapi_error andAPIreceipt/errorbody remain unchanged. terminal-classification.json providesderivedmodel_context_limit withbinding.",
+    "retry": "Valid context/modelsyntax/output-budget failures never trigger a freshepisode. Existing same-request transportattempts remain recorded; context rejection happens beforegeneration.",
+    "unsupported_parser": "Unknownschema/adapter parseerrors remainforreview, notamodelFalse orsuccess-seeking rerun."
+  }
+}

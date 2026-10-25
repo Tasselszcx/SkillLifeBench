@@ -1,0 +1,8 @@
+{
+  "approved": true,
+  "manifest_sha256": "31cb49c05ce0080caaa38c81d27680363ed0c3ef65441765283053c7362b5e91",
+  "operations": [
+    "full"
+  ],
+  "basis": "Root reviewed12-casepilot:45APIreceipts,33toolactions,allprotocolbindingspassed. Revisedcontroller exactpinnedcontext/syntaxbudgetclassification preservesraw and forbids freshretry forvalidmodel failures. Authorized534completeprespecifiedDefault/Checkrecords, not outcome-selected; allraw retained."
+}

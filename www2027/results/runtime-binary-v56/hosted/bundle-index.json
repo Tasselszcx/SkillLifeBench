@@ -1,0 +1,71 @@
+{
+  "bundles": [
+    {
+      "bytes": 6492980,
+      "path": "bundles/audit-only.tar.xz",
+      "sha256": "87bbe1b73b3986ff1d40daeaabeab141adcdac4f9d0dcb2295ea27325fec6f76"
+    },
+    {
+      "bytes": 9631688,
+      "path": "bundles/claude-sonnet-4-6.tar.xz",
+      "sha256": "0f60c195ae9c99567c5abce52746fd51c0edd159a13575ec05fd8845f84e2f80"
+    },
+    {
+      "bytes": 9318540,
+      "path": "bundles/claude-sonnet-5.tar.xz",
+      "sha256": "a32953e5addf2a68479675a1a5b531584042b73b0525b7b98694ee3a7a3e73dd"
+    },
+    {
+      "bytes": 12914368,
+      "path": "bundles/deepseek-v3.2.tar.xz",
+      "sha256": "e3e81201546f09492edd714ee3d8b85b8e6d9062f008e6a6bf04d250833646d0"
+    },
+    {
+      "bytes": 10717944,
+      "path": "bundles/deepseek-v4-flash.tar.xz",
+      "sha256": "fd9bbe5a487c4c3a676b66c639f419fcbfae631dec35d0e383cfeb62c18e5f93"
+    },
+    {
+      "bytes": 9255824,
+      "path": "bundles/deepseek-v4-pro.tar.xz",
+      "sha256": "6c84eecc88d4fd0d559297ed341e5e336b5ddafa7e341aeab9bd4fe339bf490e"
+    },
+    {
+      "bytes": 12298264,
+      "path": "bundles/gemini-3.5-flash.tar.xz",
+      "sha256": "f603943c11c21e28c6562461e8eaaeb127714b8da1dcde445e15f540d45507d1"
+    },
+    {
+      "bytes": 8903320,
+      "path": "bundles/glm-5.2.tar.xz",
+      "sha256": "e316f3649443e3df0c45072c3b68b0370a5a3fe4e0a449eedc4586026101e11d"
+    },
+    {
+      "bytes": 12159452,
+      "path": "bundles/glm-5.3.tar.xz",
+      "sha256": "dfa443fa23a8ba49e1831c2636286cd54653db52302e55a2cdcfae95802f92ec"
+    },
+    {
+      "bytes": 10412180,
+      "path": "bundles/gpt-5.6-sol.tar.xz",
+      "sha256": "c0ce9cff93b5cf14398366544bd9d76c026da75018e9a2b6d7d4e0fff13f9009"
+    },
+    {
+      "bytes": 10601072,
+      "path": "bundles/gpt-5.6-terra.tar.xz",
+      "sha256": "e7c6035ce08f2ef5204e6f4e3be6e50bb57fdc52054155380bc96eb545ccc4cc"
+    },
+    {
+      "bytes": 8068736,
+      "path": "bundles/gpt-6-luna.tar.xz",
+      "sha256": "7c1854f0beee0dd71976984d19f97b804f5f1a17155a35943b5cc70530eee016"
+    },
+    {
+      "bytes": 8954312,
+      "path": "bundles/kimi-k2.6.tar.xz",
+      "sha256": "fe5ad7d2efe651bba3be8d544c68b043409046df633bd1e458fb462e89b5e306"
+    }
+  ],
+  "publication_policy": "protocol/publication-transform.json",
+  "raw_originals_unchanged": true
+}

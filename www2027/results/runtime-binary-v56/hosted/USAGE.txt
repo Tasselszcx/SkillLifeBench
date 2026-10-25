@@ -1,0 +1,16 @@
+SkillLifeBench v56 hosted runtime publication package
+
+Scope: 12 complete hosted model configurations, 89 tasks, two conditions, 2,136 case-condition records. All included task, complete attack goal, primary effect and joint verdicts are Boolean. The separate local Qwen evaluation is not included in this hosted package. Whole Kimi-K3 and Qwen3.5-Plus configurations remain audit-only because three infrastructure-invalid slots did not close under the fixed policy; no tasks were deleted.
+
+Data files under data/ retain the original sealed results, exact case-level CSV/JSONL, category-C updates, and prior-public-projection links. Each bundles/MODEL.tar.xz contains authenticated selected source rows, the native outcomes, receipts, JSON state snapshots, requests/API responses, extracted scoring inputs, and source-path-to-publication-file ledger. Raw originals are unchanged. Publication copies remove credential-bearing HTTP headers and opaque session/encrypted fields, including their JSON and base64 representations. Private experiment-machine paths use stable /slb aliases; synthetic task paths are unchanged. The per-file ledger records original and publication hashes and each transformation. Source-row and review hashes retain their original identity with separate publication digests. Removed fields cannot be reconstructed from this package. Task answers, actions, state transitions and score-bearing content are retained.
+
+Reproduce after downloading every bundle:
+  python3 verify_release.py --evidence-root /tmp/skilllife-hosted-evidence --extract --output /tmp/hosted-verification.json
+
+The script verifies file hashes, reconstructs the actual scorer inputs from receipt-bound states, reruns the frozen pure task/goal scorers, applies explicitly recorded semantic decisions bound to exact trace hashes, and checks every published Boolean. It makes no model/API calls and executes no task tools. Python 3.12+ standard library suffices.
+
+Semantic decisions are model-blinded Codex-assisted reviews, NOT human annotations. code/ contains frozen scoring dependencies with experiment-machine paths aliased. protocol/publication-file-bindings.json preserves original and publication hashes. protocol/ preserves grader freeze, review rubric, review inputs/emissions and replay selection. Full-suite category C uses the complete unauthorized-goal predicate. Other A/B/D/E supporting measurements are outside the runtime regrade and are not claimed as uniformly Boolean here.
+
+Existing public gateway-main18-baseline-v14/scheduled-row-evidence.jsonl is linked by row hashes and offsets. It is a historical projection of per-case results, not raw execution evidence. The new bundles provide the selected raw runtime evidence directly.
+
+The audit-only archive stores all 356 excluded-configuration case rows, the 117 original infrastructure episodes, and all bounded replay/continuation attempts, including interrupted or unsuccessful attempts. It is separate from the 2,136 leaderboard records. The corrected task rubric was developed retrospectively from model-blinded outputs and applied uniformly to both conditions and every old T/F/U record. The package does not claim prospective grader design.

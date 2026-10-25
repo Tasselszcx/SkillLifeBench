@@ -1,0 +1,903 @@
+{
+  "cases": 89,
+  "tool_schemas": 1913,
+  "schema_errors": 0,
+  "model_calls": 0,
+  "helper": {
+    "path": "/slb/benchmark/www2027/local_qwen35_schema_parser.py",
+    "sha256": "c98b49f8b8cc716f000d97b8a6f91dea694a0ffcb45baa14f0d1f3e1d2e5de31",
+    "bytes": 10868
+  },
+  "catalogs": [
+    {
+      "case_id": "agentdojo-slack-user0-goal2",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user0-goal2/clean/session/initial-input.json",
+        "sha256": "156699994fffd8923c8762e145ad57cac653163364bd3c7e4386b90d209b9233",
+        "bytes": 11244
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user10-goal2",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user10-goal2/clean/session/initial-input.json",
+        "sha256": "648e8d48d747b8a5fafed29b781cbbe57e16959135773910359891b258b1c2e3",
+        "bytes": 11316
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user11-goal2",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user11-goal2/clean/session/initial-input.json",
+        "sha256": "22df26606ae11b363e1b19c3f602c3da0429c5cce2f4c7553f9959c385de6005",
+        "bytes": 11388
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user11-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user11-goal3/clean/session/initial-input.json",
+        "sha256": "a85989da2d1b83cdea4ec1fb2b71c7e35741d5a404b436d33b67c28fecf6c07d",
+        "bytes": 11388
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user12-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user12-goal3/clean/session/initial-input.json",
+        "sha256": "0ac19472af501d02306be4e54569ed2a4c361e3217feaf069125a717cbcfdf04",
+        "bytes": 11276
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user12-goal4",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user12-goal4/clean/session/initial-input.json",
+        "sha256": "3267e981e626b879eb176c33055e542e46e782ec2ab29cbcb7641a61f6c98950",
+        "bytes": 11276
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user13-goal4",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user13-goal4/clean/session/initial-input.json",
+        "sha256": "c2ff7801fe8568fc83ece4281c3c1d979bbbc455ff746cc8c3c72805d6b9e8e9",
+        "bytes": 11326
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user13-goal5",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user13-goal5/clean/session/initial-input.json",
+        "sha256": "99957deeba34b9603e10036f80638a96119ef7e6aaf5271d614a9445d77cadcb",
+        "bytes": 11335
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user14-goal5",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user14-goal5/clean/session/initial-input.json",
+        "sha256": "d4b7f5831fb59e51c09108f03ffa059d6ca1f436972e497ed865312a4a844ad0",
+        "bytes": 11419
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user17-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user17-goal3/clean/session/initial-input.json",
+        "sha256": "85fb23eb4ebcf14709234256e5d5845c39b3c369f7a20675f5f3ca228aa32475",
+        "bytes": 11390
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user17-goal4",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user17-goal4/clean/session/initial-input.json",
+        "sha256": "bb1384e16b64e3ef012ea1684993093327d9a86c72652365671811f3fe13772a",
+        "bytes": 11390
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user19-goal5",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user19-goal5/clean/session/initial-input.json",
+        "sha256": "87ecb1d25a786798e267f9765e2d070fb55273cfda909e1904e1009b21d773bf",
+        "bytes": 11301
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user2-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user2-goal3/clean/session/initial-input.json",
+        "sha256": "6de531676ca20a70916093c70f6f57f36902168a2662a7000c9c5f9d033cea69",
+        "bytes": 11277
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user2-goal4",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user2-goal4/clean/session/initial-input.json",
+        "sha256": "63b723e0ab553986b177c13328878d094a0613f287b6b45f4765956764af7a38",
+        "bytes": 11277
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user4-goal5",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user4-goal5/clean/session/initial-input.json",
+        "sha256": "1fc4c4f051edee0215b876d576cff8196ad90831f91904a823987f66e9a90c55",
+        "bytes": 11387
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user5-goal2",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user5-goal2/clean/session/initial-input.json",
+        "sha256": "d11a03c8e149023d774c6d74f938f24fa861492719f7d5357cc769d1ca9e7ed0",
+        "bytes": 11325
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user6-goal2",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user6-goal2/clean/session/initial-input.json",
+        "sha256": "c1606982d286580faa90b2875b525728c1be207af1ee46e83edd4c7af3532801",
+        "bytes": 11376
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user6-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user6-goal3/clean/session/initial-input.json",
+        "sha256": "5bb585594ad6840653e947b3f6663c8a75b649065c28e5e5c8464ab2e2fe5d69",
+        "bytes": 11376
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user7-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user7-goal3/clean/session/initial-input.json",
+        "sha256": "8b19facd45aa7d883ed9be44f4cb5e57cfd963cf2c0ef8d2f21541263d63d6bf",
+        "bytes": 11244
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user7-goal4",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user7-goal4/clean/session/initial-input.json",
+        "sha256": "a2676804cbbfa6c3dbc711516c60e522f024609414a0a320129888f73d1a2112",
+        "bytes": 11244
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user8-goal4",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user8-goal4/clean/session/initial-input.json",
+        "sha256": "abd0329833014e99577d4ffa5fad66578721d2488a058077e5d74ee77823ca21",
+        "bytes": 11301
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user8-goal5",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user8-goal5/clean/session/initial-input.json",
+        "sha256": "6067ebf4a451cfbf4be43803a7c04eef3119cdea924134165ce9119ccfe4789f",
+        "bytes": 11310
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-slack-user9-goal5",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-slack-user9-goal5/clean/session/initial-input.json",
+        "sha256": "686b42457c7ed30facab2165421e36eebacfe6347038ace3067d45daa9f9e2da",
+        "bytes": 11286
+      },
+      "tools": 11,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user1-goal1",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user1-goal1/clean/session/initial-input.json",
+        "sha256": "e5a6942e13f3b26b687560073088dae89dd622c2184f0620b9a3d372c30f2682",
+        "bytes": 29571
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user1-goal2",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user1-goal2/clean/session/initial-input.json",
+        "sha256": "e50efb2d2cc157e9b3972d005afb248f56fe42862907b89233c2d0df0b6d3251",
+        "bytes": 29562
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user10-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user10-goal3/clean/session/initial-input.json",
+        "sha256": "bafa6db3c6376328e57c43c0f6a8d3d86c61e97fd152055aa9583a28a0e1e60b",
+        "bytes": 29542
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user10-goal4",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user10-goal4/clean/session/initial-input.json",
+        "sha256": "0d9859941dcb4321635f42a6a7ce332be91d2f23b6294f438eaa7d98a07f0ad8",
+        "bytes": 29533
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user12-goal5",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user12-goal5/clean/session/initial-input.json",
+        "sha256": "2fa329353d7d84fcee5ae2ec504873c4a03f3a024578abd9a420bece5ca52769",
+        "bytes": 29720
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user13-goal6",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user13-goal6/clean/session/initial-input.json",
+        "sha256": "8c74cacb94004a73934a02b083435e1c412ddab46f6f5295e6f92654047fb678",
+        "bytes": 29503
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user14-goal1",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user14-goal1/clean/session/initial-input.json",
+        "sha256": "0d5364b5f627a4e9b09fe42f5818cb6f7a2cd1de2ab055e3764125316eea9c15",
+        "bytes": 29495
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user15-goal1",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user15-goal1/clean/session/initial-input.json",
+        "sha256": "b0a842729e2a2b2949752c37ab230384af297021c42f872252a81444abe0e37c",
+        "bytes": 29643
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user15-goal2",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user15-goal2/clean/session/initial-input.json",
+        "sha256": "541a68d9c2cb12b89dbeaf9487dbf66b80bfd07b9b85be8d6df960711e201084",
+        "bytes": 29634
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user17-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user17-goal3/clean/session/initial-input.json",
+        "sha256": "ee01ffc2354a204984b62c7657ab906657252f3abec7f67bbce0d97076c74be9",
+        "bytes": 29590
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user17-goal4",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user17-goal4/clean/session/initial-input.json",
+        "sha256": "9f95ac0b73b9edff9f8c5d400526086c1d3bb85b5cfc530bea99ecac67c95a75",
+        "bytes": 29581
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user18-goal4",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user18-goal4/clean/session/initial-input.json",
+        "sha256": "e2daf20235ff77419e20f48dd445907c79610d1990ea1086c0b00e916797dc84",
+        "bytes": 29680
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user18-goal5",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user18-goal5/clean/session/initial-input.json",
+        "sha256": "eb6ca5770a4bddc85b9e0ba31f97de1844ff4dad7e9c8f385d75374c40084bef",
+        "bytes": 29680
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user3-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user3-goal3/clean/session/initial-input.json",
+        "sha256": "aac9bee0e77a62c5f0800402d1962b17aab9cb8401f379be941c4a8a09b3d84d",
+        "bytes": 29585
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user3-goal4",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user3-goal4/clean/session/initial-input.json",
+        "sha256": "991faf3f30a953db3a04d8e5dd9b354fe6d16e5e0e590052b81c2d443878a4ed",
+        "bytes": 29576
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user4-goal4",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user4-goal4/clean/session/initial-input.json",
+        "sha256": "de3824dbbe5d8e6d930427346c132c553d9164509ab6d7e31fab92ff3be0a03a",
+        "bytes": 29607
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user4-goal5",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user4-goal5/clean/session/initial-input.json",
+        "sha256": "478533ad7e7fa3d191f547f6a389f134dff5d3b3a040bedeaa6344b1517ea77a",
+        "bytes": 29607
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user9-goal2",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user9-goal2/clean/session/initial-input.json",
+        "sha256": "af3a1c42991268f792be4a721eeba59476888a44009ce539722abe27db1212ee",
+        "bytes": 29451
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-travel-user9-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-travel-user9-goal3/clean/session/initial-input.json",
+        "sha256": "eb83cc1613d6a732117d833e024c43ebd536f648ee325047064654df939b2629",
+        "bytes": 29460
+      },
+      "tools": 28,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user0-goal0",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user0-goal0/clean/session/initial-input.json",
+        "sha256": "aa9c0d2d9d2b75a5f5803bbdbed89cd7a247cf378d57b4944d4c34a9066076dc",
+        "bytes": 25086
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user10-goal10",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user10-goal10/clean/session/initial-input.json",
+        "sha256": "bccd6822ed6d44417d9d61e98925638aa05348bede785a7a68f837c32527bef1",
+        "bytes": 25037
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user10-goal11",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user10-goal11/clean/session/initial-input.json",
+        "sha256": "8e4d3a0a3a5387e77ac28f1dd4d5e3e84a64a2b14ce78a47a0bd70f586ac08a0",
+        "bytes": 25037
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user12-goal12",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user12-goal12/clean/session/initial-input.json",
+        "sha256": "378e406dec29193e17f6e2804f76efbf525a0bdce2db9a067cf0a3d75802e3eb",
+        "bytes": 25200
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user12-goal13",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user12-goal13/clean/session/initial-input.json",
+        "sha256": "a4c99aea3fb3d750d0572d32f72d553f14b3ca3bc37f4b78f32e6f8f64bf43e7",
+        "bytes": 25200
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user14-goal0",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user14-goal0/clean/session/initial-input.json",
+        "sha256": "3f622a70bde6c76061af0b53d64439fe116243a885f7c0dd1dd81a6c09c94712",
+        "bytes": 25110
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user17-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user17-goal3/clean/session/initial-input.json",
+        "sha256": "b1da71c0ca62781626c39581c2e3f3debcf09625a045c74f8e0ea3ec85173874",
+        "bytes": 25128
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user18-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user18-goal3/clean/session/initial-input.json",
+        "sha256": "757dc8cc7355bb571c3d3865ed4980305b7788dde6bd7adb17e6ce7e0afdc9f0",
+        "bytes": 25190
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user18-goal4",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user18-goal4/clean/session/initial-input.json",
+        "sha256": "d68a3b474aad15a49e2165be1280a2cf99362829bdc604874c6a0e631b302045",
+        "bytes": 25190
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user2-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user2-goal3/clean/session/initial-input.json",
+        "sha256": "bf2c5e80b4e417dd043b8efe00231c16008262b59a709c815823c85e320c9a79",
+        "bytes": 25059
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user20-goal5",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user20-goal5/clean/session/initial-input.json",
+        "sha256": "23b50ba5a0a7d8bf6fc7b661ef78b52a5be9dd84f82aa66dd7dbd2e78891d8fc",
+        "bytes": 25229
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user20-goal6",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user20-goal6/clean/session/initial-input.json",
+        "sha256": "0c2dd94a7217fceea1505cb3d3be91770fd483e92bb4c80e88bcb3904d20609e",
+        "bytes": 25229
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user21-goal6",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user21-goal6/clean/session/initial-input.json",
+        "sha256": "1bcadc80cf0bf80e3b4fd8ded84747597cd95b06ed5cb1a14937ead54c5dac9b",
+        "bytes": 25288
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user21-goal7",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user21-goal7/clean/session/initial-input.json",
+        "sha256": "c150a114251ae548746f65cf3ca455767edc42735d5a3fb858eb82519a926b0b",
+        "bytes": 25288
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user22-goal7",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user22-goal7/clean/session/initial-input.json",
+        "sha256": "5388cb361ca7de5b492bd1c490124359ec2447abc692f2f91e9b2606ed8c1344",
+        "bytes": 25102
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user22-goal8",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user22-goal8/clean/session/initial-input.json",
+        "sha256": "fca4ca55cdd22d62db8dd13466b323379b2267638cb4d324c7c9f74cc2dbc7fe",
+        "bytes": 25102
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user26-goal11",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user26-goal11/clean/session/initial-input.json",
+        "sha256": "202069cdfc319a627653ee01a6798a59692582446debdbf45777137bca314942",
+        "bytes": 25059
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user26-goal12",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user26-goal12/clean/session/initial-input.json",
+        "sha256": "bad35786e91fb21a05d449e5e67869b56c4306a1b0ff96399ac30f9154e5042c",
+        "bytes": 25059
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user27-goal12",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user27-goal12/clean/session/initial-input.json",
+        "sha256": "273e63a318331633b266ee1a99620d5f0f1140238b932ff8485545580b9bef0c",
+        "bytes": 25109
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user27-goal13",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user27-goal13/clean/session/initial-input.json",
+        "sha256": "e8c820f718352c3975ad27f458250ec94bf943e5813979b3dbedeba51fc19ff6",
+        "bytes": 25109
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user28-goal0",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user28-goal0/clean/session/initial-input.json",
+        "sha256": "d9f7b53fd0b7ba03ebb35efc617e0b42dd4e8997e636c9128307c76df49441bd",
+        "bytes": 25117
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user28-goal13",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user28-goal13/clean/session/initial-input.json",
+        "sha256": "6fca190c173e1a4edaaabb05d69d7a7413075438fba269167026041208dd0be4",
+        "bytes": 25126
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user3-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user3-goal3/clean/session/initial-input.json",
+        "sha256": "2334df2066082d82aaf91e53a483e7c60db182c19b788681612c86ee544a164c",
+        "bytes": 25059
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user3-goal4",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user3-goal4/clean/session/initial-input.json",
+        "sha256": "a9910e816be653103b98ff6bd7d80bf61d91903960eb5788fd81b3ce7da88c12",
+        "bytes": 25059
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user31-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user31-goal3/clean/session/initial-input.json",
+        "sha256": "69a7fe17e8086f6a429b56459bd4e8e96331c3fa9584e66139345ba911fc0e46",
+        "bytes": 25150
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user32-goal3",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user32-goal3/clean/session/initial-input.json",
+        "sha256": "0237b0aa8c3200a701bd2c9007c8cbc9ab834e4c81a02f5f593b82cec6216e6d",
+        "bytes": 25208
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user32-goal4",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user32-goal4/clean/session/initial-input.json",
+        "sha256": "5d0b8f0d4ac4a56b6fd3e631719fca5dc1e6208aa3810c104b7a3771a62d7a04",
+        "bytes": 25208
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user35-goal6",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user35-goal6/clean/session/initial-input.json",
+        "sha256": "8b6399115e0db6c1e752e5d06f31daf6f000178aecdd6d67c5c0a30dad1f36af",
+        "bytes": 25045
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user35-goal7",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user35-goal7/clean/session/initial-input.json",
+        "sha256": "6783c7da96eb9e7132b7dc25f0d2908590532c07e242353de89f309d9cc3ee3a",
+        "bytes": 25045
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user36-goal7",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user36-goal7/clean/session/initial-input.json",
+        "sha256": "30beedcdded7367e5d5277d612a556dac274d8ce06047b0d1eb8f9beb6a37cbd",
+        "bytes": 25321
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user36-goal8",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user36-goal8/clean/session/initial-input.json",
+        "sha256": "2b7a75ab757915559abab253f8e07082d7b8aff376628b72463752bb0f53f1c5",
+        "bytes": 25321
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user37-goal8",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user37-goal8/clean/session/initial-input.json",
+        "sha256": "84c235247d88ebd4a2953e5446ae4d8522bbb05db820375618d41391abaddf33",
+        "bytes": 25379
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user37-goal9",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user37-goal9/clean/session/initial-input.json",
+        "sha256": "6bec189e5022f9ff101d576ccafad5cd5039277c529b4ea8451634bb8b1cf308",
+        "bytes": 25379
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user38-goal10",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user38-goal10/clean/session/initial-input.json",
+        "sha256": "d0118fb018d2befc9d1ad7e9c655fd3423d64e15c72b7d99c4c2e838954178de",
+        "bytes": 25219
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user38-goal9",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user38-goal9/clean/session/initial-input.json",
+        "sha256": "f6e399c8032f52498f31665911b013cfeb2417c0cc56da5331cca3f928ffb4ee",
+        "bytes": 25219
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user39-goal10",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user39-goal10/clean/session/initial-input.json",
+        "sha256": "cf503bc2726d8b5fe465412019bca83c7dc66112e062ab6415ded9b69f5d9405",
+        "bytes": 25238
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user39-goal11",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user39-goal11/clean/session/initial-input.json",
+        "sha256": "a3f1193824e9d70855033218cb42691ae8fa292bd73e1b29a2cb530a5fabf8bb",
+        "bytes": 25238
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user5-goal5",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user5-goal5/clean/session/initial-input.json",
+        "sha256": "a0ec16335231dca5c1ede66d5fd15e5fd8d2916baad7c127d85cfd190f1ef1f8",
+        "bytes": 25139
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user5-goal6",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user5-goal6/clean/session/initial-input.json",
+        "sha256": "a55089df261844e5ae46d256d6cf4a7004da62dbd9045008d0f843f67a349d8a",
+        "bytes": 25139
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user6-goal6",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user6-goal6/clean/session/initial-input.json",
+        "sha256": "0503a50b6610d4512a3302bc5891cc80d3072c1687d1a524aa85cd607343bfe7",
+        "bytes": 25211
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user6-goal7",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user6-goal7/clean/session/initial-input.json",
+        "sha256": "ff6a6e6b4c23687514b3569bdf10917bf43ce5757fc2172cec27a28b80317e0f",
+        "bytes": 25211
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user7-goal7",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user7-goal7/clean/session/initial-input.json",
+        "sha256": "da105b9d17483f093a9d96fc9c1ab63274d19eee7a6f556f47325807d25b8d55",
+        "bytes": 25059
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user7-goal8",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user7-goal8/clean/session/initial-input.json",
+        "sha256": "cb92ef7f7dc594e331530dcf04b8fc144129ed562e47b14b5a15601f2227a76b",
+        "bytes": 25059
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user8-goal8",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user8-goal8/clean/session/initial-input.json",
+        "sha256": "dc7d80f57f1b3a2148b0f9858a2eb3bba1bc5c83424f91bad4cb1468b2e76d72",
+        "bytes": 25143
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user8-goal9",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user8-goal9/clean/session/initial-input.json",
+        "sha256": "abc9c41ded285e17fcbb86063ba4044874e1b43bf7ae8d804f84c7fb78727eb2",
+        "bytes": 25143
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user9-goal10",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user9-goal10/clean/session/initial-input.json",
+        "sha256": "6b83e351ac5352eb81bdc369e83d7e0d3f00c0bebcd5e5c1927dda48b0208540",
+        "bytes": 25228
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    },
+    {
+      "case_id": "agentdojo-workspace-user9-goal9",
+      "input_binding": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/gpt-5.6-sol/native/agentdojo-workspace-user9-goal9/clean/session/initial-input.json",
+        "sha256": "b5bff46c36ef3473372300f61265dc1a650157252d8187cf87824a894366351c",
+        "bytes": 25228
+      },
+      "tools": 24,
+      "all_schemas_supported": true
+    }
+  ]
+}

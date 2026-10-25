@@ -1,0 +1,8 @@
+{
+  "source": "/tmp/skilllife-v56-independent-joint-review/independent-verdicts.json",
+  "sha256": "014c60c9b587d6d0bc146782f72e98dc588bef84639d9ed26bcf45227e8a5510",
+  "scope": "All25 hosted challenged records withtaskTandgoalT; source task/goal predicates independently checked from authenticated artifacts; modelidentifiers and peer judgments withheld from providedpacks.",
+  "reviewer_kind": "Codex_agent",
+  "human_annotation": false,
+  "independent_model_family": false
+}

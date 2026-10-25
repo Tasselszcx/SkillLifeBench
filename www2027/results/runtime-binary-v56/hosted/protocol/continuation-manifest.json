@@ -1,0 +1,463 @@
+{
+  "schema": "saved_response_continuation/1.0",
+  "policy": "Resume first interrupted replay attempt from its captured HTTP response and checkpoint; regenerate no sampled choice; retain15rounds30actions2048tokens900active-seconds total; no additional fresh episode and no outcome-based retry. All unresolved indexed-complete-call parser cases selected independent of task result.",
+  "original_replay_manifest": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/replay-manifest.json",
+    "bytes": 277378,
+    "sha256": "9028e620c6889a28c1a6b1ef7c6928ed50565ae7045f3f3343234bfbcd8caf04"
+  },
+  "source_bindings": [
+    {
+      "path": "/slb/benchmark/www2027/_sandbox_worker.py",
+      "sha256": "c1948884fe733566c4053fa66accba2b8eb0e5cda9b284fb152c11bd2efb4d29",
+      "bytes": 6318
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_banking_fixed_prepare.py",
+      "sha256": "acd30c5cb4f68a5874b576a10b52be12a762fa95141d8f6a6294e1fe415e2c88",
+      "bytes": 7371
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_banking_fixed_runtime.py",
+      "sha256": "d59fd6ce2d086d70b483fa89b8da4fe7aa52be514fdce0783771f2f9535bc5c5",
+      "bytes": 21000
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_candidate_fixed_prepare.py",
+      "sha256": "1357aa124a0f99a0c22e356c6118649acd48d7e37f6c984b4574fa3528937b87",
+      "bytes": 12681
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_candidate_fixed_runtime.py",
+      "sha256": "23c00f3b1a8ee22e31e3d8b6b2852800bf116d6062f632b4ab318c4a11fd6ca4",
+      "bytes": 20939
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_candidate_fixed_worker.py",
+      "sha256": "e68bd905f8cf173540aded2007b43210517bfc180a19722b630b3352b659fa80",
+      "bytes": 29061
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_candidate_prepare.py",
+      "sha256": "c7b4451e763e5301e1c1b09175653d83ee859b8fb410cf4fa7868960fd7c82f2",
+      "bytes": 7394
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_episode_runner.py",
+      "sha256": "f707560b9165b04d49a3513d7ce27c72b4a7800f49c9b9a598ae475a5363f105",
+      "bytes": 11738
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_fixed_runtime.py",
+      "sha256": "f3e89482c0ffeafb64d469ad7b96d0d84919aa6ac4abe8a7e202723390536fd0",
+      "bytes": 21492
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_fixed_worker.py",
+      "sha256": "5c969e3ae510c659587501a2b8a10da4b3caa39673ae20e2e582fd84c744f1e6",
+      "bytes": 17687
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next40_fixed_prepare.py",
+      "sha256": "00666541589481c2981476a169893db07d5fd05c64cec61bfdf62ab761444235",
+      "bytes": 7472
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next40_fixed_runtime.py",
+      "sha256": "64d26199190920a451fe168d9fe00e97a6a27a6b4758e9f09b0c415417668b22",
+      "bytes": 20993
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next51_episode_runner.py",
+      "sha256": "e7ac05953f4f34730400cc217ee41566d789c7f967ad356963ce5ad375c5e313",
+      "bytes": 11943
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next51_fixed_prepare.py",
+      "sha256": "0d94c5cbc8f1669769c253a68808d64ecc6be88cca610dfc7282331bf36565b6",
+      "bytes": 7482
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_next51_fixed_runtime.py",
+      "sha256": "caaabc735e0e9dcb3132f0d5b112fc721cbbb829dd6c72c7efaac9f0ed642212",
+      "bytes": 20993
+    },
+    {
+      "path": "/slb/benchmark/www2027/agentdojo_runtime_prototype.py",
+      "sha256": "42e9c4f22508439bf49156735c988d8e0d62c9863e193373fbfb5cb395bc877f",
+      "bytes": 23145
+    },
+    {
+      "path": "/slb/benchmark/www2027/c_response_prototype.py",
+      "sha256": "1356cec53626ee0bbe36acec013c25f2383cc13fa29387d099bdc3d86e13aedd",
+      "bytes": 41678
+    },
+    {
+      "path": "/slb/benchmark/www2027/comparison_local_server.py",
+      "sha256": "53c753a156359b5eaec9fd498e0e64274e45e1a46d9374534be0c590a54b2c7e",
+      "bytes": 30141
+    },
+    {
+      "path": "/slb/benchmark/www2027/effect_oracle.py",
+      "sha256": "df60c0304989f5b2dbe40c9b810c3a5aa72f24d12f5ea116419d7d49517a5291",
+      "bytes": 7301
+    },
+    {
+      "path": "/slb/benchmark/www2027/episode_runner.py",
+      "sha256": "374337bca105a0094a0a1a05a163c46d37a04f5a469f8b7c72bf49da850f7447",
+      "bytes": 8866
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_direct_measurement01.py",
+      "sha256": "6ba82b54e101cc1032ed82aea9a758b4940bd71442aec74f6555587f3e03bf1a",
+      "bytes": 11436
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_direct_session01.py",
+      "sha256": "19664e2c6c81ffae472e3a6432f54b659ec01c28455efa4afb7b79ae317e5d6d",
+      "bytes": 20822
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_direct_study01.py",
+      "sha256": "aa603b7ab230fde4d7e806daddedd78ee207f0c067e50f678c75318c93578c6e",
+      "bytes": 40534
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_transport03.py",
+      "sha256": "8c9617a260277e9a66d811387a50d042d2b814eda64fd62d614508baa9f94f09",
+      "bytes": 29048
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_transport04.py",
+      "sha256": "b0a3c55f37171051a3fd32c7ba61df06e961e584944a1849968dc2ff3b86e67c",
+      "bytes": 29183
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_transport05.py",
+      "sha256": "ed42709fb1f838076ae4baede002b996c933487de256539f0eb045b81df0cdc5",
+      "bytes": 5436
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_typed_continuation_view01.py",
+      "sha256": "019e289275454eb1b98948445e699e4238ec1123cd023047f04fe8cea339e080",
+      "bytes": 7927
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_graph_adapters.py",
+      "sha256": "a090b9734b10dc1c842c1ca2c3bbcf5c33c7d7dfd057eaa2203fad302cfb55ac",
+      "bytes": 15225
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_matrix_runner.py",
+      "sha256": "2736414fb1d3e12bcf82425c52b42c47f3d2c92558a49ff1437abf7abf231d50",
+      "bytes": 25500
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_matrix_session.py",
+      "sha256": "8647c9e47ab84cae38416fdc19f590afd84f91f8654fcd4ef7722cc2f10067ae",
+      "bytes": 20041
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_matrix_sources.py",
+      "sha256": "c1902e7e2d57652be0c392636fb02a329356b7581833ba5c009e9c02a22af220",
+      "bytes": 15054
+    },
+    {
+      "path": "/slb/benchmark/www2027/isolated_executor.py",
+      "sha256": "5480909102f136aafdc65707ebbd8ea057e309616e942b107b2c559bf7108855",
+      "bytes": 21300
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_client.py",
+      "sha256": "b81e99d9d30a28ee7d475ea2343549da69a666a376f5ef429c0747b277b92868",
+      "bytes": 7130
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_long_context_server.py",
+      "sha256": "a3aa8f994bb991f99d6c8dafc4e464edf39d4b36294890edcbdc36fe179f022a",
+      "bytes": 11703
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_lossless2048_server.py",
+      "sha256": "c4a73f9c8f3ccbf277b5af8db9a25d3dcb427de426abd487282092bdd66cf5be",
+      "bytes": 13594
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_lossless_parser.py",
+      "sha256": "2b0bff0477933f25eb1f93431d2160280f8ac37b728e5869827b6ac1cc7ac224",
+      "bytes": 4358
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_schema_parser.py",
+      "sha256": "c98b49f8b8cc716f000d97b8a6f91dea694a0ffcb45baa14f0d1f3e1d2e5de31",
+      "bytes": 10868
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_qwen35_server.py",
+      "sha256": "b6ebdb12ef710e843dd926b7ee9f7c52da0fc8f19c68e4220833c324e35c2dc3",
+      "bytes": 9933
+    },
+    {
+      "path": "/slb/benchmark/www2027/provider_client.py",
+      "sha256": "8d8236c57bb80800ccdafbb6f54742ecd4e1f84d6b44a92d443008614c911856",
+      "bytes": 2877
+    },
+    {
+      "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/indexed_complete_calls_parser.py",
+      "bytes": 2989,
+      "sha256": "17360d205c7a166bb7cf78591e91d001d785fd5d5398567cc8bc73bef4de7af6"
+    },
+    {
+      "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/continuation_transport.py",
+      "bytes": 1750,
+      "sha256": "e4a177d7c9e35bd55a55a004a538b76cdf8617e41eca3f834b520a713d0d0db1"
+    },
+    {
+      "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/continue_saved_response.py",
+      "bytes": 13707,
+      "sha256": "de461bf7428a9f43e389d7139390be5534e713b4dc51431377912c4dbc00acdd"
+    }
+  ],
+  "jobs": [
+    {
+      "job_id": "gpt-6-luna/native/agentdojo-slack-user9-goal5/clean",
+      "case_id": "agentdojo-slack-user9-goal5",
+      "condition": "clean",
+      "model": {
+        "key": "gpt-6-luna",
+        "model": "gpt-6-luna",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gpt-6-luna"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "bound_live_probe_exception",
+        "catalog_exception_probe": {
+          "scope": "luna_actual_chat_wire_observation_not_behavioral_success",
+          "candidate_plan": {
+            "path": "/slb/evidence/audit/gateway-compatibility03/candidate-luna-chat01.json",
+            "sha256": "80d0a48cc5debae5c5af15d1cd39a8c9a74ba7c9651db929ac2d71a8cf5c7cff",
+            "bytes": 12608
+          },
+          "summary": {
+            "path": "/slb/evidence/experiments/gateway-compatibility03-luna01/summary.json",
+            "sha256": "1249f1aeea220ad2deaa89d4f754d95173d4bf2012a9446e0a7dcc305e12d31e",
+            "bytes": 2129
+          },
+          "actual_exit": {
+            "path": "/slb/evidence/audit/gateway-compatibility03/actual-exit-luna01.json",
+            "sha256": "abe0c46ea5acf964ed147e189819ac52ec2dd43f2898e00c524d85c183cecb94",
+            "bytes": 132
+          },
+          "api_receipt": {
+            "path": "/slb/evidence/experiments/gateway-compatibility03-luna01/jobs/m00-sum-1/api-00-00.json",
+            "sha256": "1a9e3a24a0e909bdef2ecadec7bd4ba49df1e3a9988b2e3deb407dad897b325c",
+            "bytes": 14143
+          }
+        },
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "source_attempt": 1,
+      "source_outcome": {
+        "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/run01/attempt-01/original04/episodes/gpt-6-luna/native/agentdojo-slack-user9-goal5/clean/session/outcome.json",
+        "bytes": 15282,
+        "sha256": "738ae462543121167859419226f749031f3abbbd306d6e3c83e4cc644c854560"
+      },
+      "source_root": "/slb/evidence"
+    },
+    {
+      "job_id": "gpt-6-luna/native/agentdojo-slack-user9-goal5/injected",
+      "case_id": "agentdojo-slack-user9-goal5",
+      "condition": "injected",
+      "model": {
+        "key": "gpt-6-luna",
+        "model": "gpt-6-luna",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gpt-6-luna"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "bound_live_probe_exception",
+        "catalog_exception_probe": {
+          "scope": "luna_actual_chat_wire_observation_not_behavioral_success",
+          "candidate_plan": {
+            "path": "/slb/evidence/audit/gateway-compatibility03/candidate-luna-chat01.json",
+            "sha256": "80d0a48cc5debae5c5af15d1cd39a8c9a74ba7c9651db929ac2d71a8cf5c7cff",
+            "bytes": 12608
+          },
+          "summary": {
+            "path": "/slb/evidence/experiments/gateway-compatibility03-luna01/summary.json",
+            "sha256": "1249f1aeea220ad2deaa89d4f754d95173d4bf2012a9446e0a7dcc305e12d31e",
+            "bytes": 2129
+          },
+          "actual_exit": {
+            "path": "/slb/evidence/audit/gateway-compatibility03/actual-exit-luna01.json",
+            "sha256": "abe0c46ea5acf964ed147e189819ac52ec2dd43f2898e00c524d85c183cecb94",
+            "bytes": 132
+          },
+          "api_receipt": {
+            "path": "/slb/evidence/experiments/gateway-compatibility03-luna01/jobs/m00-sum-1/api-00-00.json",
+            "sha256": "1a9e3a24a0e909bdef2ecadec7bd4ba49df1e3a9988b2e3deb407dad897b325c",
+            "bytes": 14143
+          }
+        },
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "source_attempt": 1,
+      "source_outcome": {
+        "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/run01/attempt-01/original04/episodes/gpt-6-luna/native/agentdojo-slack-user9-goal5/injected/session/outcome.json",
+        "bytes": 16332,
+        "sha256": "1c411a3aaaf8be8bcc255153267764c67e61f1d198a2aaa080262e48097f70dc"
+      },
+      "source_root": "/slb/evidence"
+    },
+    {
+      "job_id": "gpt-6-luna/native/agentdojo-travel-user1-goal2/clean",
+      "case_id": "agentdojo-travel-user1-goal2",
+      "condition": "clean",
+      "model": {
+        "key": "gpt-6-luna",
+        "model": "gpt-6-luna",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gpt-6-luna"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "bound_live_probe_exception",
+        "catalog_exception_probe": {
+          "scope": "luna_actual_chat_wire_observation_not_behavioral_success",
+          "candidate_plan": {
+            "path": "/slb/evidence/audit/gateway-compatibility03/candidate-luna-chat01.json",
+            "sha256": "80d0a48cc5debae5c5af15d1cd39a8c9a74ba7c9651db929ac2d71a8cf5c7cff",
+            "bytes": 12608
+          },
+          "summary": {
+            "path": "/slb/evidence/experiments/gateway-compatibility03-luna01/summary.json",
+            "sha256": "1249f1aeea220ad2deaa89d4f754d95173d4bf2012a9446e0a7dcc305e12d31e",
+            "bytes": 2129
+          },
+          "actual_exit": {
+            "path": "/slb/evidence/audit/gateway-compatibility03/actual-exit-luna01.json",
+            "sha256": "abe0c46ea5acf964ed147e189819ac52ec2dd43f2898e00c524d85c183cecb94",
+            "bytes": 132
+          },
+          "api_receipt": {
+            "path": "/slb/evidence/experiments/gateway-compatibility03-luna01/jobs/m00-sum-1/api-00-00.json",
+            "sha256": "1a9e3a24a0e909bdef2ecadec7bd4ba49df1e3a9988b2e3deb407dad897b325c",
+            "bytes": 14143
+          }
+        },
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "source_attempt": 1,
+      "source_outcome": {
+        "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/run01/attempt-01/original04/episodes/gpt-6-luna/native/agentdojo-travel-user1-goal2/clean/session/outcome.json",
+        "bytes": 14083,
+        "sha256": "2bda2257e19430f2917828a49a8334dcc432e1ec5a4f8d9dd0f6115a5ab38fd6"
+      },
+      "source_root": "/slb/evidence"
+    },
+    {
+      "job_id": "gpt-6-luna/native/agentdojo-travel-user3-goal3/injected",
+      "case_id": "agentdojo-travel-user3-goal3",
+      "condition": "injected",
+      "model": {
+        "key": "gpt-6-luna",
+        "model": "gpt-6-luna",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gpt-6-luna"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "bound_live_probe_exception",
+        "catalog_exception_probe": {
+          "scope": "luna_actual_chat_wire_observation_not_behavioral_success",
+          "candidate_plan": {
+            "path": "/slb/evidence/audit/gateway-compatibility03/candidate-luna-chat01.json",
+            "sha256": "80d0a48cc5debae5c5af15d1cd39a8c9a74ba7c9651db929ac2d71a8cf5c7cff",
+            "bytes": 12608
+          },
+          "summary": {
+            "path": "/slb/evidence/experiments/gateway-compatibility03-luna01/summary.json",
+            "sha256": "1249f1aeea220ad2deaa89d4f754d95173d4bf2012a9446e0a7dcc305e12d31e",
+            "bytes": 2129
+          },
+          "actual_exit": {
+            "path": "/slb/evidence/audit/gateway-compatibility03/actual-exit-luna01.json",
+            "sha256": "abe0c46ea5acf964ed147e189819ac52ec2dd43f2898e00c524d85c183cecb94",
+            "bytes": 132
+          },
+          "api_receipt": {
+            "path": "/slb/evidence/experiments/gateway-compatibility03-luna01/jobs/m00-sum-1/api-00-00.json",
+            "sha256": "1a9e3a24a0e909bdef2ecadec7bd4ba49df1e3a9988b2e3deb407dad897b325c",
+            "bytes": 14143
+          }
+        },
+        "upstream_weights_authenticated": false
+      },
+      "limits": {
+        "api_attempts": 2,
+        "harness_wall_seconds": 900,
+        "max_model_rounds": 15,
+        "max_output_tokens": 2048,
+        "max_tool_actions": 30
+      },
+      "source_attempt": 1,
+      "source_outcome": {
+        "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/run01/attempt-01/original04/episodes/gpt-6-luna/native/agentdojo-travel-user3-goal3/injected/session/outcome.json",
+        "bytes": 21648,
+        "sha256": "491218cafd851ca13cc49e0836452afdb0d2c9bd255e7bad7192fa0416928521"
+      },
+      "source_root": "/slb/evidence"
+    }
+  ]
+}

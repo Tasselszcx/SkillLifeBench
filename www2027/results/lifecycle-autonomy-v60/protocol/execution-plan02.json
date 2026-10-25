@@ -1,0 +1,890 @@
+{
+  "schema": "lifecycle-autonomy-model-controller-v60.2",
+  "created_at": "2026-10-23T08:27:51.068252+00:00",
+  "task_manifest": {
+    "path": "/tmp/skilllife-lifecycle-v60/integrated-controls03/task-manifest.json",
+    "sha256": "c67e5a705c6851c133e8ac09f336e4a12b38f3ac89f793d19989f7ac3007ad41"
+  },
+  "qualification": {
+    "path": "/tmp/skilllife-lifecycle-v60/integrated-controls03/qualification.json",
+    "sha256": "4eda1fb7bb277d49c6c9d1bb2b03e4765b5e335858edc39166c2f8034078ad3c"
+  },
+  "configuration_sources": [
+    {
+      "path": "/slb/benchmark/www2027/paper/results/model-data.json",
+      "sha256": "7f4be97cb1ea00c721cfe66a8e152a842004cc27ae33236933dbc0a8e43d2057"
+    },
+    {
+      "path": "/slb/benchmark/www2027/manifests/gateway-direct-full-plan04.json",
+      "sha256": "1bf8670e6b8b99015fe5be2dcc70251628e77d6adcdfc908f285ebedf0a2a425"
+    },
+    {
+      "path": "/slb/evidence/audit/runtime-verdict-audit-v56/replays/replay-manifest.json",
+      "sha256": "9028e620c6889a28c1a6b1ef7c6928ed50565ae7045f3f3343234bfbcd8caf04"
+    },
+    {
+      "path": "/slb/evidence/audit/runtime-verdict-audit-v56/qwen-execution-plan01/manifest.json",
+      "sha256": "b213c396c8afc938039146dd0fe25e6ec0f1b7ae585fe207bb2973c1bbfac8d7"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/route-recommendation.json",
+      "sha256": "1aab873a5e9375c03f94f8ad2c372695c75bef1885bfc06b96cb912c9d6faa9d"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/models-metadata.json",
+      "sha256": "0a707c35c3f40328dc706a07e8ed02c22160ea87fcec6ee7aad24956e495ede4"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/summary.json",
+      "sha256": "7f42045cfdfeb698707a55c3eb2b4abcbd4078e33a44095eca2c232748f4aa7d"
+    },
+    {
+      "path": "/tmp/skilllife-v60-route-probe01.py",
+      "sha256": "576670ae4991caaaa7c318c15beaa0d27e1154ae1b7f71c2428dbe807d65d72c"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/deepseek-v4-pro-trial-0-round-0.json",
+      "sha256": "104e70ca1534eb42f598e6a95719c52edf405ddf4eb5a2d75978912563780003"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/deepseek-v4-pro-trial-0-round-1.json",
+      "sha256": "60062d65372b29833e94118c105166ce2d53e412716a4e2430a1721357bd0d0d"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/deepseek-v4-pro-trial-1-round-0.json",
+      "sha256": "496bfc18fb0ac18426c19f419b61fc337fceb82f01c076eecbfc33e454f76846"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/deepseek-v4-pro-trial-1-round-1.json",
+      "sha256": "584c2ce002ac4b6b0c4828ac31b91dc7b140be95c829a00b6fd52226437ef97a"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/deepseek-v4-pro-0813-trial-0-round-0.json",
+      "sha256": "21cd2a77159bf52ab42cdb6ec8d1d9b8e8ffe3f166560029b9af3621b6b839e1"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/deepseek-v4-pro-0813-trial-0-round-1.json",
+      "sha256": "27cfd62c5c1547ed36100afa8b872a75a6d593ecc9c49453472e7fdbb65a1d85"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/deepseek-v4-pro-0813-trial-1-round-0.json",
+      "sha256": "452f82ea4f6630c35f8dcde805d94391b4af5c414b834717294edc6ba1c97ccc"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/deepseek-v4-pro-0813-trial-1-round-1.json",
+      "sha256": "ca19c80d1484bfe4d58cb0a7dbd7623d559c89cde39173a52ee2f4c6902a3ab9"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/glm-5.3-trial-0-round-0.json",
+      "sha256": "f2c4deaeda2c34cb70bddd8032706f83a2d676ce3d096780f63f8ee6cc92cc0e"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/glm-5.3-trial-0-round-1.json",
+      "sha256": "ad5f18f23f7e37a595680e459d7e78a4fffd85bc26d4ad2ca9e3ff3e39f384ce"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/glm-5.3-trial-1-round-0.json",
+      "sha256": "47e2fa650267ee00eae1b579623e3570f4c165a8b4b2d2effacd9f2253418696"
+    },
+    {
+      "path": "/tmp/skilllife-lifecycle-v60/route-probe01/glm-5.3-trial-1-round-1.json",
+      "sha256": "b3cff66316e131e31fc70deb8239122cec64d3f13f7a4c6b3a3d73b5f68e67f1"
+    }
+  ],
+  "implementation_bindings": [
+    {
+      "path": "/slb/benchmark/www2027/_sandbox_worker.py",
+      "sha256": "c1948884fe733566c4053fa66accba2b8eb0e5cda9b284fb152c11bd2efb4d29"
+    },
+    {
+      "path": "/slb/benchmark/www2027/effect_oracle.py",
+      "sha256": "df60c0304989f5b2dbe40c9b810c3a5aa72f24d12f5ea116419d7d49517a5291"
+    },
+    {
+      "path": "/slb/benchmark/www2027/episode_runner.py",
+      "sha256": "374337bca105a0094a0a1a05a163c46d37a04f5a469f8b7c72bf49da850f7447"
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_direct_session01.py",
+      "sha256": "19664e2c6c81ffae472e3a6432f54b659ec01c28455efa4afb7b79ae317e5d6d"
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_transport04.py",
+      "sha256": "b0a3c55f37171051a3fd32c7ba61df06e961e584944a1849968dc2ff3b86e67c"
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_transport05.py",
+      "sha256": "ed42709fb1f838076ae4baede002b996c933487de256539f0eb045b81df0cdc5"
+    },
+    {
+      "path": "/slb/benchmark/www2027/gateway_typed_continuation_view01.py",
+      "sha256": "019e289275454eb1b98948445e699e4238ec1123cd023047f04fe8cea339e080"
+    },
+    {
+      "path": "/slb/benchmark/www2027/harness_matrix_session.py",
+      "sha256": "8647c9e47ab84cae38416fdc19f590afd84f91f8654fcd4ef7722cc2f10067ae"
+    },
+    {
+      "path": "/slb/benchmark/www2027/isolated_executor.py",
+      "sha256": "5480909102f136aafdc65707ebbd8ea057e309616e942b107b2c559bf7108855"
+    },
+    {
+      "path": "/slb/benchmark/www2027/lifecycle_autonomy_v60/__init__.py",
+      "sha256": "895d247f06b74f5d0139d2eeb1850ea95cbf94fbe8658feddde84b21859b4f10"
+    },
+    {
+      "path": "/slb/benchmark/www2027/lifecycle_autonomy_v60/b_tasks.py",
+      "sha256": "6b7e4247db3ef6d352a0db352d3d52c378a343bdc6622561e261020d5137998c"
+    },
+    {
+      "path": "/slb/benchmark/www2027/lifecycle_autonomy_v60/backend.py",
+      "sha256": "2a6fc3638c14345e61042799be44ca6371a168903e79aab51ac37ef4cc1505e6"
+    },
+    {
+      "path": "/slb/benchmark/www2027/lifecycle_autonomy_v60/d_tasks.py",
+      "sha256": "e59b9d7fd1abbd35f4d55dc227fcac07ee3602be35913432afc383f4838d2783"
+    },
+    {
+      "path": "/slb/benchmark/www2027/lifecycle_autonomy_v60/e_tasks.py",
+      "sha256": "d17646b74c34aed2fc64b56ce925dbe3f0d6f6a44e67c37c49af28576e6255b5"
+    },
+    {
+      "path": "/slb/benchmark/www2027/lifecycle_autonomy_v60/qualify.py",
+      "sha256": "d6dd55b3918fec4ac607c9c63514e57817c4385ed2bc5e34a7f5d72850b35c6d"
+    },
+    {
+      "path": "/slb/benchmark/www2027/lifecycle_autonomy_v60/run_models.py",
+      "sha256": "326210eaf8763b88c1d4a16e0c58adae406d139dddc6d8c6dc82e78be11a6968"
+    },
+    {
+      "path": "/slb/benchmark/www2027/lifecycle_autonomy_v60/test_b_tasks.py",
+      "sha256": "35565e37fb6b77c8ac2f400900bb6d83eed6ea4af88800bff2e704f7c5ab89d3"
+    },
+    {
+      "path": "/slb/benchmark/www2027/lifecycle_autonomy_v60/test_d_tasks.py",
+      "sha256": "6377425e664910305a89352a2304eceab56acd282b2f7afd8d3cbfe358b8163c"
+    },
+    {
+      "path": "/slb/benchmark/www2027/lifecycle_autonomy_v60/test_e_tasks.py",
+      "sha256": "cf37b40fe0e77003477dda8f08cae48d7f743979726179a420b464663a49c3a6"
+    },
+    {
+      "path": "/slb/benchmark/www2027/lifecycle_autonomy_v60/test_runner.py",
+      "sha256": "11607ace16a0561009e2bd45b3b264b2e22c1c550485cfe63c32d5f52d5dcaed"
+    },
+    {
+      "path": "/slb/benchmark/www2027/local_client.py",
+      "sha256": "b81e99d9d30a28ee7d475ea2343549da69a666a376f5ef429c0747b277b92868"
+    },
+    {
+      "path": "/slb/benchmark/www2027/provider_client.py",
+      "sha256": "8d8236c57bb80800ccdafbb6f54742ecd4e1f84d6b44a92d443008614c911856"
+    },
+    {
+      "path": "/slb/benchmark/www2027/qwen_runtime_repair_v56.py",
+      "sha256": "3153def2e189a5532e3ac40cf366f999923dc7db181846763fa31e90b74a5b57"
+    }
+  ],
+  "models": [
+    {
+      "key": "gpt-5.6-sol",
+      "kind": "hosted",
+      "concurrency": 2,
+      "transport_version": "04",
+      "record": {
+        "key": "gpt-5.6-sol",
+        "model": "gpt-5.6-sol",
+        "protocol": "responses",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gpt-5.6-sol"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false,
+        "runtime_leaderboard_configuration": {
+          "requested_model": "gpt-5.6-sol",
+          "expected_served_labels": [
+            "gpt-5.6-sol"
+          ],
+          "transport_version": "04"
+        }
+      }
+    },
+    {
+      "key": "claude-sonnet-4-6",
+      "kind": "hosted",
+      "concurrency": 2,
+      "transport_version": "04",
+      "record": {
+        "key": "claude-sonnet-4-6",
+        "model": "claude-sonnet-4-6",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "claude-sonnet-4-6"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false,
+        "runtime_leaderboard_configuration": {
+          "requested_model": "claude-sonnet-4-6",
+          "expected_served_labels": [
+            "claude-sonnet-4-6"
+          ],
+          "transport_version": "04"
+        }
+      }
+    },
+    {
+      "key": "gpt-5.6-terra",
+      "kind": "hosted",
+      "concurrency": 2,
+      "transport_version": "04",
+      "record": {
+        "key": "gpt-5.6-terra",
+        "model": "gpt-5.6-terra",
+        "protocol": "responses",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gpt-5.6-terra"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false,
+        "runtime_leaderboard_configuration": {
+          "requested_model": "gpt-5.6-terra",
+          "expected_served_labels": [
+            "gpt-5.6-terra"
+          ],
+          "transport_version": "04"
+        }
+      }
+    },
+    {
+      "key": "deepseek-v4-pro",
+      "kind": "hosted",
+      "concurrency": 2,
+      "transport_version": "04",
+      "record": {
+        "key": "deepseek-v4-pro-0813-v60",
+        "model": "deepseek-v4-pro-0813",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "deepseek-v4-pro-0813"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/tmp/skilllife-lifecycle-v60/route-probe01/route-recommendation.json",
+          "sha256": "1aab873a5e9375c03f94f8ad2c372695c75bef1885bfc06b96cb912c9d6faa9d"
+        },
+        "catalog_route_policy": "advertised_pinned_version_benign_tool_qualified",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false,
+        "previous_runtime_qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "lifecycle_configuration_change": "Pinned requested release replaces the runtime leaderboard's unpinned Pro route. Original route now sometimes returns a Flash model; Flash labels remain rejected.",
+        "runtime_leaderboard_configuration": {
+          "requested_model": "deepseek-v4-pro",
+          "expected_served_labels": [
+            "deepseek-v4-pro",
+            "deepseek-v4-pro-0813"
+          ],
+          "transport_version": "04"
+        }
+      }
+    },
+    {
+      "key": "deepseek-v4-flash",
+      "kind": "hosted",
+      "concurrency": 2,
+      "transport_version": "04",
+      "record": {
+        "key": "deepseek-v4-flash-0731-followup01",
+        "model": "deepseek-v4-flash-0731",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "deepseek-v4-flash-0731",
+          "deepseek-v4-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-flash-pinned-study01/root-technical-review01.json",
+          "bytes": 892,
+          "sha256": "c1bf3abb873e413faab79bfeadeabfd0ebf954bf9f136c13835d2dc7fc92815d"
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false,
+        "runtime_leaderboard_configuration": {
+          "requested_model": "deepseek-v4-flash-0731",
+          "expected_served_labels": [
+            "deepseek-v4-flash-0731",
+            "deepseek-v4-flash"
+          ],
+          "transport_version": "04"
+        }
+      }
+    },
+    {
+      "key": "kimi-k2.6",
+      "kind": "hosted",
+      "concurrency": 2,
+      "transport_version": "04",
+      "record": {
+        "key": "kimi-k2.6",
+        "model": "kimi-k2.6",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "kimi-k2.6"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false,
+        "runtime_leaderboard_configuration": {
+          "requested_model": "kimi-k2.6",
+          "expected_served_labels": [
+            "kimi-k2.6"
+          ],
+          "transport_version": "04"
+        }
+      }
+    },
+    {
+      "key": "claude-sonnet-5",
+      "kind": "hosted",
+      "concurrency": 2,
+      "transport_version": "04",
+      "record": {
+        "key": "claude-sonnet-5",
+        "model": "claude-sonnet-5",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "claude-sonnet-5"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false,
+        "runtime_leaderboard_configuration": {
+          "requested_model": "claude-sonnet-5",
+          "expected_served_labels": [
+            "claude-sonnet-5"
+          ],
+          "transport_version": "04"
+        }
+      }
+    },
+    {
+      "key": "glm-5.3",
+      "kind": "hosted",
+      "concurrency": 2,
+      "transport_version": "05",
+      "record": {
+        "key": "glm-5.3-observed-namespace-v60",
+        "model": "glm-5.3",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "glm-5.3",
+          "cb/glm-5.3"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/tmp/skilllife-lifecycle-v60/route-probe01/route-recommendation.json",
+          "sha256": "1aab873a5e9375c03f94f8ad2c372695c75bef1885bfc06b96cb912c9d6faa9d"
+        },
+        "catalog_route_policy": "advertised_endpoint_explicit_observed_label_namespace",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false,
+        "previous_runtime_qualification": {
+          "path": "/slb/evidence/audit/gateway-glm53-typed05-study01/root-technical-review01.json",
+          "bytes": 819,
+          "sha256": "279eb749ba84b037151317e052af5fa9716d340de88034dbf732c21b51257d01"
+        },
+        "lifecycle_configuration_change": "Same requested model and typed transport; allow the explicitly observed cb/glm-5.3 serving label. No generic prefix removal; upstream weights remain unauthenticated.",
+        "runtime_leaderboard_configuration": {
+          "requested_model": "glm-5.3",
+          "expected_served_labels": [
+            "glm-5.3"
+          ],
+          "transport_version": "05"
+        }
+      }
+    },
+    {
+      "key": "glm-5.2",
+      "kind": "hosted",
+      "concurrency": 2,
+      "transport_version": "04",
+      "record": {
+        "key": "glm-5.2",
+        "model": "glm-5.2",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "glm-5.2"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false,
+        "runtime_leaderboard_configuration": {
+          "requested_model": "glm-5.2",
+          "expected_served_labels": [
+            "glm-5.2"
+          ],
+          "transport_version": "04"
+        }
+      }
+    },
+    {
+      "key": "qwen3.5-9b",
+      "kind": "local",
+      "concurrency": 1,
+      "record": {
+        "key": "local9b",
+        "model_id": "Qwen3.5-9B@c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+        "repo": "Qwen/Qwen3.5-9B",
+        "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+        "weights_path": "/slb/evidence/models/qwen35-9b/weights",
+        "pinned_manifest": {
+          "path": "/slb/evidence/models/qwen35-9b/pinned_artifacts.json",
+          "bytes": 3364,
+          "sha256": "58d69cf828dc9389470dcda34c2bb0c5d7aa40d3f1c4d822f255dd0c5fda8ada"
+        },
+        "files_present_size_matched": true,
+        "bytes": 19329314448,
+        "full_weight_hash_revalidation": "Existing server revalidates all weight hashes before startup. Planning step checks presence/size only.",
+        "physical_gpu": 3,
+        "port": 8767,
+        "base_url": "http://127.0.0.1:8767/v1",
+        "server_module": "local_qwen35_lossless2048_server.py",
+        "server_source": {
+          "path": "/slb/benchmark/www2027/local_qwen35_lossless2048_server.py",
+          "bytes": 13594,
+          "sha256": "c4a73f9c8f3ccbf277b5af8db9a25d3dcb427de426abd487282092bdd66cf5be"
+        },
+        "generation": {
+          "max_context": 32768,
+          "max_new_tokens": 2048,
+          "generation_max_time_seconds": 120,
+          "dtype": "bfloat16",
+          "attention": "sdpa",
+          "decoding": "greedy",
+          "thinking": false,
+          "torch": "2.7.1+cu126",
+          "transformers": "5.2.0",
+          "cuda_build": "12.6"
+        },
+        "concurrency": 1,
+        "instance_root": "/slb/evidence/models/qwen35-9b/instances/next51-gpu3-lossless2048-v56-repair01",
+        "expected_identity": {
+          "profile_name": "qwen35-9b-32768-output2048-lossless-greedy-bf16-sdpa-v1",
+          "repo": "Qwen/Qwen3.5-9B",
+          "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+          "model_id": "Qwen3.5-9B@c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+          "max_context": 32768,
+          "max_new_tokens": 2048,
+          "generation_max_time_seconds": 120,
+          "dtype": "bfloat16",
+          "attention": "sdpa",
+          "decoding": "greedy",
+          "thinking": false,
+          "torch": "2.7.1+cu126",
+          "transformers": "5.2.0",
+          "cuda_build": "12.6",
+          "model_manifest_sha256": "58d69cf828dc9389470dcda34c2bb0c5d7aa40d3f1c4d822f255dd0c5fda8ada",
+          "server_sha256": "c4a73f9c8f3ccbf277b5af8db9a25d3dcb427de426abd487282092bdd66cf5be",
+          "client_parser_sha256": "2b0bff0477933f25eb1f93431d2160280f8ac37b728e5869827b6ac1cc7ac224",
+          "parser_module": "www2027.local_qwen35_lossless_parser",
+          "physical_gpu": 3,
+          "port": 8767,
+          "host": "127.0.0.1"
+        },
+        "serve_command": [
+          "/slb/evidence/models/qwen35-9b/venv/bin/python",
+          "-B",
+          "-u",
+          "-m",
+          "www2027.local_qwen35_lossless2048_server",
+          "--root",
+          "/slb/evidence/models/qwen35-9b/instances/next51-gpu3-lossless2048-v56-repair01",
+          "--model-root",
+          "/slb/evidence/models/qwen35-9b",
+          "--gpu",
+          "3",
+          "--port",
+          "8767"
+        ]
+      }
+    },
+    {
+      "key": "gpt-6-luna",
+      "kind": "hosted",
+      "concurrency": 2,
+      "transport_version": "04",
+      "record": {
+        "key": "gpt-6-luna",
+        "model": "gpt-6-luna",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gpt-6-luna"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "bound_live_probe_exception",
+        "catalog_exception_probe": {
+          "scope": "luna_actual_chat_wire_observation_not_behavioral_success",
+          "candidate_plan": {
+            "path": "/slb/evidence/audit/gateway-compatibility03/candidate-luna-chat01.json",
+            "sha256": "80d0a48cc5debae5c5af15d1cd39a8c9a74ba7c9651db929ac2d71a8cf5c7cff",
+            "bytes": 12608
+          },
+          "summary": {
+            "path": "/slb/evidence/experiments/gateway-compatibility03-luna01/summary.json",
+            "sha256": "1249f1aeea220ad2deaa89d4f754d95173d4bf2012a9446e0a7dcc305e12d31e",
+            "bytes": 2129
+          },
+          "actual_exit": {
+            "path": "/slb/evidence/audit/gateway-compatibility03/actual-exit-luna01.json",
+            "sha256": "abe0c46ea5acf964ed147e189819ac52ec2dd43f2898e00c524d85c183cecb94",
+            "bytes": 132
+          },
+          "api_receipt": {
+            "path": "/slb/evidence/experiments/gateway-compatibility03-luna01/jobs/m00-sum-1/api-00-00.json",
+            "sha256": "1a9e3a24a0e909bdef2ecadec7bd4ba49df1e3a9988b2e3deb407dad897b325c",
+            "bytes": 14143
+          }
+        },
+        "upstream_weights_authenticated": false,
+        "runtime_leaderboard_configuration": {
+          "requested_model": "gpt-6-luna",
+          "expected_served_labels": [
+            "gpt-6-luna"
+          ],
+          "transport_version": "04"
+        }
+      }
+    },
+    {
+      "key": "gemini-3.5-flash",
+      "kind": "hosted",
+      "concurrency": 2,
+      "transport_version": "04",
+      "record": {
+        "key": "gemini-3.5-flash",
+        "model": "gemini-3.5-flash",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "gemini-3.5-flash"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false,
+        "runtime_leaderboard_configuration": {
+          "requested_model": "gemini-3.5-flash",
+          "expected_served_labels": [
+            "gemini-3.5-flash"
+          ],
+          "transport_version": "04"
+        }
+      }
+    },
+    {
+      "key": "qwen3.5-4b",
+      "kind": "local",
+      "concurrency": 1,
+      "record": {
+        "key": "local4b",
+        "model_id": "Qwen/Qwen3.5-4B@851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+        "repo": "Qwen/Qwen3.5-4B",
+        "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+        "weights_path": "/slb/evidence/models/comparison-qwen35-4b/weights",
+        "pinned_manifest": {
+          "path": "/slb/evidence/models/comparison-qwen35-4b/pinned_artifacts.json",
+          "bytes": 3351,
+          "sha256": "3062698c0d0f9bd89636a360966d823db89f9d1e0895ca4c52c94c632f8a5503"
+        },
+        "files_present_size_matched": true,
+        "bytes": 9342816694,
+        "full_weight_hash_revalidation": "Existing server revalidates all weight hashes before startup. Planning step checks presence/size only.",
+        "physical_gpu": 4,
+        "port": 8768,
+        "base_url": "http://127.0.0.1:8768/v1",
+        "server_module": "comparison_local_server.py",
+        "server_source": {
+          "path": "/slb/benchmark/www2027/comparison_local_server.py",
+          "bytes": 30141,
+          "sha256": "53c753a156359b5eaec9fd498e0e64274e45e1a46d9374534be0c590a54b2c7e"
+        },
+        "generation": {
+          "max_context": 32768,
+          "max_new_tokens": 2048,
+          "generation_max_time_seconds": 120,
+          "dtype": "bfloat16",
+          "attention": "sdpa",
+          "decoding": "greedy",
+          "thinking": false,
+          "torch": "2.7.1+cu126",
+          "transformers": "5.2.0",
+          "cuda_build": "12.6"
+        },
+        "concurrency": 1,
+        "instance_root": "/slb/evidence/models/comparison-qwen35-4b/instances/v56-runtime-repair01",
+        "expected_identity": {
+          "profile_name": "comparison-qwen35-4b-32768-output2048-greedy-bf16-sdpa-v1",
+          "repo": "Qwen/Qwen3.5-4B",
+          "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+          "model_id": "Qwen/Qwen3.5-4B@851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+          "max_context": 32768,
+          "max_new_tokens": 2048,
+          "generation_max_time_seconds": 120,
+          "dtype": "bfloat16",
+          "attention": "sdpa",
+          "decoding": "greedy",
+          "thinking": false,
+          "torch": "2.7.1+cu126",
+          "transformers": "5.2.0",
+          "cuda_build": "12.6",
+          "model_manifest_sha256": "3062698c0d0f9bd89636a360966d823db89f9d1e0895ca4c52c94c632f8a5503",
+          "server_sha256": "53c753a156359b5eaec9fd498e0e64274e45e1a46d9374534be0c590a54b2c7e",
+          "client_parser_sha256": "2b0bff0477933f25eb1f93431d2160280f8ac37b728e5869827b6ac1cc7ac224",
+          "parser_module": "www2027.local_qwen35_lossless_parser",
+          "physical_gpu": 4,
+          "port": 8768,
+          "host": "127.0.0.1"
+        },
+        "serve_command": [
+          "/slb/evidence/models/qwen35-9b/venv/bin/python",
+          "-B",
+          "-u",
+          "-m",
+          "www2027.comparison_local_server",
+          "serve",
+          "--model-key",
+          "qwen35-4b",
+          "--model-root",
+          "/slb/evidence/models/comparison-qwen35-4b",
+          "--root",
+          "/slb/evidence/models/comparison-qwen35-4b/instances/v56-runtime-repair01",
+          "--gpu",
+          "4",
+          "--port",
+          "8768",
+          "--manifest-sha256",
+          "3062698c0d0f9bd89636a360966d823db89f9d1e0895ca4c52c94c632f8a5503",
+          "--server-sha256",
+          "53c753a156359b5eaec9fd498e0e64274e45e1a46d9374534be0c590a54b2c7e"
+        ]
+      }
+    },
+    {
+      "key": "deepseek-v3.2",
+      "kind": "hosted",
+      "concurrency": 2,
+      "transport_version": "04",
+      "record": {
+        "key": "deepseek-v3.2",
+        "model": "deepseek-v3.2",
+        "protocol": "chat_completions",
+        "base_url": "https://api.zcloudapi.com/v1",
+        "request_timeout_seconds": 180,
+        "expected_served_labels": [
+          "deepseek-v3.2"
+        ],
+        "technical_qualification_status": "passed",
+        "qualification": {
+          "path": "/slb/evidence/audit/gateway-study-integration01/root-full-technical-review01.json",
+          "sha256": "e3c5db25de966085d40e481bd91b1f58d14d52e95f7add6ef77581b94ebedd1c",
+          "bytes": 25729
+        },
+        "catalog_route_policy": "advertised_endpoint",
+        "catalog_exception_probe": null,
+        "upstream_weights_authenticated": false,
+        "runtime_leaderboard_configuration": {
+          "requested_model": "deepseek-v3.2",
+          "expected_served_labels": [
+            "deepseek-v3.2"
+          ],
+          "transport_version": "04"
+        }
+      }
+    }
+  ],
+  "task_ids": [
+    "LIFE-B-private-report-acl-01",
+    "LIFE-B-private-report-acl-02",
+    "LIFE-B-private-report-acl-03",
+    "LIFE-B-private-report-acl-04",
+    "LIFE-B-private-report-acl-05",
+    "LIFE-B-local-document-save-01",
+    "LIFE-B-local-document-save-02",
+    "LIFE-B-local-document-save-03",
+    "LIFE-B-local-document-save-04",
+    "LIFE-B-local-document-save-05",
+    "LIFE-B-local-data-filter-01",
+    "LIFE-B-local-data-filter-02",
+    "LIFE-B-local-data-filter-03",
+    "LIFE-B-local-data-filter-04",
+    "LIFE-B-local-data-filter-05",
+    "LIFE-B-calendar-read-01",
+    "LIFE-B-calendar-read-02",
+    "LIFE-B-calendar-read-03",
+    "LIFE-B-calendar-read-04",
+    "LIFE-B-calendar-read-05",
+    "LA60-D-revoked-grant-01",
+    "LA60-D-stale-cache-01",
+    "LA60-D-sequence-rollback-01",
+    "LA60-D-retained-destination-01",
+    "LA60-D-revoked-grant-02",
+    "LA60-D-stale-cache-02",
+    "LA60-D-sequence-rollback-02",
+    "LA60-D-retained-destination-02",
+    "LA60-D-revoked-grant-03",
+    "LA60-D-stale-cache-03",
+    "LA60-D-sequence-rollback-03",
+    "LA60-D-retained-destination-03",
+    "LA60-D-revoked-grant-04",
+    "LA60-D-stale-cache-04",
+    "LA60-D-sequence-rollback-04",
+    "LA60-D-retained-destination-04",
+    "LA60-D-revoked-grant-05",
+    "LA60-D-stale-cache-05",
+    "LA60-D-sequence-rollback-05",
+    "LA60-D-retained-destination-05",
+    "LA-E-NATIVE-PACKAGING-01",
+    "LA-E-NATIVE-PACKAGING-02",
+    "LA-E-NATIVE-PACKAGING-03",
+    "LA-E-NATIVE-PACKAGING-04",
+    "LA-E-NATIVE-PACKAGING-05",
+    "LA-E-REPORT-PUBLISH-01",
+    "LA-E-REPORT-PUBLISH-02",
+    "LA-E-REPORT-PUBLISH-03",
+    "LA-E-REPORT-PUBLISH-04",
+    "LA-E-REPORT-PUBLISH-05",
+    "LA-E-APPROVAL-EXPORT-01",
+    "LA-E-APPROVAL-EXPORT-02",
+    "LA-E-APPROVAL-EXPORT-03",
+    "LA-E-APPROVAL-EXPORT-04",
+    "LA-E-APPROVAL-EXPORT-05",
+    "LA-E-CONCURRENT-RECONCILE-01",
+    "LA-E-CONCURRENT-RECONCILE-02",
+    "LA-E-CONCURRENT-RECONCILE-03",
+    "LA-E-CONCURRENT-RECONCILE-04",
+    "LA-E-CONCURRENT-RECONCILE-05"
+  ],
+  "task_count": 60,
+  "template_count": 12,
+  "conditions": [
+    "clean",
+    "attack"
+  ],
+  "limits": {
+    "max_model_rounds": 15,
+    "max_tool_actions": 30,
+    "max_output_tokens": 2048,
+    "api_attempts": 2,
+    "harness_wall_seconds": 900
+  },
+  "sandbox_limits": {
+    "wall_seconds": 30,
+    "cpu_seconds": 20,
+    "capture_bytes": 1048576,
+    "output_bytes": 1048576
+  },
+  "request_timeout_seconds": 180,
+  "max_fresh_episode_attempts": 2,
+  "minimum_free_disk_bytes": 2147483648,
+  "pilot_models": [
+    "gpt-5.6-sol",
+    "claude-sonnet-4-6",
+    "gpt-5.6-terra",
+    "deepseek-v4-pro",
+    "deepseek-v4-flash",
+    "kimi-k2.6",
+    "claude-sonnet-5",
+    "glm-5.3",
+    "glm-5.2",
+    "qwen3.5-9b",
+    "gpt-6-luna",
+    "gemini-3.5-flash",
+    "qwen3.5-4b",
+    "deepseek-v3.2"
+  ],
+  "pilot_tasks": [
+    "LIFE-B-private-report-acl-01"
+  ],
+  "scheduled_episodes": 1680,
+  "selection_policy": "First valid model ending; failure/refusal/budget termination retained. At most two fresh attempts for infrastructure errors only.",
+  "generation_profile": {
+    "hosted": "Provider defaults; no temperature, top_p, seed or reasoning override.",
+    "local": "Pinned greedy non-thinking server identity, unchanged from the runtime leaderboard."
+  },
+  "paper_frozen": true,
+  "model_calls_during_preparation": 0
+}

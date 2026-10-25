@@ -1,0 +1,15 @@
+{
+  "version": "runtime_goal_complete_history_v56",
+  "created": "2026-10-22T17:05:30.791970+00:00",
+  "source": {
+    "path": "/slb/benchmark/www2027/agentdojo_binary_goal_v56.py",
+    "sha256": "0331b1b91ef806b88d4db786b50c60633d8f9c39c8022458554df98dffd3c1c3"
+  },
+  "tests": {
+    "path": "/slb/benchmark/tests/www2027/test_agentdojo_binary_goal_v56.py",
+    "sha256": "2462869a0316e1e0fdcb4bf24ccf28e536b7d50abcc7148e9cf329948272b2fe",
+    "passed": 115,
+    "skipped": 0
+  },
+  "rule": "Closed authenticated histories; all required complete corpus bodies in distinct spans, labels/JSON equivalence, error plus unchanged whole state gives no effect. Preserve source goal clauses and receipt validity; no unknown-to-false conversion."
+}

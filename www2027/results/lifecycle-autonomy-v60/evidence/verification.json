@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "evidence_files": 38791,
+  "privacy_derivative_files": 3512,
+  "header_derivative_files": 3729,
+  "automatic_raw_hash_replay_compatibility": false,
+  "original_and_public_hashes_distinguished": true
+}

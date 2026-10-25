@@ -1,0 +1,42 @@
+{
+  "schema": "immutable-runtime-measurement-seal/v56",
+  "status": "complete_and_independently_checked",
+  "model_calls_during_scoring_and_sealing": 0,
+  "files": [
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/qwen-final-summary01/anonymous-review.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/qwen-final-summary01/case-verdicts.jsonl",
+      "bytes": 2726387,
+      "sha256": "6095da2616075540fb85481898ce8c61478c76d19d83f5763e1bd0bba7766ea8"
+    },
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/qwen-final-summary01/current-model-runtime-data.json",
+      "bytes": 10867,
+      "sha256": "756e2af35df50cf22e77210f23cc82c34fab0569813978f7a9196b7091b8923c"
+    },
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/qwen-final-summary01/independent-checks.json",
+      "bytes": 4956,
+      "sha256": "e47fdd40a335d65ac2ec19c6d06d74d656e2e5ef81ed695c5c9c89cdd481a102"
+    },
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/qwen-final-summary01/paired-default-check.json",
+      "bytes": 251709,
+      "sha256": "80f5d18e136b188fb424b3fea1962bdf7f6ea9aab689c4048347c266fffc9efb"
+    },
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/qwen-final-summary01/rows.json",
+      "bytes": 26811384,
+      "sha256": "4951a9e0e1685020b310e4400f3d383f3ba4a7e59f9826bea3a66b2401f37f04"
+    },
+    {
+      "path": "/tmp/skilllife-runtime-v56-large/qwen-final-summary01/summary.json",
+      "bytes": 4503,
+      "sha256": "c816d2f599c58514cb21143ce366ec452899cfe85823982c76faa68d12c3e292"
+    }
+  ]
+}

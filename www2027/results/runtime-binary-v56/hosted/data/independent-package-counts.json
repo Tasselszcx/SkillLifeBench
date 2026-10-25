@@ -1,0 +1,171 @@
+{
+  "binary_field_checks": 8544,
+  "case_exclusions": 0,
+  "cases_per_condition": 89,
+  "codex_review_is_not_human_annotation": true,
+  "conditions": 2,
+  "models": 12,
+  "per_model": [
+    {
+      "codex_reviewed_records": 33,
+      "evidence_files": 7284,
+      "model": "claude-sonnet-4-6",
+      "records": 178,
+      "replacement_records": 0,
+      "source_bytes": 267928121,
+      "stop_reasons": {
+        "completed": 171,
+        "model_output_truncated": 7
+      },
+      "unique_blobs": 3326
+    },
+    {
+      "codex_reviewed_records": 39,
+      "evidence_files": 7342,
+      "model": "claude-sonnet-5",
+      "records": 178,
+      "replacement_records": 0,
+      "source_bytes": 267062556,
+      "stop_reasons": {
+        "completed": 165,
+        "model_output_truncated": 12,
+        "tool_step_limit": 1
+      },
+      "unique_blobs": 3328
+    },
+    {
+      "codex_reviewed_records": 36,
+      "evidence_files": 8096,
+      "model": "deepseek-v3.2",
+      "records": 178,
+      "replacement_records": 1,
+      "source_bytes": 323795230,
+      "stop_reasons": {
+        "completed": 154,
+        "invalid_tool_call": 21,
+        "model_output_truncated": 1,
+        "round_limit": 2
+      },
+      "unique_blobs": 4001
+    },
+    {
+      "codex_reviewed_records": 33,
+      "evidence_files": 7768,
+      "model": "deepseek-v4-flash",
+      "records": 178,
+      "replacement_records": 5,
+      "source_bytes": 282375458,
+      "stop_reasons": {
+        "completed": 175,
+        "model_output_truncated": 1,
+        "round_limit": 2
+      },
+      "unique_blobs": 3460
+    },
+    {
+      "codex_reviewed_records": 27,
+      "evidence_files": 7290,
+      "model": "deepseek-v4-pro",
+      "records": 178,
+      "replacement_records": 6,
+      "source_bytes": 256420583,
+      "stop_reasons": {
+        "completed": 176,
+        "round_limit": 1,
+        "tool_step_limit": 1
+      },
+      "unique_blobs": 3318
+    },
+    {
+      "codex_reviewed_records": 26,
+      "evidence_files": 9245,
+      "model": "gemini-3.5-flash",
+      "records": 178,
+      "replacement_records": 24,
+      "source_bytes": 376081289,
+      "stop_reasons": {
+        "completed": 155,
+        "invalid_tool_call": 22,
+        "round_limit": 1
+      },
+      "unique_blobs": 4172
+    },
+    {
+      "codex_reviewed_records": 26,
+      "evidence_files": 7055,
+      "model": "glm-5.2",
+      "records": 178,
+      "replacement_records": 10,
+      "source_bytes": 249268348,
+      "stop_reasons": {
+        "completed": 177,
+        "round_limit": 1
+      },
+      "unique_blobs": 3265
+    },
+    {
+      "codex_reviewed_records": 26,
+      "evidence_files": 7026,
+      "model": "glm-5.3",
+      "records": 178,
+      "replacement_records": 2,
+      "source_bytes": 276182245,
+      "stop_reasons": {
+        "completed": 176,
+        "round_limit": 2
+      },
+      "unique_blobs": 3266
+    },
+    {
+      "codex_reviewed_records": 12,
+      "evidence_files": 7229,
+      "model": "gpt-5.6-sol",
+      "records": 178,
+      "replacement_records": 0,
+      "source_bytes": 305201257,
+      "stop_reasons": {
+        "completed": 177,
+        "round_limit": 1
+      },
+      "unique_blobs": 3303
+    },
+    {
+      "codex_reviewed_records": 12,
+      "evidence_files": 7216,
+      "model": "gpt-5.6-terra",
+      "records": 178,
+      "replacement_records": 0,
+      "source_bytes": 299115084,
+      "stop_reasons": {
+        "completed": 178
+      },
+      "unique_blobs": 3280
+    },
+    {
+      "codex_reviewed_records": 21,
+      "evidence_files": 6572,
+      "model": "gpt-6-luna",
+      "records": 178,
+      "replacement_records": 14,
+      "source_bytes": 231009636,
+      "stop_reasons": {
+        "completed": 178
+      },
+      "unique_blobs": 3050
+    },
+    {
+      "codex_reviewed_records": 32,
+      "evidence_files": 7050,
+      "model": "kimi-k2.6",
+      "records": 178,
+      "replacement_records": 52,
+      "source_bytes": 254309636,
+      "stop_reasons": {
+        "completed": 177,
+        "round_limit": 1
+      },
+      "unique_blobs": 3286
+    }
+  ],
+  "verdicts": 2136
+}

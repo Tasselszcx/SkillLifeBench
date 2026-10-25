@@ -1,0 +1,209 @@
+{
+  "status": "passed",
+  "scope": "12 hosted models; 89 cases in both clean and challenged conditions; local Qwen is a separate package",
+  "totals": {
+    "file_path_bindings": 89173,
+    "credential_header_publication_copies": 7381,
+    "session_field_publication_copies": 2569,
+    "path_aliased_publication_copies": 8578,
+    "omitted_nongrading_binary_files": 0,
+    "boolean_records": 2136,
+    "codex_semantic_reviews": 323
+  },
+  "model_conditions": [
+    {
+      "model": "claude-sonnet-4-6",
+      "condition": "clean",
+      "N": 89,
+      "task_T": 78,
+      "goal_T": 0,
+      "joint_T": 78
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "condition": "injected",
+      "N": 89,
+      "task_T": 73,
+      "goal_T": 0,
+      "joint_T": 73
+    },
+    {
+      "model": "claude-sonnet-5",
+      "condition": "clean",
+      "N": 89,
+      "task_T": 78,
+      "goal_T": 0,
+      "joint_T": 78
+    },
+    {
+      "model": "claude-sonnet-5",
+      "condition": "injected",
+      "N": 89,
+      "task_T": 68,
+      "goal_T": 0,
+      "joint_T": 68
+    },
+    {
+      "model": "deepseek-v3.2",
+      "condition": "clean",
+      "N": 89,
+      "task_T": 53,
+      "goal_T": 0,
+      "joint_T": 53
+    },
+    {
+      "model": "deepseek-v3.2",
+      "condition": "injected",
+      "N": 89,
+      "task_T": 50,
+      "goal_T": 35,
+      "joint_T": 25
+    },
+    {
+      "model": "deepseek-v4-flash",
+      "condition": "clean",
+      "N": 89,
+      "task_T": 76,
+      "goal_T": 0,
+      "joint_T": 76
+    },
+    {
+      "model": "deepseek-v4-flash",
+      "condition": "injected",
+      "N": 89,
+      "task_T": 69,
+      "goal_T": 0,
+      "joint_T": 69
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "condition": "clean",
+      "N": 89,
+      "task_T": 73,
+      "goal_T": 0,
+      "joint_T": 73
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "condition": "injected",
+      "N": 89,
+      "task_T": 69,
+      "goal_T": 0,
+      "joint_T": 69
+    },
+    {
+      "model": "gemini-3.5-flash",
+      "condition": "clean",
+      "N": 89,
+      "task_T": 68,
+      "goal_T": 0,
+      "joint_T": 68
+    },
+    {
+      "model": "gemini-3.5-flash",
+      "condition": "injected",
+      "N": 89,
+      "task_T": 60,
+      "goal_T": 0,
+      "joint_T": 60
+    },
+    {
+      "model": "glm-5.2",
+      "condition": "clean",
+      "N": 89,
+      "task_T": 75,
+      "goal_T": 0,
+      "joint_T": 75
+    },
+    {
+      "model": "glm-5.2",
+      "condition": "injected",
+      "N": 89,
+      "task_T": 66,
+      "goal_T": 0,
+      "joint_T": 66
+    },
+    {
+      "model": "glm-5.3",
+      "condition": "clean",
+      "N": 89,
+      "task_T": 80,
+      "goal_T": 0,
+      "joint_T": 80
+    },
+    {
+      "model": "glm-5.3",
+      "condition": "injected",
+      "N": 89,
+      "task_T": 68,
+      "goal_T": 0,
+      "joint_T": 68
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "clean",
+      "N": 89,
+      "task_T": 78,
+      "goal_T": 0,
+      "joint_T": 78
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "condition": "injected",
+      "N": 89,
+      "task_T": 73,
+      "goal_T": 0,
+      "joint_T": 73
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "condition": "clean",
+      "N": 89,
+      "task_T": 81,
+      "goal_T": 0,
+      "joint_T": 81
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "condition": "injected",
+      "N": 89,
+      "task_T": 72,
+      "goal_T": 0,
+      "joint_T": 72
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "clean",
+      "N": 89,
+      "task_T": 67,
+      "goal_T": 0,
+      "joint_T": 67
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "injected",
+      "N": 89,
+      "task_T": 65,
+      "goal_T": 0,
+      "joint_T": 65
+    },
+    {
+      "model": "kimi-k2.6",
+      "condition": "clean",
+      "N": 89,
+      "task_T": 75,
+      "goal_T": 0,
+      "joint_T": 75
+    },
+    {
+      "model": "kimi-k2.6",
+      "condition": "injected",
+      "N": 89,
+      "task_T": 69,
+      "goal_T": 2,
+      "joint_T": 69
+    }
+  ],
+  "redaction_note": "Publication copies omit credential headers and opaque session fields, alias private experiment paths, and explicitly bind original source identities to published bytes. Removed bytes cannot be reconstructed. All scoring-bearing JSON evidence is retained.",
+  "reviews": "Model-blinded Codex-assisted semantic adjudication; not human annotations."
+}

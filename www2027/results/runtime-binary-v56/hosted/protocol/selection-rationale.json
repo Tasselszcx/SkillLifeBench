@@ -1,0 +1,26 @@
+{
+  "archived_models_audited": 14,
+  "archived_case_condition_records": 2492,
+  "included_hosted_models": 12,
+  "included_records": 2136,
+  "cases_per_condition": 89,
+  "case_exclusions": 0,
+  "invalid_record_policy": "An execution-invalid episode is neither task false nor goal false. First valid fixed-policy replay is accepted regardless of success. Valid budget/model failures remain.",
+  "excluded_configurations": [
+    {
+      "model": "kimi-k3",
+      "record_count_retained": 178,
+      "invalid_slots": 2,
+      "reason": "Literal returned model label remains outside the frozen allowed set."
+    },
+    {
+      "model": "qwen3.5-plus",
+      "record_count_retained": 178,
+      "invalid_slots": 1,
+      "reason": "The fixed original model route did not produce a valid execution within the retry policy."
+    }
+  ],
+  "scope_of_exclusion": "Whole configurations, not task-level denominators. Valid results from excluded configurations are retained for audit but not ranked.",
+  "local_qwen": "A separate fresh matched cohort is in progress; it is not part of this hosted-only sealed package.",
+  "adjudication": "Explicit model-blinded Codex-assisted semantic review, not human annotation or independent-model-family validation."
+}

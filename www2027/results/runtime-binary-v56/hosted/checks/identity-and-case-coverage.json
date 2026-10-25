@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "record_identity_bindings": 2136,
+  "unique_runtime_cases": 89,
+  "model_conditions_with_identical_case_set": 24,
+  "case_duplicates": 0,
+  "source_row_hash_mismatches": 0
+}

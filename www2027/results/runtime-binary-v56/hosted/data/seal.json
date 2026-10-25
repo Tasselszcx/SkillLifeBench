@@ -1,0 +1,45 @@
+{
+  "schema": "binary-runtime-artifact-seal/v56",
+  "status": "complete_12_model_binary_runtime",
+  "files": {
+    "ineligible-configurations.json": {
+      "path": "/slb/evidence/audit/runtime-verdict-audit-v56/binary12-final01/ineligible-configurations.json",
+      "bytes": 1894,
+      "sha256": "34437ab9372ac6541e9a42ae7e27301b5f1e6e963c6b9a4ce2dd2c9329016782"
+    },
+    "runtime-case-verdicts.jsonl": {
+      "path": "/slb/evidence/audit/runtime-verdict-audit-v56/binary12-final01/runtime-case-verdicts.jsonl",
+      "bytes": 2278745,
+      "sha256": "74b3267e36d3b2243127552332dbd7dbcec8111d73da0b678f0fd2c5de28394b"
+    },
+    "full-suite-category-C-updates.json": {
+      "path": "/slb/evidence/audit/runtime-verdict-audit-v56/binary12-final01/full-suite-category-C-updates.json",
+      "bytes": 200292,
+      "sha256": "8f395e5a073cdf23b756dd8fbdd3eee93971fb1508752f8e46c1f22d9b63425d"
+    },
+    "independent-checks.json": {
+      "path": "/slb/evidence/audit/runtime-verdict-audit-v56/binary12-final01/independent-checks.json",
+      "bytes": 3626,
+      "sha256": "ee8bb6c5b013ca9ea0bd283ad397cf38efb5648d3ed42c32e2492a2d48ed3812"
+    },
+    "current-model-runtime-data.json": {
+      "path": "/slb/evidence/audit/runtime-verdict-audit-v56/binary12-final01/current-model-runtime-data.json",
+      "bytes": 25512,
+      "sha256": "063eb1b043ef81722db5a00f8bdd18a6d1974bbcd3b24e4fba8318e4afb99b35"
+    }
+  },
+  "adjudicated_records": {
+    "path": "/slb/evidence/audit/runtime-verdict-audit-v56/adjudicated-run05/candidate-records.jsonl",
+    "sha256": "465a5b353b659372eb68ec080f06be8efca8a81af8ff94be68bc961dd4b321ff"
+  },
+  "excluded_models": [
+    "kimi-k3",
+    "qwen3.5-plus"
+  ],
+  "no_cases_removed": true,
+  "source_grader_versions": [
+    "runtime-complete-task-binary-v56.5",
+    "runtime_goal_complete_history_v56"
+  ],
+  "pending_small_qwen_fresh_evaluation": true
+}

@@ -1,0 +1,88 @@
+{
+  "old_protocol": {
+    "path": "/tmp/skilllife-gateway-full04/protocol.json",
+    "bytes": 483349,
+    "sha256": "71c47a3711d2f56c224619bd9586fa49bbbd0d560b49ac483e7f78447eb22be0"
+  },
+  "selected_protocol": {
+    "path": "/tmp/skilllife-gateway-full-kimi3-label04-01/protocol.json",
+    "bytes": 466544,
+    "sha256": "487603c2867ed7d0fe9b2d973e94000a3dda97ff927ca875eb6725d3ef36c3df"
+  },
+  "model_request_fields_equal": {
+    "model": true,
+    "protocol": true,
+    "base_url": true,
+    "request_timeout_seconds": true,
+    "catalog_route_policy": true
+  },
+  "limits_equal": true,
+  "generation_profile_equal": true,
+  "old_labels": [
+    "moonshotai/kimi-k3"
+  ],
+  "selected_labels": [
+    "kimi-k3",
+    "moonshotai/kimi-k3"
+  ],
+  "source_execution_sha256_equal": true,
+  "source_cases_binding_equal": true,
+  "cases": [
+    {
+      "condition": "clean",
+      "old_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/kimi-k3/native/agentdojo-workspace-user31-goal3/clean/session/outcome.json",
+        "bytes": 6522,
+        "sha256": "462d8adaaa0896c90ba0061e30aa4bf3b0f19f92323369b76ea8e07e71a9948a"
+      },
+      "selected_outcome": {
+        "path": "/tmp/skilllife-gateway-full-kimi3-label04-01/episodes/kimi-k3-label04-followup01/native/agentdojo-workspace-user31-goal3/clean/session/outcome.json",
+        "bytes": 6785,
+        "sha256": "9382df458a1f669fc5f930b21d20c9abe06007c6bc27ae6c9e831b250edd998a"
+      },
+      "original_saved_response": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/kimi-k3/native/agentdojo-workspace-user31-goal3/clean/session/api-000-attempt-00.json",
+        "bytes": 71046,
+        "sha256": "d00d9803a6737ec2c4d8a6358e1e552bb7275db319eb5ddad11ffc86a210fddf"
+      },
+      "initial_messages_equal": true,
+      "tools_equal": true,
+      "limits_equal": true,
+      "case_hash_equal": true,
+      "initial_state_map_bindings_equal": true,
+      "literal_returned_label": "kimi-k3",
+      "label_allowed_by_selected_configuration": true,
+      "original_elapsed": 6.688936,
+      "original_rounds": 1,
+      "original_actions": 0
+    },
+    {
+      "condition": "injected",
+      "old_outcome": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/kimi-k3/native/agentdojo-workspace-user31-goal3/injected/session/outcome.json",
+        "bytes": 6983,
+        "sha256": "c8bb636fc067152da9840c8eb3a0c3a37a62d028a6d8eb9073422e25daf823cf"
+      },
+      "selected_outcome": {
+        "path": "/tmp/skilllife-gateway-full-kimi3-label04-01/episodes/kimi-k3-label04-followup01/native/agentdojo-workspace-user31-goal3/injected/session/outcome.json",
+        "bytes": 72621,
+        "sha256": "f48da39da808fa551aa3670c949c15b5ccc86977cfe3616189f037c7a1d21d33"
+      },
+      "original_saved_response": {
+        "path": "/tmp/skilllife-gateway-full04/episodes/kimi-k3/native/agentdojo-workspace-user31-goal3/injected/session/api-000-attempt-01.json",
+        "bytes": 71595,
+        "sha256": "833bb351904384b13b33b8a5a4a0dbd930727f0a0c1f8545ad4b4b451c49b5b9"
+      },
+      "initial_messages_equal": true,
+      "tools_equal": true,
+      "limits_equal": true,
+      "case_hash_equal": true,
+      "initial_state_map_bindings_equal": true,
+      "literal_returned_label": "kimi-k3",
+      "label_allowed_by_selected_configuration": true,
+      "original_elapsed": 8.182014,
+      "original_rounds": 1,
+      "original_actions": 0
+    }
+  ]
+}

@@ -1,7 +1,0 @@
-pyyaml
-requests
-langchain
-langchain-openai
-langchain-anthropic
-langchain-core
-pydantic

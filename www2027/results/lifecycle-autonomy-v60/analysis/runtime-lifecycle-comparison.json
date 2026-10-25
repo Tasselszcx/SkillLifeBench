@@ -1,0 +1,24 @@
+{
+  "description": "Descriptive association across the same fourteen model names on different task sets. Declared request or response-validation changes are recorded below; no pooled ranking or causal interpretation.",
+  "spearman_rho": 0.5111161591968717,
+  "model_count": 14,
+  "runtime_tasks": 89,
+  "lifecycle_tasks": 60,
+  "runtime_and_lifecycle_tasks_paired": false,
+  "changed_configurations": [
+    {
+      "model": "glm-5.3",
+      "runtime_requested_label": "glm-5.3",
+      "lifecycle_requested_label": "glm-5.3",
+      "configuration_note": "Requested model remains glm-5.3; response validation additionally accepts its observed provider namespace label."
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "runtime_requested_label": "deepseek-v4-pro",
+      "lifecycle_requested_label": "deepseek-v4-pro-0813",
+      "configuration_note": "Lifecycle request: deepseek-v4-pro-0813; runtime request: deepseek-v4-pro."
+    }
+  ],
+  "same_configuration_model_count": 12,
+  "spearman_rho_same_configuration": 0.5167556537798427
+}

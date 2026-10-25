@@ -1,0 +1,48 @@
+{
+  "schema": "hosted-runtime-publication-release/v56",
+  "status": "ready_for_parent_publication",
+  "models": 12,
+  "cases_per_condition": 89,
+  "conditions": [
+    "clean",
+    "injected"
+  ],
+  "records": 2136,
+  "all_included_task_goal_primary_joint_verdicts_boolean": true,
+  "case_exclusions": 0,
+  "valid_replacements": 114,
+  "codex_semantic_adjudications": 323,
+  "not_human_annotation": true,
+  "audit_only_configurations": [
+    "kimi-k3",
+    "qwen3.5-plus"
+  ],
+  "audit_only_configuration_records": 356,
+  "remaining_invalid_audit_slots": 3,
+  "original_infrastructure_episodes_archived": 117,
+  "selected_evidence_file_path_bindings": 89173,
+  "audit_replay_evidence_file_path_bindings": 9497,
+  "redacted_header_names": [
+    "Set-Cookie",
+    "X-Codex-Turn-State"
+  ],
+  "archive_count": 13,
+  "compressed_archive_bytes": 129728680,
+  "largest_blob_bytes": 12914368,
+  "archive_roundtrip": "every_member_equals_staging_bytes",
+  "source_originals_changed": false,
+  "model_calls_in_packaging_and_verification": 0,
+  "native_tool_calls_in_packaging_and_verification": 0,
+  "scope_exclusion": "Local Qwen runs and unchanged non-runtime supporting cohorts are not claimed by this hosted-only package.",
+  "removed_session_fields": [
+    "encrypted_content"
+  ],
+  "publication_revision": "privacy-cleanup-20261026",
+  "private_machine_paths": "Stable /slb aliases; synthetic task paths unchanged",
+  "selected_credential_header_publication_copies": 7381,
+  "audit_credential_header_publication_copies": 566,
+  "privacy_verification": "checks/privacy-hardening.json",
+  "selected_session_field_publication_copies": 2569,
+  "selected_path_aliased_publication_copies": 8578,
+  "omitted_nongrading_binary_files": 0
+}

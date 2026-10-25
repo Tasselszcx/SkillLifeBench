@@ -1,0 +1,9 @@
+{
+  "counts": {
+    "successful_old_chat_receipts": 7330,
+    "unchanged": 7330,
+    "skipped_non04": 635,
+    "errors": 0
+  },
+  "errors": []
+}

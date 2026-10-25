@@ -1,0 +1,58 @@
+{
+  "package": "@lobehub/icons-static-svg",
+  "version": "1.95.1",
+  "license": "MIT",
+  "conversion": "PyMuPDF 1.28.2 SVG\u2192vector PDF and RGBA PNG; originals unchanged",
+  "logos": [
+    {
+      "key": "openai",
+      "npm_member": "package/icons/openai.svg",
+      "original_svg_sha256": "a595df6b423920c67a7f8f73c063e4bfb72d415948097b6cac063a2366bb5186",
+      "pdf_sha256": "40fd8c8eea25f8752736d1e5b4ee2bbaf5f2fe2acf35495b45eb3bef7394f5b9",
+      "svg_unchanged": true
+    },
+    {
+      "key": "anthropic",
+      "npm_member": "package/icons/anthropic.svg",
+      "original_svg_sha256": "e833fdfa7e7187a86a05b870925067556a506dcd4239089aed73e1e58c9366a3",
+      "pdf_sha256": "b29bc61fc944e9e6b089c6a8aef2841b534c66870d73acc432441ba84f3b76e2",
+      "svg_unchanged": true
+    },
+    {
+      "key": "google",
+      "npm_member": "package/icons/google-color.svg",
+      "original_svg_sha256": "4e6aa8892ef15a6b431f40f2c9045979bf7e2357524e7bbb89b353cf4f32a5ac",
+      "pdf_sha256": "ed3743e12a3f08e1edc2467107fdcd40d140684c84a71abcf02f96d11a561776",
+      "svg_unchanged": true
+    },
+    {
+      "key": "qwen",
+      "npm_member": "package/icons/qwen-color.svg",
+      "original_svg_sha256": "77f5768c66d08ce1d3d14e73373975c1bc0454be88c81523ddd0ffd7e2974029",
+      "pdf_sha256": "b8a11ffe2f019ecbab787eab5f12602e8c2b61bac25f7d4fab41dbf60d355dd7",
+      "svg_unchanged": true
+    },
+    {
+      "key": "deepseek",
+      "npm_member": "package/icons/deepseek-color.svg",
+      "original_svg_sha256": "deba5f98a5c1796e20fcac3149bcd7eb8a32f0bdd04d048819400b1f28bd1439",
+      "pdf_sha256": "6f2444a4155c32d34b20a892e5dda699b07a7d7b3eb776196716a0119c896001",
+      "svg_unchanged": true
+    },
+    {
+      "key": "glm",
+      "npm_member": "package/icons/zai.svg",
+      "original_svg_sha256": "e748cb5108ce37b116d7a5ba97d37e0ae97eadf6849b0de11afb248e244a01e1",
+      "pdf_sha256": "126664663ba44269fc453fe484aee5bf91575a0ce5154ccb3d0269c65ab662d4",
+      "svg_unchanged": true
+    },
+    {
+      "key": "kimi",
+      "npm_member": "package/icons/kimi.svg",
+      "original_svg_sha256": "ed08131b46acf70e6e2144eceb775e74098b58ea65fa21eaee04be7b05cfe63b",
+      "pdf_sha256": "07cecc7c7c8675bb8effee9a7007dd9d40dfb12e8f0046f0e0b180c93f1158e7",
+      "svg_unchanged": true,
+      "reason": "Original monochrome glyph stays visible against pale paper/table backgrounds."
+    }
+  ]
+}

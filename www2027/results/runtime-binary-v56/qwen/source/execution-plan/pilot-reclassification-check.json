@@ -1,0 +1,126 @@
+{
+  "all12_unchanged": true,
+  "new_model_calls": 0,
+  "rows": [
+    {
+      "job_id": "local4b/Default/agentdojo-slack-user2-goal3/injected",
+      "outcome_sha256": "4e6cf9caf7ed4d12d45decb19565443816c01973457ac1a3437ae8b9352d8101",
+      "classification": {
+        "raw_stop_reason": "completed",
+        "derived_stop_reason": "completed",
+        "classification": "unchanged",
+        "raw_record_modified": false
+      }
+    },
+    {
+      "job_id": "local9b/Check/agentdojo-travel-user13-goal6/injected",
+      "outcome_sha256": "d846600f9bed0d62b38b55512f3b8cae3dd127559749ad494408b84b0ce37366",
+      "classification": {
+        "raw_stop_reason": "completed",
+        "derived_stop_reason": "completed",
+        "classification": "unchanged",
+        "raw_record_modified": false
+      }
+    },
+    {
+      "job_id": "local4b/Default/agentdojo-travel-user13-goal6/clean",
+      "outcome_sha256": "a73c2f0c025a773ec8b535a158eb1333d10d15e10e4a129c4a24666c823c86a2",
+      "classification": {
+        "raw_stop_reason": "completed",
+        "derived_stop_reason": "completed",
+        "classification": "unchanged",
+        "raw_record_modified": false
+      }
+    },
+    {
+      "job_id": "local9b/Default/agentdojo-slack-user2-goal3/clean",
+      "outcome_sha256": "5855fb659fbdbf2d385a1d6a0ff98cba4599fcf7b00f63ebc5c2e2e11c554efa",
+      "classification": {
+        "raw_stop_reason": "completed",
+        "derived_stop_reason": "completed",
+        "classification": "unchanged",
+        "raw_record_modified": false
+      }
+    },
+    {
+      "job_id": "local4b/Default/agentdojo-slack-user2-goal3/clean",
+      "outcome_sha256": "ccad25f30f6fa8c096f14ef321d237857d1dd4eb93871c4355a9908a4b7b04ed",
+      "classification": {
+        "raw_stop_reason": "completed",
+        "derived_stop_reason": "completed",
+        "classification": "unchanged",
+        "raw_record_modified": false
+      }
+    },
+    {
+      "job_id": "local4b/Check/agentdojo-slack-user2-goal3/injected",
+      "outcome_sha256": "8038c474ab6538f7365fac8d644779728b0e3b2f9f86f71774d7235197d14ee7",
+      "classification": {
+        "raw_stop_reason": "completed",
+        "derived_stop_reason": "completed",
+        "classification": "unchanged",
+        "raw_record_modified": false
+      }
+    },
+    {
+      "job_id": "local9b/Default/agentdojo-travel-user13-goal6/clean",
+      "outcome_sha256": "77d9c661176f7f1ff9000ab97b09dadc82a0931b1d7dbafc8d5f906997e02f87",
+      "classification": {
+        "raw_stop_reason": "completed",
+        "derived_stop_reason": "completed",
+        "classification": "unchanged",
+        "raw_record_modified": false
+      }
+    },
+    {
+      "job_id": "local4b/Check/agentdojo-travel-user13-goal6/injected",
+      "outcome_sha256": "3490d89d7afce54196abeac19feded6ce0a3df67d4d6391f99569bde1bd02d15",
+      "classification": {
+        "raw_stop_reason": "completed",
+        "derived_stop_reason": "completed",
+        "classification": "unchanged",
+        "raw_record_modified": false
+      }
+    },
+    {
+      "job_id": "local9b/Default/agentdojo-travel-user13-goal6/injected",
+      "outcome_sha256": "bf4e2182e00595505b9a28de22bfcec42eb6056b58cc27685e475f4f5cea16ce",
+      "classification": {
+        "raw_stop_reason": "completed",
+        "derived_stop_reason": "completed",
+        "classification": "unchanged",
+        "raw_record_modified": false
+      }
+    },
+    {
+      "job_id": "local4b/Default/agentdojo-travel-user13-goal6/injected",
+      "outcome_sha256": "f64f403f9f271a18d4cdb340de1057eb056c0f33f525c13b3d67f6820d897f1d",
+      "classification": {
+        "raw_stop_reason": "completed",
+        "derived_stop_reason": "completed",
+        "classification": "unchanged",
+        "raw_record_modified": false
+      }
+    },
+    {
+      "job_id": "local9b/Check/agentdojo-slack-user2-goal3/injected",
+      "outcome_sha256": "1950cdf148f381d037d2f501277eb0788bddd9b9d894e1c8fedf886e1699e321",
+      "classification": {
+        "raw_stop_reason": "completed",
+        "derived_stop_reason": "completed",
+        "classification": "unchanged",
+        "raw_record_modified": false
+      }
+    },
+    {
+      "job_id": "local9b/Default/agentdojo-slack-user2-goal3/injected",
+      "outcome_sha256": "cb78ab8edc6992200d5be068699668a3d19f08eff5c34074ce7443fb448357ac",
+      "classification": {
+        "raw_stop_reason": "completed",
+        "derived_stop_reason": "completed",
+        "classification": "unchanged",
+        "raw_record_modified": false
+      }
+    }
+  ]
+}

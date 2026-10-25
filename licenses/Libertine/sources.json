@@ -1,0 +1,22 @@
+{
+  "LICENCE.txt": {
+    "url": "https://ftp.fau.de/ctan/fonts/libertine/doc/LICENCE.txt",
+    "bytes": 1181,
+    "sha256": "95e77ee9617df439760875ebf86c855c42ab1546a299f3eafa203648448488b1"
+  },
+  "GPL.txt": {
+    "url": "https://ftp.fau.de/ctan/fonts/libertine/doc/GPL.txt",
+    "bytes": 18619,
+    "sha256": "de694db5ca6a8995ab115aa9d4bb0c4bd6f617921088ca786c9e746e02777c03"
+  },
+  "libertine-README.txt": {
+    "url": "https://ftp.fau.de/ctan/fonts/libertine/README",
+    "bytes": 3500,
+    "sha256": "fc48558c08e2cada2084a7fe3d9b2a4ac35dc8177acc086d164d45c7a1d5a73e"
+  },
+  "debian-copyright.txt": {
+    "url": "https://sources.debian.org/data/main/f/fonts-linuxlibertine/5.3.0-6/debian/copyright",
+    "bytes": 7091,
+    "sha256": "d1596e5ce3a19be004ca1882be66da33a121189bd18b62586bc8869327a61701"
+  }
+}
