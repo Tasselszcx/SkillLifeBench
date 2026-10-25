@@ -28,7 +28,7 @@ import time
 import types
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 MANIFEST_NAME = "release-manifest.json"
 IGNORED_DIRS = frozenset({".git", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache", ".cache",
                           ".venv", "venv", "runs", "outputs", "local-results", "build", "dist"})
@@ -181,57 +181,52 @@ def model_map(rows, key="model"):
 
 
 def verify_runtime(root):
-    base = root / "www2027/results/runtime-binary-v56"
-    documents = [(root / "www2027/paper/results/model-data.json", "paper"), (base / "model-data.json", "release")]
-    paper = read_json(documents[0][0])
-    case_ids = paper["runtime_case_ids"]
+    base = root / "data/runtime"
+    published = read_json(base / "model-data.json")
+    case_ids = published["runtime_case_ids"]
     require(len(case_ids) == len(set(case_ids)) == 89, "Runtime track must retain 89 distinct tasks")
     rows = read_jsonl(base / "runtime-case-verdicts.jsonl")
     require(len(rows) == 2492, "Runtime track must contain 2,492 records")
     require(all(type(row.get("primary_effect")) is bool for row in rows), "Runtime primary effect is not Boolean")
     totals = tally_records(rows, MODEL_IDS, set(case_ids), ("clean", "injected"))
     ranks = rank_counts(totals, "injected")
-    displays = model_map(paper["models"])
-    for path, scope in documents:
-        document = read_json(path)
-        models = model_map(document["models"])
-        require(set(models) == MODEL_IDS, scope + " runtime model set differs")
-        require(set(document["runtime_case_ids"]) == set(case_ids), scope + " runtime task set differs")
-        for model, item in models.items():
-            integer(item["rank"], ranks[model], scope + ": " + model + " rank")
-            for field, condition in (("clean", "clean"), ("challenged", "injected")):
-                score, count = item["runtime"][field], totals[(model, condition)]
-                integer(score["N"], 89, model + " denominator")
-                integer(score["valid_episodes"], 89, model + " valid episodes")
-                for metric in ("task", "goal"):
-                    for symbol, expected in (("T", count[metric]), ("F", 89 - count[metric]), ("N", 89)):
-                        integer(score[metric][symbol], expected, model + " " + field + " " + metric + symbol)
-                for cell in ("TT", "TF", "FT", "FF"):
-                    integer(score["joint"][cell], count[cell], model + " " + field + " " + cell)
-                for metric in ("task", "goal", "joint"):
-                    close(score[metric + "_rate"], 100 * count[metric] / 89, model + " " + field + " " + metric + " rate")
-    for path in (base / "runtime-leaderboard.csv", root / "www2027/paper/results/runtime-leaderboard.csv"):
-        csv_models = model_map(read_csv(path))
-        require(set(csv_models) == {item["display_name"] for item in displays.values()}, "Runtime leaderboard model names differ")
-        for model, item in displays.items():
-            row = csv_models[item["display_name"]]
-            clean, challenged = totals[(model, "clean")], totals[(model, "injected")]
-            expected = {"rank": ranks[model], "N_per_condition": 89, "clean_task_T": clean["task"],
-                        "clean_task_F": 89 - clean["task"], "challenged_task_T": challenged["task"],
-                        "challenged_task_F": 89 - challenged["task"], "challenged_goal_T": challenged["goal"],
-                        "challenged_goal_F": 89 - challenged["goal"], "joint_success_T": challenged["joint"],
-                        "clean_TSR_percent": 100 * clean["task"] / 89,
-                        "challenged_TSR_percent": 100 * challenged["task"] / 89,
-                        "joint_SR_percent": 100 * challenged["joint"] / 89,
-                        "task_change_pp": 100 * (challenged["task"] - clean["task"]) / 89}
-            for field, value in expected.items():
-                close(row[field], value, str(path.name) + ": " + model + " " + field)
+    displays = model_map(published["models"])
+    require(set(displays) == MODEL_IDS, "Runtime model set differs")
+    for model, item in displays.items():
+        integer(item["rank"], ranks[model], model + " runtime rank")
+        for field, condition in (("clean", "clean"), ("challenged", "injected")):
+            score, count = item["runtime"][field], totals[(model, condition)]
+            integer(score["N"], 89, model + " denominator")
+            integer(score["valid_episodes"], 89, model + " valid episodes")
+            for metric in ("task", "goal"):
+                for symbol, expected in (("T", count[metric]), ("F", 89 - count[metric]), ("N", 89)):
+                    integer(score[metric][symbol], expected, model + " " + field + " " + metric + symbol)
+            for cell in ("TT", "TF", "FT", "FF"):
+                integer(score["joint"][cell], count[cell], model + " " + field + " " + cell)
+            for metric in ("task", "goal", "joint"):
+                close(score[metric + "_rate"], 100 * count[metric] / 89, model + " " + field + " " + metric + " rate")
+    path = base / "runtime-leaderboard.csv"
+    csv_models = model_map(read_csv(path))
+    require(set(csv_models) == {item["display_name"] for item in displays.values()}, "Runtime leaderboard model names differ")
+    for model, item in displays.items():
+        row = csv_models[item["display_name"]]
+        clean, challenged = totals[(model, "clean")], totals[(model, "injected")]
+        expected = {"rank": ranks[model], "N_per_condition": 89, "clean_task_T": clean["task"],
+                    "clean_task_F": 89 - clean["task"], "challenged_task_T": challenged["task"],
+                    "challenged_task_F": 89 - challenged["task"], "challenged_goal_T": challenged["goal"],
+                    "challenged_goal_F": 89 - challenged["goal"], "joint_success_T": challenged["joint"],
+                    "clean_TSR_percent": 100 * clean["task"] / 89,
+                    "challenged_TSR_percent": 100 * challenged["task"] / 89,
+                    "joint_SR_percent": 100 * challenged["joint"] / 89,
+                    "task_change_pp": 100 * (challenged["task"] - clean["task"]) / 89}
+        for field, value in expected.items():
+            close(row[field], value, str(path.name) + ": " + model + " " + field)
     return {"status": "passed", "models": 14, "tasks": 89, "records": 2492,
-            "Boolean_verdicts": True, "paper_counts_rates_and_ranks_match": True}, totals
+            "Boolean_verdicts": True, "published_counts_rates_and_ranks_match": True}, totals
 
 
 def verify_lifecycle(root, runtime):
-    base = root / "www2027/results/lifecycle-autonomy-v60"
+    base = root / "data/lifecycle"
     manifest = read_json(base / "protocol/task-manifest.json")
     tasks = {task["id"]: task for task in manifest["tasks"]}
     require(len(tasks) == len(manifest["tasks"]) == 60, "Lifecycle track requires 60 distinct tasks")
@@ -254,29 +249,27 @@ def verify_lifecycle(root, runtime):
     require(sum(totals[(model, "clean")]["joint"] for model in MODEL_IDS) == 688, "Lifecycle clean joint total differs")
     ranking_path = base / "analysis/model-ranking.json"
     canonical_ranking = read_json(ranking_path)
-    for path in (ranking_path, root / "www2027/paper/results/lifecycle-data.json"):
-        document = read_json(path)
-        require(document.get("complete") is True, "Lifecycle ranking is not complete")
-        models = model_map(document["models"])
-        require(set(models) == MODEL_IDS, "Lifecycle ranking model set differs")
-        for model, item in models.items():
-            integer(item["rank"], ranks[model], model + " lifecycle rank")
-            integer(item["N_per_condition"], 60, model + " lifecycle denominator")
-            integer(item["template_count"], 12, model + " lifecycle templates")
-            for condition in ("clean", "attack"):
-                count = totals[(model, condition)]
-                for field, metric in (("task_success", "task"), ("harm", "goal"), ("joint_success", "joint")):
-                    integer(item[condition + "_" + field], count[metric], model + " " + condition + " " + field)
-                    close(item[condition + "_" + field + "_pct"], 100 * count[metric] / 60, model + " " + condition + " " + field + " rate")
-                close(item[condition + "_template_macro_joint_pct"], 100 * count["joint"] / 60, model + " template macro")
-            numerator, denominator = item["attack_macro_exact_numerator"], item["attack_macro_exact_denominator"]
-            require(type(numerator) is int and type(denominator) is int and denominator > 0, "Invalid exact lifecycle fraction")
-            require(Fraction(numerator, denominator) == Fraction(totals[(model, "attack")]["joint"], 60), "Exact lifecycle fraction differs")
-            integer(item["runtime_N"], 89, model + " paired runtime denominator")
-            integer(item["runtime_joint_success"], runtime[(model, "injected")]["joint"], model + " paired runtime count")
-            close(item["runtime_joint_pct"], 100 * runtime[(model, "injected")]["joint"] / 89, model + " paired runtime rate")
-            close(item["paired_attack_minus_clean_joint_pp"], 100 * (totals[(model, "attack")]["joint"] - totals[(model, "clean")]["joint"]) / 60,
-                  model + " paired lifecycle change")
+    require(canonical_ranking.get("complete") is True, "Lifecycle ranking is not complete")
+    models = model_map(canonical_ranking["models"])
+    require(set(models) == MODEL_IDS, "Lifecycle ranking model set differs")
+    for model, item in models.items():
+        integer(item["rank"], ranks[model], model + " lifecycle rank")
+        integer(item["N_per_condition"], 60, model + " lifecycle denominator")
+        integer(item["template_count"], 12, model + " lifecycle templates")
+        for condition in ("clean", "attack"):
+            count = totals[(model, condition)]
+            for field, metric in (("task_success", "task"), ("harm", "goal"), ("joint_success", "joint")):
+                integer(item[condition + "_" + field], count[metric], model + " " + condition + " " + field)
+                close(item[condition + "_" + field + "_pct"], 100 * count[metric] / 60, model + " " + condition + " " + field + " rate")
+            close(item[condition + "_template_macro_joint_pct"], 100 * count["joint"] / 60, model + " template macro")
+        numerator, denominator = item["attack_macro_exact_numerator"], item["attack_macro_exact_denominator"]
+        require(type(numerator) is int and type(denominator) is int and denominator > 0, "Invalid exact lifecycle fraction")
+        require(Fraction(numerator, denominator) == Fraction(totals[(model, "attack")]["joint"], 60), "Exact lifecycle fraction differs")
+        integer(item["runtime_N"], 89, model + " paired runtime denominator")
+        integer(item["runtime_joint_success"], runtime[(model, "injected")]["joint"], model + " paired runtime count")
+        close(item["runtime_joint_pct"], 100 * runtime[(model, "injected")]["joint"] / 89, model + " paired runtime rate")
+        close(item["paired_attack_minus_clean_joint_pp"], 100 * (totals[(model, "attack")]["joint"] - totals[(model, "clean")]["joint"]) / 60,
+              model + " paired lifecycle change")
     csv_models = model_map(read_csv(base / "analysis/model-ranking.csv"))
     require(set(csv_models) == MODEL_IDS, "Lifecycle ranking CSV model set differs")
     for item in canonical_ranking["models"]:
@@ -288,12 +281,12 @@ def verify_lifecycle(root, runtime):
             else:
                 require(row[key] == str(value), item["model"] + " ranking CSV metadata differs: " + key)
     return {"status": "passed", "models": 14, "tasks": 60, "templates": 12, "records": 1680,
-            "Boolean_verdicts": True, "paper_counts_rates_and_ranks_match": True,
+            "Boolean_verdicts": True, "published_counts_rates_and_ranks_match": True,
             "challenged_matrix_task_goal": matrix, "challenged_joint_successes": 548, "clean_joint_successes": 688}
 
 
 def verify_sources(root):
-    bundle = root / "www2027/data/release-v1"
+    bundle = root / "data/scenarios"
     source = bundle / "code/release_bundle.py"
     module = types.ModuleType("_skilllifebench_frozen_source_verifier")
     module.__file__ = str(source)
@@ -373,11 +366,11 @@ def validate_full_reports(hosted, qwen, lifecycle):
 
 def run_full(root, output):
     require_tar_filters()
-    runtime = root / "www2027/results/runtime-binary-v56"
+    runtime = root / "data/runtime"
     specs = {
         "hosted_runtime": [sys.executable, "-B", str(runtime / "hosted/verify_release.py"), "--evidence-root", str(output / "hosted-evidence"), "--extract", "--output", str(output / "hosted-verification.json")],
         "qwen_runtime": [sys.executable, "-B", str(runtime / "qwen/verify_release.py"), "--evidence-root", str(output / "qwen-evidence"), "--extract", "--output", str(output / "qwen-verification.json")],
-        "lifecycle": [sys.executable, "-B", str(root / "scripts/replay_lifecycle.py"), "--release-root", str(root / "www2027/results/lifecycle-autonomy-v60"), "--output", str(output / "lifecycle-replay")],
+        "lifecycle": [sys.executable, "-B", str(root / "skilllifebench/verification/lifecycle_replay.py"), "--release-root", str(root / "data/lifecycle"), "--output", str(output / "lifecycle-replay")],
     }
 
     def execute(item):

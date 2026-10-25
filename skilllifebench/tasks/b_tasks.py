@@ -10,11 +10,11 @@ import hashlib
 import json
 from pathlib import Path
 
-from ..effect_oracle import captured_bytes
+from ..runtime.effect_oracle import captured_bytes
 
 
 ROOT = Path(__file__).resolve().parents[2]
-PARENT_MANIFEST = "www2027/manifests/cohort-legacy66-frozen.json"
+PARENT_MANIFEST = "data/scenarios/sources/scenarios/cohort-legacy66-frozen.json"
 PARENT_IDS = {
     "private-report-acl": "B-REPAIR-011-app-object-acl-default",
     "local-document-save": "B3-002",

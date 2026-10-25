@@ -13,10 +13,10 @@ import json
 from pathlib import Path, PurePosixPath
 import tempfile
 
-from ..episode_runner import SYSTEM, execute_action, initial_fixture, restore_snapshot
-from ..harness_matrix_session import HarnessStop
-from ..isolated_executor import _snapshot
-from ..provider_client import save_receipt
+from ..runtime.episode_runner import SYSTEM, execute_action, initial_fixture, restore_snapshot
+from ..runtime.harness_matrix_session import HarnessStop
+from ..runtime.isolated_executor import _snapshot
+from ..runtime.provider_client import save_receipt
 
 
 def canonical(value):

@@ -9,15 +9,14 @@ from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import patch
-from types import SimpleNamespace
 import urllib.error
 import urllib.request
 
 from skilllifebench.catalog import DEFAULT_MANIFEST, load_tasks, select_tasks
 from skilllifebench.client import EnvironmentClient
 from skilllifebench.__main__ import main
-from www2027.lifecycle_autonomy_v60.backend import LifecycleBackend, grade_task
-from www2027.harness_matrix_session import HarnessLimits, HarnessSession, run_native
+from skilllifebench.tasks.backend import LifecycleBackend, grade_task
+from skilllifebench.runtime.harness_matrix_session import FilesystemBackend, HarnessLimits, HarnessSession, run_native
 
 
 class TransportTests(unittest.TestCase):
@@ -99,13 +98,17 @@ class CatalogTests(unittest.TestCase):
 
 
 class HarnessTests(unittest.TestCase):
+    def test_unsupported_case_rejected_before_creating_output_or_running_tools(self):
+        with tempfile.TemporaryDirectory() as root:
+            output = Path(root) / "backend"
+            with self.assertRaisesRegex(ValueError, "Summary-contract cases are not supported"):
+                FilesystemBackend({"summary_contract": {}}, "clean", output, None)
+            self.assertFalse(output.exists())
+
     def test_incomplete_replay_is_not_reported_as_success(self):
         report = {"complete": False, "planned": 1680, "matched": 1679,
                   "aggregate_counts_match": False, "prefixes_regraded": 8000, "model_calls": 0}
-        module = SimpleNamespace(run=lambda **kwargs: report)
-        spec = SimpleNamespace(loader=SimpleNamespace(exec_module=lambda module: None))
-        with patch("skilllifebench.__main__.importlib.util.spec_from_file_location", return_value=spec), \
-             patch("skilllifebench.__main__.importlib.util.module_from_spec", return_value=module), \
+        with patch("skilllifebench.verification.lifecycle_replay.run", return_value=report), \
              redirect_stdout(io.StringIO()):
             self.assertEqual(main(["replay", "--output", "/tmp/unused-replay-test"]), 2)
 

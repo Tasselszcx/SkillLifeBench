@@ -22,7 +22,7 @@ import types
 from datetime import datetime, timezone
 
 
-RELEASE_ROOT = Path(__file__).resolve().parents[1] / "www2027/results/lifecycle-autonomy-v60"
+RELEASE_ROOT = Path(__file__).resolve().parents[2] / "data/lifecycle"
 INDEX_SHA256 = "4f2c2240901d808e4edb5e5e0a9402b1eb91f4abc664406f00b89622746ee2fa"
 REPLAY_SHA256 = "6021584e9349b903c634c0489238790a4bfc3ade33408dba4cb628b10dc2cc0b"
 GRADER_SHA256 = {

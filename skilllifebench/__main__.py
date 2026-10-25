@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import argparse
-import importlib.util
 import json
 from pathlib import Path
 import sys
@@ -16,6 +15,10 @@ def main(argv=None):
     listing = sub.add_parser("list", help="List frozen lifecycle tasks; no execution or network")
     listing.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
     listing.add_argument("--json", action="store_true")
+    verification = sub.add_parser("verify", help="Verify released records and data bindings offline")
+    verification.add_argument("--full", action="store_true", help="Verify all evidence archives and source hashes")
+    verification.add_argument("--output", type=Path, help="Write a JSON verification report")
+    verification.add_argument("--root", type=Path, help="Override repository root")
     replay = sub.add_parser("replay", help="Regrade all 1,680 frozen lifecycle outcomes offline")
     replay.add_argument("--output", type=Path, required=True, help="New report directory")
     replay.add_argument("--evidence-root", type=Path, help="Reusable extracted evidence directory")
@@ -30,15 +33,22 @@ def main(argv=None):
     execution.add_argument("--condition", choices=("clean", "attack", "both"), default="both")
     args = parser.parse_args(argv)
     try:
+        if args.command == "verify":
+            from .verification.release import main as verify_release
+            options = []
+            if args.full:
+                options.append("--full")
+            if args.output is not None:
+                options.extend(("--output", str(args.output)))
+            if args.root is not None:
+                options.extend(("--root", str(args.root)))
+            return verify_release(options)
         if args.command == "replay":
-            path = Path(__file__).resolve().parents[1] / "scripts/replay_lifecycle.py"
-            spec = importlib.util.spec_from_file_location("skilllifebench_portable_replay", path)
-            module = importlib.util.module_from_spec(spec)
-            spec.loader.exec_module(module)
+            from .verification.lifecycle_replay import run as replay_lifecycle
             options = {"output": args.output, "evidence_root": args.evidence_root}
             if args.release_root:
                 options["release_root"] = args.release_root
-            report = module.run(**options)
+            report = replay_lifecycle(**options)
             summary = {key: report[key] for key in ("complete", "planned", "matched", "aggregate_counts_match", "prefixes_regraded", "model_calls")}
             summary["report"] = str(args.output.resolve() / "replay-report.json")
             print(json.dumps(summary, indent=2))

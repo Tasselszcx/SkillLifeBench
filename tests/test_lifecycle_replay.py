@@ -1,16 +1,12 @@
 """Integrity regression tests for the portable frozen-evidence resolver."""
 import hashlib
-import importlib.util
 import json
 from pathlib import Path
 import tempfile
 import unittest
 
 
-SCRIPT = Path(__file__).resolve().parents[1] / "scripts/replay_lifecycle.py"
-SPEC = importlib.util.spec_from_file_location("portable_lifecycle_replay", SCRIPT)
-replay = importlib.util.module_from_spec(SPEC)
-SPEC.loader.exec_module(replay)
+from skilllifebench.verification import lifecycle_replay as replay
 
 
 class PortableEvidenceTests(unittest.TestCase):

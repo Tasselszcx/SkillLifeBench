@@ -28,7 +28,7 @@ def _write(path, value):
 
 
 def qualify(tasks, binding, output):
-    from www2027.lifecycle_autonomy_v60.qualify import run_controls
+    from .tasks.qualify import run_controls
     manifest = {"tasks": tasks, "task_count": len(tasks),
                 "template_count": len({task["template_id"] for task in tasks})}
     report = run_controls(manifest, Path(output))
@@ -38,9 +38,9 @@ def qualify(tasks, binding, output):
 
 def run(tasks, binding, model, conditions, output):
     import jsonschema  # Fail before the first model request if schema validation is unavailable.
-    from www2027.harness_matrix_session import HarnessLimits, HarnessSession, run_native
-    from www2027.isolated_executor import IsolatedExecutor, SandboxLimits
-    from www2027.lifecycle_autonomy_v60.backend import LifecycleBackend
+    from .runtime.harness_matrix_session import HarnessLimits, HarnessSession, run_native
+    from .runtime.isolated_executor import IsolatedExecutor, SandboxLimits
+    from .tasks.backend import LifecycleBackend
 
     client = EnvironmentClient(timeout=180)
     output = Path(output).resolve()

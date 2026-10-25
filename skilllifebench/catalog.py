@@ -8,7 +8,7 @@ import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_MANIFEST = ROOT / "www2027/results/lifecycle-autonomy-v60/protocol/task-manifest.json"
+DEFAULT_MANIFEST = ROOT / "data/lifecycle/protocol/task-manifest.json"
 
 
 def load_tasks(manifest=None):

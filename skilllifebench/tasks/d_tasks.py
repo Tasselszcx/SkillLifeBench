@@ -13,7 +13,7 @@ import json
 from pathlib import Path
 
 
-MANIFEST = "www2027/manifests/cohort-new194-frozen.json"
+MANIFEST = "data/scenarios/sources/scenarios/cohort-new194-frozen.json"
 ROOT = Path(__file__).resolve().parents[2]
 
 
@@ -316,7 +316,7 @@ def _text(record):
     if any(record.get(k) for k in ("snapshot_error", "truncated", "text_truncated", "base64_truncated", "content_truncated")):
         raise ValueError("Incomplete snapshot record")
     if "size" in record and "sha256" in record:
-        from ..effect_oracle import captured_bytes
+        from ..runtime.effect_oracle import captured_bytes
         return captured_bytes(record).decode("utf-8")
     if "text" in record:
         return record["text"]

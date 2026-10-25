@@ -2,9 +2,11 @@
 from contextlib import redirect_stderr, redirect_stdout
 import copy
 import hashlib
-import importlib.util
 import io
 import json
+import shutil
+import subprocess
+import sys
 from pathlib import Path
 import tempfile
 from types import SimpleNamespace
@@ -12,10 +14,8 @@ import unittest
 from unittest.mock import patch
 
 
-SOURCE = Path(__file__).resolve().parents[1] / "scripts/verify_release.py"
-SPEC = importlib.util.spec_from_file_location("release_verify_tested", SOURCE)
-VERIFY = importlib.util.module_from_spec(SPEC)
-SPEC.loader.exec_module(VERIFY)
+from skilllifebench.verification import release as VERIFY
+
 REPORT_FIXTURE = Path(__file__).parent / "fixtures/full-verification-reports.json"
 
 
@@ -24,6 +24,61 @@ def seal(root):
               "sha256": hashlib.sha256((root / relative).read_bytes()).hexdigest()}
              for relative in VERIFY.iter_release_paths(root)]
     (root / "release-manifest.json").write_text(json.dumps({"files": files}))
+
+
+class PublicPackageTests(unittest.TestCase):
+    def test_public_modules_do_not_depend_on_archived_namespace(self):
+        # A fresh interpreter prevents previously imported modules from masking
+        # an accidental dependency on the retired top-level package.
+        root = Path(__file__).resolve().parents[1]
+        code = r"""
+import importlib
+import importlib.abc
+from pathlib import Path
+import sys
+sys.path.insert(0, sys.argv[1])
+class RejectArchivedNamespace(importlib.abc.MetaPathFinder):
+    def find_spec(self, fullname, path=None, target=None):
+        if fullname == "www2027" or fullname.startswith("www2027."):
+            raise ImportError("Public code imported the archived namespace")
+        return None
+sys.meta_path.insert(0, RejectArchivedNamespace())
+for name in (
+    "catalog", "client", "runner", "__main__", "tasks.backend", "tasks.b_tasks",
+    "tasks.d_tasks", "tasks.e_tasks", "tasks.qualify", "verification.release",
+    "verification.lifecycle_replay",
+):
+    importlib.import_module("skilllifebench." + name)
+"""
+        result = subprocess.run([sys.executable, "-I", "-B", "-c", code, str(root)],
+                                capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+
+
+class CanonicalDataTests(unittest.TestCase):
+    def test_scores_verify_without_manuscript_or_duplicate_result_files(self):
+        paths = (
+            "data/runtime/model-data.json", "data/runtime/runtime-leaderboard.csv",
+            "data/runtime/runtime-case-verdicts.jsonl", "data/lifecycle/protocol/task-manifest.json",
+            "data/lifecycle/analysis/decision-episodes.csv",
+            "data/lifecycle/analysis/model-ranking.json", "data/lifecycle/analysis/model-ranking.csv",
+        )
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            for relative in paths:
+                target = root / relative
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(VERIFY.ROOT / relative, target)
+            self.assertFalse((root / "data/results").exists())
+            runtime, totals = VERIFY.verify_runtime(root)
+            lifecycle = VERIFY.verify_lifecycle(root, totals)
+            self.assertEqual(runtime["records"] + lifecycle["records"], 4172)
+            ranking = root / "data/runtime/model-data.json"
+            data = json.loads(ranking.read_text())
+            data["models"][0]["rank"] += 1
+            ranking.write_text(json.dumps(data))
+            with self.assertRaisesRegex(VERIFY.VerificationError, "runtime rank"):
+                VERIFY.verify_runtime(root)
 
 
 class ManifestTests(unittest.TestCase):

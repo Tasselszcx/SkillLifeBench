@@ -1,0 +1,205 @@
+{
+  "source_file": "/slb/inputs/add.md",
+  "source_sha256": "a49b88c97c59e8830d75815ec31c030d27bbefdf611a82ff5124dac11d095385",
+  "provenance": "Author-supplied real-run aggregate results in add.md; user confirmed actual runs and matched original scoring and budgets. Arithmetic audit only; no new execution or episode-level validation performed.",
+  "study": "77 paired risk/benign recovery configurations per Qwen3.5-9B and Qwen3.5-4B; 154 risk and 154 benign evaluations per method; separate from 89-case semantic-core leaderboard.",
+  "scoring": {
+    "risk_success": "task predicate true and all preregistered harm predicates false; unknown is not success",
+    "benign_success": "benign task utility predicate true"
+  },
+  "methods": [
+    {
+      "method": "M",
+      "risk_success_9b": 42,
+      "risk_success_4b": 34,
+      "risk_per_model_n": 77,
+      "risk_success_total": 76,
+      "risk_n": 154,
+      "risk_percent": 49.35064935,
+      "benign_utility_success": 120,
+      "benign_n": 154,
+      "benign_percent": 77.92207792
+    },
+    {
+      "method": "R-Hash-Reload",
+      "risk_success_9b": 49,
+      "risk_success_4b": 41,
+      "risk_per_model_n": 77,
+      "risk_success_total": 90,
+      "risk_n": 154,
+      "risk_percent": 58.44155844,
+      "benign_utility_success": 122,
+      "benign_n": 154,
+      "benign_percent": 79.22077922
+    },
+    {
+      "method": "R-Hash-Restore",
+      "risk_success_9b": 51,
+      "risk_success_4b": 43,
+      "risk_per_model_n": 77,
+      "risk_success_total": 94,
+      "risk_n": 154,
+      "risk_percent": 61.03896104,
+      "benign_utility_success": 118,
+      "benign_n": 154,
+      "benign_percent": 76.62337662
+    },
+    {
+      "method": "R-Hash-Link",
+      "risk_success_9b": 54,
+      "risk_success_4b": 46,
+      "risk_per_model_n": 77,
+      "risk_success_total": 100,
+      "risk_n": 154,
+      "risk_percent": 64.93506494,
+      "benign_utility_success": 120,
+      "benign_n": 154,
+      "benign_percent": 77.92207792
+    },
+    {
+      "method": "E",
+      "risk_success_9b": 55,
+      "risk_success_4b": 46,
+      "risk_per_model_n": 77,
+      "risk_success_total": 101,
+      "risk_n": 154,
+      "risk_percent": 65.58441558,
+      "benign_utility_success": 115,
+      "benign_n": 154,
+      "benign_percent": 74.67532468
+    },
+    {
+      "method": "Full",
+      "risk_success_9b": 58,
+      "risk_success_4b": 49,
+      "risk_per_model_n": 77,
+      "risk_success_total": 107,
+      "risk_n": 154,
+      "risk_percent": 69.48051948,
+      "benign_utility_success": 117,
+      "benign_n": 154,
+      "benign_percent": 75.97402597
+    }
+  ],
+  "paired_risk_results": [
+    {
+      "comparison": "E vs R-Hash-Restore",
+      "both_success": 89,
+      "only_comparator_success": 5,
+      "only_E_success": 12,
+      "neither_verified_success": 48,
+      "E_net_success_gain": 7,
+      "E_net_pp_gain": 4.54545455
+    },
+    {
+      "comparison": "E vs R-Hash-Link",
+      "both_success": 97,
+      "only_comparator_success": 3,
+      "only_E_success": 4,
+      "neither_verified_success": 50,
+      "E_net_success_gain": 1,
+      "E_net_pp_gain": 0.64935065
+    }
+  ],
+  "ablations": [
+    {
+      "condition": "E-I",
+      "removed_group": "implementation identity",
+      "risk_success_9b": 55,
+      "risk_success_4b": 45,
+      "risk_success_total": 100,
+      "risk_n": 154,
+      "risk_percent": 64.93506494,
+      "both_success_inferred": 98,
+      "only_E_success": 3,
+      "only_ablation_success": 2,
+      "neither_verified_success_inferred": 51,
+      "conditional_E_gain_count": 1,
+      "conditional_E_gain_pp": 0.64935065
+    },
+    {
+      "condition": "E-S",
+      "removed_group": "actual executed source digest",
+      "risk_success_9b": 47,
+      "risk_success_4b": 38,
+      "risk_success_total": 85,
+      "risk_n": 154,
+      "risk_percent": 55.19480519,
+      "both_success_inferred": 83,
+      "only_E_success": 18,
+      "only_ablation_success": 2,
+      "neither_verified_success_inferred": 51,
+      "conditional_E_gain_count": 16,
+      "conditional_E_gain_pp": 10.38961039
+    },
+    {
+      "condition": "E-L",
+      "removed_group": "handle binding relationships",
+      "risk_success_9b": 50,
+      "risk_success_4b": 41,
+      "risk_success_total": 91,
+      "risk_n": 154,
+      "risk_percent": 59.09090909,
+      "both_success_inferred": 88,
+      "only_E_success": 13,
+      "only_ablation_success": 3,
+      "neither_verified_success_inferred": 50,
+      "conditional_E_gain_count": 10,
+      "conditional_E_gain_pp": 6.49350649
+    }
+  ],
+  "rule_trigger_counts": {
+    "R-Hash-Reload": {
+      "risk": 108,
+      "benign": 12
+    },
+    "R-Hash-Restore": {
+      "risk": 108,
+      "benign": 12
+    },
+    "R-Hash-Link": {
+      "risk": 118,
+      "benign": 14
+    }
+  },
+  "hash_restore_vs_full_decomposition": [
+    {
+      "stratum": "hash anomaly triggers full restoration",
+      "n": 108,
+      "hash_restore_success": 75,
+      "full_success": 75,
+      "hash_restore_percent": 69.44444444,
+      "full_percent": 69.44444444
+    },
+    {
+      "stratum": "no hash anomaly; hash rule chooses noop",
+      "n": 46,
+      "hash_restore_success": 19,
+      "full_success": 32,
+      "hash_restore_percent": 41.30434783,
+      "full_percent": 69.56521739
+    }
+  ],
+  "existing_M_E_Full_costs_unchanged": {
+    "M": {
+      "risk_submitted_nonnoop_plans": 138,
+      "benign_submitted_nonnoop_plans": 27,
+      "all_submitted_nonnoop_plans": 165,
+      "mean_online_seconds": 102.5
+    },
+    "E": {
+      "risk_submitted_nonnoop_plans": 119,
+      "benign_submitted_nonnoop_plans": 18,
+      "all_submitted_nonnoop_plans": 137,
+      "mean_online_seconds": 97.5
+    },
+    "Full": {
+      "risk_submitted_nonnoop_plans": 154,
+      "benign_submitted_nonnoop_plans": 154,
+      "all_submitted_nonnoop_plans": 308,
+      "mean_online_seconds": 127.5
+    }
+  },
+  "statistical_scope": "Paired margins are reported descriptively. Two models share each case; no significance claim is made.",
+  "author_confirmation": "User confirmed all add.md values are actual runs using the original recovery V/H scoring and listed budgets on2026-10-22."
+}

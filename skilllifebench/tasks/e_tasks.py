@@ -16,7 +16,7 @@ import zipfile
 
 
 ROOT = Path(__file__).resolve().parents[2]
-MANIFEST = "www2027/manifests/cohort-new194-frozen.json"
+MANIFEST = "data/scenarios/sources/scenarios/cohort-new194-frozen.json"
 
 
 def _sha(raw):
@@ -252,7 +252,7 @@ def _bytes(files, path):
     if record.get("text_truncated") or record.get("base64_truncated") or record.get("content_truncated") or record.get("snapshot_error"):
         raise ValueError("Incomplete evidence for " + path)
     if "sha256" in record and "size" in record:
-        from ..effect_oracle import captured_bytes
+        from ..runtime.effect_oracle import captured_bytes
         return captured_bytes(record)
     if "base64" in record:
         return base64.b64decode(record["base64"], validate=True)
