@@ -44,6 +44,6 @@ The paper and `www2027/paper/protocol/` describe fault construction, evidence pr
 
 ## Data contract
 
-Inspect a lifecycle task with `python3 -m skilllifebench list --json`. Entries identify the task, template, family, parent case, request, authorization, initial state, tools, and outcome predicates. Synthetic private fixtures and attack payloads are intentional benchmark inputs. They are not credentials for external services.
+`python3 -m skilllifebench list --json` lists each task ID, template, family and parent case, and identifies the frozen manifest. Full task definitions are in `www2027/results/lifecycle-autonomy-v60/protocol/task-manifest.json`; `www2027/lifecycle_autonomy_v60/` implements their observations, actions and outcome predicates. Synthetic private fixtures and attack payloads are intentional benchmark inputs. They are not credentials for external services.
 
 The new runner uses these fixed task contracts. Changing task inputs, authorization or outcome checks creates a new evaluation configuration and should be recorded as such.

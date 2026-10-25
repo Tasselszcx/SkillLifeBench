@@ -2,7 +2,7 @@
 
 ## Inspect and verify without an API key
 
-Clone the repository and run commands from its root. Use Python 3.10 or newer (3.12 recommended). No Python dependencies are needed for task listing or frozen replay.
+Clone the repository and run commands from its root. Use Python 3.12 or newer. Distribution-patched Python 3.10/3.11 also works if `tarfile.data_filter` is available; the full verifier checks this requirement before extraction. No Python dependencies are needed for task listing or frozen replay.
 
 ```sh
 git clone https://github.com/Tasselszcx/SkillLifeBench.git
@@ -25,14 +25,16 @@ Reserve about 10 GB of scratch space for full extraction. Extraction and checks 
 
 ## Run new evaluations
 
-Use an editable install from the cloned repository so the code and frozen task data remain together. New lifecycle execution requires Linux. The sandbox uses user, network and PID namespaces, a disposable filesystem and seccomp. On Debian/Ubuntu, install the system prerequisites:
+Use an editable install from the cloned repository so the code and frozen task data remain together. New lifecycle execution requires Linux x86-64. The sandbox uses user, network and PID namespaces, a disposable filesystem and seccomp. On Debian/Ubuntu, install the system prerequisites:
 
 ```sh
-sudo apt-get install python3 python3-yaml python3-cryptography python3-cffi libseccomp2 util-linux
+sudo apt-get install python3 python3-venv python3-yaml python3-cryptography python3-cffi libseccomp2 util-linux
+python3 -m venv .venv
+. .venv/bin/activate
 python3 -m pip install -e .
 ```
 
-The sandbox specifically uses `/usr/bin/python3`; installing packages only in a virtual environment does not install them for that interpreter. The host must permit user namespaces. Some container configurations disable them; use a suitable Linux host rather than disabling the sandbox.
+The sandbox specifically uses `/usr/bin/python3`; installing packages only in a virtual environment does not install them for that interpreter. The x86-64 OpenSSL legacy provider must be available at `/usr/lib/x86_64-linux-gnu/ossl-modules/legacy.so`. The host must permit user namespaces. Some container configurations disable them; use a suitable Linux host rather than disabling the sandbox.
 
 First run a real positive/negative control, which requires no model:
 

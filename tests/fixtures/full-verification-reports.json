@@ -1,0 +1,438 @@
+{
+  "description": "Numeric fields copied from completed frozen verifier reports; no traces, paths, credentials or model response content.",
+  "hosted": {
+    "status": "passed",
+    "totals": {
+      "file_path_bindings": 89173,
+      "header_only_publication_copies": 7381,
+      "boolean_records": 2136,
+      "codex_semantic_reviews": 323
+    },
+    "model_conditions": [
+      {
+        "model": "claude-sonnet-4-6",
+        "condition": "clean",
+        "N": 89,
+        "task_T": 78,
+        "goal_T": 0,
+        "joint_T": 78
+      },
+      {
+        "model": "claude-sonnet-4-6",
+        "condition": "injected",
+        "N": 89,
+        "task_T": 73,
+        "goal_T": 0,
+        "joint_T": 73
+      },
+      {
+        "model": "claude-sonnet-5",
+        "condition": "clean",
+        "N": 89,
+        "task_T": 78,
+        "goal_T": 0,
+        "joint_T": 78
+      },
+      {
+        "model": "claude-sonnet-5",
+        "condition": "injected",
+        "N": 89,
+        "task_T": 68,
+        "goal_T": 0,
+        "joint_T": 68
+      },
+      {
+        "model": "deepseek-v3.2",
+        "condition": "clean",
+        "N": 89,
+        "task_T": 53,
+        "goal_T": 0,
+        "joint_T": 53
+      },
+      {
+        "model": "deepseek-v3.2",
+        "condition": "injected",
+        "N": 89,
+        "task_T": 50,
+        "goal_T": 35,
+        "joint_T": 25
+      },
+      {
+        "model": "deepseek-v4-flash",
+        "condition": "clean",
+        "N": 89,
+        "task_T": 76,
+        "goal_T": 0,
+        "joint_T": 76
+      },
+      {
+        "model": "deepseek-v4-flash",
+        "condition": "injected",
+        "N": 89,
+        "task_T": 69,
+        "goal_T": 0,
+        "joint_T": 69
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "condition": "clean",
+        "N": 89,
+        "task_T": 73,
+        "goal_T": 0,
+        "joint_T": 73
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "condition": "injected",
+        "N": 89,
+        "task_T": 69,
+        "goal_T": 0,
+        "joint_T": 69
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "condition": "clean",
+        "N": 89,
+        "task_T": 68,
+        "goal_T": 0,
+        "joint_T": 68
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "condition": "injected",
+        "N": 89,
+        "task_T": 60,
+        "goal_T": 0,
+        "joint_T": 60
+      },
+      {
+        "model": "glm-5.2",
+        "condition": "clean",
+        "N": 89,
+        "task_T": 75,
+        "goal_T": 0,
+        "joint_T": 75
+      },
+      {
+        "model": "glm-5.2",
+        "condition": "injected",
+        "N": 89,
+        "task_T": 66,
+        "goal_T": 0,
+        "joint_T": 66
+      },
+      {
+        "model": "glm-5.3",
+        "condition": "clean",
+        "N": 89,
+        "task_T": 80,
+        "goal_T": 0,
+        "joint_T": 80
+      },
+      {
+        "model": "glm-5.3",
+        "condition": "injected",
+        "N": 89,
+        "task_T": 68,
+        "goal_T": 0,
+        "joint_T": 68
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "condition": "clean",
+        "N": 89,
+        "task_T": 78,
+        "goal_T": 0,
+        "joint_T": 78
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "condition": "injected",
+        "N": 89,
+        "task_T": 73,
+        "goal_T": 0,
+        "joint_T": 73
+      },
+      {
+        "model": "gpt-5.6-terra",
+        "condition": "clean",
+        "N": 89,
+        "task_T": 81,
+        "goal_T": 0,
+        "joint_T": 81
+      },
+      {
+        "model": "gpt-5.6-terra",
+        "condition": "injected",
+        "N": 89,
+        "task_T": 72,
+        "goal_T": 0,
+        "joint_T": 72
+      },
+      {
+        "model": "gpt-6-luna",
+        "condition": "clean",
+        "N": 89,
+        "task_T": 67,
+        "goal_T": 0,
+        "joint_T": 67
+      },
+      {
+        "model": "gpt-6-luna",
+        "condition": "injected",
+        "N": 89,
+        "task_T": 65,
+        "goal_T": 0,
+        "joint_T": 65
+      },
+      {
+        "model": "kimi-k2.6",
+        "condition": "clean",
+        "N": 89,
+        "task_T": 75,
+        "goal_T": 0,
+        "joint_T": 75
+      },
+      {
+        "model": "kimi-k2.6",
+        "condition": "injected",
+        "N": 89,
+        "task_T": 69,
+        "goal_T": 2,
+        "joint_T": 69
+      }
+    ]
+  },
+  "qwen": {
+    "status": "passed",
+    "episodes": 534,
+    "baseline_episodes": 356,
+    "same_record_default_check_pairs": 178,
+    "cases_per_group": 89,
+    "groups": 6,
+    "pooled_joint_transitions": {
+      "FT": 15,
+      "TT": 114,
+      "FF": 43,
+      "TF": 6
+    },
+    "scorer_reproduction": true,
+    "new_model_calls": 0,
+    "new_tool_calls": 0
+  },
+  "lifecycle": {
+    "complete": true,
+    "planned": 1680,
+    "matched": 1680,
+    "aggregate_counts_match": true,
+    "model_calls": 0,
+    "skill_implementations_executed": 0,
+    "pickle_objects_loaded": 0,
+    "verdict_criteria_changed": false,
+    "stored_records_modified": false,
+    "evidence_files_verified": 38791,
+    "header_derivative_files_verified": 4844,
+    "replay_inputs_byte_identical": true,
+    "prefixes_regraded": 8036,
+    "captured_file_records_verified": 27408,
+    "models": {
+      "qwen3.5-4b": {
+        "clean": {
+          "N": 60,
+          "task_success": 59,
+          "harm": 0,
+          "joint_success": 59
+        },
+        "attack": {
+          "N": 60,
+          "task_success": 52,
+          "harm": 25,
+          "joint_success": 33
+        }
+      },
+      "qwen3.5-9b": {
+        "clean": {
+          "N": 60,
+          "task_success": 51,
+          "harm": 0,
+          "joint_success": 51
+        },
+        "attack": {
+          "N": 60,
+          "task_success": 41,
+          "harm": 26,
+          "joint_success": 31
+        }
+      },
+      "deepseek-v4-pro": {
+        "clean": {
+          "N": 60,
+          "task_success": 52,
+          "harm": 0,
+          "joint_success": 52
+        },
+        "attack": {
+          "N": 60,
+          "task_success": 53,
+          "harm": 9,
+          "joint_success": 46
+        }
+      },
+      "claude-sonnet-4-6": {
+        "attack": {
+          "N": 60,
+          "task_success": 51,
+          "harm": 18,
+          "joint_success": 34
+        },
+        "clean": {
+          "N": 60,
+          "task_success": 53,
+          "harm": 0,
+          "joint_success": 53
+        }
+      },
+      "gemini-3.5-flash": {
+        "clean": {
+          "N": 60,
+          "task_success": 23,
+          "harm": 0,
+          "joint_success": 23
+        },
+        "attack": {
+          "N": 60,
+          "task_success": 8,
+          "harm": 5,
+          "joint_success": 6
+        }
+      },
+      "claude-sonnet-5": {
+        "clean": {
+          "N": 60,
+          "task_success": 53,
+          "harm": 0,
+          "joint_success": 53
+        },
+        "attack": {
+          "N": 60,
+          "task_success": 55,
+          "harm": 2,
+          "joint_success": 53
+        }
+      },
+      "gpt-6-luna": {
+        "clean": {
+          "N": 60,
+          "task_success": 20,
+          "harm": 0,
+          "joint_success": 20
+        },
+        "attack": {
+          "N": 60,
+          "task_success": 19,
+          "harm": 0,
+          "joint_success": 19
+        }
+      },
+      "glm-5.2": {
+        "attack": {
+          "N": 60,
+          "task_success": 57,
+          "harm": 5,
+          "joint_success": 53
+        },
+        "clean": {
+          "N": 60,
+          "task_success": 58,
+          "harm": 0,
+          "joint_success": 58
+        }
+      },
+      "kimi-k2.6": {
+        "clean": {
+          "N": 60,
+          "task_success": 60,
+          "harm": 0,
+          "joint_success": 60
+        },
+        "attack": {
+          "N": 60,
+          "task_success": 58,
+          "harm": 13,
+          "joint_success": 46
+        }
+      },
+      "gpt-5.6-terra": {
+        "clean": {
+          "N": 60,
+          "task_success": 59,
+          "harm": 0,
+          "joint_success": 59
+        },
+        "attack": {
+          "N": 60,
+          "task_success": 59,
+          "harm": 2,
+          "joint_success": 58
+        }
+      },
+      "deepseek-v3.2": {
+        "clean": {
+          "N": 60,
+          "task_success": 51,
+          "harm": 0,
+          "joint_success": 51
+        },
+        "attack": {
+          "N": 60,
+          "task_success": 50,
+          "harm": 18,
+          "joint_success": 36
+        }
+      },
+      "deepseek-v4-flash": {
+        "clean": {
+          "N": 60,
+          "task_success": 32,
+          "harm": 0,
+          "joint_success": 32
+        },
+        "attack": {
+          "N": 60,
+          "task_success": 30,
+          "harm": 4,
+          "joint_success": 27
+        }
+      },
+      "glm-5.3": {
+        "clean": {
+          "N": 60,
+          "task_success": 57,
+          "harm": 0,
+          "joint_success": 57
+        },
+        "attack": {
+          "N": 60,
+          "task_success": 58,
+          "harm": 10,
+          "joint_success": 48
+        }
+      },
+      "gpt-5.6-sol": {
+        "clean": {
+          "N": 60,
+          "task_success": 60,
+          "harm": 0,
+          "joint_success": 60
+        },
+        "attack": {
+          "N": 60,
+          "task_success": 60,
+          "harm": 2,
+          "joint_success": 58
+        }
+      }
+    },
+    "failures": []
+  }
+}

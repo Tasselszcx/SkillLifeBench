@@ -28,8 +28,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6315,
-      "sha256": "475ed4bd3903ccbe3b1be7260831b059459d5333517df64a225a27a0bcfdfca9"
+      "bytes": 6421,
+      "sha256": "e1f3cd68831b35a78a196fa5b72820f4a69c6ac2dee8203650c6fa731015c80b"
     },
     {
       "path": "SECURITY.md",
@@ -42,11 +42,6 @@
       "sha256": "3fafa49b19d5ff9ac6b727a152d50302db875e2fd3fb3d1c8b7574aaeebb5a46"
     },
     {
-      "path": ".github/workflows/ci.yml",
-      "bytes": 521,
-      "sha256": "f867aabdadea90458b1c6a04eabb579a6b87e006aa868e67cea55a24ab17a4f8"
-    },
-    {
       "path": "assets/overview.png",
       "bytes": 998892,
       "sha256": "5b1d7ffc44678a1949e9eb1c4aa8e2e3f3af3146cac293b1037a90e481f09b86"
@@ -57,9 +52,14 @@
       "sha256": "3afc4741db5a29ae7ec09a3ded306c520eefde84816305f851153a23ee10e2b4"
     },
     {
+      "path": "docs/ci-workflow.example.yml",
+      "bytes": 521,
+      "sha256": "f867aabdadea90458b1c6a04eabb579a6b87e006aa868e67cea55a24ab17a4f8"
+    },
+    {
       "path": "docs/dataset.md",
-      "bytes": 3733,
-      "sha256": "033ffc997267cf972d01c3acbfdd5f32f880d6f54d2284054bb605f16ffc2af3"
+      "bytes": 3860,
+      "sha256": "0f71f6c503460276e0cb83c025ba7dcafabd65b5ebb3aee8b3a04b642da20007"
     },
     {
       "path": "docs/evaluation.md",
@@ -68,8 +68,8 @@
     },
     {
       "path": "docs/quickstart.md",
-      "bytes": 3403,
-      "sha256": "30fe15f806ecea24bd4da4e2abd927aac6b05bdf0ffef92aa3b644d19f45c937"
+      "bytes": 3704,
+      "sha256": "18a3cf0bc3d25aa31004161ced16f334892701bd9447c2b26c1f57e51a70046e"
     },
     {
       "path": "docs/reproduction.md",
@@ -143,8 +143,8 @@
     },
     {
       "path": "scripts/verify_release.py",
-      "bytes": 22598,
-      "sha256": "81ca6714180559c83a2e68084bd2d4d608f35542422b0c6997b897ffa00563fe"
+      "bytes": 26776,
+      "sha256": "ff6b1cf6ccde0cac32b9dafb9c22a86d753b227ffb4e235d9a056e2fce11e6a9"
     },
     {
       "path": "skilllifebench/__init__.py",
@@ -183,8 +183,13 @@
     },
     {
       "path": "tests/test_release_verify.py",
-      "bytes": 7744,
-      "sha256": "0462e2406c8425c834ee31f92f7248aef28854905ec97fbb970d2aed6fbacd65"
+      "bytes": 9729,
+      "sha256": "7d6c9a5e49dd8e13b0904c3af00ed82e6d804692d004da502ab4a5feec940d1f"
+    },
+    {
+      "path": "tests/fixtures/full-verification-reports.json",
+      "bytes": 9336,
+      "sha256": "6e30d9e9b164ce44cb7a27bbc5d799b883e0d7b51a8fb775e19b714f8f106281"
     },
     {
       "path": "www2027/__init__.py",

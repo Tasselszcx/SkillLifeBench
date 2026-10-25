@@ -16,6 +16,7 @@ SOURCE = Path(__file__).resolve().parents[1] / "scripts/verify_release.py"
 SPEC = importlib.util.spec_from_file_location("release_verify_tested", SOURCE)
 VERIFY = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(VERIFY)
+REPORT_FIXTURE = Path(__file__).parent / "fixtures/full-verification-reports.json"
 
 
 def seal(root):
@@ -142,15 +143,58 @@ class DecisionTests(unittest.TestCase):
     def test_full_replay_cannot_pass_on_zero_exit_with_incomplete_report(self):
         with tempfile.TemporaryDirectory() as folder, redirect_stdout(io.StringIO()):
             output = Path(folder)
-            (output / "hosted-verification.json").write_text(json.dumps({"boolean_records": 2136}))
-            (output / "qwen-verification.json").write_text(json.dumps({"status": "passed", "episodes": 534,
-                "baseline_episodes": 356, "same_record_default_check_pairs": 178, "scorer_reproduction": True}))
+            fixture = json.loads(REPORT_FIXTURE.read_text())
+            (output / "hosted-verification.json").write_text(json.dumps(fixture["hosted"]))
+            (output / "qwen-verification.json").write_text(json.dumps(fixture["qwen"]))
             (output / "lifecycle-replay").mkdir()
-            (output / "lifecycle-replay/replay-report.json").write_text(json.dumps({"complete": False,
-                "planned": 1680, "matched": 1679, "aggregate_counts_match": False, "failures": ["one row"]}))
+            incomplete = {**fixture["lifecycle"], "complete": False, "matched": 1679,
+                          "aggregate_counts_match": False, "failures": ["one row"]}
+            (output / "lifecycle-replay/replay-report.json").write_text(json.dumps(incomplete))
             with patch.object(VERIFY.subprocess, "run", return_value=SimpleNamespace(returncode=0)):
                 with self.assertRaisesRegex(VERIFY.VerificationError, "incomplete"):
                     VERIFY.run_full(output, output)
+
+
+class FullReportSchemaTests(unittest.TestCase):
+    def setUp(self):
+        self.reports = json.loads(REPORT_FIXTURE.read_text())
+
+    def check(self):
+        return VERIFY.validate_full_reports(self.reports["hosted"], self.reports["qwen"], self.reports["lifecycle"])
+
+    def test_actual_completed_report_layouts_are_accepted(self):
+        report = self.check()
+        self.assertEqual(report["status"], "passed")
+        self.assertEqual(report["hosted_runtime_records"], 2136)
+        self.assertEqual(report["local_runtime_baseline_records"], 356)
+        self.assertEqual(report["lifecycle_records"], 1680)
+
+    def test_hosted_count_is_read_from_totals_and_cannot_be_missing(self):
+        hosted = self.reports["hosted"]
+        hosted["boolean_records"] = hosted["totals"].pop("boolean_records")
+        with self.assertRaisesRegex(VERIFY.VerificationError, "Hosted"):
+            self.check()
+
+    def test_hosted_duplicate_condition_fails_despite_correct_total(self):
+        groups = self.reports["hosted"]["model_conditions"]
+        groups[-1] = copy.deepcopy(groups[0])
+        with self.assertRaisesRegex(VERIFY.VerificationError, "group"):
+            self.check()
+
+    def test_qwen_baseline_count_is_checked_separately_from_intervention(self):
+        self.reports["qwen"]["baseline_episodes"] = 355
+        with self.assertRaisesRegex(VERIFY.VerificationError, "Qwen"):
+            self.check()
+
+    def test_lifecycle_models_checked_even_when_complete_flag_is_true(self):
+        self.reports["lifecycle"]["models"].pop("qwen3.5-4b")
+        with self.assertRaisesRegex(VERIFY.VerificationError, "model schedule"):
+            self.check()
+
+    def test_tar_filter_capability_has_clear_error(self):
+        with patch.object(VERIFY.tarfile, "data_filter", None, create=True):
+            with self.assertRaisesRegex(VERIFY.VerificationError, "Python 3.12"):
+                VERIFY.require_tar_filters()
 
 
 if __name__ == "__main__":

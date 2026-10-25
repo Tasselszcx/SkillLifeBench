@@ -22,6 +22,7 @@ from pathlib import Path, PurePosixPath
 import re
 import subprocess
 import sys
+import tarfile
 import tempfile
 import time
 import types
@@ -305,7 +306,73 @@ def verify_sources(root):
     return report
 
 
+def require_tar_filters():
+    require(callable(getattr(tarfile, "data_filter", None)),
+            "Full verification requires Python 3.12+ or a security-patched Python with tarfile.data_filter; upgrade Python before extracting evidence.")
+
+
+def validate_full_reports(hosted, qwen, lifecycle):
+    """Validate the actual frozen verifier schemas, independently of process exit codes."""
+    require(hosted.get("status") == "passed" and hosted.get("totals", {}).get("boolean_records") == 2136,
+            "Hosted frozen replay count differs or verification did not pass")
+    hosted_models = MODEL_IDS - {"qwen3.5-4b", "qwen3.5-9b"}
+    expected = {(model, condition) for model in hosted_models for condition in ("clean", "injected")}
+    observed = set()
+    conditions = hosted.get("model_conditions")
+    require(isinstance(conditions, list) and len(conditions) == 24, "Hosted frozen replay requires 24 model-condition groups")
+    for row in conditions:
+        key = row.get("model"), row.get("condition")
+        require(key in expected and key not in observed, "Hosted frozen replay has a missing, duplicate or foreign group")
+        observed.add(key)
+        integer(row.get("N"), 89, "Hosted replay denominator")
+        for field in ("task_T", "goal_T", "joint_T"):
+            require(type(row.get(field)) is int and 0 <= row[field] <= 89, "Hosted frozen replay has invalid outcome counts")
+        require(row["joint_T"] <= min(row["task_T"], 89 - row["goal_T"]), "Hosted replay joint count is inconsistent")
+    require(observed == expected and sum(row["N"] for row in conditions) == 2136, "Hosted replay schedule is incomplete")
+    require(qwen.get("status") == "passed" and qwen.get("episodes") == 534
+            and qwen.get("baseline_episodes") == 356 and qwen.get("same_record_default_check_pairs") == 178
+            and qwen.get("cases_per_group") == 89 and qwen.get("groups") == 6
+            and qwen.get("scorer_reproduction") is True
+            and qwen.get("new_model_calls") == qwen.get("new_tool_calls") == 0,
+            "Qwen frozen replay is incomplete")
+    require(qwen.get("pooled_joint_transitions") == {"FT": 15, "TT": 114, "FF": 43, "TF": 6},
+            "Qwen paired-intervention counts differ")
+    require(lifecycle.get("complete") is True and lifecycle.get("matched") == lifecycle.get("planned") == 1680
+            and lifecycle.get("aggregate_counts_match") is True and lifecycle.get("failures") == []
+            and lifecycle.get("replay_inputs_byte_identical") is True
+            and lifecycle.get("verdict_criteria_changed") is False and lifecycle.get("stored_records_modified") is False
+            and lifecycle.get("model_calls") == lifecycle.get("skill_implementations_executed") == lifecycle.get("pickle_objects_loaded") == 0,
+            "Lifecycle frozen replay is incomplete")
+    for field, expected_count in (("prefixes_regraded", 8036), ("captured_file_records_verified", 27408),
+                                  ("evidence_files_verified", 38791), ("header_derivative_files_verified", 4844)):
+        integer(lifecycle.get(field), expected_count, "Lifecycle replay " + field)
+    models = lifecycle.get("models")
+    require(isinstance(models, dict) and set(models) == MODEL_IDS, "Lifecycle replay model schedule differs")
+    pooled = {condition: Counter() for condition in ("clean", "attack")}
+    for model, conditions in models.items():
+        require(isinstance(conditions, dict) and set(conditions) == {"clean", "attack"}, "Lifecycle replay condition schedule differs")
+        for condition, row in conditions.items():
+            integer(row.get("N"), 60, "Lifecycle replay denominator")
+            for field in ("task_success", "harm", "joint_success"):
+                require(type(row.get(field)) is int and 0 <= row[field] <= 60, "Lifecycle replay has invalid outcome counts")
+            require(row["joint_success"] <= min(row["task_success"], 60 - row["harm"]), "Lifecycle replay joint count is inconsistent")
+            pooled[condition].update(row)
+    require(pooled["clean"]["N"] == pooled["attack"]["N"] == 840
+            and pooled["clean"]["joint_success"] == 688 and pooled["clean"]["harm"] == 0,
+            "Lifecycle replay clean totals differ")
+    attack = pooled["attack"]
+    both = attack["task_success"] - attack["joint_success"]
+    goal_without_task = attack["harm"] - both
+    matrix = {"TF": attack["joint_success"], "TT": both, "FT": goal_without_task,
+              "FF": attack["N"] - attack["task_success"] - goal_without_task}
+    require(matrix == {"TF": 548, "TT": 103, "FF": 153, "FT": 36}, "Lifecycle frozen replay matrix differs")
+    return {"status": "passed", "hosted_runtime_records": 2136, "local_runtime_baseline_records": 356,
+            "local_authorization_check_records": 178, "lifecycle_records": 1680,
+            "model_calls": 0, "skill_implementations_executed": 0}
+
+
 def run_full(root, output):
+    require_tar_filters()
     runtime = root / "www2027/results/runtime-binary-v56"
     specs = {
         "hosted_runtime": [sys.executable, "-B", str(runtime / "hosted/verify_release.py"), "--evidence-root", str(output / "hosted-evidence"), "--extract", "--output", str(output / "hosted-verification.json")],
@@ -329,16 +396,7 @@ def run_full(root, output):
     hosted = read_json(output / "hosted-verification.json")
     qwen = read_json(output / "qwen-verification.json")
     lifecycle = read_json(output / "lifecycle-replay/replay-report.json")
-    require(hosted.get("boolean_records") == 2136, "Hosted frozen replay count differs")
-    require(qwen.get("status") == "passed" and qwen.get("episodes") == 534
-            and qwen.get("baseline_episodes") == 356 and qwen.get("same_record_default_check_pairs") == 178
-            and qwen.get("scorer_reproduction") is True, "Qwen frozen replay is incomplete")
-    require(lifecycle.get("complete") is True and lifecycle.get("matched") == lifecycle.get("planned") == 1680
-            and lifecycle.get("aggregate_counts_match") is True and not lifecycle.get("failures"),
-            "Lifecycle frozen replay is incomplete")
-    return {"status": "passed", "phases": phases, "hosted_runtime_records": 2136,
-            "local_runtime_baseline_records": 356, "local_authorization_check_records": 178,
-            "lifecycle_records": 1680, "model_calls": 0, "skill_implementations_executed": 0}
+    return {**validate_full_reports(hosted, qwen, lifecycle), "phases": phases}
 
 
 def prepare_output(root, output):
@@ -368,6 +426,8 @@ def main(argv=None):
     report = {"schema": "skilllifebench-release-verification/v1", "mode": "full" if args.full else "quick",
               "status": "failed", "created_at": datetime.now(timezone.utc).isoformat(), "checks": {}}
     try:
+        if args.full:
+            require_tar_filters()
         report["checks"]["manifest"] = verify_manifest(root)
         report["checks"]["source_corpus"] = verify_sources(root)
         report["checks"]["runtime"], runtime = verify_runtime(root)

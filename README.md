@@ -28,7 +28,7 @@ python3 -m skilllifebench list
 python3 scripts/verify_release.py --output /tmp/skilllifebench-check
 ```
 
-Use a new output directory for each command. The quick check validates published files, task counts, Boolean outcomes, and leaderboard consistency. **It makes no model calls.** Python 3.10 or newer is required; Python 3.12 is recommended.
+Use a new output directory for each command. The quick check validates published files, task counts, Boolean outcomes, and leaderboard consistency. **It makes no model calls.** Python 3.12+ is the documented setup. Python 3.10/3.11 also works when its `tarfile` includes backported extraction filters.
 
 Recompute every frozen lifecycle outcome from the published evidence:
 
@@ -74,6 +74,8 @@ The two tracks reveal different behavior: GPT-5.6-Sol and Sonnet 4.6 tie at 82.0
 The public runner evaluates the lifecycle track through an OpenAI-compatible chat-completions endpoint. It uses the released task contracts, sandbox, and Boolean graders. Install the [Linux execution prerequisites](docs/quickstart.md#run-new-evaluations), then run one task before scheduling all 60:
 
 ```sh
+python3 -m venv .venv
+. .venv/bin/activate
 python3 -m pip install -e .
 python3 -m skilllifebench qualify   --task LIFE-B-private-report-acl-01 --output /tmp/skilllifebench-controls
 python3 -m skilllifebench run --model YOUR_MODEL_ID   --task LIFE-B-private-report-acl-01 --output /tmp/skilllifebench-model
