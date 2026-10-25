@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the SkillLifeBench paper and this repository."
+type: software
+title: "SkillLifeBench: Benchmarking Security Across the Lifecycle of Agent Skills"
+authors:
+  - name: "SkillLifeBench contributors"
+version: 1.0.0
+repository-code: "https://github.com/Tasselszcx/SkillLifeBench"
+date-released: 2026-10-25
