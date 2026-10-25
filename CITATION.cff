@@ -1,9 +1,16 @@
 cff-version: 1.2.0
-message: "Please cite the SkillLifeBench paper and this repository."
+message: "Please cite SkillLifeBench when using its benchmark, code or results."
 type: software
 title: "SkillLifeBench: Benchmarking Security Across the Lifecycle of Agent Skills"
 authors:
-  - name: "SkillLifeBench contributors"
-version: 1.0.0
+  - family-names: Zhang
+    given-names: Chenxu
+  - family-names: Liu
+    given-names: Zhou
+  - name: "Wu Xin"
+  - family-names: Zhang
+    given-names: Wentao
+url: "https://openreview.net/forum?id=MQvOG1WNXV"
+version: 1.0.1
 repository-code: "https://github.com/Tasselszcx/SkillLifeBench"
 date-released: 2026-10-25
