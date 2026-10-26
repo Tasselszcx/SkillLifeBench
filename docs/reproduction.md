@@ -52,9 +52,9 @@ python3 data/scenarios/code/release_bundle.py verify --bundle data/scenarios
 
 ## Evidence layout
 
-`runtime-binary-v56/hosted/` and `qwen/` are sealed packages with their own manifests, frozen graders, source contracts, per-case decisions and compressed evidence. `lifecycle-autonomy-v60/evidence/` contains a two-part archive and a path/hash index. The portable lifecycle resolver maps historical source paths to archive members on the local machine.
+`data/runtime/hosted/` and `data/runtime/qwen/` are sealed packages with their own manifests, frozen graders, source contracts, per-case decisions and compressed evidence. `data/lifecycle/evidence/` contains a compressed archive and a path/hash index. The portable lifecycle resolver maps historical source paths to archive members on the local machine.
 
-Some API receipts have explicit published copies with credential-bearing headers removed. The original-to-published map preserves this transformation; scoring-bearing responses, observations and state remain bound to the final verdicts. Deleted credentials are not needed for replay.
+Published API receipts remove credential headers and opaque continuation fields, including their encoded JSON copies. Experiment host paths use stable `/slb/` aliases. Source and public hashes are recorded separately in publication ledgers, and the verifiers authenticate each published file before checking its source binding. Task outputs, actions, scoring criteria and final decisions are preserved. Frozen native state is byte-identical and is never deserialized during verification.
 
 Files under `data/studies/` are the plotted/tabulated inputs for supporting studies. Supporting-study files provide reported measurements and provenance; complete evidence replay is available for the two decision tracks above.
 

@@ -14,6 +14,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+from .privacy import sanitize_transport
+
 
 class EnvironmentClient:
     def __init__(self, *, timeout=180):
@@ -34,13 +36,7 @@ class EnvironmentClient:
         self.base_url, self._key, self.timeout = base, key, timeout
 
     def _safe(self, value):
-        if isinstance(value, dict):
-            return {self._safe(key): self._safe(item) for key, item in value.items()}
-        if isinstance(value, list):
-            return [self._safe(item) for item in value]
-        if isinstance(value, str) and self._key:
-            return value.replace(self._key, "[REDACTED]")
-        return value
+        return sanitize_transport(value, secret=self._key)[0]
 
     def complete(self, model, messages, tools=None, max_tokens=2048, tool_choice=None):
         payload = {"model": model, "messages": messages, "max_tokens": max_tokens}
@@ -67,10 +63,14 @@ class EnvironmentClient:
             if len(raw) > 8 * 1024 * 1024:
                 raise ValueError("API response exceeds 8 MiB")
             data = json.loads(raw)
-            safe = self._safe(data)
+            safe, privacy = sanitize_transport(data, secret=self._key)
             receipt.update(status="ok", served_model=safe.get("model"), usage=safe.get("usage"),
                            response_sha256=hashlib.sha256(raw).hexdigest(), response=safe,
-                           credential_redaction_applied=safe != data)
+                           published_response_sha256=hashlib.sha256(json.dumps(
+                               safe, sort_keys=True, ensure_ascii=False, separators=(",", ":")
+                           ).encode()).hexdigest(),
+                           privacy=privacy,
+                           credential_redaction_applied=bool(privacy["credential_values_redacted"]))
         except urllib.error.HTTPError as error:
             detail = error.read(8192).decode(errors="replace")
             receipt.update(status="http_error", http_status=error.code, error=self._safe(detail))

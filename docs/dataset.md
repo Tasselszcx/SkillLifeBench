@@ -34,7 +34,7 @@ The two tracks have 14 models and 4,172 baseline executions in total. The 60 lif
 | `data/scenarios/sources/scenarios/` | Parent-case definitions used by the lifecycle backend |
 | `data/lifecycle/protocol/qualification.json` | Frozen qualification-control results |
 
-`release-v1/episodes.csv` contains the source release's 2,119 construction/effect measurements. It is not the current leaderboard. Use the runtime and lifecycle decision records linked in [reproduction](reproduction.md).
+`data/scenarios/episodes.csv` contains the source release's 2,119 construction/effect measurements. It is not the current leaderboard. Use the runtime and lifecycle decision records linked in [reproduction](reproduction.md).
 
 ## Recovery study
 

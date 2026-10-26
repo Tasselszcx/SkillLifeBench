@@ -4,9 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "skilllifebench"
-version = "1.0.1"
+version = "1.0.2"
 description = "Lifecycle security evaluation and frozen evidence replay for agent skills"
 readme = "README.md"
+license = {file = "LICENSE"}
 authors = [
   {name = "Chenxu Zhang"},
   {name = "Zhou Liu"},

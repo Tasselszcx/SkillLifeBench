@@ -117,4 +117,4 @@ Please cite SkillLifeBench when using the benchmark, code or results:
 
 [Download BibTeX](CITATION.bib) · [Machine-readable citation](CITATION.cff)
 
-See [attribution](docs/attribution.md) for dataset and third-party notices, and [security guidance](SECURITY.md) for credential handling and isolated execution.
+Original code: [MIT](LICENSE). Data: [CC BY 4.0](docs/licenses/Dataset-CC-BY-4.0.txt). Third-party materials retain their [original notices](docs/attribution.md). See [security guidance](SECURITY.md) for credential handling and isolated execution.
