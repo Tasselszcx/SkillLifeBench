@@ -1,0 +1,15 @@
+{
+  "schema": "source-to-publication-bindings/v1",
+  "path_alias_prefix": "/slb",
+  "source_hashes_preserved": true,
+  "files": [
+    {
+      "path": "baseline-model-data-v55.json",
+      "sha256": "93fc2ba70de71281da3ffc67650a5cbe7c7b44126ef2e3f2a86fb4b991f06173",
+      "bytes": 81562,
+      "source_sha256": "57888c4569c3fb1fdf3042807a281ac024631ca7a527dfa4f0ebec291a990199",
+      "source_bytes": 81835,
+      "transformation": "private_host_path_aliases_only"
+    }
+  ]
+}

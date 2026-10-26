@@ -1,0 +1,85 @@
+{
+  "contracts": [],
+  "schema": "source-to-publication-bindings/v1",
+  "transformation": "private_host_path_aliases_only",
+  "scope": "Private host paths are replaced with stable /slb aliases. Original source hashes remain source identities; published hashes authenticate released bytes. Synthetic task paths, grading predicates, outcomes, model replies, and state snapshots are unchanged except for host-location metadata.",
+  "files": [
+    {
+      "path": "episodes.csv",
+      "sha256": "7fc70b25878451b1c58806529b946866d2208df8d772a893914338079f0aca06",
+      "bytes": 3232934,
+      "source_sha256": "5004020fd1d238b5fa9b3915490c1002adc46cd1e5dcf0e5eab5cbcea55cb77c",
+      "source_bytes": 3553969
+    },
+    {
+      "path": "scenarios.json",
+      "sha256": "12928cc1861869e0d62eaf865d3dd7e0e1b5dfe9872e1a7ea6d2231e1261d3e2",
+      "bytes": 3881643,
+      "source_sha256": "e84a8c5a4007d29de8eb34a807545ea4a4b5c16fcbf7abe55b8f428777da0716",
+      "source_bytes": 3881859
+    },
+    {
+      "path": "sources/measurements/legacy66.json",
+      "sha256": "fe7a9961c318712315bf32a5a79a01e08302517fc4d779de262d71b2ca876cf0",
+      "bytes": 2461777,
+      "source_sha256": "bbbfd3ff0ecbd8b722b508c65a06b4d23bffa00c3a6dddf17f5e9c05e69fda06",
+      "source_bytes": 2486142
+    },
+    {
+      "path": "sources/measurements/new194.json",
+      "sha256": "14fb374bebface9864015a0867f90759e43d110678e79282649de03dc73d26ee",
+      "bytes": 6115141,
+      "source_sha256": "e070fc654755eb542e52f1471476b87579bdf13c7a151c65a435917a206b72c8",
+      "source_bytes": 6232896
+    },
+    {
+      "path": "sources/next51-terminal-inventory.json",
+      "sha256": "5490019d4d5a5f0b30666bfc5fc161092a330404bb563ef79d44596013265ade",
+      "bytes": 99511,
+      "source_sha256": "8b172326d8ee84b951756b67da9d8e8eb2bc3603426a20689dc8498e0d9b3616",
+      "source_bytes": 111336
+    },
+    {
+      "path": "sources/scenarios/cohort-agentdojo-next51-frozen.json",
+      "sha256": "c57f87aed8877e4d50d538fa022342814e686291f0660997e6579705b5da1a00",
+      "bytes": 359274,
+      "source_sha256": "45700a77eff80295e95ed076e13a8f39a1b916a8b27cc657bb32629dd3d630ec",
+      "source_bytes": 365269
+    },
+    {
+      "path": "sources/scenarios/cohort-agentdojo-next51-security49-frozen.json",
+      "sha256": "b2dbcabb2b6e9d9e4bad78e529715351946d1e16f267fe08ab9350961306aa7f",
+      "bytes": 313044,
+      "source_sha256": "32a020561554ed795012a4540b3247c6d486a42ec8e812d161c1e79313e6846c",
+      "source_bytes": 313099
+    },
+    {
+      "path": "sources/scenarios/cohort-legacy-c2-frozen.json",
+      "sha256": "76165752dfb426e17989c6f1340cedcaa401c641b76e7ef214dfe9b64fce7275",
+      "bytes": 23084,
+      "source_sha256": "a555e7e728b22fb5467bb82cf0a0c5dd22ad0fd337ab5fc53ffa61739d32e6c7",
+      "source_bytes": 23300
+    },
+    {
+      "path": "sources/scenarios/cohort-legacy66-frozen.json",
+      "sha256": "2716c21397d082fdb70e2ae0863521acd8a4be0e05766ca99341789f35619703",
+      "bytes": 1438065,
+      "source_sha256": "e2a59f28175ef2caa4f73396e3bd629795c888b5fca158958604e779f9b482d7",
+      "source_bytes": 1438395
+    },
+    {
+      "path": "sources/scenarios/cohort-new194-frozen.json",
+      "sha256": "5398eb7026509a25106827f8da1a02a9202c69ef72d429ed4bf9b5e03d47ab73",
+      "bytes": 1721848,
+      "source_sha256": "251f2f11847d1e53e4945866bddd602cc04275822059f26259ea65a57a7ddb2c",
+      "source_bytes": 1722508
+    },
+    {
+      "path": "sources/supplementary-evidence/primary_d_final.json",
+      "sha256": "67e3d0321f203cfd9cac32fb3e13d22f3c644cc8e48887ffdaa1c7875f022aa1",
+      "bytes": 89181,
+      "source_sha256": "5f6bdd28493e35c52ca216cd47589ae77327fa9a942435911296024d08680122",
+      "source_bytes": 89511
+    }
+  ]
+}

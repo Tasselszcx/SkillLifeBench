@@ -16,9 +16,28 @@ _signatures = importlib.util.module_from_spec(_signature_spec)
 _signature_spec.loader.exec_module(_signatures)
 
 
+PUBLICATION_BINDINGS = {}
+
+
+def evidence_digest(path, raw):
+    """Authenticate public bytes while retaining the recorded source identity.
+
+    Publication bindings explicitly record host-path-only derivatives. Receipt
+    chains continue to use their original source hashes; this never skips the
+    digest check of the actual bytes loaded by the reader.
+    """
+    actual = sha256(raw).hexdigest()
+    binding = PUBLICATION_BINDINGS.get(str(path))
+    if binding is None:
+        return actual
+    if actual != binding['sha256'] or len(raw) != binding['bytes']:
+        raise ValueError('published_checksum_mismatch:' + str(path))
+    return binding.get('source_sha256', actual)
+
+
 def read_json(path, expected=None):
     raw = Path(path).read_bytes()
-    if expected is not None and sha256(raw).hexdigest() != expected:
+    if expected is not None and evidence_digest(path, raw) != expected:
         raise ValueError('saved_checksum_mismatch:' + str(path))
     return json.loads(raw)
 
@@ -51,7 +70,7 @@ def load_inputs(raw, selected):
     physical = {x['path']: x['sha256'] for x in raw.get('physical_api_receipt_bindings', [])}
     for path in sorted(Path(raw['outcome_path']).parent.glob('api-*.json')):
         data = path.read_bytes()
-        actual_digest = sha256(data).hexdigest()
+        actual_digest = evidence_digest(path, data)
         if str(path) in physical and actual_digest != physical[str(path)]:
             raise ValueError('saved_api_checksum_mismatch:' + str(path))
         signature = (None if raw.get('model_identity_kind') == 'pinned_local_checkpoint_and_pid'

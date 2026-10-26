@@ -1,0 +1,472 @@
+{
+  "schema": "publication-file-bindings/v1",
+  "scope": "Explicit original-source to publication-file hashes. Original cryptographic identities inside experimental records remain unchanged; current manifests authenticate publication bytes. The original source files are not distributed if they contain removed fields.",
+  "files": [
+    {
+      "path": "RELEASE.json",
+      "original_sha256": "8e17693a0009888ccf446a0e534fce384a1bfc52ec211ada925e4f6085e2b36b",
+      "original_bytes": 1291,
+      "publication_sha256": "6c93ac5cb1c6f61dc9041933f62b2607022e9c269b31bdf45d3ef642ed015845",
+      "publication_bytes": 1728,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "USAGE.txt",
+      "original_sha256": "70fb57e093f5ecead76730fd644b43e0616e3a9a95e3b583991db26ccffacacd",
+      "original_bytes": 2826,
+      "publication_sha256": "66bf5669b02ebd2a5414d2a93a6b47c81875f3de23d03777309a2cc186117a8b",
+      "publication_bytes": 3209,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "bundle-index.json",
+      "original_sha256": "fa69e150049965b8f4e2402a72d5f81b48308a00c9f683da9b631637b529e34c",
+      "original_bytes": 2212,
+      "publication_sha256": "680b7820dcc84ac89d50df5c61f44c6b8685e1f143259ed540a807a36c3c0497",
+      "publication_bytes": 2275,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "bundles/audit-only.tar.xz",
+      "original_sha256": "7936ee9822fa19e66c1e6218c1cd2ede7dda9e080ebf4f223c4ef7a6ff442e96",
+      "original_bytes": 6427360,
+      "publication_sha256": "87bbe1b73b3986ff1d40daeaabeab141adcdac4f9d0dcb2295ea27325fec6f76",
+      "publication_bytes": 6492980,
+      "transformations": [
+        "session_field_removal",
+        "path_aliasing",
+        "archive_repack"
+      ]
+    },
+    {
+      "path": "bundles/claude-sonnet-4-6.tar.xz",
+      "original_sha256": "33a71247118208dfa4d5cfb65951c56804d0507ffb1a8f1a8d9490e028e6d0da",
+      "original_bytes": 9577344,
+      "publication_sha256": "0f60c195ae9c99567c5abce52746fd51c0edd159a13575ec05fd8845f84e2f80",
+      "publication_bytes": 9631688,
+      "transformations": [
+        "session_field_removal",
+        "path_aliasing",
+        "archive_repack"
+      ]
+    },
+    {
+      "path": "bundles/claude-sonnet-5.tar.xz",
+      "original_sha256": "3e9035d6a21fe0c594292f0d82bb6144c5295de6a01f76ec4ac885d9f6e1d70f",
+      "original_bytes": 9285696,
+      "publication_sha256": "a32953e5addf2a68479675a1a5b531584042b73b0525b7b98694ee3a7a3e73dd",
+      "publication_bytes": 9318540,
+      "transformations": [
+        "session_field_removal",
+        "path_aliasing",
+        "archive_repack"
+      ]
+    },
+    {
+      "path": "bundles/deepseek-v3.2.tar.xz",
+      "original_sha256": "32d975af8996883fa695ba3a894f3136690361fe10556afa2c77bd63f560535e",
+      "original_bytes": 12868208,
+      "publication_sha256": "e3e81201546f09492edd714ee3d8b85b8e6d9062f008e6a6bf04d250833646d0",
+      "publication_bytes": 12914368,
+      "transformations": [
+        "session_field_removal",
+        "path_aliasing",
+        "archive_repack"
+      ]
+    },
+    {
+      "path": "bundles/deepseek-v4-flash.tar.xz",
+      "original_sha256": "d16f5294c06ee6ef24be6ad88d4a0fe0f4a89ced30bd95c6189a439ed3940f34",
+      "original_bytes": 10631464,
+      "publication_sha256": "fd9bbe5a487c4c3a676b66c639f419fcbfae631dec35d0e383cfeb62c18e5f93",
+      "publication_bytes": 10717944,
+      "transformations": [
+        "session_field_removal",
+        "path_aliasing",
+        "archive_repack"
+      ]
+    },
+    {
+      "path": "bundles/deepseek-v4-pro.tar.xz",
+      "original_sha256": "7ba2fabd0840fa64546c91631739b820967bc54eb87d512baa78bdb89356ef69",
+      "original_bytes": 9250024,
+      "publication_sha256": "6c84eecc88d4fd0d559297ed341e5e336b5ddafa7e341aeab9bd4fe339bf490e",
+      "publication_bytes": 9255824,
+      "transformations": [
+        "session_field_removal",
+        "path_aliasing",
+        "archive_repack"
+      ]
+    },
+    {
+      "path": "bundles/gemini-3.5-flash.tar.xz",
+      "original_sha256": "08d7e07cb31aaeb30a5f8a4b14a6a2bb63703831995178fed708a53f304fe1ed",
+      "original_bytes": 12280216,
+      "publication_sha256": "f603943c11c21e28c6562461e8eaaeb127714b8da1dcde445e15f540d45507d1",
+      "publication_bytes": 12298264,
+      "transformations": [
+        "session_field_removal",
+        "path_aliasing",
+        "archive_repack"
+      ]
+    },
+    {
+      "path": "bundles/glm-5.2.tar.xz",
+      "original_sha256": "d128273225cbb203ea186db198e8611d6148dc13a5bf15812cd7b758c54a110e",
+      "original_bytes": 8941612,
+      "publication_sha256": "e316f3649443e3df0c45072c3b68b0370a5a3fe4e0a449eedc4586026101e11d",
+      "publication_bytes": 8903320,
+      "transformations": [
+        "session_field_removal",
+        "path_aliasing",
+        "archive_repack"
+      ]
+    },
+    {
+      "path": "bundles/glm-5.3.tar.xz",
+      "original_sha256": "c00be56fafc190c200e63de22502148419d534ea2f09032663d07119cca13e7c",
+      "original_bytes": 12137808,
+      "publication_sha256": "dfa443fa23a8ba49e1831c2636286cd54653db52302e55a2cdcfae95802f92ec",
+      "publication_bytes": 12159452,
+      "transformations": [
+        "session_field_removal",
+        "path_aliasing",
+        "archive_repack"
+      ]
+    },
+    {
+      "path": "bundles/gpt-5.6-sol.tar.xz",
+      "original_sha256": "29bc5de9abf832f46a68601b21b49f0c04241f0f7b4beb00501452d005ce49de",
+      "original_bytes": 20797228,
+      "publication_sha256": "c0ce9cff93b5cf14398366544bd9d76c026da75018e9a2b6d7d4e0fff13f9009",
+      "publication_bytes": 10412180,
+      "transformations": [
+        "session_field_removal",
+        "path_aliasing",
+        "archive_repack"
+      ]
+    },
+    {
+      "path": "bundles/gpt-5.6-terra.tar.xz",
+      "original_sha256": "9f2c222f98e930bb485b680ca926732431c1cd773f77fbe01e7ba318f3d54b0b",
+      "original_bytes": 17418928,
+      "publication_sha256": "e7c6035ce08f2ef5204e6f4e3be6e50bb57fdc52054155380bc96eb545ccc4cc",
+      "publication_bytes": 10601072,
+      "transformations": [
+        "session_field_removal",
+        "path_aliasing",
+        "archive_repack"
+      ]
+    },
+    {
+      "path": "bundles/gpt-6-luna.tar.xz",
+      "original_sha256": "a38acbdad984352098cf9f25c634a6b9537a201e52d2100a739379daf7ea4937",
+      "original_bytes": 8068696,
+      "publication_sha256": "7c1854f0beee0dd71976984d19f97b804f5f1a17155a35943b5cc70530eee016",
+      "publication_bytes": 8068736,
+      "transformations": [
+        "session_field_removal",
+        "path_aliasing",
+        "archive_repack"
+      ]
+    },
+    {
+      "path": "bundles/kimi-k2.6.tar.xz",
+      "original_sha256": "e6e7c79fdb8c9cb6742fe9b0e348b01bda62ee2ebd60b993e14a25a0c3b3dbb6",
+      "original_bytes": 9057548,
+      "publication_sha256": "fe5ad7d2efe651bba3be8d544c68b043409046df633bd1e458fb462e89b5e306",
+      "publication_bytes": 8954312,
+      "transformations": [
+        "session_field_removal",
+        "path_aliasing",
+        "archive_repack"
+      ]
+    },
+    {
+      "path": "checks/archive-roundtrip.json",
+      "original_sha256": "1fd3e3824d70a1563090da202a8c96f3b579c686b450bd47b454ea5c1e28dcc0",
+      "original_bytes": 4180,
+      "publication_sha256": "b7a1762fcfbc2b3831e38b3f9103e0977e13e12b12d27ba64961c198ff101bfa",
+      "publication_bytes": 5596,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "checks/portable-scorer-verification.json",
+      "original_sha256": "d46426a101b7239fb625dfb8127c8e24b28e034c1f555ebd819540fb1f355400",
+      "original_bytes": 4206,
+      "publication_sha256": "f1fd4e428e496f589d57c301685955b0dc51443b36f2d22c9e38d2ab09a260af",
+      "publication_bytes": 4388,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "data/contracts.json",
+      "original_sha256": "2775e5a01bce7bb6935a9af758268aa62460a16eb4d6e2fa0502de49d4126cad",
+      "original_bytes": 3763815,
+      "publication_sha256": "96668d4b4503eb3e47e799134a47311895b498f0858d5de41630a300dd70704e",
+      "publication_bytes": 3707165,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "data/current-model-runtime-data.json",
+      "original_sha256": "063eb1b043ef81722db5a00f8bdd18a6d1974bbcd3b24e4fba8318e4afb99b35",
+      "original_bytes": 25512,
+      "publication_sha256": "2c758d7f35d4c2dd4f9851ed7fa2d4778b33e40a277b28f0b70ec8e8d4d08aea",
+      "publication_bytes": 25457,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "data/full-suite-category-C-updates.json",
+      "original_sha256": "8f395e5a073cdf23b756dd8fbdd3eee93971fb1508752f8e46c1f22d9b63425d",
+      "original_bytes": 200292,
+      "publication_sha256": "77fc57be636835aaaf90ed7bebc415cbabe6db6805d11dc2ab0c6e4889b9af65",
+      "publication_bytes": 190282,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "data/prior-public-projection-links.json",
+      "original_sha256": "42069fb141a75c185df994997078c69fbc7fa8ce4111e50d2b04fa4ddddcc92d",
+      "original_bytes": 3687671,
+      "publication_sha256": "956bb3deb0b3cb836b4e2d6faab40502144c49f482809423632a5a720e06bf28",
+      "publication_bytes": 3675351,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "data/runtime-case-verdicts.csv",
+      "original_sha256": "473d133cd8d61a119cc4d16edc21bf4b7798e55d8186f50072028efa1f9692f7",
+      "original_bytes": 445260,
+      "publication_sha256": "d43c47e850d18dad878f3fa9f90d0f21ca644cbbc5b3dcdc0373072cc0427a0e",
+      "publication_bytes": 439100,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "data/runtime-case-verdicts.jsonl",
+      "original_sha256": "74b3267e36d3b2243127552332dbd7dbcec8111d73da0b678f0fd2c5de28394b",
+      "original_bytes": 2278745,
+      "publication_sha256": "b1a41be0715dfc8c2e0b85146e64c8d200b58fb363439fbc557cc47d4211a856",
+      "publication_bytes": 2230895,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "data/seal.json",
+      "original_sha256": "cdbd41ac7aa11deb036778d95bb4453db58551d1070ba17a294b40a477f3adf5",
+      "original_bytes": 2222,
+      "publication_sha256": "7a59fb75a65a56bdd2c453a04a99cca5ddbe6be0cab277a5fbf92f2f62864b67",
+      "publication_bytes": 1892,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/adjudication-emissions.jsonl",
+      "original_sha256": "6e63f794de2ba9215e7bf765a2ffc9bf6ecb53a8dce3e0bd66f3135c0c63ec20",
+      "original_bytes": 682758,
+      "publication_sha256": "e7c4f377e5adf7f1b42e8bec8969a30e957afeadaa441e27eb89fe0a3fc9a175",
+      "publication_bytes": 666698,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/adjudication-inputs.jsonl",
+      "original_sha256": "b01f3f3b299e59316304f0c7a770f129a814df2a39d70194a277d28c58306b41",
+      "original_bytes": 895435,
+      "publication_sha256": "e1468bc19bfa2c1633b7e9b35e8038c4af1ad2299b95b48becb85553cebfb98f",
+      "publication_bytes": 877670,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/archival-label-continuation-manifest.json",
+      "original_sha256": "05f755cb5a113ab4d4175720b57404a473849d3c0dde372ff517a77a1196759d",
+      "original_bytes": 13734,
+      "publication_sha256": "b49e52e2ce67bed45da2366ffb235e92da441304974fefa47febeb942b1fe784",
+      "publication_bytes": 11835,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/continuation-binder-audit.json",
+      "original_sha256": "a2ca80997390af8a83156669fec5af797956f13e56830452571eadaaaf8e6167",
+      "original_bytes": 2810,
+      "publication_sha256": "6c67f388f9035d959748b0365014d53781d6a9518b4388a6d46314538234990a",
+      "publication_bytes": 2590,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/continuation-manifest.json",
+      "original_sha256": "f2a4f1a172a93f70ecb38c879de28cb4960a8525a0e51c8fd543f34aee59a9c6",
+      "original_bytes": 22079,
+      "publication_sha256": "7072bf62bdcaa37dbb2f43ba60f340fa647f2dbae5891198b0aba022cf05ef19",
+      "publication_bytes": 18915,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/contract-files/agentdojo-next40-normal-utility-contracts.json",
+      "original_sha256": "919708391e214ff43d77033dda16c290c2d11e9ec709e300778da2ed59c16ff5",
+      "original_bytes": 489343,
+      "publication_sha256": "f9c7d13f2f004ebecf6d48713a4a4b8a970685072c19b952566fda8e6c4bc6b6",
+      "publication_bytes": 480048,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/contract-files/agentdojo-next51-normal-utility-contracts.json",
+      "original_sha256": "b4739ffc5d898d3754d265c87e23efb0892612746e0154d917e47bdb67b1f629",
+      "original_bytes": 1007824,
+      "publication_sha256": "77e04f33191bbc19d5598c935ed997099a6710314af5fc8a3b49b83aa473d237",
+      "publication_bytes": 995999,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/contract-files/agentdojo-next51-target-contracts.json",
+      "original_sha256": "6ac1d47f068b0077ea2d7d060b6489d01723801a6997a63211bb101684b9b92b",
+      "original_bytes": 3090821,
+      "publication_sha256": "5b2ba6873d793670518000b0e4a97a54fa195c4bb1b69e2afd1c35fe2e14dd4f",
+      "publication_bytes": 3068768,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/contract-files/agentdojo-next60-target-contracts.json",
+      "original_sha256": "43684b8c402bf88c1b710b2301f4bf7ed3c6a84e8b2def23bdb9b2b2dd3057eb",
+      "original_bytes": 745921,
+      "publication_sha256": "44b3bc9972f7e5fe13162662f87be2f96e7f46c5c9236b3fe4364a1d29f3d06d",
+      "publication_bytes": 724949,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/goal-grader-freeze01.json",
+      "original_sha256": "ef295f5a6d0050fb401b9c7758453fdd69f62bd2772530b9126e324f198a78b1",
+      "original_bytes": 813,
+      "publication_sha256": "2c0f5e928b65babd2ca73e55f9a1fbb79c6705d8c533c363fffab84d2c3cfaa4",
+      "publication_bytes": 741,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/grader-freeze05.json",
+      "original_sha256": "9f685581e9f31eb4a16c01d8fa3296fe50f7fc36bfbc4595fe235bdcbab4a09e",
+      "original_bytes": 3647,
+      "publication_sha256": "b607930f151bca866f62e34534e78983e2fed7c4196e49b32ecb67e9bfefd02e",
+      "publication_bytes": 3467,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/publication-transform.json",
+      "original_sha256": "57499d84167da66d7c6d8553ed61699c47d6a999ed91e7c69bff06b133527c3e",
+      "original_bytes": 1973274,
+      "publication_sha256": "97c8350697ff2cd76019ca1aab5868f1cf2d4a5534deea62c08ea9fcbfafdaea",
+      "publication_bytes": 1951439,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/qwen-plus-finite-recovery-search.json",
+      "original_sha256": "c2a000da61a28706159701e73bdbcd0441f1f13511d39bbce2af6f7b8d9c9201",
+      "original_bytes": 1677,
+      "publication_sha256": "fba95124840878245a8cf982d06ca4739ab27611458f93cfbc99c17a16cf1998",
+      "publication_bytes": 1567,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/replay-collection-candidates.json",
+      "original_sha256": "8ffdcb1676d05a56648d344cb22416cf6cc32024843f18978de187c39d721989",
+      "original_bytes": 229046,
+      "publication_sha256": "163ef9b64f9793f87f71b74b22c90c99b4d300d1fd6bfefad93c5bf0c1ed90b8",
+      "publication_bytes": 212986,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/replay-final-audit.json",
+      "original_sha256": "b4edaddf0ec67f1029dc283da57271eb3ba4229cdd6ed16f6e6073553a8a8c56",
+      "original_bytes": 2591,
+      "publication_sha256": "e91b64b16d5113f32379efb81cb81aa2411cc35b668c9fba25cb210413cdee57",
+      "publication_bytes": 2426,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/replay-manifest.json",
+      "original_sha256": "9028e620c6889a28c1a6b1ef7c6928ed50565ae7045f3f3343234bfbcd8caf04",
+      "original_bytes": 277378,
+      "publication_sha256": "8e9c862d156ce48360d1ed273cea8d6dfa616dc36501de5cde25f3052b4d2547",
+      "publication_bytes": 267614,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/service-disk-recovery-manifest.json",
+      "original_sha256": "58387e52e51c2921b272f722a30db0e4d57e65208c7566026a2eb624700c98b3",
+      "original_bytes": 36109,
+      "publication_sha256": "61e6f76af8cbfb71b9d65b0922d185f287991d1442790300d868299a62f67686",
+      "publication_bytes": 31900,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "protocol/service-replay-manifest.json",
+      "original_sha256": "efb3033e133816102219aca103a4cd58b48bc78808783dd8c3b49758bf27079a",
+      "original_bytes": 81774,
+      "publication_sha256": "68fa80a6de3a51c5fb9cd98139a44ebd3bd08b543dc4d8bc2081e47f17451a85",
+      "publication_bytes": 78885,
+      "transformations": [
+        "publication_metadata_update"
+      ]
+    },
+    {
+      "path": "verify_release.py",
+      "original_sha256": "8812a6841c3a40a1d9b66694743824aa1ad73945b6707c5ecfb6cd81e7144934",
+      "original_bytes": 8359,
+      "publication_sha256": "ec640f7774455cf043a25d8a7087a42bbdc7130dc54ae1ab50239552035e3103",
+      "publication_bytes": 11084,
+      "transformations": [
+        "privacy_binding_verification"
+      ]
+    }
+  ]
+}

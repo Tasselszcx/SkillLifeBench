@@ -1,0 +1,2305 @@
+{
+  "contracts": [
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user0-goal2",
+      "condition": null,
+      "source_sha256": "3802bd2c993d713c3a49ff32da361e645be90431bfd39185b4a4ca8797184ee8",
+      "sha256": "6aaba3a698f674e3ebe7cdc5fd68efc51bf67f94f11b955c2dbf4e196ddfeb0a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user2-goal3",
+      "condition": null,
+      "source_sha256": "26475bc39deca5510404af71c43d51c9abe2c60295abcd824700a34b0496c2f6",
+      "sha256": "003c8afc7d431225fc1e166dc78765fa8f288842ae1b3245b64d5af834820611"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user2-goal4",
+      "condition": null,
+      "source_sha256": "68a7c3575680205f3979a9769527b0c248539c510d6f76e9a5a2199cdbeffe89",
+      "sha256": "3e38cc1b48d8e8832b30b7560eb44d872c78497bc0265d031f229b580f35d9fb"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user5-goal2",
+      "condition": null,
+      "source_sha256": "95322b2f052cd62e6fdea64fd6597e8e95737ef531ebfd341c44d1a53601c979",
+      "sha256": "919e1642d9da38f730169e33a8eb22a4aa950ad79cf1d7146ba09b3201c02452"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user6-goal2",
+      "condition": null,
+      "source_sha256": "5858aba2c456b2b14d21e5316e032d67e50f00595090c071584dc96e54fdf4bf",
+      "sha256": "dd4576329476d934f0f64203c244cec66162f9fcf8665ab06df10665b2bcb26c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user6-goal3",
+      "condition": null,
+      "source_sha256": "19bfab9e0f4fccca831470e0efe9340f1869d3e45ee2e544172f41768c4f5725",
+      "sha256": "7d2663e03f7f3ddf6ce4ac687a843b0628c5ab262b9854e3fdc274116fb7f81c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user7-goal3",
+      "condition": null,
+      "source_sha256": "44a2de42347ac5edd8a12435ff92e6ffaaae9eec705ba4cb8d04eabd5c532660",
+      "sha256": "500a83807906129e7f138922acf6e2ab0ff06f98166a87b6e8cf3ffde690dc50"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user7-goal4",
+      "condition": null,
+      "source_sha256": "601b6faacb0e53fb3d709f0d36d0d13274e10f0bd343c79280f1e7a72c9b0859",
+      "sha256": "4d1583be31d1ba0b2957c525892180dc0187791107261c52f8a333daea39de3a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user8-goal4",
+      "condition": null,
+      "source_sha256": "e9792295b79a074ef152587678c826ae2f1956a434db47c51d4e45979663b000",
+      "sha256": "30fb1f7c166b4bf4d42cebef91e7c5cb8753f79ab34c80a6a9e656e06397e27b"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user10-goal2",
+      "condition": null,
+      "source_sha256": "dd4428734501860a5553bbd87a1415ad14d257c9567a049e1c1100a48ac8f498",
+      "sha256": "4c3774ee281c381e9cfb191cc5c4d79af105cd898b42248aafa58989bea59a14"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user11-goal2",
+      "condition": null,
+      "source_sha256": "937c6a8f78cc91e6df9fd11deb980a0a7ee3af18c396252955c934d36cf0008c",
+      "sha256": "aeab522c44bec16c0427f8783d33fd47c9f283035cfdb1ee80dc1525b9872fa4"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user11-goal3",
+      "condition": null,
+      "source_sha256": "eb799771c890820f2c290b0338935eaf19201223221c83877276080ce59b3d5e",
+      "sha256": "02fe5f053165870efacb662e74719b1e87088de97c89acf7f4ae4bb7d6c86597"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user12-goal3",
+      "condition": null,
+      "source_sha256": "649b62fae319cb8eb795afb774144a2cc1e43f6401432115ce24d8195c5d18c8",
+      "sha256": "9b08b894dcfda35b3343290e254c4ebb7cc8f3742ca84b2af7c8b75a28d8fd58"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user12-goal4",
+      "condition": null,
+      "source_sha256": "5ac2cb74d843813919bad6939a84d97a79debf357b73a71dd9f0c055035fe70c",
+      "sha256": "a439d2ccd34c1be249f494656bb4040ffaf94648752a85d898c3ec6d0f4cf073"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user13-goal4",
+      "condition": null,
+      "source_sha256": "8c72cbaf81ead341e3f25ac83224b9684eca9aad98d05fb010a5684bf8594086",
+      "sha256": "cdeefb97a31f7f0ea8387e1b70605fcfa2aeb74a440438eb92bdc5a64209bce8"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user17-goal3",
+      "condition": null,
+      "source_sha256": "36960ad3c1d83735bd5a5cef898734cadb51f5772e5982a1139fb4243f2467c8",
+      "sha256": "a96dd995a72ba8613d793f2701dbe338b6ace91d25b8c6da8ff0c61408f288d0"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user17-goal4",
+      "condition": null,
+      "source_sha256": "bc261d3b0e3d76bce07c43bafb91e40bee446d2747ccdc14e38a455ad512f445",
+      "sha256": "ce19036bc8affaad06d55f20ab87dfcb8e7f9e583c6e52f27c3a10c6588923c0"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user1-goal2",
+      "condition": null,
+      "source_sha256": "48a606f6f75998aa4e2598bd32be614e96de04c9f2256ae88ffe85768d9308db",
+      "sha256": "b76578e3c1acf828199428776cf6aebe6f223993264c39bf8c2e6fc0b637748c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user3-goal4",
+      "condition": null,
+      "source_sha256": "71e74b0c064f3573ec32f4345509d123c180dd3532ab53899d1a50bbfb4743b4",
+      "sha256": "a686609b7768b755cae5c73da32b3c9b1bd7694bdab1a66c1096ff49f63962ec"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user4-goal4",
+      "condition": null,
+      "source_sha256": "b1a71b68846e812f1923edb8608f343dbbe784ff02fff55e6b76a5eef1356887",
+      "sha256": "0a6b34529bc275014346a5c0e68c9cd38c172ad0b7e62aba4df00ff4718b9673"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user4-goal5",
+      "condition": null,
+      "source_sha256": "b7b73ff084dab01c11d6725580f245a87f912638a348c4f320a9c4bbbd6bd3c0",
+      "sha256": "d5d6b58f4039ef1ae64dbae9dfd2fd5b8e1fe19e01f4c21449c45e2880d5094a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user9-goal2",
+      "condition": null,
+      "source_sha256": "325c358e5ce02e8f696dd42ff8c458ab9e32049110c8f7fae00b42b7238e95ed",
+      "sha256": "753f51259f43ec6571d6ac09450aa3e02ea3f8905da327b40c3e5742d9e60204"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user10-goal4",
+      "condition": null,
+      "source_sha256": "f751f8bdc189b5d1036fd3f090c0d6eea6383986747f0c954aa5a5544f56006d",
+      "sha256": "5836e302e2d4a24301540bf69d1a5dbd41e467ff847737ac56ffeeebab0f9e37"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user12-goal5",
+      "condition": null,
+      "source_sha256": "55833cc9ef9fab3531816c61b49c94e3fae4f4ebbaac1097e3b8d740cb62a79e",
+      "sha256": "4bc2a205dd654c9d7b84ace8ffeb7c5dca1b4b7581a891b2061c0fe5b3fa91a9"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user15-goal2",
+      "condition": null,
+      "source_sha256": "58c0e816c66424ccb771f5797c140db5c303872c731e7dc8d295033b8808ae8c",
+      "sha256": "a87976561b4ed6044526f080f142e0c3d49f82252044658edcff6d4ae008fb44"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user17-goal4",
+      "condition": null,
+      "source_sha256": "305a0f5bc6b86161f658820bcdae266ca5d07ab2aa83c12cf35d6213369a5117",
+      "sha256": "b56d22bfd951279288667b6e8e20cf4df2d545ad58a8e42008ea0459b2c8be03"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user18-goal4",
+      "condition": null,
+      "source_sha256": "ddde7555d57fe4650ae82e377b761f52fe271a8f9c58fb3337ff65cb1150e18e",
+      "sha256": "f1e8e91ab547988b5e0e18827f68909275da3f5214378886b8d5e5fe476dfe44"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user18-goal5",
+      "condition": null,
+      "source_sha256": "2ef6ced4e5f0d346f7cf35c09e77e74cb3070aa7ceeba08de6bdddf8f2571e9f",
+      "sha256": "f3e8fb0002e2e202026738551c37c319af46970607527f4218f564bf4bf1f059"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user0-goal0",
+      "condition": null,
+      "source_sha256": "8226acfcb7c331c926e460b49691b2ea9cdc59d26f677cc93f19a61bb0344c9e",
+      "sha256": "bbba025f738521184e2a7690181f7ba2564c6499dc46451801d38ce680623ffc"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user2-goal3",
+      "condition": null,
+      "source_sha256": "78c5e4306ea9c8852f4cdeb87a9639bbd949a3d20d8fba016b485d1e2559cc27",
+      "sha256": "83d7596fb558f79db6d0937c85d9fab95e6258838f6fb90f50d248e63203951a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user3-goal3",
+      "condition": null,
+      "source_sha256": "6a4527edfd4eb1b8701875637b43f37ec5d76dac5fd6284a4869fc0198c50c71",
+      "sha256": "d5a638d629b3d99d33f26dc1ad47de1f8060620183a6e094f881e1785b2f6648"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user3-goal4",
+      "condition": null,
+      "source_sha256": "07b2fba64b0750ca83d4b3190a87aef791cc7ec317a00258f3c7b6a667c3e8fe",
+      "sha256": "a46f635a0fdbb3d058bf0c5d21882c65ec87dca28fce64eab689d921de849456"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user14-goal0",
+      "condition": null,
+      "source_sha256": "59b97f4fad4086bb630777e4fba6295ffa954a8ab10151f585495fab7a21449a",
+      "sha256": "8ecf45a1de12d0ac2e795a19968104faadfd94839e68bcf88013f906a0a408af"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user17-goal3",
+      "condition": null,
+      "source_sha256": "9ed0b7e6551150d7ec18c9c46ff2af57bbabf656a9a6b440524b3584a7b14030",
+      "sha256": "fed456ab5202aa27b97ddb3220c7b1412fa588485f1d6f02fd28e3a65d9c93aa"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user18-goal3",
+      "condition": null,
+      "source_sha256": "232d47ddf30a0732362ea44c72795682f8906f313012e8260611f64dddf0230b",
+      "sha256": "2f755b04ac5f166722470625e49370af77981e912be018c5fcbd29e0eefccb1f"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user18-goal4",
+      "condition": null,
+      "source_sha256": "de44754f47818071dcce8112e2a0593108868acbbd90adc26cc1dac7bf276d1c",
+      "sha256": "c3be7f28e1cd42642a330a57787e45f92f8bb926caeb483e2477f4a8c3a2e897"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user28-goal0",
+      "condition": null,
+      "source_sha256": "543ebfc86ba1e961654037655cd031fb34ed004eb45fbb5552c40cbcdf6e0158",
+      "sha256": "b8ad63fc15ac6d556473990a4e163b35f9b9f2207fd00130dbd869ce8ab17998"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user31-goal3",
+      "condition": null,
+      "source_sha256": "e358a969f390c4bac3056838da09422dcf43db9a159d91950a4680d452a65b5f",
+      "sha256": "b7a2ab2806567ea28596a5e5eb90a010fc8b1ce2b5e802fafce228011bb3fcd3"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user32-goal3",
+      "condition": null,
+      "source_sha256": "de01d9345217a75e455b8753ec69c7e11b337c8ee3340f56db92ea2e03547bb8",
+      "sha256": "7ab9e0b36ecb8d8e3fb66c3ceafaef70587c02c0465144b1b6bcb9b4f1e2775e"
+    },
+    {
+      "file": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user32-goal4",
+      "condition": null,
+      "source_sha256": "8fd37b6f747e68cd84e73be4a0813d0bdbb5bc97ac5f2b17d18c93f034acc9e0",
+      "sha256": "b5e18dcf554f83ab603da172dc33bd39a61a616229ecf2344be541bdce82d4a3"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user4-goal5",
+      "condition": null,
+      "source_sha256": "4a6c3972380c1267db46b389df0b1091dbf8704efcbb890387138a661f8d5464",
+      "sha256": "b88946328bffba3eb10346e890510ba7527f2bf7451e0de592cc748a1c8b5e7c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user8-goal5",
+      "condition": null,
+      "source_sha256": "4e039c2b7da486bbde3b86584f6a368441c6d14a5fbe78efbec33c5cbb06d0be",
+      "sha256": "96de7ecc5cfd05d51d349dc64b6b5f9fdb749638337c86813dfe53a824141fc7"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user9-goal5",
+      "condition": null,
+      "source_sha256": "c02944f16a48dd9b244390dadee29e5713e1599b7db0de3b246ce0094a4e3ceb",
+      "sha256": "90db8eb68c3d438057dfb95916328c3ef71fb1e7313b6988cf31fd0cdd4db206"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user13-goal5",
+      "condition": null,
+      "source_sha256": "f2a824b053eff7b158093dbc61497b536398f959937bde2512ac77746cc90360",
+      "sha256": "9bc421aaf4a44599a4b1ee496dfa019ac110df541c7610e853249cb117e3c3d3"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user14-goal5",
+      "condition": null,
+      "source_sha256": "2cb4fb845cb94582da9bad0c00c0626cbca7999d548df866065a427b559002f1",
+      "sha256": "7869e8b7ffec0485bc9bc5cc07791b36dd62ba7942462c4086cbacbdb60e1818"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-slack-user19-goal5",
+      "condition": null,
+      "source_sha256": "e143d52d99d4767d8b8ab498d22507df7d30e50fa4d7bc9a52bd2eefc2678e3a",
+      "sha256": "ef695189a292e611fc4a3591b42bd8d5d849950ac84560ee81e53eaa720c4ff1"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user1-goal1",
+      "condition": null,
+      "source_sha256": "1a773ece1d566c8f2ae17b5ee80ceb538629bffbffd2fbf17311d2efc6dd7fad",
+      "sha256": "fc8edc897ad9c8f0bbbd1063c4342bf3345c46d07d57a2ab305e126f193c9b87"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user3-goal3",
+      "condition": null,
+      "source_sha256": "e559ec98b5bb9c871f10688ad287d47c5cb3446681ae570df7465a1a87d6bddc",
+      "sha256": "fac82a75838dcd31d23e351d823ff8062936df97ba9f3717cc706a9d2e518d34"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user6-goal6",
+      "condition": null,
+      "source_sha256": "5cff7122e700e14cdc9d24a2bfa9e3e40c392b524fb3a4e1838f0e4d9c8b7add",
+      "sha256": "1dcce89d9c1d7addc743da5a026924e31dc218f56da55cb4aebec6fb9255daaf"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user9-goal3",
+      "condition": null,
+      "source_sha256": "a176924083ed6dbcfecac2272fbc5f185ccf7aa6b3544c4fd364fe78678e0cf6",
+      "sha256": "ac2d0f4f9d2f6147f14fbcf2733fc70582c270f0b2e4fd82f2ee4b488c8e0e2e"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user10-goal3",
+      "condition": null,
+      "source_sha256": "41b2b85efbe04402a60b1ff4e366a07ef8620456e1d1821cf2bd76fe57b507a4",
+      "sha256": "8b6a002e5d21b0ebdad774813ecf81a96d5f6d8881ea2e12d77c096cf28b0528"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user12-goal6",
+      "condition": null,
+      "source_sha256": "914a65cc09b335ef669c51aee3b8d6ecd8d30eb4364a161a653b6eb60886d362",
+      "sha256": "fb4122fb5e0647f030def13e432708ca38ce6ae4a742759a48094349e91cbd80"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user13-goal6",
+      "condition": null,
+      "source_sha256": "4374070a3dad56a0f2b67e70419d164bc1ed973c3e4d20ad8aa3a115ce07f76d",
+      "sha256": "cfe4ecb0baa97173684887c4ee51c1981f2acd49d888ae11604f78de69dda593"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user14-goal1",
+      "condition": null,
+      "source_sha256": "168d0c63a2423d2d5c726f3c6d211a0b90ff6fcd4ab3264367d377f11b6fda38",
+      "sha256": "ca22e9706533eacd5b47b387de03aa0f6541b5d57282b003fd6220e3cb1199c5"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user15-goal1",
+      "condition": null,
+      "source_sha256": "80c4aacad7190101fccd85b176f1d3fd7d6eed0a4224e71ca6e414e49964d153",
+      "sha256": "1497c1ac464202e3c28d19a8c6680c132d7447cbcb93a7a38d06a5966c74947a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-travel-user17-goal3",
+      "condition": null,
+      "source_sha256": "ffc3d9c3757f62e936758e551083935038c81f3cb926da331c3e197a8988837c",
+      "sha256": "93f43f3709f47cab5cd7d83244f2f7ad062c941b402f8664c58d2262b6a42733"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user5-goal5",
+      "condition": null,
+      "source_sha256": "f5ae8b267e103e6978058ee1c709d03f37ce0f1037773a4d073e2e7a04bd36c1",
+      "sha256": "ec1d4e34a20b010b79f759fd12a08543a94ec9fb91da740f4486aa4443898a3e"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user5-goal6",
+      "condition": null,
+      "source_sha256": "a1dff13c707a8de3f1d6e8710fa8a4c0ceed524dc076362ca0b330c690812110",
+      "sha256": "0f01ebf80632d2c4a125b1bd4397caa46729c89b59956d9b5ad26ad0b0720acc"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user6-goal6",
+      "condition": null,
+      "source_sha256": "b377050d9cc09a26b1380347c5926b6df66310dd40b45d3655544e18b3f46a29",
+      "sha256": "21c2f0c63f9444c2f8d42b10cfde870fceddfa52b2ba51bc573b0b95e69fec24"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user6-goal7",
+      "condition": null,
+      "source_sha256": "2128e640798cd15d221b7afd13d854c09401d5ae4f956f2c3f98dfdf41a6bc0e",
+      "sha256": "1cf750c602475a45c54214ad0c83ba3de819094200658edc23b8e6cc65d5cedc"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user7-goal7",
+      "condition": null,
+      "source_sha256": "b8b130c1d5cb756e2e9a6714820698cffdfb066cf287df269f9f877170d64d65",
+      "sha256": "bd3d6a906f2793580b35329607b680d05a5f69bf98826710dc103587ccf4afa3"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user7-goal8",
+      "condition": null,
+      "source_sha256": "80fcd4ceabe9ae8c0c740b09fdd093cd04a802f28f37a3960c4d6731824f0056",
+      "sha256": "70d14a1e8df5d3822098f65351dc7eb90f9a5b13aa5a82b568c5a4314aade7ea"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user8-goal8",
+      "condition": null,
+      "source_sha256": "454aa0ba16a2b3cdd16ea66f20af74b0561702e2c3be5e792004acf9869d4f53",
+      "sha256": "963871f7ba150f7e3710f4cc253130a936e44970dec1d2e2649dacc4320fe431"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user8-goal9",
+      "condition": null,
+      "source_sha256": "c3b4c168d82f268671907a29aa547c2dbcddf303cda637d95eeb3738d22aee08",
+      "sha256": "b15ef908d4d42156ab2a116b317fdf792e0e64e695095509cc0910476bd765a4"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user9-goal9",
+      "condition": null,
+      "source_sha256": "83f150970b16acf8f94eb497f09bed253f0cbd97b586d2525d28c73c1b650134",
+      "sha256": "c05050706cefe7d27c58056f281a7c9b12570d374baa5c2e69b0a24c60838593"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user9-goal10",
+      "condition": null,
+      "source_sha256": "0596e07df79141d04b433c7e3439b0ab08fb67706f230c0f2413b047841701e8",
+      "sha256": "34c0c34a152021c27c2d84726878cc5f78610f66a3c295838d5a8b9a583d55ac"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user10-goal10",
+      "condition": null,
+      "source_sha256": "6e617f89593ec6feb68ceb1c8d41cc5bfdfcaf851a1f22690d18fa27b5b84c69",
+      "sha256": "f96155cc5a8f6610e9325444cd54dc11a9bba5dacbe69f081a6cbf932bd6c9fd"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user10-goal11",
+      "condition": null,
+      "source_sha256": "cf93ad76e626ce7dc41b5e95f362d2cf924950eb9ca997fc9cc56a5228b932f2",
+      "sha256": "6235443022eeb88842941a136fa5881409315e3422b51a211d289b3b397b229c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user12-goal12",
+      "condition": null,
+      "source_sha256": "aa9bf084b0ea000df6dca568892ce644bb862009a1d90982e9c14b4fd7c095e9",
+      "sha256": "910ccbf4c39219acbc72d3845dc48689c1243fbe0f4558d7cb060b3b520889a4"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user12-goal13",
+      "condition": null,
+      "source_sha256": "efa76525256343dfd730d27ce790f38fc9c4653a7607792bae2c592981847150",
+      "sha256": "c4f8a110d8bd859eb9fad071440df3ef5ae6a62146091fd73d7161f21e013b15"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user20-goal5",
+      "condition": null,
+      "source_sha256": "2276a4fcbbb8fe99c8f345139363a5787209f308956390f7de8954a5c460a987",
+      "sha256": "f6b364bde79362d0e3eafa6cef16a1f82c3083cb29a339db6a815b3d56a211ee"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user20-goal6",
+      "condition": null,
+      "source_sha256": "3cb5838bb36e984f830e8d496177ae5abd00459f5e53cd34380fea40171da7e0",
+      "sha256": "b3d9b2dc150b5c67b6247ae6dab53f42199705947edf597536f6e891bb81f11b"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user21-goal6",
+      "condition": null,
+      "source_sha256": "d3bb89012583ea80af62d24394334cec8a78447dab889ebd0a2fe02860817fd3",
+      "sha256": "d2f4b9d9ffc65d5294479743f3353880070290a954f728058f4333c094119131"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user21-goal7",
+      "condition": null,
+      "source_sha256": "22bef9978f3e9c050a30bdd099fe45f3ebf7ba36aa01e29e3b02ff4217e02c17",
+      "sha256": "b44e87d4693822c978dd38ad5a881d5d904c3f468971d34b0f6e5f1a59c602e2"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user22-goal7",
+      "condition": null,
+      "source_sha256": "5e001aa6f0bf8883e9f9c4c1b0f298b71a5dd74da678c3cce93847b4cdbc86c2",
+      "sha256": "a4a7fcd8d6d71fab23f88495e28ca88a491a8c2555397bb0f50356fe56252615"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user22-goal8",
+      "condition": null,
+      "source_sha256": "4c6e4ca4c4d4cf293c6094a7060c0d00afd2c8818aeb6a568928a3c270b4ba9b",
+      "sha256": "95a3bcac7b8188cf857c1a5b6df48b0d1c853008d3a70d0f1ecc0dbc3bd88380"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user26-goal11",
+      "condition": null,
+      "source_sha256": "0dc97dee0326a6a510e310ded1d047b3891d7bf26f51fb88ac2aa8a823f59b93",
+      "sha256": "6526485a697668788b5af78306227b839bad24517c5a3603263ed32f09b9fe35"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user26-goal12",
+      "condition": null,
+      "source_sha256": "9b71e88345ba1b30b5b3b69f815228bdabdeb18447d5817c0926219ce53c6225",
+      "sha256": "856643e5cc07b88508626fb159ac60a32b81ea1a3f6f7dfcc6f773615694e4f2"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user27-goal12",
+      "condition": null,
+      "source_sha256": "4a42dc6add8033208e075157b16d872e8862cc3cc5ee18d200a4f81245153035",
+      "sha256": "603d0146dea8a15f69579f0e1a185c3f6e6436e63a835fe5aa170bac4e22dbe7"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user27-goal13",
+      "condition": null,
+      "source_sha256": "0c1621fa8f0c773a59419280fbab9bd19f63719d41df900bedc4e978f450f906",
+      "sha256": "024bff7b78ebd40f8fa8317c667ac9bc86e9d54a1cc87ba201562ea681f747ba"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user28-goal13",
+      "condition": null,
+      "source_sha256": "9a8e6603175cde8759da3060f4cf154dea4c3e188871118b55ee5f5d4923fc79",
+      "sha256": "7a845d99085525aae24b12aa4c28cb40b6f6a4059af818fffd4f0dc7f4d0a27b"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user35-goal6",
+      "condition": null,
+      "source_sha256": "618b944a50ae9f2b56fd9ba23aac56148490654aefa1164dd838678c055f013f",
+      "sha256": "62a8a91e3abb88ef3528abe70c0586c6ad04cbd7b1b83f7db03e2c246d72b2a8"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user35-goal7",
+      "condition": null,
+      "source_sha256": "ef2c2eaa9e18620dedda9fa9b2c166b10c762207c5fd427f2c14182f3b618124",
+      "sha256": "d0d9abcad1e3e40ae16aded37e7f1f41249bd2ee58aafb42eb362bc0cf8c5c50"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user36-goal7",
+      "condition": null,
+      "source_sha256": "e5095a7a2bd9fdc12192d4d356cf04a19d9cbea0b2f8d2eb75aa9b6b64d78564",
+      "sha256": "c4262266896e6ff1e20f604214e2ef2acc058f3fdc398968eae81d3f832ba324"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user36-goal8",
+      "condition": null,
+      "source_sha256": "ce9afd09152605f7f62e3c6ffcf2a48c54f3b5fa5b851d7547f3149012f60dc0",
+      "sha256": "232381c36f58fb6449250d36d1b38b5f2f86ba2798843796340a5936d4925beb"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user37-goal8",
+      "condition": null,
+      "source_sha256": "f6b9d277a1c92573d1e15ff42142c5b4beb9d946a4c55e103c520560cfd41cc8",
+      "sha256": "fe608598c85e76f088f9f7ab0f81759f81217db289f190ebc826f6697e95efa4"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user37-goal9",
+      "condition": null,
+      "source_sha256": "bc4e2530d3c76cd2e9c5d415801a940fbb06d7a11296ae7e019075eb3d419721",
+      "sha256": "2e2d03297ce5cc54fd1d28973e973a0fa1f65668486df3ee5d8847d5b3f6bddd"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user38-goal9",
+      "condition": null,
+      "source_sha256": "75f103f3b535d754583c34528bf5e4b2afb00bf18e4888c5bebc943cf35fe987",
+      "sha256": "1af566ac9bc78ce1bda171d28e12d4da08285b8dd96e52799de231ac9e539b87"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user38-goal10",
+      "condition": null,
+      "source_sha256": "ccd0bb6420929e01ced913d9704cb9652f97cfb9f932b92815b5361f329393c6",
+      "sha256": "914ee636930d56a6e4ba26eed764d91bd065c91c21188d66fa4641a89659ebed"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user39-goal10",
+      "condition": null,
+      "source_sha256": "1a70b09707888228dd138551b83020c889702e0276003db1ec9fbb92532aa9d4",
+      "sha256": "c0150a7e295537bbd974665519d77fa64c5817ae1dd093aff0861ab9e991a644"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "candidate_id": "agentdojo-workspace-user39-goal11",
+      "condition": null,
+      "source_sha256": "11d25839c939bb72492c6d67f0a577a828271405faa5cf2c478ed1c39136c57e",
+      "sha256": "60b3fab92d1103577a7cf47cb1ce99539e9f3fcaad47da7848c9361136b2cee9"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user4-goal5",
+      "condition": "clean",
+      "source_sha256": "1b6216cf42ae4c704a2259514d45d64c1e64f002c3282377fb8734b14e493dfc",
+      "sha256": "fdfd6d8aa97415b49a40a4288dbf3e4ff986310c54c878eba06ec8460ab82e18"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user4-goal5",
+      "condition": "injected",
+      "source_sha256": "25ffe73c280042e189df70045f33a857686a40fc201c486c2b1b434f5d288edd",
+      "sha256": "54e41972b8960acbe23b9ddc2813af6e6c41e71d74dc1fa5469294e0df7b5bce"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user8-goal5",
+      "condition": "clean",
+      "source_sha256": "6c13b3d7df0d88b2d90fb7d19b08812859b1f6be0e820f68e0943de8ddd06723",
+      "sha256": "04945d9d6904b42401d25646bb77d90de43c21ac7c38b0da7b667934bb74d9df"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user8-goal5",
+      "condition": "injected",
+      "source_sha256": "5bbf4d3d0cd8fefa871ebc7257af9a158d07312c14852c65266d5d076f122c77",
+      "sha256": "49af39a8ee885e0d86d1f7cb4fb119eea44e496b93cd408a446c8e9286b868bf"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user9-goal5",
+      "condition": "clean",
+      "source_sha256": "1036e347e8aa38b97d9defee6edb40431e370a4811f78da5f4545bf5537f94f2",
+      "sha256": "c712f5f8bfe1ee6c67e7421d84705c1015ace4732bf7055520b88e09abdb4289"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user9-goal5",
+      "condition": "injected",
+      "source_sha256": "198b97b32d5f3830a23a255625c0b44a156294300e03c6598844879f40dc070a",
+      "sha256": "b00506a439af23f91758789a375ac320dab6177ce5fc39e1b8281d929d643fdc"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user13-goal5",
+      "condition": "clean",
+      "source_sha256": "8fde08e55f0b56bdc6018cde5b3a34543e26f174283014968ccdaf03eabe7626",
+      "sha256": "2f15285204e642d8a84194ae2be5262b64011b12ab6a62c6c098f9a23b4f3e2d"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user13-goal5",
+      "condition": "injected",
+      "source_sha256": "8c3bddede561e7bea28bcaba6f131a9b449181d8e989f7d7afc3deacc5f63f35",
+      "sha256": "41b7e19fc599f98e9e7aa7a2167505bc3e4cd9e7ced5eeba36a35aaddc51804b"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user14-goal5",
+      "condition": "clean",
+      "source_sha256": "a10ec0b2697420eac0c73790dfb83d67757ae3f7df9c2f9c5d8190d39a9f4b5c",
+      "sha256": "706b8257a90eb833b1fdfa9a632c4475b328d17e31813ee8547b7c6271b0be84"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user14-goal5",
+      "condition": "injected",
+      "source_sha256": "458fd36c1315bee8e4ae66db9c702a91a73fca18a4b12770a3f5bea313356c24",
+      "sha256": "3c911e8bd02c7a112c3a8ca19e5c655ed98deeb8c834797962abae159c918112"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user19-goal5",
+      "condition": "clean",
+      "source_sha256": "08b0117e03048f1959bf90e3efe0f0ae75259e0a41d04914b6c663d2ac7ad6e4",
+      "sha256": "69fc52f35a083004098d53a38c5a9b1a591f9df35aa2be1c750bbd82da2e4fc1"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user19-goal5",
+      "condition": "injected",
+      "source_sha256": "b716fbfa644f28a18fd10981b6758b67dda8c4eb01a213b41cc334ad7e6ad9c5",
+      "sha256": "eb0c8a7d0f57b5dd5eb4ca3e432387c9afb059a2e66b94ba7dd23a743a4723c1"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user1-goal1",
+      "condition": "clean",
+      "source_sha256": "be111af0291fb6df6ead9e896279ddd8f34e3fb71127f6c9f01a650fa0bb4c72",
+      "sha256": "04d0679415bf1f41372e5854ab69a7ccb8a11f99f335a9eebd04ffe4025009fa"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user1-goal1",
+      "condition": "injected",
+      "source_sha256": "c72228ad2f61d4008dc47ad95f9a253f7ff3739c6828a95d8e17e8a7c1e79500",
+      "sha256": "3a4df71f004499483a70044ab0f89d770743c5fb1d869764064ef8fc99faa7c4"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user3-goal3",
+      "condition": "clean",
+      "source_sha256": "de6dbbcc4bc0dfb499873f1880192a7d495b61f8c6e277d874484c168271cdd8",
+      "sha256": "0b534949c0ff77278e31aef119aee803ab03fe2ee217abff7c47319dfa8d9443"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user3-goal3",
+      "condition": "injected",
+      "source_sha256": "c3acf0e961478677b246d629d63eaeedab47a45db26f8c0a1f7c38969de3ba9b",
+      "sha256": "d9bc03b443ffff9d97a8b4af99bd0589b7e50d3c021dc00cdaf0c7130d9936d1"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user6-goal6",
+      "condition": "clean",
+      "source_sha256": "674d58e8def84885a3b3ace50c8715b63e4d51655acb928837552c0e7b048659",
+      "sha256": "925926d63ec8612555473b15636e1352efa52dcd84819ced8348ded56d7ca7d8"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user6-goal6",
+      "condition": "injected",
+      "source_sha256": "8097f30491aa7108bb6d481bcce99c53e93e2470686ce77fb61bb98e9abfe60a",
+      "sha256": "d1a978a6bdf5126c172a8391d668de901d9c5825345abc8160b03c2280458d08"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user9-goal3",
+      "condition": "clean",
+      "source_sha256": "092980f91d046ed2aa12240871e6ddf9d668a9ca73406a7a5abe43f227e5bb72",
+      "sha256": "3e23484635226e6190b8f69e9289c1655a0426450d6ce02f70e1b440bf7565e8"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user9-goal3",
+      "condition": "injected",
+      "source_sha256": "bceb7c16c020fa5b648e22656b050036951c490eb2c3e46092b1a42c108d676b",
+      "sha256": "65b617088f429815e27b735f4532a812d6f04adf43dcc3cec2ebf63c719378d4"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user10-goal3",
+      "condition": "clean",
+      "source_sha256": "b78aa8359330f9c8c560e638a40f205713be9c819af908065d54140196a2dbea",
+      "sha256": "79d3c6735b843dd344708a17087f9130a61496024de0969f2fe4db0646c71e3f"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user10-goal3",
+      "condition": "injected",
+      "source_sha256": "23d1ed5112095b360279cd149c1c0434c29cd664dddc08cdc804e3994e9edd65",
+      "sha256": "d96fe32d0524d18c391c94eb85278aca84dd3e8be6fca47a5009456f144cc4d0"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user12-goal6",
+      "condition": "clean",
+      "source_sha256": "bd5cf3b8a69d6a25d2a85ac4b8182670884cf0269414d2d1fad15b108175e42d",
+      "sha256": "5dca616263c63def6ca4fb849baa64019bc4cc5aa003c8a4dc865d9cf9df8700"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user12-goal6",
+      "condition": "injected",
+      "source_sha256": "1a23a260894402c6cfb330064ea1b3c166d5b85a7ad27f20e2947d48186b2893",
+      "sha256": "40f200d6eb51c945b7f01c2519a63ffebf23156c685efd839feed7e1ad455e99"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user13-goal6",
+      "condition": "clean",
+      "source_sha256": "489e4502e23c1e1ce9a838beadf3110ea9c9ab2029d4487a7f45946437049692",
+      "sha256": "c386502a4f9fe0e0bf2b5d89c169d0e61ad1ee37808491fb7c137a640f021949"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user13-goal6",
+      "condition": "injected",
+      "source_sha256": "8f802ad0b9b53da82d1eb2991d6e8bd97d8c192fe87cb6892de86140986c4bb7",
+      "sha256": "1f5dd182e716a526779ec505a8a4d2c5956a7c910df643d1c5afea99ea80c9a0"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user14-goal1",
+      "condition": "clean",
+      "source_sha256": "76fe038738cb5e4adba8fb1704268b714299f60177b365854b4af2e04ada641c",
+      "sha256": "0cf017d635fa3aa689964afac4beccc823ac0b28178e1385c570417dab5ca6fc"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user14-goal1",
+      "condition": "injected",
+      "source_sha256": "3e943c5c93ce53770ea8a2e2acd67fd7b9c09ae21b75482e31a04a6e47c9bf3c",
+      "sha256": "6e0902f8754451b3fdd4869368737727d19ce2c67b35e31090c13da9360620f7"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user15-goal1",
+      "condition": "clean",
+      "source_sha256": "1017c72a3e6cc1f56dd7d78e59307a15197420c626b908d4b49558e99ac2f6df",
+      "sha256": "055415de80485325713ea6daa5631da7b59131550529c9372c513677b3903d6b"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user15-goal1",
+      "condition": "injected",
+      "source_sha256": "39cf88f11bf1494522f21d2e1f6802027875f687a3bd998ff2a036d3ad307b51",
+      "sha256": "11c974f317019ed1dccf501d7331c80e3bc198fa5f146be14fc213d5b510a3fc"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user17-goal3",
+      "condition": "clean",
+      "source_sha256": "4a8f452ea35dbffe47bf6cbf4b6608e15c03f6ff8764b8b92096e4a4f9536ff8",
+      "sha256": "f6c922c78a89f8f259fc6d47b5254b847df537f75d51ec660d0fbfed5e6c3625"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user17-goal3",
+      "condition": "injected",
+      "source_sha256": "956309dcce83068ba9fa876b7e5f495973c7fea6d65723eb1155e92419a10f3a",
+      "sha256": "e77060e382fc6e571cf724209f46943c429275209c4082678da8eef6baa17a0a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user5-goal5",
+      "condition": "clean",
+      "source_sha256": "4df8a8538f65d31a87acb9918d03245fd0cbde72c414ec095ff319725cc2555c",
+      "sha256": "5470ebe8edab710a1baa928f617ceeaa9d18c94cfd89a70c299c3802565de5e0"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user5-goal5",
+      "condition": "injected",
+      "source_sha256": "3e359f147fcff8ae186c3817e44353a3a96ea520925c40492e20b62d6b200673",
+      "sha256": "b77df4a5ebad31bc51f987135183fb3391ac777d56d264a3021e2200922b7c9d"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user5-goal6",
+      "condition": "clean",
+      "source_sha256": "c4f8bf5dc4f6fa1248d6cca2ed5517c65bd68669f19c6cee0bb4b54499489a0f",
+      "sha256": "c4568e1d0f71fbdcb60ddacff89a5b8fa57a609bd661e522ae54052d0d5b2f6b"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user5-goal6",
+      "condition": "injected",
+      "source_sha256": "5778428c1eca22b4f82576086a48b3ba971f02826432fd7233566606dae3a150",
+      "sha256": "559cabe0ac4a2144d698e6bc1970f1d893820562e0a196164035d4acec374c87"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user6-goal6",
+      "condition": "clean",
+      "source_sha256": "1612077ec545a123c74247130a18109c92af348ed738d1f5667155f1161c00a3",
+      "sha256": "e071c4aad10defe8c464fc1d63419bdb1f16b62d1c099e74509687c05bba51dd"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user6-goal6",
+      "condition": "injected",
+      "source_sha256": "fdb1e7eae0f2a8b1df04a0a5393ff7d8ad6e524842ff74b71ebe157f43217ae1",
+      "sha256": "29be921d391cc4920f4631a5becdf506dda64cddd889d5b0fc2f52626fec4d55"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user6-goal7",
+      "condition": "clean",
+      "source_sha256": "705b2350bbaf58ccc3982ab806d0f4e7614d571a2684ad738d69079b252c4ec0",
+      "sha256": "53a764b013ee319af4c7d0afe18b1df19164d1499de225472aff6196c84dc82a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user6-goal7",
+      "condition": "injected",
+      "source_sha256": "8f5c398124674fc1a07c42b4f7d2eb50b885fa818148c87208b247871202e6fb",
+      "sha256": "faab881637a99ced6c6c4fb28e00c9d1d00e7464584f8e23ed4d7bb3140ebbf8"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user7-goal7",
+      "condition": "clean",
+      "source_sha256": "3e5f4ba02f066efc7dd6655e9ebf2f2c7e419ce62f797224ad1bfc2bdd7384c5",
+      "sha256": "5667e7aebeb3bff60ba1889a6e53f42381522df4c08284ba50859191a6d56a30"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user7-goal7",
+      "condition": "injected",
+      "source_sha256": "e1d1b231437bb60d43cc5bdbb3f26e29f382abc511cac24e980e8f1bdf6f21e6",
+      "sha256": "686bfc2b9ab4baa335eb987cdeb68aaf916132dc6c41a2b750e6d846cee79a4c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user7-goal8",
+      "condition": "clean",
+      "source_sha256": "280f997ecebdc03c544b254f5c6f64479aa51e0f8c69e7eb5e42d5a27480c415",
+      "sha256": "8806cdcd66936ff3ca0a1fdc0463a7318dca426304d7261ff3a14287fde5bfae"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user7-goal8",
+      "condition": "injected",
+      "source_sha256": "e5bb1de5abedb9cb35727a47bba1cae39516ba7875f945327046e395f5bbb5a1",
+      "sha256": "6e842ed0b61a9bae15d7e61c5c5a8988752ed7d96f55b351a409887693273441"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user8-goal8",
+      "condition": "clean",
+      "source_sha256": "d63b425653fd1d4bb26a51d2b6350c896f80724232df928791126c41847f9e52",
+      "sha256": "ce8e58dab40c9568bd6bce73e0c37ccd3c47f38218fc97fe03390940745c709c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user8-goal8",
+      "condition": "injected",
+      "source_sha256": "5ebdb0a74e36a4c8be2b62dc513c9aa3fa897477bfc32a7af033ad430c0e9253",
+      "sha256": "0e83c70b1b680706f88b6fabba4d82b92ee4aaccd369454b33bfb9045cb5d68b"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user8-goal9",
+      "condition": "clean",
+      "source_sha256": "189dd135e2fd3751c2d56584fb4cad65cf04a3b6545db8ae90b68cb92a1682fa",
+      "sha256": "eaff1a50f9798454bb6312c422f0912aad4fa9a0c4a0ecaf48badc78533f900f"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user8-goal9",
+      "condition": "injected",
+      "source_sha256": "9c42d10b3a553d1c6f58a289d37f9ea6953d9b8321e530bfabcfd2aead68ac19",
+      "sha256": "c1b24a1e8c5f3af656daa606589d36847463034c1bfca7916d20f5eb9351486f"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user9-goal9",
+      "condition": "clean",
+      "source_sha256": "ec2fa35ae465a7df5e95a22413e9c35e3749a78eac9e0e6a309335b82126221f",
+      "sha256": "c088d68bca77c40745624a6bf78f23ea9bdb7439d6d08fd7c1ad9c1ed6e0d768"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user9-goal9",
+      "condition": "injected",
+      "source_sha256": "d37d84ed5b8601531a93a5b3cdb8dd1e32e0e4a24ebc0d2a3f177e2396529c0b",
+      "sha256": "335cd8c374198b9ffb2aefa4c9365004380d0d5c62dbc0c4a0f8d362b6c59b3e"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user9-goal10",
+      "condition": "clean",
+      "source_sha256": "eabdccfe9f25b4ba9cce6f357204cb4a371ed963844cfadfb857f1e9869748e5",
+      "sha256": "2dbadc739240da867edb3eca8e70fe2e65bd3aba331c7d424dafa1a9880d7ef5"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user9-goal10",
+      "condition": "injected",
+      "source_sha256": "81aba1c7d786180beeae302430fc830aaac63f8ed86ac7180fad609f5fd99782",
+      "sha256": "057132a48fdb91eea31f266ce5848c02d1e8a31d61aacf8dd1ffe7e35acbf146"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user10-goal10",
+      "condition": "clean",
+      "source_sha256": "c94861b064586873298e84371c39671e0da92cc58478b3821af1e3f023cb1e59",
+      "sha256": "1b7bd7942aca177c73f66f4458f3fcb7b58afd87dd0de4bef8186356ae16789d"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user10-goal10",
+      "condition": "injected",
+      "source_sha256": "53ea54ed8b0a7814040ac4c84264fb62130c846a3c883ff6c6bc40ccd2eadc44",
+      "sha256": "e8a5bb7bbde49c377ac683f1406b4bb2b4ac7fe9b037b929df722b3eda91263d"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user10-goal11",
+      "condition": "clean",
+      "source_sha256": "b6ea775f9961d166550b70c02c0c5ea5d44e5d6366993e7d31472d470b54ae7d",
+      "sha256": "e738d8338d1426038d7650881d4cae36b648d2f67488ed266d0c6a7c2a057e20"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user10-goal11",
+      "condition": "injected",
+      "source_sha256": "87adea3ec25e1f6d08c1ff90655fcbc25d0c02776055892a0dbbec77b025e099",
+      "sha256": "d95c0a11ac16c29fff4fc6f1cc18770c0c9adb96936e53dd789159f32266cd64"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user12-goal12",
+      "condition": "clean",
+      "source_sha256": "79e1051b68dad9996a044c85e017c1a50a3be09b166603949b31733cafe7615d",
+      "sha256": "b5ddab61d3f642e821c2aa7d4a6292d8c7d80037a258dd3ee60d9e8f5cacd28f"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user12-goal12",
+      "condition": "injected",
+      "source_sha256": "fdd5b4769ef33727a3b3adeba01337f53fb38675966950ae27128186653ed7d8",
+      "sha256": "a50e883fc004fe0876e8485432778d6d46aefe3e2208520dee26407be996e513"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user12-goal13",
+      "condition": "clean",
+      "source_sha256": "43596c61bb95e824185288aff930ba93afba6984e653d938ffb9a7fa408cc0df",
+      "sha256": "bdd8826e504ecd7b30828ece74fde5b0bdc87885c535637ed4d9769e8d548956"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user12-goal13",
+      "condition": "injected",
+      "source_sha256": "bd82925bc4a7507393d88ff6c9b65abeeb8c1db7910e63eb4022af72832bc344",
+      "sha256": "fd12f264f4771945ab739b8839669794c7436628b757c2df1b59fe3795978e33"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user20-goal5",
+      "condition": "clean",
+      "source_sha256": "f76e3b510ab0cbbbdcb858b8abbe4a7215c937fc59e6bca1d7f6a094fa9684f5",
+      "sha256": "e3fb218a97747804607f228ea683e1f247346a3421ce31ccbcbbf33c54ac25fb"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user20-goal5",
+      "condition": "injected",
+      "source_sha256": "8d95682ea9b09043756c83850cc6c491bb4998a9e1a5f2bffb0d1b7cf35f4dc1",
+      "sha256": "88f4d0bd154e45fa17518d899dc8c9a67c818a2fe9a269c9434de7c88c8827f1"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user20-goal6",
+      "condition": "clean",
+      "source_sha256": "3e63fb679cd141c5dd12da821a198b022cb8f34577dce92b26519aebe397b456",
+      "sha256": "ad62891179a71ba267bcce14cc3ab6623dca6fa6cbfbe4aff8da2dd2a0b226d5"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user20-goal6",
+      "condition": "injected",
+      "source_sha256": "ffdc85a5ef65172641f991a1f39e56b2ba9941b8793919008c8f9ec82a15c7ce",
+      "sha256": "0c71b623c22b4d632548cee73a91daf67cb46cc6f37e2922f69863ce221a0c1f"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user21-goal6",
+      "condition": "clean",
+      "source_sha256": "891447b009e037f071496398a841e204a05ec7c21a74291148f4ed0848da97f5",
+      "sha256": "521722eb90e87983d1b7499786067fb0885a34d0b02bb299cbb834259f174b82"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user21-goal6",
+      "condition": "injected",
+      "source_sha256": "74fa9f7b24ace9dff59a2986e6a754c7883cbce71850ea74809cb24d09533304",
+      "sha256": "b80a19cd78bfb9a809fa4d6931a7fe24dc4b11ab6eed34416dbd771075b3fa4d"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user21-goal7",
+      "condition": "clean",
+      "source_sha256": "3030f655715aa131a385eabaa9b14e02f9d14e364ea64016980a0a466b256154",
+      "sha256": "e836b2dddc0031ab6a01d516e22a4b4d72d57c05e125f97a9d821b8f7fba115e"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user21-goal7",
+      "condition": "injected",
+      "source_sha256": "c78749ddda06ced87f08943b68f318deccb92bfee2490fa87b1708c65a2e399b",
+      "sha256": "4c445a84741d7e0a8350eeddcea502c81940bc62415e124d98055d1324361d7f"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user22-goal7",
+      "condition": "clean",
+      "source_sha256": "52adee47408b7b6f0e42ae275f74ea77555446800b9f52b0fc7d6be3b645a74f",
+      "sha256": "2aec6fe221c155903eb0c959b62806b0f94cdf0ecd153497e4398c2d37e729e8"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user22-goal7",
+      "condition": "injected",
+      "source_sha256": "91452ea4ecd35f23bb7d64bc89c058e0f9a9a41beeda97de3d16d5bf47975678",
+      "sha256": "b2e03238ac66486414a409b66384e159035bf06745d93e9d91939c3aa263c0d3"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user22-goal8",
+      "condition": "clean",
+      "source_sha256": "752e81bd1539c201caae16f1f9ea397b67b8764f716d61fdc40eb1e37835c21d",
+      "sha256": "83d9eef78bccf4b3822f79d1114a56613d6331b78b952735a1fb1bcca947c456"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user22-goal8",
+      "condition": "injected",
+      "source_sha256": "ad3739650b7b2fc5c43f1a0bf6b1352b6ebdd03d0f9885b4606f044f5da4efba",
+      "sha256": "47b462cfd32428a06bf1ab2fecf47320252a855c5f80c56e49f5b4e100d2de6f"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user26-goal11",
+      "condition": "clean",
+      "source_sha256": "7bb94539dc08cd5ff31e142c04347cb1348d0d2809d4b21a69241a793ffb0c29",
+      "sha256": "1dc40ee67d438124733d89d06ffcad95986048eae8d24bddabafb5042fcb40fa"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user26-goal11",
+      "condition": "injected",
+      "source_sha256": "545ea543e1fc6ef27405c3ffe24937d3ff3bd02d9a0894131dc894232bfaa697",
+      "sha256": "95f982b96c5abf076f7025569f3ef9dfca2f3f6a0b35d9c6154ae9b3f32fa708"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user26-goal12",
+      "condition": "clean",
+      "source_sha256": "077cb1ac4e73a35cecb25c2a24e3751effd216512afca10e681f4b9b03ac3d33",
+      "sha256": "e5b6b9953a7f696d8dc6f7d64a8fe61a0668ccab52334171bbea89889acc864b"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user26-goal12",
+      "condition": "injected",
+      "source_sha256": "f3dfa63a13fb0f72b5514fdd93f8ca0cc025e6995e79f2cbf8a0c0a8412b51e0",
+      "sha256": "279a2db68633fde01805c3ce7df5173e6717927904b979b0908f9edc14a0a197"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user27-goal12",
+      "condition": "clean",
+      "source_sha256": "2b3ebf803a065e78b3abe33ad970fea5ac6d45c2364d371636e2146f90ab8ba3",
+      "sha256": "321815627a5a3ebd59418cbbd94aa315359a5009a51c296eabe395d43e715063"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user27-goal12",
+      "condition": "injected",
+      "source_sha256": "b86c2d03a8991c8e086b32ed7bdde22413d317dba53842fd3ffb946ff863cebe",
+      "sha256": "2c283967460396b731cfa376f978f4f913cfe56c34a7d1db03e43ff9e21a2e5a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user27-goal13",
+      "condition": "clean",
+      "source_sha256": "08f85ce7b9e5eb746bb90cef2928e8004abdeb0de1c5e78466c0abf4c2292549",
+      "sha256": "d21334037c4dc2ff50ae4cf4538ce315775549efbd784a57dcedbd76b44cf7c5"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user27-goal13",
+      "condition": "injected",
+      "source_sha256": "7df8c8e0e456aa58de54933dbb1bd1089e3ad6ca72c3d3bf0fa2f4727d2f9bd1",
+      "sha256": "4fc8cdad5c882771e958568d7a3ecf3445531718570634317c18248f4756ebcd"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user28-goal13",
+      "condition": "clean",
+      "source_sha256": "0e2f9197fddf9a86995e439ebfc99266c3188454f6d30625002ff378beb80572",
+      "sha256": "a0307d95e05106158cfff82dc6be58bf43f39cb1353dd116903a2de799960377"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user28-goal13",
+      "condition": "injected",
+      "source_sha256": "2a82a2d3424bd92a61b024effacde722f65ef8c85800c31b93631b64c11a09aa",
+      "sha256": "d047971cc35114002de9a51f518f29bbb69048b3756901566bd4ae9c4d12928c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user35-goal6",
+      "condition": "clean",
+      "source_sha256": "ff7ffd985af871c437f2733a44df77bcb3d0ee6cb7418a676f58b5cc040ccd75",
+      "sha256": "6607b89f5489752398a11f455f6a30018662afa3388e3a1fdbba9e5c9f61b023"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user35-goal6",
+      "condition": "injected",
+      "source_sha256": "f07a96cffc32c35bee82b1ec5f7c41890be21a86a2507e2b593b8bf65f62ed56",
+      "sha256": "83477e893613701a40758cd1df243539c729c36db25e79d1f31ae68e9542bd65"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user35-goal7",
+      "condition": "clean",
+      "source_sha256": "8795024d2d38fc875d8857dee291260fdafb8174ac76a486a44851ce1b390513",
+      "sha256": "f5a4cc49d0a47d71c2ab49a6efa7a8a12be468361e528792e3526397f01e2214"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user35-goal7",
+      "condition": "injected",
+      "source_sha256": "7ed3035f270001d176e49ec1b4d111f17c2d12098f62750ab1eb1f22b3c947e8",
+      "sha256": "659f12c605b6598c9f7c6cc8edb8f0e06b4ab3705e6d7a3c768ce6a02e403c7a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user36-goal7",
+      "condition": "clean",
+      "source_sha256": "7e346500a48f659004bd6e7a9a3f3593f3b2059cbf9354daabcf15f87f5d2cbd",
+      "sha256": "6b61392dcd1d891d17361db1f27ce75c58946c15d5a0132549779d0cfe52e5a0"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user36-goal7",
+      "condition": "injected",
+      "source_sha256": "462ae18efa6b100ea2442e24e918ecf8f1f53e5353837e4c2804741a67ed008c",
+      "sha256": "523a766c706bea5c08c4ff0209e417f471948c4db366a0c2d08ea82eae346ad3"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user36-goal8",
+      "condition": "clean",
+      "source_sha256": "8341ff092cdadab88354b2916876a111e8459f53d0f9b2a10969ecca26b1353b",
+      "sha256": "1f0fe80beb7904f4ec487791c7660df6405ec510573fbd511a081d5df1cf2d56"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user36-goal8",
+      "condition": "injected",
+      "source_sha256": "c668d4078fc936c2d5b69a1feb4a81cc72db0b9ac86fbb44bc9f9d19854d9926",
+      "sha256": "ff4862d2ba7de9052da52ac8bd003010afe86ead0f8f2a2062781efc9a00c443"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user37-goal8",
+      "condition": "clean",
+      "source_sha256": "9a827ccefa85df0b1ab69c3e0b03e793123f43eb7cd91699e9fec8b8d42217ff",
+      "sha256": "39f947bab03bfef21d54ae72f30dbd4c55c6ee81af41c607e4b868b8e4c1491d"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user37-goal8",
+      "condition": "injected",
+      "source_sha256": "90b52b538d9a609a9191f07987105468d69cec6db39cf07537692db9daa62233",
+      "sha256": "5a4448bd3c48c96a6db9a72e3b2f01beaeec2ea509889ac806e7fadff67ff256"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user37-goal9",
+      "condition": "clean",
+      "source_sha256": "10ad4131ef78c7d9236a0e63b4f4d8bdb8483b1cda83d9bc940753c242afaff3",
+      "sha256": "1befe9a1cc520f64218e96ff351308f832dd27f4b54f6b8365a90583d71d2aa4"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user37-goal9",
+      "condition": "injected",
+      "source_sha256": "2acaf0870d659e1843306dbf15e2788f3af4b46bdeb397715396eca7f7b44b80",
+      "sha256": "009dde8b791b1a9869c7148e8dee8dc624e8dab94d44c23207f331ebc49a19b5"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user38-goal9",
+      "condition": "clean",
+      "source_sha256": "0e99f0040846e738f78f39ff0001c000337b303764c7839d1177b3d0d9390fb4",
+      "sha256": "c8600387fe54a17b202721e930914f3e61ea84d8de5a1b56e2858237595041d7"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user38-goal9",
+      "condition": "injected",
+      "source_sha256": "2f68f3207322a183186103bd2165eedc2da740e1716a2bbebc73923dc0571698",
+      "sha256": "766053c6041069d155528c1694c27a9cb1d67002f7d56cf839e2f4ac7a0217a9"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user38-goal10",
+      "condition": "clean",
+      "source_sha256": "ac46d5b5c8df43b91c866daa1f5068d146e9b47a0111ff6900aef46ab5e045a2",
+      "sha256": "5b787ea36207e5c3b079f14e2a483a4fa12f2da6f87067ebd7a7dafce0e4fdcb"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user38-goal10",
+      "condition": "injected",
+      "source_sha256": "0f62489cd68f9bcb2fddb19302a27c7e56b0a226fc5e296407316541c7988390",
+      "sha256": "5831e16a571e4e5336698e4ce9fea4ef96e00deed6ab875bfd9a250193037c72"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user39-goal10",
+      "condition": "clean",
+      "source_sha256": "cc1f4af5b62df943e8a20637f0975f21738e4c22f5aa5a38fe74112cdfcda6b3",
+      "sha256": "0cb5a7b1899dc1fd0073522e66553613561f7b34d3464e7b5321b1f91889788a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user39-goal10",
+      "condition": "injected",
+      "source_sha256": "9b555582cf15714ff7df22583ea0c0b91f82d67c608273482131dfe9da726a03",
+      "sha256": "487eabd135bc48fd394b102876f64976371d880535f77d885e7d13c4e7cdc717"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user39-goal11",
+      "condition": "clean",
+      "source_sha256": "6383eb4791ca156cb4bd8f4ff72b8e0a25439955b8fb907a3d236a0caecb0186",
+      "sha256": "0e97b7471463aab85bf318f74b69bf6766fb4f4d3efdf15f34a52f21b643145f"
+    },
+    {
+      "file": "source/contracts/agentdojo-next51-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user39-goal11",
+      "condition": "injected",
+      "source_sha256": "31f61f47b45c79c553f15740c75bfcbabfb6067b0db304f800c7373b83460732",
+      "sha256": "2e95e419210b2c21372c7b0ef6add5dcf63a84d5a9e3a386cacf73791f483abb"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user0-goal2",
+      "condition": "clean",
+      "source_sha256": "e307fd76d3a7473edeb5c1e4f3a61cd78a38b4fc243e794f8c78ef8991d58b59",
+      "sha256": "118e70650e4f821f65979a39451581a543395b4862ca81e52422786197beb417"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user0-goal2",
+      "condition": "injected",
+      "source_sha256": "ce266bf5158ae066220ace269f8582831ff763add6c92c6d23c686301856bf6c",
+      "sha256": "8bb0472fd5ae7706180a2e8d06d39df40a7e1269b73c4fe4f47df9ec51af68aa"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user1-goal2",
+      "condition": "clean",
+      "source_sha256": "4072bdb6f76d122ca598b3c89679268d31ed16261e3ef71dcfbbadfe64c8ccbb",
+      "sha256": "09f27f4402b2831eb9baff2ba2968721a572dc6d34cbc07bce658cec52382557"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user1-goal2",
+      "condition": "injected",
+      "source_sha256": "f486b59fed54d9ce4765323aa00425d617a0f34da0a031b43995bf73e7aeb131",
+      "sha256": "b83927ddc23515274d92bb7f59367cc5b39ca1a7f014a4e5c088be2632eee7b4"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user1-goal3",
+      "condition": "clean",
+      "source_sha256": "2db12406245a0eed9f03b7146de42a6470b09f87c457df4c3b38b6380e29e6c3",
+      "sha256": "80e38e52eab91517f6b1e40bd9ae1a1bdda9a4394c9931bc4bc51ef6f5a4bd9a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user1-goal3",
+      "condition": "injected",
+      "source_sha256": "96e1a62b277d85050cc7a8527e622177ce921707370e3226480441e63465b82d",
+      "sha256": "41a194beefb049e3bafaee01896fdd21b05175556e421be66b031f6e23f3d3bd"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user2-goal3",
+      "condition": "clean",
+      "source_sha256": "76519381b3a129c397538593f6e21778ff7bad3015fd694a244ec6dd0b36193e",
+      "sha256": "c8b8bab2a230c53db0f2c3587a54abc829d2c908a1a6069615c0afed30da228c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user2-goal3",
+      "condition": "injected",
+      "source_sha256": "fd6992c5e50f2a37f7c076636c0199a34f968cbb92ae694fd9e53ff1081bee03",
+      "sha256": "c615852383098a0799545cae9b24d32391cdad30afd509e9d881dc5efb2de886"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user2-goal4",
+      "condition": "clean",
+      "source_sha256": "7aaaf5250ce9a40c315603f4f7b22957f802cbf7ccec21d7b76d48fdc8e222df",
+      "sha256": "2d82d3a64c56962ec98285257c6ab6f8a7a9ae981d70320bcfffde186aa86816"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user2-goal4",
+      "condition": "injected",
+      "source_sha256": "acc52b71cfe75e94c03efb4b2505d773d54d83a406a94d30144cf2a31964ffc9",
+      "sha256": "9097001e3bb5cdf9ca0b9d6acf5d934e9c13b6abdf04129491f8e3ac9df374ba"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user3-goal4",
+      "condition": "clean",
+      "source_sha256": "0b94ba85da2a4f50222c6959b869b44f6ab37b2b61e4cafc3eafa6bd07517f2c",
+      "sha256": "95966b5f9383b7dc80bbfd1053d5e2204f4bb075da5368731f2eaefc8c3c2725"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user3-goal4",
+      "condition": "injected",
+      "source_sha256": "790b6ec0c0f34b7d04e2877acbc74349e12fcf36bc77e88cd90bd61a19d87444",
+      "sha256": "2c079d0338c81450e8b53e5b56cb4e68ac1ced454dce129a46d381b0c260bee5"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user5-goal2",
+      "condition": "clean",
+      "source_sha256": "0bf405d61d5c90aaa45be07a09e71716e50d65c7618dcc7699ec7aa65e2d2185",
+      "sha256": "0403b252e5a36c79168219bf8a119ab473468797667dd23b04f2849d354a2dd0"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user5-goal2",
+      "condition": "injected",
+      "source_sha256": "2c3d215df76a078076195219a6036583ea85ea01599079d3c353b264fecb247b",
+      "sha256": "f2c758de4b04cbba35406c3b0bdd2484d0231eb760cab54a315b36284a79446a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user6-goal2",
+      "condition": "clean",
+      "source_sha256": "2b7c8c7b0e7c76eedd4a5f41afe10d457fcd58c25dc21a451ddd609c19e6652c",
+      "sha256": "ec6c1f75bc443096939ea580e8ca5ad6b9a33bf6a2340b08585bfcc8c2752a4e"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user6-goal2",
+      "condition": "injected",
+      "source_sha256": "5eb640eea8a76e8ff6eb78270b1f36b7a1c6d79e96013aa978f3b0e4d39b68dd",
+      "sha256": "c9b3fc09def69a38107c1175d84b2c66477818cd1187f9a7565678f6cd043c98"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user6-goal3",
+      "condition": "clean",
+      "source_sha256": "859c592fa92babdee33c5dd6787ce2756f4dffa59958cffe3ac030e99f9d0229",
+      "sha256": "4259b474d1ae62c55cd0d43a115f5bed8e9c8b19971b184d1f6ea9dc2fb9641a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user6-goal3",
+      "condition": "injected",
+      "source_sha256": "f0e3e6fd51ac5fd3161fb22d8cc0edbec7fb0c2a579c2775ca3cc716fc41e273",
+      "sha256": "01807215adc693b1292f9d30d6e4f442da2eefdec40e4e850da65c5a6dcb2d09"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user7-goal3",
+      "condition": "clean",
+      "source_sha256": "5a6fa016d447ecca9e49733e146add8e4ce12a3e072ee46f09776cf37de8e2f6",
+      "sha256": "47ef6972ef430849ffa8926769408585c81e3045392c9f56f2423ab29b238efd"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user7-goal3",
+      "condition": "injected",
+      "source_sha256": "da183e886bb34510e4bc98cbd33b128115fb5f176539dfe98948183df7405cf8",
+      "sha256": "a5dd0787fc3427b15a15e91918978916f1b8c263aefa4f6669239bdececba2bf"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user7-goal4",
+      "condition": "clean",
+      "source_sha256": "09fbf90ce3babceb3502d3e0240eea7c3b68130baf7ea8b46c2c69698512e4a6",
+      "sha256": "e83cacb88cb6db0218cd4914d6679c4cee12fabaf5b39a532dfd52507b0353c3"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user7-goal4",
+      "condition": "injected",
+      "source_sha256": "b3e8d618ddb60517417c2dbd72f55d5e38a5e9239a0a53990108fa1764ad3d68",
+      "sha256": "d3b8ed42cf80e0c27068388bd10de5afdf27b5aa08f0d9600c1fe133ad0ca9d9"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user8-goal4",
+      "condition": "clean",
+      "source_sha256": "312d43f3170e9a2dc4cf4dbc9170b2c40753315b19410853e84e792140788eb8",
+      "sha256": "1420f06d611e0b671ac56849ef8923fcd6238e8be1f3789342819ec2e427b0b6"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user8-goal4",
+      "condition": "injected",
+      "source_sha256": "f66fbb557c1ac81361b17d86f88a084f72f750f767f46e0180585f9484d9b5af",
+      "sha256": "e568d3a2a3ca11045d0c300cdfdc4a58925e1178355057470d89f9c1ffd81dc1"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user10-goal2",
+      "condition": "clean",
+      "source_sha256": "94b615adc7db61361834b0271d4cfe86f4492092c414ee34d65553ff19415b04",
+      "sha256": "334c241457f6fc3fa0afdb93037c1f44be3f372df1098960808479238402b6d0"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user10-goal2",
+      "condition": "injected",
+      "source_sha256": "d3314289ef8753194a6ddf335e61cc621f2337b686eda3a144cd3967cb2dff6e",
+      "sha256": "225911228a7a6aa0329bf49de38720381df9a936d5316854fb556af59e423844"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user11-goal2",
+      "condition": "clean",
+      "source_sha256": "fbec7eb293784fdd6b238d08bb7bd46ac096e36a729dbda20dc4ab363287dbe8",
+      "sha256": "43714e77fb46a00aa6ecc6912528a13eb0b483da92df52c4123ab130503a0387"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user11-goal2",
+      "condition": "injected",
+      "source_sha256": "a6ac4fa99b2d201eb50b4a4dd7f3ed7884bd975f9d5820cfa585b18b9ff5f94b",
+      "sha256": "96173c48b1b2e627dcf41c1e4d4b842bdb92fd109ceb9c1f2e90dbf6baca3191"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user11-goal3",
+      "condition": "clean",
+      "source_sha256": "9365cf435c7ce91824e688d59731531ec2d8440c7dc03e72ff820105b6970391",
+      "sha256": "8d653150b1f5aa9b1ac7ee25323045c792c1e023b3d14507c6831454854dcca0"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user11-goal3",
+      "condition": "injected",
+      "source_sha256": "7fead9dfa710fcc49eb5819a679ce13f079baa618f251ebc0321f1477956eb98",
+      "sha256": "dc6d14d1b5762399e98fae21a681580198c27d0c6a924efdfe0c7bf06d041255"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user12-goal3",
+      "condition": "clean",
+      "source_sha256": "56c0e6953fbac4c4e816a89cbfbd388d4bc86d142373584ab5ae1867486c4c1c",
+      "sha256": "b26f56c15cabfd89df03387d77cd93691b428303903029b3c028146f272fc9fa"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user12-goal3",
+      "condition": "injected",
+      "source_sha256": "be8b004490b299ea64ba52e01d7ad4274767724f85110905fd9f0d4ff058f1d6",
+      "sha256": "4043038e7400df7ba52e7db3a5ada3fd4a44343d6121907b5a5d5959a7dbf42e"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user12-goal4",
+      "condition": "clean",
+      "source_sha256": "773a7d590038631794558350c18c1b13ec38cad41bdd69aa0300b1a0a741fb70",
+      "sha256": "87b5db02911f814fd9bfa23dc36e5c999d6fcadb48d014a884af8df401b1c172"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user12-goal4",
+      "condition": "injected",
+      "source_sha256": "8a0f12bf9b2fcb26dc690dcd4187dca3f69d185fd554980d1a1979bcd0f57754",
+      "sha256": "1831391c9631124d907851a1b15fe371e52dee8cf874454f40955cc79d163d48"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user13-goal4",
+      "condition": "clean",
+      "source_sha256": "63bffba87c5d31088258e208287aff38ddbb14219019dbdc1d9c742ffd5bffd8",
+      "sha256": "ab460e40f1612a77beed8c253dd135d55a296075ac63f1e5c30b9c2dd3799bfe"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user13-goal4",
+      "condition": "injected",
+      "source_sha256": "de58683e7d64e305b3ef59ce69a9b8596d60b9118aeb1de2ddcc56ee832a76f4",
+      "sha256": "2593fbfe0616fa983074fd076b8c6ea7f4669a6dd9f8110798a67d63deeb97ef"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user15-goal2",
+      "condition": "clean",
+      "source_sha256": "90e6d4076db18d802d7fa43cd3d56372dab8619bfe0ad8f962a05f2e78ac1552",
+      "sha256": "032b706c0449f79bf7c70c1fda827ebb79fb609abda3f1145a0b2f6ecca79d06"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user15-goal2",
+      "condition": "injected",
+      "source_sha256": "a077d75d4a0f750d53cb9f42fe9f884e461abcfbb79a560d8fd5c6b60a482c6a",
+      "sha256": "95be1f8aabc130a4779f333b416fa2d0f5861f95f86ad11ff721504e6d11b16e"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user16-goal2",
+      "condition": "clean",
+      "source_sha256": "fdebd62e2717b0004b80eac869153c121cecb918b563428caab134ebddd22a1e",
+      "sha256": "ad8493c9807aab963d3cb3491fb5d78bd0c80dbbda3481e40d6eb1827bee4e0c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user16-goal2",
+      "condition": "injected",
+      "source_sha256": "7714f8f2af294286d232a7b8e8a42387e594b2ba0f88d24fb39b92c8076960d3",
+      "sha256": "92755a1b7b344682966954a50b3e2647248e7c675811dce3e11ef20feb77e53f"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user16-goal3",
+      "condition": "clean",
+      "source_sha256": "aa2e103b36fdc29fd3092ee21bd8f597590009bb60b0760675e5f3ecf721bebf",
+      "sha256": "be2bc91ce00a1b47e45fc74a97a14c0e1b29e162806243ecb73714caa1309a4a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user16-goal3",
+      "condition": "injected",
+      "source_sha256": "19531f872c09cab4c859d7192c7674c1f6af7de10704085999d694b66399f19f",
+      "sha256": "05b8326d2fd037860d9e06c927ac21a332af36e0b19fa3610749744f1163e02a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user17-goal3",
+      "condition": "clean",
+      "source_sha256": "46128f0c0df6e3460025245fbeb9a0b4bf0efa39be9a170e4d344f5b1f4aa399",
+      "sha256": "b279b9f2adbe4a41722fc11118c64bf378d3268f29a9784dc8533c56a04bdace"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user17-goal3",
+      "condition": "injected",
+      "source_sha256": "0388f2e6be2aeac18b7f1560fa11b6705455dcb413ea7ab34941370368e73a7f",
+      "sha256": "17e1a127a10bb224c59971dd33e1c12bbc0c5752291c741e0d792d755fdb838f"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user17-goal4",
+      "condition": "clean",
+      "source_sha256": "40a4df773b2875288cc25422ae3ec3289ad30d08cd6f8b2e044c9308ab99f7d4",
+      "sha256": "8c25b09b2d0feff5e20179321a56dcf36b94235ff3a9976767e8d604101af88a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user17-goal4",
+      "condition": "injected",
+      "source_sha256": "fcd8b1e3820ffbc070492d6be52da60915f682d816eb598e0760a4cf44e73f29",
+      "sha256": "63346db2f04ba64ca98b46090beb9f2456e7220dfa01cb1232ee6568bcee4edf"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user18-goal4",
+      "condition": "clean",
+      "source_sha256": "b0eadfcd2c61cf7665bba54f95bee17d0895b46eca46ed5b0edcc923034d1ba2",
+      "sha256": "6fc6ba0edb6a188821cd9c7f257e84fe058b057c51c01acd61f4e8c5ee52ef0e"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user18-goal4",
+      "condition": "injected",
+      "source_sha256": "6a5fd748feda5b0c5252b60482fdb642774a13825bdba76c9caec76e724a2e76",
+      "sha256": "4d1ab93e6aeb5fd500f7412d55606bda8f9b67135273613957db6459ecf1b24c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user20-goal2",
+      "condition": "clean",
+      "source_sha256": "a77c04632d78becc3aaa4d63000d1b56533a6f3fa03b7888284b614a66e62f1a",
+      "sha256": "697df78582fdf5f6a80a21042e0e61c0f7cabe3d94079353a0370ff9c542ee82"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-slack-user20-goal2",
+      "condition": "injected",
+      "source_sha256": "19aecf5dad51a9e216e0ed80eaf249479606f1f4edd4cd3f1a24e74d945d1742",
+      "sha256": "40b2d3a14e864adb58ba58f7bdda69e869fe3b9670b0d2263cd577e42c7be429"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user1-goal2",
+      "condition": "clean",
+      "source_sha256": "d62c555d00fa16dc9cc3a767982cec4fb6f9304e5e5f40eb155b4a35e4772c71",
+      "sha256": "0a0a27615993a98e683a171c4f4a67dcf746f523c073fd37eb3790d806809d38"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user1-goal2",
+      "condition": "injected",
+      "source_sha256": "ebe563806afe9e8ada0545effeac4a791b21b7a8595a7aafb4b352cbab27ebde",
+      "sha256": "106374713e257e10ede3d7b45249c89fe70bf1dc71d428f3068703c06b1f42db"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user2-goal2",
+      "condition": "clean",
+      "source_sha256": "929f2217d9b61721daf49d6c5cc4d94b85c62f183f0e4f5021522d85c6b90479",
+      "sha256": "2796e06e56612e564f3b14271bc354c5d71592ea8d2723abc76172da504dfbdc"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user2-goal2",
+      "condition": "injected",
+      "source_sha256": "033edb8c49b46dce967e4423f79281d69bbacc30003f6b4a0404e492c83a0784",
+      "sha256": "33b5cc958badc76e92eaff9b01a31f9fec418e224d3a2dd942daadfa864664b4"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user3-goal4",
+      "condition": "clean",
+      "source_sha256": "8adfe42c2d7ac624fe541b54014c0b58b534c3b5c25ef070db2b445f5b7b3885",
+      "sha256": "0183224b5452a3b3b5376f4f716357b0d683d4b6b5fb1e7f1bc847fac0ea8eac"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user3-goal4",
+      "condition": "injected",
+      "source_sha256": "ca5afb0b8026c93356d5cf61b77a5b922a44087e7917693dd74bf31bf68f3a5d",
+      "sha256": "67436e70033e8ae1e7da5bd28a4875e385deda2771bb615c7878d0ec927aeb65"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user4-goal4",
+      "condition": "clean",
+      "source_sha256": "8a060559a0518c0801a08fa11251f02ee82cdd1dde4f0fa4554c372d65bc1ad7",
+      "sha256": "6f1985d750f0310418e1684558bd9ea656ed3689cc85d0c8c7c66c7ad361162f"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user4-goal4",
+      "condition": "injected",
+      "source_sha256": "a75494d7b6d56e5b9fdd487ea3fd28fc506a20d197875b6fe5966f8c0bdffbe9",
+      "sha256": "0c2f15ebb6af1158ab4463a39badf1bd689ef013f846bef8d142624db1f13c2d"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user4-goal5",
+      "condition": "clean",
+      "source_sha256": "0f509432698ed3153f5fb615210ca8baff27bdfed0eef021979600722222eebe",
+      "sha256": "87e885052a5853ed0c1c03503d5a55cd523cd85fb81172f2c1434af9e0855116"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user4-goal5",
+      "condition": "injected",
+      "source_sha256": "fd9fdfc221e8209335d1d63c85a709975804a537a5912ec7492579cf3415df9e",
+      "sha256": "6052d1ab55b22a003b8c0311aeda3783e409d485592ee67082277d99601c522c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user5-goal5",
+      "condition": "clean",
+      "source_sha256": "d65472e5ce9d9500807322724d203a06db29df7a506929e61ac844eea9a1d139",
+      "sha256": "b2f6b067baeae8ec36504e8852bc0ca2cb69c52170a08eed58e247484ba5492c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user5-goal5",
+      "condition": "injected",
+      "source_sha256": "004f6ca1ba59298c3c66541a29cf6665ac73f9fb6e0c71779629e204f6cfdee3",
+      "sha256": "1760cb00f9cde4eb75ce3803d7fcf51b31f3362f0b6ac8d4eced13a831c55c2e"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user8-goal2",
+      "condition": "clean",
+      "source_sha256": "338ff010780b0f6bb2df85eae08762472013e64675215b66762defa35b24f46d",
+      "sha256": "be0e60986fd0a18ed4f6b3715ac9ff22a960b2a9a4a3f91a318bafac17af7b83"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user8-goal2",
+      "condition": "injected",
+      "source_sha256": "a1afed5b99f8b3558532202c893f6b7f78dbb2f9486489038710387c458627d9",
+      "sha256": "fcb0f2e0c4a1455a675a0bf097a5e07a9a99a69108dea9d62f59892393bc3940"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user9-goal2",
+      "condition": "clean",
+      "source_sha256": "9af1bcba4919ded5a1d92cc461a096823cb62432314942ee56f96d5a952fbba8",
+      "sha256": "9343eeedbc6552cc49ed67c20bbffbf2ad919546e25b70e255a5f21f512882ee"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user9-goal2",
+      "condition": "injected",
+      "source_sha256": "c14f848eb652850ebacc73f117cea7b8f5c22603bdd8172105d3cc87966ab25a",
+      "sha256": "4123a046b038f253de7d5fee6c4dcfa7bb84c15bbbe649450e1cf1ae9007e948"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user10-goal4",
+      "condition": "clean",
+      "source_sha256": "1ec685476dc00a0a95cdca5d116d12bd17af78fd66c8ac2ed94e5c348e7c442b",
+      "sha256": "d968672c8e552fea2e54e4ff10ec7cbc3b7e001c6435c923480cc46654ec7b1a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user10-goal4",
+      "condition": "injected",
+      "source_sha256": "2961fe5f88695e963c9ab043168c5268a09ca64fee9c1630f3636accc097d8e9",
+      "sha256": "95d6d04f2a00c14233da07f7d3832daf19bf58d1f4717859e84b76825e5ffe61"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user11-goal4",
+      "condition": "clean",
+      "source_sha256": "5f91dd505d32864669f4433c6d185e82235518ebfb18cfa9eb9124fb014343a6",
+      "sha256": "ad1ea0c183b3565a39644c9a5b8a6e015ae2d18af6960583e17813462388efaf"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user11-goal4",
+      "condition": "injected",
+      "source_sha256": "2be19e0a40ac139d6d60d707c0da422c1b5f786dd6e0e97144fb8e99b1ebd1e0",
+      "sha256": "371c536a884e29b5e1ee5c22cdbaea65edda9ce890fee1cdbedb471302e47426"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user11-goal5",
+      "condition": "clean",
+      "source_sha256": "9b3994230d86759f315fe3e707d1ef98be33437edd918655c595449c3318c2fe",
+      "sha256": "95f63d87f21082ba6d2762f50784e5323aac2a0159ce570a15636414f0cf1988"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user11-goal5",
+      "condition": "injected",
+      "source_sha256": "e18977cd624b21e54ebbf220b719678badc807385a59b9f58f58fb3665d8df96",
+      "sha256": "b9d76a73e94c86585430d0e01be819f99e66543587771212dcb3f24c3f23518b"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user12-goal5",
+      "condition": "clean",
+      "source_sha256": "756bc305ee1c985ca113e3d6c590b09dca44294fed1e5b0ab157c5246b037698",
+      "sha256": "74cb90e79c421f2fcfee09fc5f4f60d52daf7ea5953c5254185422a5a5b236aa"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user12-goal5",
+      "condition": "injected",
+      "source_sha256": "43e5f3b997813f31e4462dd52e97783ea02d6a0705712910bbdc980f5c8527d6",
+      "sha256": "98f853c47c6516b134db502f5bf4484911703a4d5eff1fd01f0207344ae73959"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user15-goal2",
+      "condition": "clean",
+      "source_sha256": "c971f961492fe07c53d5d5ac4a7dfa75ae41611869a05c9dcdcf6b7e20778f08",
+      "sha256": "26a94fc93693feb2634261b522ea4a68be3373e2950e4c05807934eaa6eede68"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user15-goal2",
+      "condition": "injected",
+      "source_sha256": "9ca5e9e76cbc2c3a47abd4bed114d8a86fe777f9dd22e91c32270b5f83ebc18e",
+      "sha256": "dbeffb38ea3403864dc71200dde72d02da093fa88ba9596f0e1b3c39f6de9286"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user16-goal2",
+      "condition": "clean",
+      "source_sha256": "d00d7205130b1f486b01c2c4326ad67488466827432a14813328e04f5c82bf01",
+      "sha256": "3893187b965a898bdc1f1aff552aaf3036aecb75c8e613e2e10efd527929bd3f"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user16-goal2",
+      "condition": "injected",
+      "source_sha256": "d10869da1d9b6a23eb879d86259af2fd4c0230ee9a49a1bc67c3500cb5992743",
+      "sha256": "801250581cbfbd4f0ebe13ed2436088acdf61e73dfb928cc00267d32ab0ba68a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user17-goal4",
+      "condition": "clean",
+      "source_sha256": "27546953fd2e5fcabe8154106029a8173e2f418867f29a050a6075fec78d1138",
+      "sha256": "7c881a85f60c9ed33fadb9bfcffb6fb9dd50e19a9d57ce25d7edf641d67bb073"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user17-goal4",
+      "condition": "injected",
+      "source_sha256": "4348f21a1a4117f5c7c3c189b2f3da74d8b8260fd8f37e248484e2af185ea881",
+      "sha256": "a291d354d1ee9a49540dc0ca5ed2029a853ee19bd00f1d89ee6cbdbb706e3c20"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user18-goal4",
+      "condition": "clean",
+      "source_sha256": "a7921b4d7878c021c9c12975976e09792c904f49fdf4130c2226a0f6725d4dcb",
+      "sha256": "fccec156c8ab2578530e2bdc0e6ec88d51bab454ed1ac0e526fec7b0b3c9d3f1"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user18-goal4",
+      "condition": "injected",
+      "source_sha256": "0bbfa9ece5676e29152d4d370d3bc57cf2a53f0560b5ed9bc35e08d9ad191fc6",
+      "sha256": "a912a548b70abbeba3e13417b469923b6c7f38053bf9bfbd71b4b246e6dda1b8"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user18-goal5",
+      "condition": "clean",
+      "source_sha256": "26280e111c237e0382259b96f6f582d4654f8c986b82b1a6becfda20f3e509d1",
+      "sha256": "fe163fab122e8db1ba3307012422f2cb5ab5f3a36143899aa5d8c49107d0f566"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user18-goal5",
+      "condition": "injected",
+      "source_sha256": "b161310a48bd7df1775da5b1ae9d22cfeca0a8b8855b86eea3d7ea2b60831b2d",
+      "sha256": "b2aeb70eb2ddc77118c2abf600487928c1628ed3e373b9c328711c0b57da2b7c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user19-goal5",
+      "condition": "clean",
+      "source_sha256": "8f83430b7122f18bf33d554e80d79a1c802f8e7b80d01b82cf22bb19d2732592",
+      "sha256": "ce82675e82da825e2a5d0839687d4f63c823445d0888966e595dd896595601c8"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-travel-user19-goal5",
+      "condition": "injected",
+      "source_sha256": "5bfdc6c23d27eb2c29e2b66b6dc85c7d0a094a6b57b76b9a4a69a6bc0c5320c1",
+      "sha256": "bc1b6ddf298949bf2e6a5e8cc9d213b03dff7e91d2edf3e8cb201b25c897253d"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user0-goal0",
+      "condition": "clean",
+      "source_sha256": "bb66546b54cb50a6b799f5ba9cc963f7dfe8aba5182d3ab04b71627c9759f441",
+      "sha256": "083adad9337b5b5935cbc212e8e491d83a59cc75f254515165a93a20534fd1e5"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user0-goal0",
+      "condition": "injected",
+      "source_sha256": "4e0f2a7f50cf089a483d7aed967d01976e9e89eba9c76f6be2a94e22501c6513",
+      "sha256": "f949e95745540b9a4ad18d2ce681b96a27f9128599882d81bf01cdcb1d257ae7"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user2-goal3",
+      "condition": "clean",
+      "source_sha256": "3019ed984fad762a9ad651ae3679b3d47d7e30c460f6ccac458ac9f69d95d4a6",
+      "sha256": "48018d655b5121e9fa59cf5f91a5ebbbd36aa460a0924db1d93e49480bbe864a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user2-goal3",
+      "condition": "injected",
+      "source_sha256": "1e15b0c6688a314b9fad70c52f6c899cb2a91943e39de809db26d5383ceb28a0",
+      "sha256": "74bc96e9e2aa951754755a3f7cd2b7db7b91bb252df91c8f4e8836d3d6188962"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user3-goal3",
+      "condition": "clean",
+      "source_sha256": "53a8e150352b5ad80b762ad3a9b51b66df58908b591acf203a143fc30135a62f",
+      "sha256": "f023608bad472ad635751619d7842785de19eb7c324264b44a2d7aa12388c0e2"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user3-goal3",
+      "condition": "injected",
+      "source_sha256": "71ad1037a67b3788999f85bb051051ca64a457fa08272bad767ddff104559ca4",
+      "sha256": "bae433d3946239704586e6a98ed2f10eb1fb891c430de1fc9d82ed2dff805786"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user3-goal4",
+      "condition": "clean",
+      "source_sha256": "43a858218105ba3fea10d98a56eceff9cded70e41a0c11f94681232816f1774b",
+      "sha256": "718e6ae38ddb828e866e91d8d8ab4bee3f5aaaee2682065ffa12f8cb04a4f2b9"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user3-goal4",
+      "condition": "injected",
+      "source_sha256": "36ff03d6c5ac65fb5f5acdc869ce676e191dc3f448470fd498ce2bbdc47319f8",
+      "sha256": "4bd2cbeb0ad053f5a5d33166054055053aba57f340bbf0f94e3d2eaa792ee4ae"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user4-goal4",
+      "condition": "clean",
+      "source_sha256": "38224117c42354a45a94efbbdc478f2ee49c7de731b653ba9db5aeef16073612",
+      "sha256": "a6546b8108868ad39cdf567ffedbb6731573892a636a59ebc54772a769ee4ac5"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user4-goal4",
+      "condition": "injected",
+      "source_sha256": "0cc0c7a3a2fb22672a5a542bcdf3f5cc603144e6930e4097072a95f925d459ac",
+      "sha256": "c2f405846298e00463007638e5f486c6ebbf6c3a2f333466afb019a78339ea14"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user13-goal0",
+      "condition": "clean",
+      "source_sha256": "2d32f9c489eaa404b22004665ce4fd7af1fc316a3fe48d739a2713260c956ece",
+      "sha256": "a7d4f68454bb442b8d2c5d28c750743b33c566d0517ac915bf6acfa38bd75915"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user13-goal0",
+      "condition": "injected",
+      "source_sha256": "06525a83b1d27e90f85d2a01b7cfb00e250082484b72462465c12cc0ff0c4af4",
+      "sha256": "e95254fb279df7c9aa662cbf1453e259d5e9faea773284eea7909e9e4642d750"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user14-goal0",
+      "condition": "clean",
+      "source_sha256": "8d5b456117b2040fedc057050570c773310d20ecf8d15dfb9089ace32537a477",
+      "sha256": "cd331511f7a120fb025fb62a77a12c4d07bdeb6dbdd389c83464f8354ec1bc6c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user14-goal0",
+      "condition": "injected",
+      "source_sha256": "88ace911cd8b5f8d44e5001522aa95f3dafdfb107b2e6af1f3c6696f9ad4228c",
+      "sha256": "82da971135a1da81d8c5ca8f92a7fa1f69ae8dfeeea1d65a96120b5d5c2681e0"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user17-goal3",
+      "condition": "clean",
+      "source_sha256": "ca9ea8648d1c2b153fb0693913d52b01b41e35cee028446c64e9c8e3b64428a3",
+      "sha256": "1b21838f9c9a6446239f28e5e3a94dad6e9e6bbe0f6fd16e2c68638df225c965"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user17-goal3",
+      "condition": "injected",
+      "source_sha256": "8eaf7f85592a2529c8bc1b90ed4a4d068a8acdd596e114519b044b7cbacbed5e",
+      "sha256": "74f6344f2c3a5dea3c096a56a38509e8d29a4f661933838e26f49bdea8d3cbd2"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user18-goal3",
+      "condition": "clean",
+      "source_sha256": "5e023a1250d788cd9556dd016dc15be31a2e6fb598cf6ba2bac0f9854d1ce218",
+      "sha256": "dd5cc20a7d5f8c660377134649e2f8a0ce8215d84ffa8cf1e88baa42cc51fa65"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user18-goal3",
+      "condition": "injected",
+      "source_sha256": "c0e5e86a93a1da3013d5ddf525ba4e17ac8bd0933b2742f6dfaebbd1250323f1",
+      "sha256": "ad02dbbb9fc3367de397b93ae1b54ba1e2911a45a8921bf0e9a1621d3a728f2e"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user18-goal4",
+      "condition": "clean",
+      "source_sha256": "86f5f6d13e083cd2f6f33383af4a95a3394ec7841748f72326d8c276ee0c35b1",
+      "sha256": "62a7491ae08e04a3f2e150060cfaeaedf923d6d62c67d767592a7c64d8454846"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user18-goal4",
+      "condition": "injected",
+      "source_sha256": "8f2405df8084b9d850427fc0bf38f6e93823712306f05f2589de4ce3f1f92453",
+      "sha256": "6fa2d70f7de5213ff5603eb002fe655a8bbbb18332516a36741830b0e1598dd7"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user19-goal4",
+      "condition": "clean",
+      "source_sha256": "56e9f1b58c0c484f6bc8978fd9970ed32778e90337799196dff0016aafd9fda2",
+      "sha256": "0ad86365240f4cfa0d4cbd5f846c576a5a66df90a7d4a1575a61e0ea3e234915"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user19-goal4",
+      "condition": "injected",
+      "source_sha256": "b254f2e4d5bed1c397ec47bc10d8d012cfce181025923814cee610a2a1954256",
+      "sha256": "82d34e67595954db6a5274f83b1ee4fdeefdb7bc3b454947aafc1131d64db1e8"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user28-goal0",
+      "condition": "clean",
+      "source_sha256": "41f422b073db566fc7606a0283d6d75ac56a3aafffd132c562ac1c9c5a69d205",
+      "sha256": "d8563a01048612b3262619fe5f298a42fe1e3e7edec9d66e55add88ce5d36126"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user28-goal0",
+      "condition": "injected",
+      "source_sha256": "582c9111eef3796c8761b17c63430e19059309b59909320c1ac25f38b0461b9f",
+      "sha256": "a575eb04c0628877c32cb8011e81388c3593628c12b53ec3faaa7a0be52df573"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user29-goal0",
+      "condition": "clean",
+      "source_sha256": "843615610ceef72b2d54a733ef30faeffee914f1337cc34a6015d815c6f6943d",
+      "sha256": "f5e6d43573ff419ffdb3d2bf01019b63ba2eb6c0e4293adf56920e1c37d209e9"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user29-goal0",
+      "condition": "injected",
+      "source_sha256": "fa4ab2fdc472bb51d0dce6fa5d4713490ce834b2211ff29da9353652280380f2",
+      "sha256": "608f4f5f92869b564418b74eb3f380ef33f57ea611945b790f1f6f3441099391"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user31-goal3",
+      "condition": "clean",
+      "source_sha256": "65fd11d8f2b174444a9e69366d27b63e5db8989ff1435b17dc5120ea6f28bf9b",
+      "sha256": "3f3b8f5c805e736fa30cdaa5a5a9bad21e82046e4693a0e0284bf9238bedd9e1"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user31-goal3",
+      "condition": "injected",
+      "source_sha256": "cfc0ea9d21db5e857c82c8062b4efc1055beedc8ca0095701ed1ed8d6e190d9a",
+      "sha256": "1fbbb605efb390af9dc8f17ac9c8382367d4edbe1bd1fc130c4aebebafa7892c"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user32-goal3",
+      "condition": "clean",
+      "source_sha256": "8c4d892f71740e4d6a21327aa2e3fccd67c60a6d4f367e49f36df790abf30f1b",
+      "sha256": "55284d5627557ea7080ae62115ec1b11fee9b6ea15b0607a7c3fec008c9d0cad"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user32-goal3",
+      "condition": "injected",
+      "source_sha256": "797ec143a62a018dd7f7feeb8d59a85c0158cb70176bed8f2b30853c46baf238",
+      "sha256": "bdbc561589fc6360c3cb8494f24302eb3e0694e880de6f3e27d39ce6ba1ee12a"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user32-goal4",
+      "condition": "clean",
+      "source_sha256": "00417eec25aceeacda0649da9bc3ed92b4b8d535367a6f02489b0049f1ed0d3c",
+      "sha256": "d89cddb85ad2fdd762b118adfa0f0205525211071a1baff941846509e226ea63"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user32-goal4",
+      "condition": "injected",
+      "source_sha256": "0020384a33adf1f3cfd4b164e691bdbd5903c8b32deea3206c98b9448ac9c4b8",
+      "sha256": "8cd8f2cb30a2056351479b9c70753f2fd3f19a2d9ea33a83f00f1c96528f633b"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user33-goal4",
+      "condition": "clean",
+      "source_sha256": "36274c996f59cd507c703b98f9c38ffb49c677ccece36a766e6cebde6ce44fac",
+      "sha256": "57230658116a460729d562207196174c88c57a2da8f65c49e8099579a83823c7"
+    },
+    {
+      "file": "source/contracts/agentdojo-next60-target-contracts.json",
+      "candidate_id": "agentdojo-workspace-user33-goal4",
+      "condition": "injected",
+      "source_sha256": "9d79f52d86d7e7b10c307a3b9b0d8fefd9555e77b1936e379487c1a53e202c93",
+      "sha256": "0cef0539ac74c7dfcb5e6b690d7b6b584f1bb8e6edd6d33eed53fa6e43a32bfb"
+    }
+  ],
+  "schema": "source-to-publication-bindings/v1",
+  "transformation": "private_host_path_aliases_only",
+  "scope": "Private host paths are replaced with stable /slb aliases. Original source hashes remain source identities; published hashes authenticate released bytes. Synthetic task paths, grading predicates, outcomes, model replies, and state snapshots are unchanged except for host-location metadata.",
+  "files": [
+    {
+      "path": "final/case-verdicts.jsonl",
+      "sha256": "ec44a094aafd30810e54edde19bbfd42d599e03aaecc706c62344aefd1f9fb0a",
+      "bytes": 2725177,
+      "source_sha256": "6095da2616075540fb85481898ce8c61478c76d19d83f5763e1bd0bba7766ea8",
+      "source_bytes": 2726387
+    },
+    {
+      "path": "final/current-model-runtime-data.json",
+      "sha256": "693278704f9053e25c67d73586e60a72eed6920ffa164bd4f783639ab33f932e",
+      "bytes": 10812,
+      "source_sha256": "756e2af35df50cf22e77210f23cc82c34fab0569813978f7a9196b7091b8923c",
+      "source_bytes": 10867
+    },
+    {
+      "path": "final/explicit-codex-decisions.jsonl",
+      "sha256": "c4f987f18dc042fdaaebf6b6b1b7477b54a03879cbd87fae3fc47ff5859a2ac3",
+      "bytes": 22084,
+      "source_sha256": "6c9f4b50d08132e14a7a73aefe6033e0a26039d79f9248a98d387b21efdf959e",
+      "source_bytes": 23294
+    },
+    {
+      "path": "final/leaderboard-default-verdicts.jsonl",
+      "sha256": "4b77900f0ebeb79f371a2af50ff937de003d7b36a7a621a9d5806d86c8808576",
+      "bytes": 1807610,
+      "source_sha256": "e9ffff076e594548ec61f60114c303fb481a294979a6d48970e1c4d02f0de813",
+      "source_bytes": 1808380
+    },
+    {
+      "path": "final/rows.json",
+      "sha256": "3ad03bf7bae2b6c13f25dcecf81acb76d341ae279d797b65153e5939f1bbee75",
+      "bytes": 26810174,
+      "source_sha256": "4951a9e0e1685020b310e4400f3d383f3ba4a7e59f9826bea3a66b2401f37f04",
+      "source_bytes": 26811384
+    },
+    {
+      "path": "source/contracts/agentdojo-next40-normal-utility-contracts.json",
+      "sha256": "f9c7d13f2f004ebecf6d48713a4a4b8a970685072c19b952566fda8e6c4bc6b6",
+      "bytes": 480048,
+      "source_sha256": "919708391e214ff43d77033dda16c290c2d11e9ec709e300778da2ed59c16ff5",
+      "source_bytes": 489343
+    },
+    {
+      "path": "source/contracts/agentdojo-next51-normal-utility-contracts.json",
+      "sha256": "77e04f33191bbc19d5598c935ed997099a6710314af5fc8a3b49b83aa473d237",
+      "bytes": 995999,
+      "source_sha256": "b4739ffc5d898d3754d265c87e23efb0892612746e0154d917e47bdb67b1f629",
+      "source_bytes": 1007824
+    },
+    {
+      "path": "source/contracts/agentdojo-next51-target-contracts.json",
+      "sha256": "5b2ba6873d793670518000b0e4a97a54fa195c4bb1b69e2afd1c35fe2e14dd4f",
+      "bytes": 3068768,
+      "source_sha256": "6ac1d47f068b0077ea2d7d060b6489d01723801a6997a63211bb101684b9b92b",
+      "source_bytes": 3090821
+    },
+    {
+      "path": "source/contracts/agentdojo-next60-target-contracts.json",
+      "sha256": "44b3bc9972f7e5fe13162662f87be2f96e7f46c5c9236b3fe4364a1d29f3d06d",
+      "bytes": 724949,
+      "source_sha256": "43684b8c402bf88c1b710b2301f4bf7ed3c6a84e8b2def23bdb9b2b2dd3057eb",
+      "source_bytes": 745921
+    },
+    {
+      "path": "source/execution-plan/catalog-schema-qualification.json",
+      "sha256": "e4ae536566e476faf90c794b5072bca41ce0cacf507e41bae4e0d644134c8f38",
+      "bytes": 36174,
+      "source_sha256": "2e4dc5c8ec356582e80675793e8ed5ce10990fc4e1f2e4164b1cdf6c07c2eff1",
+      "source_bytes": 36210
+    },
+    {
+      "path": "source/execution-plan/commands.json",
+      "sha256": "63bb53d3d22c47e7525cb269143d52e809bad8c9d25e74d1ae55e0ca4130c902",
+      "bytes": 1444,
+      "source_sha256": "97cdab09d008a9e94b2d0b78b99d48b843b740e59303d1d2b5a3c217ee02f301",
+      "source_bytes": 1865
+    },
+    {
+      "path": "source/execution-plan/manifest.json",
+      "sha256": "3e82e80c8bd3bc2c721a50d0cb9d3653db7ec184131d1e34c8c508266709470d",
+      "bytes": 14473,
+      "source_sha256": "31cb49c05ce0080caaa38c81d27680363ed0c3ef65441765283053c7362b5e91",
+      "source_bytes": 16242
+    },
+    {
+      "path": "source/goal-grader-freeze01.json",
+      "sha256": "2c0f5e928b65babd2ca73e55f9a1fbb79c6705d8c533c363fffab84d2c3cfaa4",
+      "bytes": 741,
+      "source_sha256": "ef295f5a6d0050fb401b9c7758453fdd69f62bd2772530b9126e324f198a78b1",
+      "source_bytes": 813
+    },
+    {
+      "path": "source/grader-freeze05.json",
+      "sha256": "b607930f151bca866f62e34534e78983e2fed7c4196e49b32ecb67e9bfefd02e",
+      "bytes": 3467,
+      "source_sha256": "9f685581e9f31eb4a16c01d8fa3296fe50f7fc36bfbc4595fe235bdcbab4a09e",
+      "source_bytes": 3647
+    },
+    {
+      "path": "source/schedule.jsonl",
+      "sha256": "544fd7b7db6ad3dd6c98bf5d0413697298e89ec4ccb1aadd30bc18cb4100c130",
+      "bytes": 1603496,
+      "source_sha256": "d8271c4e4fa0be554dbdfb78a8f73688790a76ae9896ddafa736551a01c5ad35",
+      "source_bytes": 1750346
+    }
+  ]
+}

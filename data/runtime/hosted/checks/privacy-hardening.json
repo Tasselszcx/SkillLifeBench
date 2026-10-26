@@ -1,0 +1,19 @@
+{
+  "schema": "hosted-privacy-verification/v1",
+  "status": "passed",
+  "archive_members_scanned": 46726,
+  "archives_scanned": 13,
+  "encoded_json_recursively_scanned": true,
+  "remaining_opaque_session_fields": 0,
+  "remaining_private_machine_paths": 0,
+  "original_boolean_rows_verified_unchanged": 2136,
+  "model_condition_summaries_unchanged": true,
+  "transform_occurrences": {
+    "path_aliasing": 40760,
+    "session_field_removal": 15026
+  },
+  "model_calls": 0,
+  "native_tool_calls": 0,
+  "deserialization_of_native_binary_states": false,
+  "source_and_publication_hashes_distinguished": true
+}

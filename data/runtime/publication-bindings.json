@@ -1,0 +1,27 @@
+{
+  "schema": "source-to-publication-bindings/v1",
+  "transformation": "private_host_path_aliases_only",
+  "files": [
+    {
+      "path": "current-model-runtime-data.json",
+      "sha256": "0e1884ddd95403d5b47565a2d25131a07ffc2801cf460e6caad13762239736c4",
+      "bytes": 32371,
+      "source_sha256": "92cfe778761f374664d0c4b1ed0f21684bbdb05ee18d8f7103420766d5266a79",
+      "source_bytes": 32481
+    },
+    {
+      "path": "model-data.json",
+      "sha256": "f4710d7e9c0837a2e99d9999bf3e0bb7af13f78377c574cb849225504777ca60",
+      "bytes": 61082,
+      "source_sha256": "7f4be97cb1ea00c721cfe66a8e152a842004cc27ae33236933dbc0a8e43d2057",
+      "source_bytes": 61302
+    },
+    {
+      "path": "runtime-case-verdicts.jsonl",
+      "sha256": "0e244abdc538adbe3917e2167201961f122f5bb0432e6f82ac9e3f7aadc28464",
+      "bytes": 2570138,
+      "source_sha256": "9e47d6e746782b963cb1d31ce3f8b5c896c94a3e6d7521b3351b28f54b37f492",
+      "source_bytes": 2618758
+    }
+  ]
+}
