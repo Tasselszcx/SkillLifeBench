@@ -1,10 +1,13 @@
 {
-  "description": "Numeric fields copied from completed frozen verifier reports; no traces, paths, credentials or model response content.",
+  "description": "Metrics, Boolean flags and artifact hashes projected from completed frozen verifier reports. Source paths are represented by basenames. No traces, private paths, credentials or model response content.",
   "hosted": {
     "status": "passed",
     "totals": {
       "file_path_bindings": 89173,
-      "header_only_publication_copies": 7381,
+      "credential_header_publication_copies": 7381,
+      "session_field_publication_copies": 2569,
+      "path_aliased_publication_copies": 8578,
+      "omitted_nongrading_binary_files": 0,
       "boolean_records": 2136,
       "codex_semantic_reviews": 323
     },
@@ -218,7 +221,17 @@
     },
     "scorer_reproduction": true,
     "new_model_calls": 0,
-    "new_tool_calls": 0
+    "new_tool_calls": 0,
+    "publication_verification": {
+      "status": "passed",
+      "public_package_files_verified": 94,
+      "source_to_public_file_bindings_verified": 15,
+      "archive_member_bindings_verified": 42445,
+      "source_to_public_member_bindings": 5102,
+      "source_to_public_contract_bindings": 313,
+      "frozen_scorer_sources_verified": true,
+      "recorded_source_hashes_retained": true
+    }
   },
   "lifecycle": {
     "complete": true,
@@ -229,12 +242,19 @@
     "skill_implementations_executed": 0,
     "pickle_objects_loaded": 0,
     "verdict_criteria_changed": false,
-    "stored_records_modified": false,
+    "stored_scores_modified": false,
+    "publication_metadata_transformed": true,
     "evidence_files_verified": 38791,
-    "header_derivative_files_verified": 4844,
-    "replay_inputs_byte_identical": true,
+    "header_derivative_files_verified": 3729,
+    "privacy_derivative_files_verified": 3512,
+    "replay_inputs_byte_identical": false,
+    "frozen_grader_sources_byte_identical": true,
+    "scoring_outputs_and_task_snapshots_preserved": true,
+    "portable_index_sha256": "5459e33d513790a1598d2bd72e3a7748a6b890ebb117366818a459e869ede238",
+    "frozen_replay_sha256": "6021584e9349b903c634c0489238790a4bfc3ade33408dba4cb628b10dc2cc0b",
     "prefixes_regraded": 8036,
     "captured_file_records_verified": 27408,
+    "declared_source_writes_replayed": 228,
     "models": {
       "qwen3.5-4b": {
         "clean": {
@@ -433,6 +453,24 @@
         }
       }
     },
-    "failures": []
+    "failures": [],
+    "frozen_grader_sources": [
+      {
+        "original_path": "effect_oracle.py",
+        "sha256": "df60c0304989f5b2dbe40c9b810c3a5aa72f24d12f5ea116419d7d49517a5291"
+      },
+      {
+        "original_path": "b_tasks.py",
+        "sha256": "6b7e4247db3ef6d352a0db352d3d52c378a343bdc6622561e261020d5137998c"
+      },
+      {
+        "original_path": "d_tasks.py",
+        "sha256": "e59b9d7fd1abbd35f4d55dc227fcac07ee3602be35913432afc383f4838d2783"
+      },
+      {
+        "original_path": "e_tasks.py",
+        "sha256": "d17646b74c34aed2fc64b56ce925dbe3f0d6f6a44e67c37c49af28576e6255b5"
+      }
+    ]
   }
 }

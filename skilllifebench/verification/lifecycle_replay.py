@@ -2,12 +2,14 @@
 """Recompute all 1,680 lifecycle outcomes from the public frozen snapshots.
 
 Standard-library only. No inference, task implementation execution, or pickle
-loading occurs. Original absolute paths are identifiers in the portable index;
-they are never opened. The archived graders and replay routine are hash-pinned.
+loading occurs. Private host paths use stable publication aliases; they are
+never opened. Original hashes bind the documented public derivatives. The
+archived graders and replay routine remain byte-identical and hash-pinned.
 """
 from __future__ import annotations
 
 import argparse
+import base64
 import csv
 import hashlib
 import importlib.util
@@ -23,7 +25,7 @@ from datetime import datetime, timezone
 
 
 RELEASE_ROOT = Path(__file__).resolve().parents[2] / "data/lifecycle"
-INDEX_SHA256 = "4f2c2240901d808e4edb5e5e0a9402b1eb91f4abc664406f00b89622746ee2fa"
+INDEX_SHA256 = "5459e33d513790a1598d2bd72e3a7748a6b890ebb117366818a459e869ede238"
 REPLAY_SHA256 = "6021584e9349b903c634c0489238790a4bfc3ade33408dba4cb628b10dc2cc0b"
 GRADER_SHA256 = {
     "effect_oracle.py": "df60c0304989f5b2dbe40c9b810c3a5aa72f24d12f5ea116419d7d49517a5291",
@@ -112,6 +114,7 @@ def extract_evidence(release_root, destination):
     parts, combined = [], hashlib.sha256()
     for part in meta["parts"]:
         path = safe_path(archive_root, part["name"])
+        require(0 < part["bytes"] <= 20 * 1024 * 1024, "Evidence part exceeds 20 MiB")
         require(path.stat().st_size == part["bytes"] and digest(path) == part["sha256"],
                 "Compressed evidence part hash differs")
         with path.open("rb") as stream:
@@ -132,6 +135,12 @@ def extract_evidence(release_root, destination):
                     for block in iter(lambda: source.read(1024 * 1024), b""):
                         target.write(block)
                 require(path.stat().st_size == member.size, "Truncated archive member")
+    for member_key, hash_key in (("portable_index_member", "portable_index_sha256"),
+                                 ("proof_scope_member", "proof_scope_sha256"),
+                                 ("privacy_publication_member", "privacy_publication_sha256")):
+        if member_key in meta:
+            require(digest(safe_path(destination, meta[member_key])) == meta[hash_key],
+                    "Evidence release metadata hash differs")
     return meta
 
 
@@ -172,6 +181,85 @@ def verify_header_derivative(row, raw):
             "Derivative proof does not cover the complete document")
 
 
+def verify_privacy_derivative(row, raw):
+    """Verify a complete original/public byte map without retaining private data.
+
+    Original token hashes are historical commitments, not reconstructed bytes.
+    Every public token and every unchanged byte interval is independently
+    checked. Encoded-body hashes explicitly distinguish published response and
+    request bodies from their original transport bindings.
+    """
+    transformation = row["transformation"]
+    require(transformation.get("schema") == "skilllifebench-privacy-derivative/v1"
+            and transformation.get("all_other_bytes_exact") is True,
+            "Unknown publication transformation")
+    replacements = transformation.get("replacements", [])
+    require(bool(replacements), "Missing privacy replacements")
+    content = None
+
+    def at_pointer(pointer):
+        nonlocal content
+        if content is None:
+            content = json.loads(raw)
+        value = content
+        for component in pointer.split("/")[1:]:
+            component = component.replace("~1", "/").replace("~0", "~")
+            value = value[int(component)] if isinstance(value, list) else value[component]
+        return value
+    segments = []
+    for interval in transformation["unchanged_byte_intervals"]:
+        p0, p1 = interval["public_start"], interval["public_end"]
+        o0, o1 = interval["original_start"], interval["original_end"]
+        require(0 <= p0 <= p1 <= len(raw) and 0 <= o0 <= o1 <= row["original_bytes"]
+                and p1 - p0 == o1 - o0, "Invalid unchanged privacy interval")
+        require(hashlib.sha256(raw[p0:p1]).hexdigest() == interval["sha256"],
+                "Unchanged privacy interval hash differs")
+        segments.append((p0, p1, o0, o1))
+    for replacement in replacements:
+        p0, p1 = replacement["public_start"], replacement["public_end"]
+        o0, o1 = replacement["original_start"], replacement["original_end"]
+        require(0 <= p0 < p1 <= len(raw) and 0 <= o0 < o1 <= row["original_bytes"],
+                "Invalid privacy replacement interval")
+        token = raw[p0:p1]
+        require(hashlib.sha256(token).hexdigest() == replacement["public_token_sha256"],
+                "Public replacement token hash differs")
+        require(re.fullmatch(r"[0-9a-f]{64}", replacement["original_token_sha256"]) is not None,
+                "Missing original replacement binding")
+        kind = replacement["kind"]
+        if kind in {"credential-header", "opaque-provider-state"}:
+            require(token == b"null", "Opaque publication token must be null")
+            pointer = replacement["json_pointer"]
+            require(at_pointer(pointer) is None, "Publication pointer is not null")
+            if kind == "credential-header":
+                require(re.fullmatch(r"/response_headers/\d+/1", pointer) is not None,
+                        "Nonheader credential replacement")
+            elif pointer.rsplit("/", 1)[-1].lower() not in {"encrypted_content", "x-codex-turn-state"}:
+                parent = at_pointer(pointer.rsplit("/", 1)[0])
+                require(isinstance(parent, list) and len(parent) == 2
+                        and isinstance(parent[0], str)
+                        and parent[0].lower() == "x-codex-turn-state"
+                        and pointer.endswith("/1"), "Nonopaque field was replaced")
+        elif kind == "host-path-alias":
+            require(b"/slb/" in token and not re.search(rb"/home/(?!user(?:/|[\"']))[^/\s]+/", token),
+                    "Invalid host-path publication alias")
+        elif kind == "encoded-json-publication":
+            text = json.loads(token)
+            decoded = base64.b64decode(text, validate=True) if replacement["encoding"] == "base64" else text.encode()
+            require(hashlib.sha256(decoded).hexdigest() == replacement["public_decoded_sha256"],
+                    "Published encoded-body hash differs")
+            json.loads(decoded)
+        else:
+            raise ValueError("Unsupported privacy replacement kind")
+        segments.append((p0, p1, o0, o1))
+    previous_public = previous_original = 0
+    for p0, p1, o0, o1 in sorted(segments):
+        require(p0 == previous_public and o0 == previous_original,
+                "Privacy proof contains a gap, overlap, or reordered bytes")
+        previous_public, previous_original = p1, o1
+    require(previous_public == len(raw) and previous_original == row["original_bytes"],
+            "Privacy proof does not cover the complete document")
+
+
 class PortableEvidence:
     """Resolve original (path, hash) bindings only through verified public bytes."""
 
@@ -181,7 +269,7 @@ class PortableEvidence:
         require(digest(index) == index_sha256, "Portable evidence index hash differs")
         self.rows = [json.loads(line) for line in index.read_text(encoding="utf-8").splitlines()]
         self.aliases, self.public = {}, {}
-        self.derivatives = 0
+        self.derivatives = self.privacy_derivatives = 0
         for row in self.rows:
             path = safe_path(self.root, row["public_path"])
             require(path.stat().st_size == row["public_bytes"] and digest(path) == row["public_sha256"],
@@ -192,7 +280,11 @@ class PortableEvidence:
                 require(row["original_sha256"] == row["public_sha256"]
                         and row["original_bytes"] == row["public_bytes"], "False byte-identity claim")
             else:
-                verify_header_derivative(row, path.read_bytes())
+                if row["transformation"].get("schema") == "skilllifebench-privacy-derivative/v1":
+                    verify_privacy_derivative(row, path.read_bytes())
+                    self.privacy_derivatives += 1
+                else:
+                    verify_header_derivative(row, path.read_bytes())
                 self.derivatives += 1
             for original in row["original_paths"]:
                 key = (original, row["original_sha256"])
@@ -210,6 +302,11 @@ class PortableEvidence:
     def member(self, relative):
         require(relative in self.public, "Requested member is outside verified evidence")
         return safe_path(self.root, relative)
+
+    def original_hash(self, relative):
+        """Historical binding for bytes intentionally changed during publication."""
+        require(relative in self.public, "Requested member is outside verified evidence")
+        return self.public[relative]["original_sha256"]
 
     def source(self, filename, expected_hash):
         choices = [row for row in self.rows if row["original_sha256"] == expected_hash
@@ -271,13 +368,13 @@ def run(output, evidence_root=None, release_root=RELEASE_ROOT):
     selected_path = evidence.member("analysis/selected-outcome-index.json")
     selected = read_json(selected_path)
     verification = read_json(evidence.member("analysis/verification.json"))
-    require(verification["plan"]["sha256"] == digest(plan_path)
+    require(verification["plan"]["sha256"] == evidence.original_hash("inputs/plan.json")
             and verification["complete"] is True and verification["valid"] == 1680,
             "Final analysis is not bound to the complete execution plan")
     require(plan["task_count"] == 60 and plan["template_count"] == 12 and len(plan["models"]) == 14,
             "Unexpected final population")
     manifest = plan["task_manifest"]
-    task_path = evidence.resolve(manifest["path"], manifest["sha256"], require_identical=True)
+    task_path = evidence.resolve(manifest["path"], manifest["sha256"])
     tasks = {task["id"]: task for task in read_json(task_path)["tasks"]}
     require(len(tasks) == 60 and set(tasks) == set(plan["task_ids"]), "Frozen task population differs")
     scheduled = {f"{model['key']}/{task}/{condition}" for model in plan["models"]
@@ -305,8 +402,10 @@ def run(output, evidence_root=None, release_root=RELEASE_ROOT):
     rows, failures = [], []
     for index, original in enumerate(selected):
         try:
-            path = evidence.resolve(original["outcome_path"], original["outcome_sha256"], require_identical=True)
-            row = {**original, "outcome_path": str(path)}
+            path = evidence.resolve(original["outcome_path"], original["outcome_sha256"])
+            # The verified ledger binds the original outcome to its public
+            # derivative. The unchanged frozen replay verifies the bytes it reads.
+            row = {**original, "outcome_path": str(path), "outcome_sha256": digest(path)}
             result = frozen.regrade_episode(row, tasks[row["task_id"]], plan, graders)
             rows.append(result)
             write_json(episodes / f"episode-{index:04d}.json", result)
@@ -330,11 +429,15 @@ def run(output, evidence_root=None, release_root=RELEASE_ROOT):
         "complete": len(rows) == 1680 and not failures and aggregates_match,
         "planned": 1680, "matched": len(rows), "aggregate_counts_match": aggregates_match,
         "model_calls": 0, "skill_implementations_executed": 0, "pickle_objects_loaded": 0,
-        "verdict_criteria_changed": False, "stored_records_modified": False,
+        "verdict_criteria_changed": False, "stored_scores_modified": False,
+        "publication_metadata_transformed": True,
         "evidence_files_verified": len(evidence.rows),
-        "header_derivative_files_verified": evidence.derivatives,
-        "header_derivative_scope": "Public null tokens and all unchanged-byte interval hashes are verified; private header values are neither reconstructed nor needed by the graders.",
-        "replay_inputs_byte_identical": True, "portable_index_sha256": INDEX_SHA256,
+        "header_derivative_files_verified": evidence.derivatives - evidence.privacy_derivatives,
+        "privacy_derivative_files_verified": evidence.privacy_derivatives,
+        "publication_derivative_scope": "Public null tokens, stable host-path aliases, decoded-body hashes and complete unchanged-byte intervals are verified. Original and public hashes remain separate; opaque provider state is not required by the graders.",
+        "replay_inputs_byte_identical": False, "frozen_grader_sources_byte_identical": True,
+        "scoring_outputs_and_task_snapshots_preserved": True,
+        "portable_index_sha256": INDEX_SHA256,
         "frozen_replay_sha256": REPLAY_SHA256, "frozen_grader_sources": graders.bindings,
         "plan_sha256": digest(plan_path), "selected_index_sha256": digest(selected_path),
         "prefixes_regraded": sum(row["prefix_count"] for row in rows),

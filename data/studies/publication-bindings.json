@@ -1,0 +1,39 @@
+{
+  "schema": "source-to-publication-bindings/v1",
+  "path_alias_prefix": "/slb",
+  "source_hashes_preserved": true,
+  "files": [
+    {
+      "path": "recovery.json",
+      "sha256": "130ef69122025078a7e3221e1589bdbe95a9f6db0f031b605f7687702d6490a2",
+      "bytes": 6160,
+      "source_sha256": "f32ff39b6e7a90fdec0e0cbec3bf17ee8d666321064262de4c150f66277ea037",
+      "source_bytes": 6184,
+      "transformation": "private_host_path_aliases_only"
+    },
+    {
+      "path": "updates/evidence.index.json",
+      "sha256": "00489172e4302492abee27792c114be2ddd797aeaa1f3b486b418b3c81b9a0cc",
+      "bytes": 1317421,
+      "source_sha256": "bf118d3ac46d7c2740e8b4e15b7a6c861d52be901a4debdb3df94ea28e325c3e",
+      "source_bytes": 1325256,
+      "transformation": "private_host_path_aliases_with_public_binding_metadata"
+    },
+    {
+      "path": "updates/evidence.tar.xz",
+      "sha256": "c8de5f3b896fc4f7e01fe19cf4ef6b4095b8f0b864a02ed940b6cbab2aa2593f",
+      "bytes": 246468,
+      "source_sha256": "cc80c5a79be93b5ca5e8e2442744984db1ffa0fedaae768f622012079cf01c3c",
+      "source_bytes": 245900,
+      "transformation": "private_host_path_aliases_with_public_binding_metadata"
+    },
+    {
+      "path": "updates.json",
+      "sha256": "0a3a3ed5e3595aae5075b20627b12002bf92cbf699b45912512d8b3e9b08e041",
+      "bytes": 310359,
+      "source_sha256": "41f2fe0d6455b36c4c82788637d5d94dc642555ed435993ef57cb02e44338023",
+      "source_bytes": 310004,
+      "transformation": "private_host_path_aliases_with_public_binding_metadata"
+    }
+  ]
+}

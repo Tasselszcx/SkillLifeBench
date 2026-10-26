@@ -36,6 +36,14 @@ MODEL_IDS = frozenset({"claude-sonnet-4-6", "claude-sonnet-5", "deepseek-v3.2", 
                        "deepseek-v4-pro", "gemini-3.5-flash", "glm-5.2", "glm-5.3", "gpt-5.6-sol",
                        "gpt-5.6-terra", "gpt-6-luna", "kimi-k2.6", "qwen3.5-4b", "qwen3.5-9b"})
 HASH = re.compile(r"[0-9a-f]{64}\Z")
+LIFECYCLE_PUBLICATION_INDEX = "5459e33d513790a1598d2bd72e3a7748a6b890ebb117366818a459e869ede238"
+LIFECYCLE_FROZEN_REPLAY = "6021584e9349b903c634c0489238790a4bfc3ade33408dba4cb628b10dc2cc0b"
+LIFECYCLE_FROZEN_GRADERS = {
+    "effect_oracle.py": "df60c0304989f5b2dbe40c9b810c3a5aa72f24d12f5ea116419d7d49517a5291",
+    "b_tasks.py": "6b7e4247db3ef6d352a0db352d3d52c378a343bdc6622561e261020d5137998c",
+    "d_tasks.py": "e59b9d7fd1abbd35f4d55dc227fcac07ee3602be35913432afc383f4838d2783",
+    "e_tasks.py": "d17646b74c34aed2fc64b56ce925dbe3f0d6f6a44e67c37c49af28576e6255b5",
+}
 
 
 class VerificationError(ValueError):
@@ -308,6 +316,12 @@ def validate_full_reports(hosted, qwen, lifecycle):
     """Validate the actual frozen verifier schemas, independently of process exit codes."""
     require(hosted.get("status") == "passed" and hosted.get("totals", {}).get("boolean_records") == 2136,
             "Hosted frozen replay count differs or verification did not pass")
+    for field, expected_count in (("file_path_bindings", 89173),
+                                  ("credential_header_publication_copies", 7381),
+                                  ("session_field_publication_copies", 2569),
+                                  ("path_aliased_publication_copies", 8578),
+                                  ("omitted_nongrading_binary_files", 0)):
+        integer(hosted["totals"].get(field), expected_count, "Hosted publication proof " + field)
     hosted_models = MODEL_IDS - {"qwen3.5-4b", "qwen3.5-9b"}
     expected = {(model, condition) for model in hosted_models for condition in ("clean", "injected")}
     observed = set()
@@ -330,14 +344,45 @@ def validate_full_reports(hosted, qwen, lifecycle):
             "Qwen frozen replay is incomplete")
     require(qwen.get("pooled_joint_transitions") == {"FT": 15, "TT": 114, "FF": 43, "TF": 6},
             "Qwen paired-intervention counts differ")
+    publication = qwen.get("publication_verification")
+    require(isinstance(publication, dict) and publication.get("status") == "passed"
+            and publication.get("frozen_scorer_sources_verified") is True
+            and publication.get("recorded_source_hashes_retained") is True,
+            "Qwen publication proof or frozen scorer verification is incomplete")
+    for field, expected_count in (("public_package_files_verified", 94),
+                                  ("source_to_public_file_bindings_verified", 15),
+                                  ("archive_member_bindings_verified", 42445),
+                                  ("source_to_public_member_bindings", 5102),
+                                  ("source_to_public_contract_bindings", 313)):
+        integer(publication.get(field), expected_count, "Qwen publication proof " + field)
     require(lifecycle.get("complete") is True and lifecycle.get("matched") == lifecycle.get("planned") == 1680
             and lifecycle.get("aggregate_counts_match") is True and lifecycle.get("failures") == []
-            and lifecycle.get("replay_inputs_byte_identical") is True
-            and lifecycle.get("verdict_criteria_changed") is False and lifecycle.get("stored_records_modified") is False
+            and lifecycle.get("verdict_criteria_changed") is False and lifecycle.get("stored_scores_modified") is False
             and lifecycle.get("model_calls") == lifecycle.get("skill_implementations_executed") == lifecycle.get("pickle_objects_loaded") == 0,
             "Lifecycle frozen replay is incomplete")
+    require(lifecycle.get("replay_inputs_byte_identical") is False
+            and lifecycle.get("publication_metadata_transformed") is True
+            and lifecycle.get("frozen_grader_sources_byte_identical") is True
+            and lifecycle.get("scoring_outputs_and_task_snapshots_preserved") is True
+            and lifecycle.get("portable_index_sha256") == LIFECYCLE_PUBLICATION_INDEX
+            and lifecycle.get("frozen_replay_sha256") == LIFECYCLE_FROZEN_REPLAY,
+            "Lifecycle publication proof or frozen grading identity differs")
+    graders = lifecycle.get("frozen_grader_sources")
+    require(isinstance(graders, list) and len(graders) == len(LIFECYCLE_FROZEN_GRADERS),
+            "Lifecycle frozen grader source bindings are incomplete")
+    grader_hashes = {}
+    for source in graders:
+        require(isinstance(source, dict) and isinstance(source.get("original_path"), str),
+                "Lifecycle frozen grader source binding is invalid")
+        name = PurePosixPath(source["original_path"]).name
+        require(name in LIFECYCLE_FROZEN_GRADERS and name not in grader_hashes,
+                "Lifecycle frozen grader source is missing, duplicate or foreign")
+        grader_hashes[name] = source.get("sha256")
+    require(grader_hashes == LIFECYCLE_FROZEN_GRADERS, "Lifecycle frozen grader source hash differs")
     for field, expected_count in (("prefixes_regraded", 8036), ("captured_file_records_verified", 27408),
-                                  ("evidence_files_verified", 38791), ("header_derivative_files_verified", 4844)):
+                                  ("declared_source_writes_replayed", 228),
+                                  ("evidence_files_verified", 38791), ("header_derivative_files_verified", 3729),
+                                  ("privacy_derivative_files_verified", 3512)):
         integer(lifecycle.get(field), expected_count, "Lifecycle replay " + field)
     models = lifecycle.get("models")
     require(isinstance(models, dict) and set(models) == MODEL_IDS, "Lifecycle replay model schedule differs")

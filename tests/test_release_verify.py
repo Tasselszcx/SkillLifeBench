@@ -236,15 +236,102 @@ class FullReportSchemaTests(unittest.TestCase):
         with self.assertRaisesRegex(VERIFY.VerificationError, "group"):
             self.check()
 
+    def test_hosted_publication_proofs_cannot_be_missing_or_reduced(self):
+        original = copy.deepcopy(self.reports)
+        for field in ("file_path_bindings", "credential_header_publication_copies",
+                      "session_field_publication_copies", "path_aliased_publication_copies",
+                      "omitted_nongrading_binary_files"):
+            for missing in (True, False):
+                self.reports = copy.deepcopy(original)
+                totals = self.reports["hosted"]["totals"]
+                if missing:
+                    totals.pop(field)
+                else:
+                    totals[field] += 1
+                with self.subTest(field=field, missing=missing), \
+                     self.assertRaisesRegex(VERIFY.VerificationError, "Hosted publication proof"):
+                    self.check()
+
     def test_qwen_baseline_count_is_checked_separately_from_intervention(self):
         self.reports["qwen"]["baseline_episodes"] = 355
         with self.assertRaisesRegex(VERIFY.VerificationError, "Qwen"):
             self.check()
 
+    def test_qwen_publication_proof_cannot_be_omitted_or_weakened(self):
+        original = copy.deepcopy(self.reports)
+        self.reports["qwen"].pop("publication_verification")
+        with self.assertRaisesRegex(VERIFY.VerificationError, "Qwen publication proof"):
+            self.check()
+        for field in ("public_package_files_verified", "source_to_public_file_bindings_verified",
+                      "archive_member_bindings_verified", "source_to_public_member_bindings",
+                      "source_to_public_contract_bindings", "frozen_scorer_sources_verified",
+                      "recorded_source_hashes_retained"):
+            self.reports = copy.deepcopy(original)
+            proof = self.reports["qwen"]["publication_verification"]
+            proof[field] = False if type(proof[field]) is bool else proof[field] - 1
+            with self.subTest(field=field), \
+                 self.assertRaisesRegex(VERIFY.VerificationError, "Qwen publication proof"):
+                self.check()
+
     def test_lifecycle_models_checked_even_when_complete_flag_is_true(self):
         self.reports["lifecycle"]["models"].pop("qwen3.5-4b")
         with self.assertRaisesRegex(VERIFY.VerificationError, "model schedule"):
             self.check()
+
+    def test_lifecycle_publication_index_and_replay_hash_are_pinned(self):
+        original = copy.deepcopy(self.reports)
+        for field in ("portable_index_sha256", "frozen_replay_sha256"):
+            for missing in (True, False):
+                self.reports = copy.deepcopy(original)
+                if missing:
+                    self.reports["lifecycle"].pop(field)
+                else:
+                    self.reports["lifecycle"][field] = "0" * 64
+                with self.subTest(field=field, missing=missing), \
+                     self.assertRaisesRegex(VERIFY.VerificationError, "publication proof"):
+                    self.check()
+
+    def test_lifecycle_privacy_cannot_claim_unchanged_bytes_or_changed_scoring_state(self):
+        original = copy.deepcopy(self.reports)
+        fields = {
+            "replay_inputs_byte_identical": True,
+            "publication_metadata_transformed": False,
+            "frozen_grader_sources_byte_identical": False,
+            "scoring_outputs_and_task_snapshots_preserved": False,
+            "stored_scores_modified": True,
+            "verdict_criteria_changed": True,
+            "pickle_objects_loaded": 1,
+        }
+        for field, value in fields.items():
+            self.reports = copy.deepcopy(original)
+            self.reports["lifecycle"][field] = value
+            with self.subTest(field=field), self.assertRaises(VERIFY.VerificationError):
+                self.check()
+
+    def test_lifecycle_derivative_and_replayed_snapshot_counts_are_exact(self):
+        original = copy.deepcopy(self.reports)
+        for field in ("evidence_files_verified", "header_derivative_files_verified",
+                      "privacy_derivative_files_verified", "prefixes_regraded",
+                      "captured_file_records_verified", "declared_source_writes_replayed"):
+            self.reports = copy.deepcopy(original)
+            self.reports["lifecycle"][field] -= 1
+            with self.subTest(field=field), self.assertRaisesRegex(VERIFY.VerificationError, "Lifecycle replay"):
+                self.check()
+
+    def test_lifecycle_grader_source_bindings_cannot_be_missing_duplicated_or_changed(self):
+        original = copy.deepcopy(self.reports)
+        for mutation in ("missing", "duplicated", "changed"):
+            self.reports = copy.deepcopy(original)
+            sources = self.reports["lifecycle"]["frozen_grader_sources"]
+            if mutation == "missing":
+                sources.pop()
+            elif mutation == "duplicated":
+                sources[-1] = copy.deepcopy(sources[0])
+            else:
+                sources[-1]["sha256"] = "0" * 64
+            with self.subTest(mutation=mutation), \
+                 self.assertRaisesRegex(VERIFY.VerificationError, "frozen grader source"):
+                self.check()
 
     def test_tar_filter_capability_has_clear_error(self):
         with patch.object(VERIFY.tarfile, "data_filter", None, create=True):
